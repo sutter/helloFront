@@ -1,0 +1,37 @@
+table {
+  margin: $spacer-s 0;
+  table-layout: fixed;
+  width: 100%;
+  border: 1px solid $base-border-color;
+}
+
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+th {
+  padding: $spacer-s;
+  border-bottom: 2px solid $base-border-color;
+  font-weight: bold;
+  text-align: left;
+  + th {
+    border-left: 1px solid tint($base-border-color, 50%);
+  }
+}
+
+tbody {
+  tr {
+    &:nth-child(even) {
+      background: $clr-0-lighten;
+    }
+  }
+  td {
+    padding: $spacer-s/2 $spacer-s;
+    border-bottom: 1px solid $base-border-color;
+    + td {
+      border-left: 1px solid tint($base-border-color, 50%);
+    }
+  }
+}

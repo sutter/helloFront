@@ -1,0 +1,9 @@
+.menu-inner {
+  @extend %list-inline;
+}
+
+.menu-link {
+  &.is-active {
+    color: $clr-2;
+  }
+}

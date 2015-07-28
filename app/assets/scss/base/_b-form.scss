@@ -1,0 +1,99 @@
+input,
+label,
+select {
+
+  display: block;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: $spacer-s/2;
+  cursor: pointer;
+  &.required:after {
+    content: " *";
+  }
+  abbr {
+    display: none;
+  }
+}
+
+textarea,
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="url"],
+select[multiple=multiple] {
+  padding: em(10);
+  width: 100%;
+  margin-bottom: $spacer-s;
+  border: 1px solid $form-border-color;
+  background-color: $clr-light;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  border-radius: $form-border-radius;
+  box-shadow: $form-box-shadow;
+  transition: $trans;
+
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $spacer-s/2;
+}
+
+input[type="file"] {
+  margin-bottom: $spacer-s;
+  padding-bottom: ($spacer-s / 3);
+  width: 100%;
+}
+
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: $spacer-s;
+}
+
+fieldset {
+  margin: 0 0 ($base-line-height / 2) 0;
+  padding: $base-line-height;
+  border: 1px solid $base-border-color;
+  background: $clr-0-lighten;
+  border-radius: $form-border-radius;
+}
+
+input::-webkit-input-placeholder {
+  color: $color-mixin-placeholder;
+}
+
+// Firefox 18
+input:-moz-placeholder {
+  color: $color-mixin-placeholder;
+}
+
+// Firefox 19+
+input::-moz-placeholder {
+  color: $color-mixin-placeholder;
+}
+
+input:-ms-input-placeholder {
+  color: $color-mixin-placeholder;
+}

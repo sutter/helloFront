@@ -1,0 +1,26 @@
+append config
+  include ../config
+
+include ../mixin/index
+
+doctype
+html(lang="#{lang}")
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    meta(name='description', content='#{metaDesc}')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(href='favicon.ico', rel='shortcut icon', type='image/x-icon')
+    link(rel='stylesheet', href='assets/css/application.css')
+
+    body(role='document', class="#{template}")
+
+      include ../partials/header
+
+      main#main.main(role='main')
+        block content
+
+      include ../partials/footer
+
+      script(src="http://code.jquery.com/jquery-2.1.4.js")
+      script(src="assets/js/application.js")

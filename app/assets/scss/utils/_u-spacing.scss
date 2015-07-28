@@ -1,0 +1,43 @@
+/* Spacing helpers
+ *   p,m = padding, margin
+ *   a,t,r,b,l = all, top, bottom, left, right
+ *   n,s,m,l = none, small, medium, large
+ */
+
+/* Margin */
+.u-man { margin: 0 !important }
+.u-mbn { margin-bottom: 0 !important }
+.u-mbs { margin-bottom: $spacer-s !important }
+.u-mbm { margin-bottom: $spacer-m !important }
+.u-mbl { margin-bottom: $spacer-l !important }
+.u-mtn { margin-top: 0 !important }
+.u-mts { margin-top: $spacer-s !important }
+.u-mtm { margin-top: $spacer-m !important }
+.u-mtl { margin-top: $spacer-l !important }
+.u-mln { margin-left: 0 !important }
+.u-mls { margin-left: $spacer-s !important }
+.u-mlm { margin-left: $spacer-m !important }
+.u-mll { margin-left: $spacer-l !important }
+.u-mrn { margin-right: 0 !important }
+.u-mrs { margin-right: $spacer-s !important }
+.u-mrm { margin-right: $spacer-m !important }
+.u-mrl { margin-right: $spacer-l !important }
+
+/* Padding */
+.u-pan { padding: 0 !important }
+.u-pbn { padding-bottom: 0 !important }
+.u-pbs { padding-bottom: $spacer-s !important }
+.u-pbm { padding-bottom: $spacer-m !important }
+.u-pbl { padding-bottom: $spacer-l !important }
+.u-ptn { padding-top: 0 !important }
+.u-pts { padding-top: $spacer-s !important }
+.u-ptm { padding-top: $spacer-m !important }
+.u-ptl { padding-top: $spacer-l !important }
+.u-pln { padding-left: 0 !important }
+.u-pls { padding-left: $spacer-s !important }
+.u-plm { padding-left: $spacer-m !important }
+.u-pll { padding-left: $spacer-l !important }
+.u-prn { padding-right: 0 !important }
+.u-prs { padding-right: $spacer-s !important }
+.u-prm { padding-right: $spacer-m !important }
+.u-prl { padding-right: $spacer-l !important }

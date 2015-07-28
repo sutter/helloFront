@@ -1,0 +1,89 @@
+%button {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+  margin: 0;
+  padding: em(16) em(50);
+  margin: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  font-size: rem(14);
+  font-weight: bold;
+  border-radius: $rad;
+  transition: $trans;
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-appearance: none;
+  &Truncate { @extend %truncate }
+  + [class*=btn] {
+    @media (min-width: $mq-s-up) {
+      margin-left: rem(10);
+    }
+  }
+  &:disabled,
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.35;
+  }
+}
+
+/**
+ * Base style
+ */
+
+.button {
+  color: $clr-light;
+  background-color: $clr-1;
+  @extend %button;
+  &:hover, &:focus {
+    color: $clr-light;
+    background: $clr-1-darken;
+  }
+  &.is-active,
+  .is-pressed {
+    background: shade($clr-1, 40%);
+  }
+}
+
+.buttonSecondary {
+  color: $base-font-color;
+  background: $base-border-color;
+  @extend %button;
+  &:hover, &:focus {
+    color: $clr-light;
+    background: shade($base-border-color, 20%);
+  }
+  &.is-active,
+  .is-pressed {
+    color: $clr-light;
+    background: shade($base-border-color, 40%);
+  }
+}
+
+/**
+ * Modifier
+ */
+
+.button--small {
+  display: inline-block;
+  width: auto;
+  padding: em(8) em(16);
+  font-size: rem(11);
+}
+
+.button--big {
+  padding: em(20) em(64);
+  font-size: em(18);
+}
+
+.button--mobileFull {
+  @media (max-width: $mq-s-up) {
+    display: block;
+    width: 100%;
+  }
+}

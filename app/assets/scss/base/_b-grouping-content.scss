@@ -1,0 +1,55 @@
+figure {
+  margin: 0 0 $spacer-s 0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: em(14);
+}
+
+hr {
+  margin: $spacer-m 0;
+  border-bottom: 1px solid $base-border-color;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+blockquote {
+  margin: $spacer-m 0;
+  padding-left: $spacer-s ;
+  border-left: 2px solid $base-border-color;
+  color: lighten($base-font-color, 15);
+  cite:before {
+    content: '\2014 \00A0';
+  }
+}
+
+cite {
+  color: lighten($base-font-color, 25);
+  font-style: italic;
+}
+
+pre {
+  font-size: em(13);
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: $code-font;
+  white-space: pre-line;
+  white-space: pre-wrap;
+}
+
+code {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 .5em;
+  font-size: .75em;
+  border: 1px solid $clr-2-light;
+  color: $clr-2;
+  background-color: $clr-2-lighten;
+  border-radius: $rad;
+}

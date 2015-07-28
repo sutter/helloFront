@@ -1,0 +1,18 @@
+%list-reset,
+.list-reset {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+%list-inline,
+.list-inline {
+  padding-left: 0;
+  > li {
+    display: inline-block;
+    vertical-align: middle;
+    + li {
+      margin-left: rem(5);
+    }
+  }
+}

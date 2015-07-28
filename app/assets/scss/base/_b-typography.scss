@@ -1,0 +1,51 @@
+h1 {
+  @extend %title;
+  font-size: $font-size-XXL;
+}
+
+h2 {
+  @extend %title;
+  font-size: $font-size-XL;
+}
+
+h3 {
+  @extend %title;
+  font-size: $font-size-L;
+}
+
+h4 {
+  @extend %title;
+  font-size: $font-size-M;
+}
+
+h5 {
+  @extend %title;
+  font-size: $font-size-XS;
+}
+
+h6 {
+  @extend %title;
+  font-size: $font-size-XS;
+}
+
+p {
+  margin: $spacer-s 0;
+  &:first-child {
+    margin-top: 0
+  }
+}
+
+small {
+  font-size: em(16);
+}
+
+abbr[title] {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+abbr,
+acronym {
+  cursor: help;
+}

@@ -1,0 +1,35 @@
+.txtXXL {
+  @extend %title;
+  font-size: $font-size-XXL;
+}
+.txtXL {
+  @extend %title;
+  font-size: $font-size-XL;
+}
+.txtL {
+  @extend %title;
+  font-size: $font-size-L;
+}
+.txtM {
+  @extend %title;
+  font-size: $font-size-M;
+}
+.txtS {
+  @extend %title;
+  font-size: $font-size-XS;
+}
+.txtXS {
+  @extend %title;
+  font-size: $font-size-XS;
+}
+
+.txtLead {
+  font-weight: bold;
+  font-size: em(20);
+  color: $clr-0-dark;
+}
+
+.txtSmall {
+  font-size: rem(12);
+  line-height: 1.25em;
+}

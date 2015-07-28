@@ -1,0 +1,19 @@
+%title {
+  margin: 0 0 $spacer-s 0;
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  font-weight: bold;
+  color: $header-font-color;
+  text-rendering: optimizeLegibility;
+  &:first-child {
+    margin-top: 0
+  }
+}
+
+%truncate {
+  max-width: 100%;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+}
