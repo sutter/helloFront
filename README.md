@@ -82,12 +82,12 @@ gulp deploy
 
 This starter use *Normalize.css* with *NPM*.
 
-* **settings** : Global variables
+* **application.scss** : Main stylesheet
+* **_settings.scss** : Global variables
 * **tools** : Default mixin and functions
 * **base** : Unclassed HTML elements (type selector)
 * **components** : Designed components, chunks of UI
-* **trumps** : Helpers and overrides
-
+* **utils** : Helpers and overrides
 ## Naming convention
 
 ```
