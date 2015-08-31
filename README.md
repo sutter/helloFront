@@ -76,7 +76,7 @@ gulp --production
 
 ```
 gulp deploy
-``
+```
 
 ## SCSS Structure
 
