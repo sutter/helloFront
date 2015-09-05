@@ -1,13 +1,12 @@
-@import "bourbon";
+@import "tools/_function";
 @import "_settings";
 @import "tools/_extend";
-
-@import "../../../node_modules/normalize.css/normalize.css";
 
 /*------------------------------------*\
     # Base
 \*------------------------------------*/
 
+@import "base/_b-normalize";
 @import "base/_b-font-face";
 @import "base/_b-init";
 @import "base/_b-link";

@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var fs = require('fs');
 var iconfont = require('gulp-iconfont');
 var iconfontCss = require('gulp-iconfont-css');
+var browserSync = require('browser-sync').create();
 var config = require('../config').fontCustom;
 
 function createIconFontFile() {
@@ -27,5 +28,6 @@ gulp.task('font-custom', function() {
       normalize:true,
       fontHeight:512
     }))
-    .pipe(gulp.dest(config.folderDest));
+    .pipe(gulp.dest(config.folderDest))
+    .pipe(browserSync.stream());
 });

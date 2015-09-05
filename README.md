@@ -1,10 +1,6 @@
 # helloFront
 Simple starter for clean Front-end project.
 
-This starter use [Bourbon library](http://bourbon.io/)
-
-Copy SCSS folder from [HelloCSS](https://github.com/sutter/helloSCSS/tree/master/app/assets/scss)
-
 Work on **app/** folder and gulp build in **dist/**.
 
 ## Installation
@@ -14,20 +10,6 @@ Go to [NodeJS.org](http://NodeJS.org) for installation.
 
 ### Install Sass
 Go to [sass-lang.com/install](http://sass-lang.com/install) for installation in command line.
-
-### Install Bourbon
-
-In your terminal :
-
-```
-gem install 'bourbon'
-```
-
-If you have an error saying "You don't have write permissions", use :
-
-```
-sudo gem install 'bourbon'
-```
 
 ### Install Gulp
 We begin by installing Gulp in global mode with `-g`.
@@ -66,7 +48,7 @@ gulp clean
 
 * Minify HTML
 * Uglify Script
-* [CSSO](https://en.bem.info/tools/optimizers/csso//) (minify and optimise) Styles and regroup media queries
+* Optimise styles and regroup media queries
 
 ```
 gulp --production

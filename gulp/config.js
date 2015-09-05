@@ -23,15 +23,15 @@ module.exports = {
     folderSrc: appSource + '/assets/scss/**/*.scss',
     mainSrc: appSource + '/assets/scss/application.scss',
     folderDest: appBuild + '/assets/css/',
-    settings: {
-      includePaths: ['sass'].concat(bourbon)
-    }
+    fileNormalizeCss: './node_modules/normalize.css/normalize.css',
+    fileNormalizeScss: appSource + '/assets/scss/base/_b-normalize.scss'
   },
   clean: {
     filesSrc: [
       appBuild,
       appSource + '/assets/font/' + fontName + '.{eot,svg,ttf,woff}',
-      appSource + '/assets/scss/components/_icons.scss'
+      appSource + '/assets/scss/components/_icons.scss',
+      appSource + '/assets/scss/base/_b-normalize.scss'
     ]
   },
   image: {
