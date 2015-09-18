@@ -1,3 +1,16 @@
-.header {
+/* ================================
+/* Component : Header
+================================ */
 
+[id="header"] {
+  background: $clr-0-darken;
+}
+
+.header-logo {
+  display: block;
+  background: $clr-1;
+  transition: $trans;
+  &:hover {
+    background: $clr-1-dark;
+  }
 }

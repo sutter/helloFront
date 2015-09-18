@@ -1,0 +1,172 @@
+/* Icon font
+-------------------------- */
+
+@font-face {
+  font-family: "app-font";
+  src: url('../font/app-font.eot');
+  src: url('../font/app-font.eot?#iefix') format('eot'),
+    url('../font/app-font.woff') format('woff'),
+    url('../font/app-font.ttf') format('truetype'),
+    url('../font/app-font.svg#app-font') format('svg');
+}
+
+%icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-family:"app-font";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+@function icon-char($filename) {
+  $char: "";
+
+  @if $filename == check {
+    $char: "\E001";
+  }
+  @if $filename == close {
+    $char: "\E002";
+  }
+  @if $filename == facebook {
+    $char: "\E003";
+  }
+  @if $filename == github {
+    $char: "\E004";
+  }
+  @if $filename == google-plus {
+    $char: "\E005";
+  }
+  @if $filename == instagram {
+    $char: "\E006";
+  }
+  @if $filename == linkedin {
+    $char: "\E007";
+  }
+  @if $filename == pinterest {
+    $char: "\E008";
+  }
+  @if $filename == trash {
+    $char: "\E009";
+  }
+  @if $filename == twitter {
+    $char: "\E00A";
+  }
+  @if $filename == youtube {
+    $char: "\E00B";
+  }
+
+  @return $char;
+}
+
+@mixin icon($filename) {
+  content: icon-char($filename);
+}
+
+[class*="icon-"] {
+  @extend %icon;
+}
+
+
+.icon-check{
+  &::before {
+    @include icon(check);
+  }
+}
+%icon-check {
+  @include icon(check);
+}
+
+.icon-close{
+  &::before {
+    @include icon(close);
+  }
+}
+%icon-close {
+  @include icon(close);
+}
+
+.icon-facebook{
+  &::before {
+    @include icon(facebook);
+  }
+}
+%icon-facebook {
+  @include icon(facebook);
+}
+
+.icon-github{
+  &::before {
+    @include icon(github);
+  }
+}
+%icon-github {
+  @include icon(github);
+}
+
+.icon-google-plus{
+  &::before {
+    @include icon(google-plus);
+  }
+}
+%icon-google-plus {
+  @include icon(google-plus);
+}
+
+.icon-instagram{
+  &::before {
+    @include icon(instagram);
+  }
+}
+%icon-instagram {
+  @include icon(instagram);
+}
+
+.icon-linkedin{
+  &::before {
+    @include icon(linkedin);
+  }
+}
+%icon-linkedin {
+  @include icon(linkedin);
+}
+
+.icon-pinterest{
+  &::before {
+    @include icon(pinterest);
+  }
+}
+%icon-pinterest {
+  @include icon(pinterest);
+}
+
+.icon-trash{
+  &::before {
+    @include icon(trash);
+  }
+}
+%icon-trash {
+  @include icon(trash);
+}
+
+.icon-twitter{
+  &::before {
+    @include icon(twitter);
+  }
+}
+%icon-twitter {
+  @include icon(twitter);
+}
+
+.icon-youtube{
+  &::before {
+    @include icon(youtube);
+  }
+}
+%icon-youtube {
+  @include icon(youtube);
+}

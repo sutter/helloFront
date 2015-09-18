@@ -11,8 +11,8 @@ var options = require('minimist')(process.argv.slice(2));
 gulp.task('script', function() {
   return gulp.src(config.folderSrc)
     .pipe(options.production ? plumber() : gutil.noop())
-    .pipe(jshint())
-    .pipe(jshint.reporter('default'))
+    // .pipe(jshint())
+    // .pipe(jshint.reporter('default'))
     .pipe(options.production ? uglify() : gutil.noop())
     .pipe(size({
       title: 'Script'

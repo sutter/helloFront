@@ -1,14 +1,20 @@
 var appSource = './app';
-var appBuild = './build';
-var fontName = 'app-font';
-var bourbon = require('node-bourbon').includePaths;
+var appBuild  = './build';
+var fontName  = 'app-font';
 
 module.exports = {
-  appSource: appSource,
-  appBuild: appBuild,
-  fontName: fontName,
   browserSync: {
-    notify: false
+    notify: false,
+    open: false,
+    port: 5001,
+    files: [
+      appSource + 'assets/js/application.js',
+      appSource + 'assets/css/application.css'
+    ],
+    proxy: 'localhost:5000',
+    ui: {
+      port: 5002
+      }
   },
   template: {
     filesSrc: appSource + '/template/pages/**/*.jade',

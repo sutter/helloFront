@@ -1,0 +1,45 @@
+/* ================================
+/* Component : App
+================================ */
+
+/* App
+-------------------------- */
+
+[id="app"] {
+  display: flex;
+  min-height: 100vh;
+  background: $clr-light;
+}
+
+/* App Pusher
+-------------------------- */
+
+[id="app-pusher"] {
+  background: $clr-0-darken;
+  width: em(200);
+  padding-top: rem(20);
+}
+
+/* App content
+-------------------------- */
+
+[id="app-content"] {
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
+  flex-grow: 1;
+}
+
+[id="main"] {
+  flex-grow: 1;
+}
+
+/* App Pusher Button
+-------------------------- */
+
+[id="app-pusherButton"] {
+  position: absolute;
+  top:  em(10);
+  left: em(10);
+  display: none;
+}

@@ -1,9 +1,35 @@
+/* ================================
+/* Component : Menu
+================================ */
+
 .menu-inner {
-  @extend %list-inline;
+  @extend %list-reset;
+  margin-top: 0;
+  display: flex;
+}
+
+.menu-title {
+  padding: em(6) em(14);
+  color: $clr-light;
+  font-weight: 700;
 }
 
 .menu-link {
+  padding: em(6) em(14);
+  font-size: em(14);
   &.is-active {
-    color: $clr-2;
+    color: $clr-1-light;
   }
 }
+
+/* Modifier : Orientation
+-------------------------- */
+
+.menu--vertical .menu-inner {
+  flex-direction: column;
+}
+
+.menu--vertical .menu-inner + .menu-title {
+  margin-top: rem(20);
+}
+

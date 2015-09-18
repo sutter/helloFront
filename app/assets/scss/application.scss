@@ -2,9 +2,7 @@
 @import "_settings";
 @import "tools/_extend";
 
-/*------------------------------------*\
-    # Base
-\*------------------------------------*/
+// Base
 
 @import "base/_b-normalize";
 @import "base/_b-font-face";
@@ -17,10 +15,10 @@
 @import "base/_b-form";
 @import "base/_b-table";
 
-/*------------------------------------*\
-    # Layout
-\*------------------------------------*/
+// Components
 
+@import "components/_app";
+@import "components/_content";
 @import "components/_grid";
 @import "components/_list";
 @import "components/_typography";
@@ -29,11 +27,11 @@
 @import "components/_footer";
 @import "components/_button";
 @import "components/_icons";
+@import "components/_exemple";
 @import "components/_videoWrapper";
+@import "components/_swatch";
 
-/*------------------------------------*\
-    # Utils
-\*------------------------------------*/
+// Utils
 
 @import "utils/_u-layout";
 @import "utils/_u-show-hide";

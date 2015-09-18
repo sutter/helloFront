@@ -34,6 +34,19 @@ pre {
   font-size: em(13);
 }
 
+pre code {
+  display: block;
+  font-size: em(16);
+  color: $clr-0;
+  padding: em(15) em(20);
+  border-color: $clr-0-light;
+  background-color: $clr-0-lighten;
+}
+
+pre code p {
+  margin: 0;
+}
+
 code,
 kbd,
 pre,

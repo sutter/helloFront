@@ -1,0 +1,12 @@
+/* Component : Content
+-------------------------- */
+
+[id="content"] {
+  padding-top: $spacer-s;
+  padding-bottom: $spacer-s;
+}
+
+[id="content-header"] {
+  display: flex;
+  align-items: center;
+}

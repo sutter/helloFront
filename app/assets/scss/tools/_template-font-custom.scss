@@ -1,3 +1,6 @@
+/* Icon font
+-------------------------- */
+
 @font-face {
   font-family: "<%= fontName %>";
   src: url('<%= fontPath %><%= fontName %>.eot');
@@ -40,7 +43,7 @@
 
 <% _.each(glyphs, function(glyph) { %>
 .icon-<%= glyph.fileName %>{
-  &:before {
+  &::before {
     @include icon(<%= glyph.fileName %>);
   }
 }

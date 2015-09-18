@@ -1,0 +1,130 @@
+/* ================================
+/* Component : Swatch
+================================ */
+
+.swatch {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.swatch + .swatch {
+  margin-top: $spacer-s;
+}
+
+.swatch-item {
+  margin: $gutter-width/2;
+  border: 1px solid $clr-0-light;
+}
+
+.swatch-item-color {
+  height: em(90);
+  width: em(160);
+  background: $clr-0-light;
+}
+
+.swatch-item-title {
+  padding: em(5);
+  font-size: em(14);
+  text-align: center;
+  background: $clr-light;
+}
+
+/* Modifier : $clr-0
+-------------------------- */
+
+.swatch-item-color--clr-0-lighten {
+  background: $clr-0-lighten;
+}
+
+.swatch-item-color--clr-0-light {
+  background: $clr-0-light;
+}
+
+.swatch-item-color--clr-0 {
+  background: $clr-0;
+}
+
+.swatch-item-color--clr-0-dark {
+  background: $clr-0-dark;
+}
+
+.swatch-item-color--clr-0-darken {
+  background: $clr-0-darken;
+}
+
+/* Modifier : $clr-1
+-------------------------- */
+
+.swatch-item-color--clr-1-lighten {
+  background: $clr-1-lighten;
+}
+
+.swatch-item-color--clr-1-light {
+  background: $clr-1-light;
+}
+
+.swatch-item-color--clr-1 {
+  background: $clr-1;
+}
+
+.swatch-item-color--clr-1-dark {
+  background: $clr-1-dark;
+}
+
+.swatch-item-color--clr-1-darken {
+  background: $clr-1-darken;
+}
+
+/* Modifier : $clr-2
+-------------------------- */
+
+.swatch-item-color--clr-2-lighten {
+  background: $clr-2-lighten;
+}
+
+.swatch-item-color--clr-2-light {
+  background: $clr-2-light;
+}
+
+.swatch-item-color--clr-2 {
+  background: $clr-2;
+}
+
+.swatch-item-color--clr-2-dark {
+  background: $clr-2-dark;
+}
+
+.swatch-item-color--clr-2-darken {
+  background: $clr-2-darken;
+}
+
+/* Modifier : Social Brand
+-------------------------- */
+
+.swatch-item-color--facebook {
+  background: $facebook;
+}
+
+.swatch-item-color--twitter {
+  background: $twitter;
+}
+
+.swatch-item-color--linkedin {
+  background: $linkedin;
+}
+
+.swatch-item-color--instagram {
+  background: $instagram;
+}
+
+.swatch-item-color--youtube {
+  background: $youtube;
+}
+
+.swatch-item-color--google-plus {
+  background: $google-plus;
+}
+
+.swatch-item-color--pinterest {
+  background: $pinterest;
+}

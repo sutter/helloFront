@@ -1,3 +1,7 @@
+/* ================================
+/* Utils : Show / hide
+================================ */
+
 .u-hideMobile {
   display: none !important;
   @media (min-width: $mq-s-up ) {

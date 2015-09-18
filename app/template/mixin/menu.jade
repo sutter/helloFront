@@ -1,6 +1,0 @@
-mixin menu(menu_items)
-  nav.menu
-    ul.menu-inner
-      each top_item in menu_items
-        li.menu-item
-          a(href=top_item.link, class=navLinkActive == top_item.title ? 'menu-link is-active' : 'menu-link')= top_item.title

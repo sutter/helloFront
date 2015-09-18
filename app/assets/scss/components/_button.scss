@@ -1,9 +1,15 @@
+/* ================================
+/* Component : Button
+================================ */
+
+/* Base style
+-------------------------- */
+
 %button {
-  display: inline-block;
-  vertical-align: middle;
-  width: auto;
+  display: inline-flex;
+  align-items: center;
   margin: 0;
-  padding: em(16) em(50);
+  padding: em(12) em(18);
   margin: 0;
   line-height: normal;
   position: relative;
@@ -20,7 +26,7 @@
   user-select: none;
   -webkit-appearance: none;
   &Truncate { @extend %truncate }
-  + [class*=btn] {
+  + [class*=button] {
     @media (min-width: $mq-s-up) {
       margin-left: rem(10);
     }
@@ -31,10 +37,6 @@
     opacity: 0.35;
   }
 }
-
-/**
- * Base style
- */
 
 .button {
   color: $clr-light;
@@ -50,13 +52,16 @@
   }
 }
 
-.buttonSecondary {
+/* Modifier : Color
+-------------------------- */
+
+.button--secondary {
   color: $base-font-color;
-  background: $base-border-color;
-  @extend %button;
+  background: $clr-light;
+  box-shadow: inset 0 0 0 1px $base-border-color;
   &:hover, &:focus {
-    color: $clr-light;
-    background: shade($base-border-color, 20%);
+    color: $base-font-color;
+    background: $base-border-color;
   }
   &.is-active,
   .is-pressed {
@@ -65,15 +70,18 @@
   }
 }
 
-/**
- * Modifier
- */
+.button--danger {
+  background-color: $clr-danger;
+  &:hover, &:focus {
+    background: shade($clr-danger, 20%);
+  }
+}
+
+/* Modifier : Size
+-------------------------- */
 
 .button--small {
-  display: inline-block;
-  width: auto;
-  padding: em(8) em(16);
-  font-size: rem(11);
+  padding: em(8) em(18);
 }
 
 .button--big {
@@ -81,9 +89,109 @@
   font-size: em(18);
 }
 
+.button--block {
+  display: block;
+  width: 100%;
+}
+
 .button--mobileFull {
   @media (max-width: $mq-s-up) {
     display: block;
     width: 100%;
   }
+}
+
+/* Button icon
+-------------------------- */
+
+.button[class*="icon-"]::before {
+  vertical-align: top;
+}
+
+.button[class*="icon-"] span {
+  @extend %visually-hidden;
+}
+
+/* Button icon + text
+-------------------------- */
+
+.button [class*="icon-"] {
+  margin-right: em(8);
+  vertical-align: text-top;
+}
+
+/* Button label icon
+-------------------------- */
+
+.button--labeled [class*="icon-"],
+.button--labeled-right [class*="icon-"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: em(46);
+  margin-right: 0;
+  background: rgba(0,0,0,0.075);
+}
+
+.button--labeled [class*="icon-"]::before,
+.button--labeled-right [class*="icon-"]::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+/* Left label */
+
+.button--labeled {
+  padding-left: em(64)
+}
+
+.button--labeled [class*="icon-"] {
+  left: 0;
+  border-radius: $rad 0 0 $rad;
+}
+
+/* Right label */
+
+.button--labeled-right {
+  padding-right: em(64);
+}
+
+.button--labeled-right [class*="icon-"] {
+  right: 0;
+  border-radius: 0 $rad $rad 0;
+}
+
+/* Button circular
+-------------------------- */
+
+.button--circular {
+  padding: em(12);
+  border-radius: em(666)
+}
+
+/* Button grouped
+-------------------------- */
+
+.buttonGrouped {
+  display: inline-flex;
+  flex-direction: row;
+  vertical-align: baseline;
+}
+
+.buttonGrouped .button {
+  border-radius: 0;
+  &:first-child {
+    border-radius: $rad 0 0 $rad;
+  }
+  &:last-child {
+    border-radius: 0 $rad $rad 0;
+  }
+}
+
+.buttonGrouped .button + .button {
+  margin-left: -1px;
 }

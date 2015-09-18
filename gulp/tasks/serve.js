@@ -6,12 +6,17 @@ var watch = require('gulp-watch');
 
 gulp.task('serve', ['image', 'style', 'template', 'script'], function() {
     browserSync.init(config.browserSync);
-    gulp.watch(config.style.folderSrc, ['style', reload]);
+    //gulp.watch(config.style.folderSrc, ['style', reload]);
+
+    watch(config.style.folderSrc, function() {
+        gulp.start('style');
+        reload();
+    });
     watch(config.script.folderSrc, function() {
         gulp.start('script');
         reload();
     });
-    watch(config.template.filesSrc, function() {
+    watch(config.template.folderSrc, function() {
         gulp.start('template');
         reload();
     });

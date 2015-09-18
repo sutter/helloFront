@@ -11,27 +11,34 @@ $clr-success   : #DFF0D8;
 $clr-alert     : #FCF8E3;
 $clr-notice    : #D9EDF7;
 
+$clr-danger    : #D24A53;
+
 $clr-0-darken  : #000;
-$clr-0-dark    : #333;
-$clr-0         : #666;
+$clr-0-dark    : #212121;
+$clr-0         : #333;
 $clr-0-light   : #ededed;
 $clr-0-lighten : #fafafa;
 
-$clr-1         : #4472B9;
+$clr-1         : #2D91D3;
 $clr-1-light   : tint($clr-1, 50%);
 $clr-1-lighten : tint($clr-1, 85%);
 $clr-1-dark    : shade($clr-1, 15%);
 $clr-1-darken  : shade($clr-1, 30%);
 
-$clr-2         : #9565C8;
+$clr-2         : #AFBD36;
 $clr-2-light   : tint($clr-2, 50%);
 $clr-2-lighten : tint($clr-2, 85%);
 $clr-2-dark    : shade($clr-2, 15%);
 $clr-2-darken  : shade($clr-2, 30%);
 
-// CSS3
-$rad   : .3rem;
-$trans : all .3s ease-in-out;
+// Social color
+$facebook    : #3b5998;
+$twitter     : #55acee;
+$linkedin    : #0077b5;
+$instagram   : #3f729b;
+$youtube     : #cd201f;
+$google-plus : #dd4b39;
+$pinterest   : #bd081c;
 
 // Font
 $em-base: 16px !default;
@@ -45,16 +52,20 @@ $header-font-family : $base-font-family;
 $header-line-height : 1.25em;
 $header-font-color  : $clr-0-darken;
 
-$font-size-XXL : em(32, $em-base);
+$font-size-XXL : em(40, $em-base);
 $font-size-XL  : em(28, $em-base);
-$font-size-L   : em(24, $em-base);
-$font-size-M   : em(20, $em-base);
-$font-size-S   : em(18, $em-base);
-$font-size-XS  : em(16, $em-base);
+$font-size-L   : em(20, $em-base);
+$font-size-M   : em(18, $em-base);
+$font-size-S   : em(16, $em-base);
+$font-size-XS  : em(14, $em-base);
 
 // Link
 $base-link-color  : $clr-1;
 $base-link-color-hover : $clr-1-darken;
+
+// CSS3
+$rad   : rem(3);
+$trans : all .3s ease-in-out;
 
 //  Grid
 $wrap-max-width : em(1000, $em-base);

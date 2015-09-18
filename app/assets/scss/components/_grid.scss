@@ -1,6 +1,8 @@
-/**
- * Wrapper
- */
+/* Component : Grid
+-------------------------- */
+
+/* Wrapper
+-------------------------- */
 
 .wrapper {
   padding-left:  $gutter-width;
@@ -12,9 +14,8 @@
   }
 }
 
-/**
- * Grid
- */
+/* Grid
+-------------------------- */
 
 @media (min-width: $mq-s-up) {
   .grid {
@@ -43,3 +44,13 @@
   .grid-2-3 { width: 66.666% }
 
 }
+
+/* Size in %
+-------------------------- */
+
+.w-25  { width: 25% }
+.w-33  { width: 33.333% }
+.w-50  { width: 50% }
+.w-66  { width: 66.666% }
+.w-75  { width: 75% }
+.w-100 { width: 100%}

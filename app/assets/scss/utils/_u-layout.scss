@@ -20,3 +20,12 @@
 .u-floatRight {
   float: right !important;
 }
+
+.u-flexPushleft {
+  margin-left: auto;
+}
+
+// hidden but not for assistance tools
+.u-visually-hidden {
+  @extend %visually-hidden;
+}
