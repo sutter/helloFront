@@ -1,34 +1,19 @@
-var gulp = require('gulp');
-var config = require('../config').template;
-var jade = require('gulp-jade');
-var htmlmin = require('gulp-htmlmin');
+var gulp        = require('gulp');
+var config      = require('../config').template;
+var jade        = require('gulp-jade');
+var htmlmin     = require('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
-var plumber = require('gulp-plumber');
-var gutil = require("gulp-util");
-var notify = require('gulp-notify');
-var options = require('minimist')(process.argv.slice(2));
-
-var onError = function(err) {
-  notify.onError({
-    title: "Gulp",
-    subtitle: "Template Failure!",
-    message: "Error: <%= error.message %>",
-    sound: "Frog"
-  })(err);
-  this.emit('end');
-};
+var plumber     = require('gulp-plumber');
+var gutil       = require("gulp-util");
+var notify      = require('gulp-notify');
+var options     = require('minimist')(process.argv.slice(2));
 
 gulp.task('template', function() {
-  return gulp.src(config.filesSrc)
+  return gulp.src(config.page_src)
     .pipe(plumber({
-      errorHandler: onError
+      errorHandler: notify.onError('JADE Error: <%= error.message %>')
     }))
-    .pipe(
-      jade({
-        pretty: true
-      })
-    )
+    .pipe( jade({ pretty: true }))
     .pipe(options.production ? htmlmin({collapseWhitespace: true}) : gutil.noop())
-    .pipe(gulp.dest(config.folderDest))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest(config.dest));
 });

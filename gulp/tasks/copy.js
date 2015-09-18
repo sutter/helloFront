@@ -1,9 +1,9 @@
-var gulp = require('gulp');
-var config = require('../config').copy;
+var gulp        = require('gulp');
+var config      = require('../config').copy;
 
 gulp.task('copy', function() {
-  return gulp.src(config.filesSrc, {
+  return gulp.src(config.src, {
       dot: true
     })
-    .pipe(gulp.dest(config.folderDest));
+    .pipe(gulp.dest(config.dest));
 });

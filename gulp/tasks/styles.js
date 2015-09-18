@@ -1,6 +1,6 @@
 var gulp         = require('gulp');
 var fs           = require('fs');
-var config       = require('../config').style;
+var config       = require('../config').styles;
 var sass         = require('gulp-sass');
 var plumber      = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
@@ -10,17 +10,19 @@ var csso         = require("gulp-csso");
 var notify       = require('gulp-notify');
 var size         = require('gulp-size');
 var sourcemaps   = require('gulp-sourcemaps');
-var browserSync  = require('browser-sync').create();
 var options      = require('minimist')(process.argv.slice(2));
 
 function createNormalizeScss() {
-  fs.createReadStream(config.fileNormalizeCss)
-  .pipe(fs.createWriteStream(config.fileNormalizeScss));
+  fs.createReadStream(config.file_normalize_css)
+  .pipe(fs.createWriteStream(config.file_normalize_scss));
 }
 
-gulp.task('style', function() {
+gulp.task('normalize', function() {
   createNormalizeScss();
-  return gulp.src(config.mainSrc)
+});
+
+gulp.task('styles', function() {
+  return gulp.src(config.main_src)
     .pipe(plumber({
       errorHandler: notify.onError('SASS Error: <%= error.message %>')
     }))
@@ -31,6 +33,5 @@ gulp.task('style', function() {
     .pipe(options.production ? cmq({ log: true }) : gutil.noop())
     .pipe(options.production ? csso() : gutil.noop())
     .pipe(size({ title: 'style' }))
-    .pipe(gulp.dest(config.folderDest))
-    .pipe(browserSync.stream());
+    .pipe(gulp.dest(config.dest));
 });

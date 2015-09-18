@@ -3,71 +3,70 @@ var appBuild  = './build';
 var fontName  = 'app-font';
 
 module.exports = {
+  appSource: appSource,
+  appBuild: appBuild,
+  fontName: fontName,
   browserSync: {
     notify: false,
     open: false,
-    port: 5001,
+    server: appBuild,
     files: [
-      appSource + 'assets/js/application.js',
-      appSource + 'assets/css/application.css'
+      appBuild + '/assets/css/index.css'
     ],
-    proxy: 'localhost:5000',
-    ui: {
-      port: 5002
-      }
+  },
+  styles: {
+    src :                appSource + '/assets/scss',
+    folder_src:          appSource + '/assets/scss/**/*.scss',
+    main_src:            appSource + '/assets/scss/index.scss',
+    dest:                appBuild + '/assets/css/',
+    file_normalize_css:  './node_modules/normalize.css/normalize.css',
+    file_normalize_scss: appSource + '/assets/scss/base/_b-normalize.scss'
   },
   template: {
-    filesSrc: appSource + '/template/pages/**/*.jade',
-    folderSrc: appSource + '/template/**/*.jade',
-    folderDest: appBuild
+    src:        appSource + '/template',
+    page_src:   appSource + '/template/pages/**/*.jade',
+    dest:       appBuild,
+    files_dest: appBuild + '/**/*.html'
   },
-  script: {
-    folderSrc: appSource + '/assets/js/**/*.js',
-    folderDest: appBuild + '/assets/js/'
-  },
-  style: {
-    folderSrc: appSource + '/assets/scss/**/*.scss',
-    mainSrc: appSource + '/assets/scss/application.scss',
-    folderDest: appBuild + '/assets/css/',
-    fileNormalizeCss: './node_modules/normalize.css/normalize.css',
-    fileNormalizeScss: appSource + '/assets/scss/base/_b-normalize.scss'
-  },
-  clean: {
-    filesSrc: [
-      appBuild,
-      appSource + '/assets/font/' + fontName + '.{eot,svg,ttf,woff}',
-      appSource + '/assets/scss/components/_icons.scss',
-      appSource + '/assets/scss/base/_b-normalize.scss'
+  scripts: {
+    src: [
+     // 'node_modules/jquery/dist/jquery.min.js',
+      appSource + '/assets/js/application.js'
+    ],
+    dest: appBuild + '/assets/js/',
+    jshint: [
+      appSource + '/assets/js/application.js'
     ]
   },
-  image: {
-    folderSrc: appSource + '/assets/img/**/*.{jpg,png,gif,svg}',
-    folderDest: appBuild + '/assets/img'
+  images: {
+    src: appSource + '/assets/img/**/*.{jpg,png,gif,svg}',
+    dest: appBuild + '/assets/img'
   },
-  font: {
-    folderSrc: appSource + '/assets/font/**',
-    folderDest: appBuild + '/assets/font'
+  fonts: {
+    src: appSource + '/assets/font/**',
+    dest: appBuild + '/assets/font'
   },
-  fontCustom: {
-    pathCreateIconFontFile: appSource + '/assets/scss/components/_icons.scss',
-    folderSrc: appSource + '/assets/icon/*.svg',
-    fontName: fontName,
-    path: appSource + '/assets/scss/tools/_template-font-custom.scss',
-    targetPath: '../scss/components/_icons.scss',
-    fontPath: '../font/',
-    folderDest: appSource + '/assets/font'
-  },
-  browserSync: {
-    notify: false,
-    server: appBuild,
+  font_icon: {
+    path_create_icon_font_file: appSource + '/assets/scss/components/_icons.scss',
+    src:                        appSource + '/assets/icon',
+    files_src:                  appSource + '/assets/icon/*.svg',
+    path:                       appSource + '/assets/scss/tools/_template-font-custom.scss',
+    target_path:                '../scss/components/_icons.scss',
+    font_path:                  '../font-icon/',
+    dest:                       appSource + '/assets/font-icon',
+    settings: {
+      font_name:         fontName,
+      append_codepoints: true,
+      normalize:        true,
+      font_height:       512
+    }
   },
   copy: {
-    filesSrc: [
+    src: [
       appSource + '/.htaccess',
-      appSource + '/robots.txt',
-      appSource + '/favicon.ico',
+      appSource + '/robots.txt'
     ],
-    folderDest: appBuild
+    dest: appBuild
   },
   deploy: {
     folderSrc: appBuild + '/**/*'
