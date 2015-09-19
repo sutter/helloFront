@@ -4,15 +4,8 @@ var runSequence = require('run-sequence');
 gulp.task('build', function(cb){
   runSequence(
     'clean',
-    'rootfiles',
-    'images',
     'font-icon',
-    'fonts',
-    'normalize',
-    'styles',
-    'jshint',
-    'scripts',
-    'template',
+    ['rootfiles','images','fonts', 'normalize', 'styles', 'jshint', 'scripts', 'template'],
     cb
   )
 });
