@@ -5,6 +5,7 @@ build
 
 app/assets/scss/base/_b-normalize.scss
 app/assets/scss/components/_icons.scss
+app/assets/icon/*.svg
 app/assets/font/app-font.eot
 app/assets/font/app-font.svg
 app/assets/font/app-font.ttf

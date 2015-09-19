@@ -48,6 +48,7 @@ module.exports = {
     dest: appBuild + '/assets/font'
   },
   font_icon: {
+    sketch_file_src:            appSource + '/assets/icon.sketch',
     path_create_icon_font_file: appSource + '/assets/scss/components/_icons.scss',
     src:                        appSource + '/assets/icon',
     files_src:                  appSource + '/assets/icon/*.svg',
