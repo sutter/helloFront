@@ -19,22 +19,27 @@ gulp.task('watch', function (callback) {
 
   // Watch Images Files
   watch(config.images.src, function() {
+    gulp.start('images');
     reload();
   });
 
   // Watch IconFont Files
-  watch(config.font_icon.src, function() {
+  watch(config.font_icon.files_src, function() {
+    gulp.start('font-icon');
+    gulp.start('styles');
     reload();
   });
 
   // Watch Font Files
   watch(config.fonts.src, function() {
+    gulp.start('fonts');
     reload();
   });
 
-  // // Watch Templates Files
-  // watch(config.templates.src, function() {
-  //   reload();
-  // })
+  // Watch Templates Files
+  watch(config.template.files_src, function() {
+    gulp.start('template');
+    reload();
+  })
 
 });

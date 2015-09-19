@@ -24,6 +24,7 @@ module.exports = {
   },
   template: {
     src:        appSource + '/template',
+    files_src:  appSource + '/template/**/*.jade',
     page_src:   appSource + '/template/pages/**/*.jade',
     dest:       appBuild,
     files_dest: appBuild + '/**/*.html'
