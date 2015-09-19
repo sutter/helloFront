@@ -1,8 +1,6 @@
 # helloFront
 
-Demo : [http://sutter.github.io/helloFront/](http://sutter.github.io/helloFront/)
-
-Simple starter for clean Front-end project.
+Simple starter GULP / SCSS Pattern / JADE for clean Front-end project.
 
 Work on **app/** folder and gulp build in **dist/**.
 
@@ -51,7 +49,8 @@ gulp clean
 
 * Minify HTML
 * Uglify Script
-* Optimise styles and regroup media queries
+* Strip console, alert, and debugger statements from JavaScript code
+* Optimise styles (csso) and regroup media queries
 
 ```
 gulp --production
@@ -67,19 +66,34 @@ gulp deploy
 
 This starter use *Normalize.css* with *NPM*.
 
-* **application.scss** : Main stylesheet
+* **base/** : Unclassed HTML elements (type selector)
+* **components/** : Designed components, chunks of UI
+* **tools/** : Default mixin and functions
+* **utils/** : Helpers and overrides
 * **_settings.scss** : Global variables
-* **tools** : Default mixin and functions
-* **base** : Unclassed HTML elements (type selector)
-* **components** : Designed components, chunks of UI
-* **utils** : Helpers and overrides
-## Naming convention
+* **index.scss** : Main stylesheet
+
+## CSS naming convention
 
 ```
-.myComponent {}
-.myComponent.is-state {}
-.myComponent--modifier {}
+// Component
+.myComponent { … }
 
-.myComponent-element {}
-.myComponent-anotherElement {}
+// Component child
+.myComponent-element { … }
+.myComponent-element-elementChild { … }
+
+// Component modifier
+.myComponent--modifier { … }
+
+// Component state
+.myComponent.is-state { … }
+
+// JS for component
+.js-myComponent { … }
 ```
+
+## Icon design
+Works on `app/assets/icon.sketch` file.
+Create a new artboard 512*512 for icon and name it.
+Vectorize all the strokes.
