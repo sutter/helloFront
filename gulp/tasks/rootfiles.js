@@ -1,7 +1,7 @@
 var gulp        = require('gulp');
-var config      = require('../config').copy;
+var config      = require('../config').rootfiles;
 
-gulp.task('copy', function() {
+gulp.task('rootfiles', function() {
   return gulp.src(config.src, {
       dot: true
     })

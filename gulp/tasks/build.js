@@ -4,7 +4,7 @@ var runSequence = require('run-sequence');
 gulp.task('build', function(cb){
   runSequence(
     'clean',
-    'copy',
+    'rootfiles',
     'images',
     'font-icon',
     'fonts',

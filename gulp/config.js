@@ -62,11 +62,8 @@ module.exports = {
       font_height:       512
     }
   },
-  copy: {
-    src: [
-      appSource + '/.htaccess',
-      appSource + '/robots.txt'
-    ],
+  rootfiles: {
+    src: appSource + '/rootfiles/**',
     dest: appBuild
   },
   deploy: {
