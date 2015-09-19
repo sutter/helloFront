@@ -5,7 +5,10 @@ build
 
 app/assets/scss/base/_b-normalize.scss
 app/assets/scss/components/_icons.scss
-app/assets/font-icon
+app/assets/font/app-font.eot
+app/assets/font/app-font.svg
+app/assets/font/app-font.ttf
+app/assets/font/app-font.woff
 .publish/
 
 npm-debug.log

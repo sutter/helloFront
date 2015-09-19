@@ -8,9 +8,8 @@ var utils       = require('./utils')
 var plumber     = require('gulp-plumber');
 var notify      = require('gulp-notify');
 
-gulp.task('icon-font', function() {
+gulp.task('font-icon', function() {
   if (utils.checkDirectoryForExt(config.src, '.svg')){
-    console.info('Creating iconFont from source SVGS...')
     return gulp.src(config.files_src)
       .pipe(plumber({
         errorHandler: notify.onError('IconFont Error: <%= error.message %>')
@@ -28,6 +27,7 @@ gulp.task('icon-font', function() {
         fontHeight: config.settings.font_height
       }))
       .pipe(gulp.dest(config.dest));
+    return
   } else {
     // Create an Empty Icon SCSS File if there's no icons in the folder
     // Avoids SCSS errors when requiring a non-existent file

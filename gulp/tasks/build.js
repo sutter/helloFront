@@ -6,7 +6,7 @@ gulp.task('build', function(cb){
     'clean',
     'copy',
     'images',
-    'icon-font',
+    'font-icon',
     'fonts',
     'normalize',
     'styles',

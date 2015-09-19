@@ -53,7 +53,8 @@ module.exports = {
     path:                       appSource + '/assets/scss/tools/_template-font-custom.scss',
     target_path:                '../scss/components/_icons.scss',
     font_path:                  '../font-icon/',
-    dest:                       appSource + '/assets/font-icon',
+    dest:                       appSource + '/assets/font',
+    files_dest:                 appSource + '/assets/font/' + fontName + '.{eot,svg,ttf,woff}',
     settings: {
       font_name:         fontName,
       append_codepoints: true,

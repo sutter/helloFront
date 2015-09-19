@@ -6,6 +6,7 @@ var runSequence = require('run-sequence');
 gulp.task('clean', del.bind(null, [
     config.appBuild,
     config.font_icon.path_create_icon_font_file,
+    config.font_icon.files_dest,
     config.styles.file_normalize_scss
 ]));
 
@@ -36,6 +37,6 @@ gulp.task('clean-template', function(cb) {
 gulp.task('clean-font-icon', function(cb) {
   del([
     config.font_icon.path_create_icon_font_file,
-    config.font_icon.dest,
+    config.font_icon.files_dest
     ], cb);
 });
