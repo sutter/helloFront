@@ -34,6 +34,7 @@
     "gulp-imagemin": "^2.3.0",
     "gulp-jade": "^1.1.0",
     "gulp-jshint": "^1.11.2",
+    "gulp-modernizr": "0.0.0",
     "gulp-notify": "^2.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.4",

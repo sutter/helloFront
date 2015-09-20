@@ -7,6 +7,7 @@ var jshint      = require('gulp-jshint');
 var uglify      = require('gulp-uglify');
 var concat      = require('gulp-concat');
 var stripDebug  = require('gulp-strip-debug');
+var modernizr   = require('gulp-modernizr');
 var options     = require('minimist')(process.argv.slice(2));
 
 gulp.task('jshint', function() {
@@ -23,5 +24,12 @@ gulp.task('scripts', function() {
     .pipe(size({
       title: 'Script'
     }))
+    .pipe(gulp.dest(config.dest));
+});
+
+gulp.task('modernizr', function() {
+  return gulp.src(config.src)
+    .pipe(modernizr(config.modernizr_settings))
+    .pipe(uglify())
     .pipe(gulp.dest(config.dest));
 });
