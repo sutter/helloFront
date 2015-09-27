@@ -44,7 +44,7 @@ $pinterest   : #bd081c;
 $em-base: 16px !default;
 $base-font-family   : Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $code-font          : 'Source Code Pro', Consolas, monospace;
-$base-font-size     : em(16, $em-base);
+$base-font-size     : em($em-base, 16);
 $base-line-height   : 1.625em;
 $base-font-color    : $clr-0;
 
