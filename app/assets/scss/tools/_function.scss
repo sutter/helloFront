@@ -1,21 +1,13 @@
-// Strips the unit from a number.
-//
-// @param {Number (With Unit)} $value
-//
-// @example scss - Usage
-//   $dimension: strip-units(10em);
-//
-// @example css - CSS Output
-//   $dimension: 10;
-//
-// @return {Number (Unitless)}
-@function strip-units($value) {
-  @return ($value / ($value * 0 + 1));
-}
+/**
+ * Base font Size
+ */
 
-// Convert pixels to ems
-// eg. for a relational value of 12px write em(12) when the parent is 16px
-// if the parent is another value say 24px write em(12, 24)
+$em-base: 16px !default;
+
+/**
+ * PX to EM
+ */
+
 @function em($pxval, $base: $em-base) {
   @if not unitless($pxval) {
     $pxval: strip-units($pxval);
@@ -26,9 +18,10 @@
   @return ($pxval / $base) * 1em;
 }
 
-// Convert pixels to rems
-// eg. for a relational value of 12px write rem(12)
-// Assumes $em-base is the font-size of <html>
+/**
+ * PX to REM
+ */
+
 @function rem($pxval) {
   @if not unitless($pxval) {
     $pxval: strip-units($pxval);
@@ -40,48 +33,10 @@
   @return ($pxval / $base) * 1rem;
 }
 
-// Mixes a color with black.
-//
-// @param {Color} $color
-//
-// @param {Number (Percentage)} $percent
-//   The amount of black to be mixed in.
-//
-// @example scss - Usage
-//   .element {
-//     background-color: shade(#ffbb52, 60%);
-//   }
-//
-// @example css - CSS Output
-//   .element {
-//     background-color: #664a20;
-//   }
-//
-// @return {Color}
+/**
+ * Strip units
+ */
 
-@function shade($color, $percent) {
-  @return mix(#000, $color, $percent);
-}
-
-// Mixes a color with white.
-//
-// @param {Color} $color
-//
-// @param {Number (Percentage)} $percent
-//   The amount of white to be mixed in.
-//
-// @example scss - Usage
-//   .element {
-//     background-color: tint(#6ecaa6, 40%);
-//   }
-//
-// @example css - CSS Output
-//   .element {
-//     background-color: #a8dfc9;
-//   }
-//
-// @return {Color}
-
-@function tint($color, $percent) {
-  @return mix(#fff, $color, $percent);
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
 }
