@@ -40,11 +40,9 @@ $youtube     : #cd201f;
 $google-plus : #dd4b39;
 $pinterest   : #bd081c;
 
-// Font
-$em-base: 16px !default;
 $base-font-family   : Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $code-font          : 'Source Code Pro', Consolas, monospace;
-$base-font-size     : em($em-base, 16);
+$base-font-size     : 1em;
 $base-line-height   : 1.625em;
 $base-font-color    : $clr-0;
 
