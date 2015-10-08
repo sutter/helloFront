@@ -40,3 +40,19 @@ $em-base: 16px !default;
 @function strip-units($value) {
   @return ($value / ($value * 0 + 1));
 }
+
+/**
+ * Mixes a color with black
+ */
+
+@function shade($color, $percent) {
+  @return mix(#000, $color, $percent);
+}
+
+/**
+ * Mixes a color with white.
+ */
+
+@function tint($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
