@@ -1,3 +1,1 @@
 "use strict";
-
-hljs.initHighlightingOnLoad();

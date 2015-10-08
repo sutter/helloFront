@@ -11,6 +11,8 @@ app/assets/font/app-font.svg
 app/assets/font/app-font.ttf
 app/assets/font/app-font.woff
 .publish/
+.screenshots/
+.failures/
 
 npm-debug.log
 

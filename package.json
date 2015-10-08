@@ -36,6 +36,7 @@
     "gulp-jshint": "^1.11.2",
     "gulp-modernizr": "0.0.0",
     "gulp-notify": "^2.2.0",
+    "gulp-phantomcss": "^0.1.1",
     "gulp-plumber": "^1.0.1",
     "gulp-sass": "^2.0.4",
     "gulp-size": "^2.0.0",

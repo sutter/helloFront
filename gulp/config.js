@@ -31,7 +31,7 @@ module.exports = {
   },
   scripts: {
     src: [
-     // 'node_modules/jquery/dist/jquery.min.js',
+     'node_modules/jquery/dist/jquery.min.js',
       appSource + '/assets/js/application.js'
     ],
     dest: appBuild + '/assets/js/',
