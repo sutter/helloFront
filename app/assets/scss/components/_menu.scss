@@ -3,7 +3,7 @@
 ================================ */
 
 .menu-inner {
-  @extend %list-reset;
+  @extend %listReset;
   margin-top: 0;
   display: flex;
 }
@@ -32,4 +32,3 @@
 .menu--vertical .menu-inner + .menu-title {
   margin-top: rem(20);
 }
-

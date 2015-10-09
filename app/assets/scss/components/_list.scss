@@ -1,15 +1,15 @@
 /* Component : List
 -------------------------- */
 
-%list-reset,
-.list-reset {
+%listReset,
+.listReset {
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }
 
-%list-inline,
-.list-inline {
+%listInline,
+.listInline {
   padding-left: 0;
   > li {
     display: inline-block;
