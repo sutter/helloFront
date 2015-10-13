@@ -1,0 +1,36 @@
+/* ================================
+/* Component : Grouped Form
+/*
+/* Dependenties : _form.scss
+/*
+================================ */
+
+.form--grouped {
+  display: flex;
+  align-items: top;
+}
+
+.form--grouped .form-group {
+  flex-grow: 1;
+}
+
+.form--grouped .form-group + .form-group {
+  margin-top: 0;
+}
+
+.form--grouped .form-label {
+  @extend %visually-hidden;
+}
+
+.form--grouped .form-control {
+  border-radius: 0;
+}
+
+.form--grouped .form-group:first-child .form-control {
+  border-radius: $form-border-radius 0 0 $form-border-radius;
+  border-right: none;
+}
+
+.form--grouped .button {
+  border-radius: 0 $form-border-radius $form-border-radius 0;
+}

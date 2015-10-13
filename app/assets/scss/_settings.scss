@@ -6,9 +6,9 @@
 
 // Base color
 $clr-light     : #fff;
-$clr-error     : #F2DEDE;
-$clr-success   : #DFF0D8;
-$clr-alert     : #FCF8E3;
+$clr-error     : #D24A53;
+$clr-success   : #61bcbd;
+$clr-warning   : #f9b134;
 $clr-notice    : #D9EDF7;
 
 $clr-danger    : #D24A53;
@@ -75,8 +75,8 @@ $base-border-color : $clr-0-light;
 
 // Forms
 $form-border-color       : $clr-0-light;
-$form-border-color-hover : shade($clr-0-light, 20%) ;
-$form-border-color-focus : $clr-1;
+$form-border-color-hover : shade($clr-0-light, 10%) ;
+$form-border-color-focus : shade($clr-0-light, 20%);
 $form-border-radius      : $rad;
 $form-box-shadow         : none;
 $form-box-shadow-focus   : $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);

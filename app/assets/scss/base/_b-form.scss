@@ -9,44 +9,9 @@ select {
 
 label {
   font-weight: bold;
-  margin-bottom: $spacer-s/2;
   cursor: pointer;
-  &.required:after {
-    content: " *";
-  }
   abbr {
     display: none;
-  }
-}
-
-textarea,
-input[type="email"],
-input[type="number"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
-input[type="text"],
-input[type="url"],
-select[multiple=multiple] {
-  padding: em(10);
-  width: 100%;
-  margin-bottom: $spacer-s;
-  border: 1px solid $form-border-color;
-  background-color: $clr-light;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
-  border-radius: $form-border-radius;
-  box-shadow: $form-box-shadow;
-  transition: $trans;
-
-  &:hover {
-    border-color: $form-border-color-hover;
-  }
-
-  &:focus {
-    border-color: $form-border-color-focus;
-    box-shadow: $form-box-shadow-focus;
-    outline: none;
   }
 }
 
@@ -69,7 +34,6 @@ input[type="file"] {
 select {
   width: auto;
   max-width: 100%;
-  margin-bottom: $spacer-s;
 }
 
 fieldset {

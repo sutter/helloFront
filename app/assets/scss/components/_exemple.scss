@@ -3,7 +3,7 @@
 
 .exemple {
   padding: em(15);
-  background: $clr-0-lighten;
+  background: $clr-light;
   border-radius: $rad;
-  border: 1px solid $base-border-color;
+  border: 1px solid $clr-0-lighten
 }

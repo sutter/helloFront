@@ -1,0 +1,175 @@
+/* ================================
+/* Component : Form
+================================ */
+
+.form-group + .form-group {
+  margin-top: $spacer-s;
+}
+
+.form-label {
+  margin: 0;
+  font-weight: bold;
+}
+
+.form-label--required::after {
+  content: " *";
+}
+
+.form-group small {
+  font-size: 80%;
+  color: tint($clr-0, 40%);
+}
+
+.form-control {
+  padding: em(10);
+  width: 100%;
+  border: 1px solid $form-border-color;
+  background-color: $clr-light;
+  font-family: $form-font-family;
+  font-size: $form-font-size;
+  border-radius: $form-border-radius;
+  box-shadow: $form-box-shadow;
+  transition: $trans;
+  &:hover {
+    border-color: $form-border-color-hover;
+  }
+  &:focus {
+    border-color: $form-border-color-focus;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+}
+
+/**
+ * Custom select
+ */
+
+select.form-control {
+  height:      em(40);
+  line-height: em(40);
+  padding-top:    0;
+  padding-bottom: 0;
+  appearance: none;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+ZG93bjwvdGl0bGU+PHBhdGggZD0iTTUuMzk3IDkuMTRsMy45NyAzLjZjLjM4NC4zNDguOTMuMzQ3IDEuMzE0LS4wMDVsMy45MjctMy42Yy40NTMtLjQxNS41MjUtMS4xNy4xNi0xLjY4Ny0uMzY0LS41MTYtMS4wMjYtLjU5OC0xLjQ4LS4xODNsLTMuOTI2IDMuNiAxLjMxNy0uMDA0LTMuOTctMy42Yy0uNDU0LS40MTItMS4xMTYtLjMyNi0xLjQ3OC4xOTMtLjM2My41MTgtLjI4OCAxLjI3My4xNjcgMS42ODZ6IiBmaWxsPSIjQURBREFEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+/**
+ * Custom radio & checkbox
+ */
+
+ input[type="radio"],
+ input[type="checkbox"]  {
+   position: absolute;
+   z-index: -1;
+   opacity: 0;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label  {
+  font-weight: 400;
+}
+
+input[type="radio"] + label::before,
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  vertical-align: text-bottom;
+  width:  em(16);
+  height: em(16);
+  margin-right: em(8);
+  background: $clr-light center no-repeat;
+  border: 1px solid $form-border-color;
+  transition: $trans;
+}
+
+input[type="radio"] + label
+input[type="checkbox"] + label {
+  transition: $trans;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"] + label:hover,
+input[type="checkbox"]:checked + label,
+input[type="checkbox"] + label:hover {
+  color: $clr-0;
+}
+
+/* Radio */
+
+input[type="radio"] + label::before {
+  border-radius: 50%;
+}
+
+input[type="radio"]:focus  + label::before,
+input[type="radio"]:checked + label::before {
+  border: em(5) solid $clr-1;
+}
+
+/* Checkbox */
+
+input[type="checkbox"] + label::before {
+  border-radius: em(3);
+}
+
+input[type="checkbox"]:checked + label::before {
+  border-color: $clr-1;
+  background: $clr-1 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%226%22%20viewBox%3D%220%200%208%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3EShape%20Copy%3C/title%3E%3Cpath%20d%3D%22M.185%203.245L2.47%205.53c.246.246.645.246.89%200l4.455-4.454c.247-.246.247-.645%200-.89-.246-.248-.645-.248-.89%200L2.47%204.638h.89L1.077%202.353c-.246-.247-.645-.247-.89%200-.248.246-.248.645%200%20.89z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E') center no-repeat; // app/assets/img/check.svg
+}
+
+/* Modifier : state
+-------------------------- */
+
+.form-message {
+  font-size: em(14)
+}
+
+/**
+ * Error
+ */
+
+.form-group--error .form-control {
+  border-color: tint($clr-error, 50%);
+  color: $clr-error;
+  background-color: tint($clr-error, 95%);
+}
+
+.form-group--error .form-label,
+.form-group--error .form-message {
+  color: $clr-error;
+}
+
+/**
+ * warning
+ */
+
+.form-group--warning .form-control {
+  border-color: tint($clr-warning, 50%);
+  color: $clr-warning;
+  background-color: tint($clr-warning, 95%);
+}
+
+.form-group--warning .form-label,
+.form-group--warning .form-message {
+  color: $clr-warning;
+}
+
+
+/**
+ * Success
+ */
+
+.form-group--success .form-control {
+  border-color: tint($clr-success, 50%);
+  color: $clr-success;
+  background-color: tint($clr-success, 95%);
+}
+
+.form-group--success .form-label,
+.form-group--success .form-message {
+  color: $clr-success;
+}
