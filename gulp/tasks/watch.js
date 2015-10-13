@@ -42,9 +42,4 @@ gulp.task('watch', function (callback) {
     reload();
   })
 
-  // Watch Sketch file
-  watch(config.font_icon.sketch_file_src, function() {
-    gulp.start('sketch-icon');
-  });
-
 });

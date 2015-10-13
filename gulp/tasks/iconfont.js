@@ -5,18 +5,8 @@ var iconfontCss = require('gulp-iconfont-css');
 var browserSync = require('browser-sync').create();
 var config      = require('../config').font_icon;
 var utils       = require('./utils');
-var sketch      = require('gulp-sketch');
 var plumber     = require('gulp-plumber');
 var notify      = require('gulp-notify');
-
-gulp.task('sketch-icon', function() {
-  return gulp.src(config.sketch_file_src)
-    .pipe(sketch({
-      export: "artboards",
-      formats: "svg"
-    }))
-  .pipe(gulp.dest(config.src));
-});
 
 gulp.task('font-icon', function() {
   if (utils.checkDirectoryForExt(config.src, '.svg')){

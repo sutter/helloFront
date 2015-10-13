@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.4 (305) - http://www.bohemiancoding.com/sketch -->
+    <title>facebook</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="facebook" sketch:type="MSArtboardGroup" fill="#010202">
+            <g sketch:type="MSLayerGroup" transform="translate(26.000000, 26.000000)" id="Shape">
+                <path d="M433.740519,0 L25.3413174,0 C11.3852295,0 0,11.408 0,25.392 L0,434.608 C0,448.592 11.3852295,460 25.3413174,460 L245.241517,460 L245.241517,281.888 L185.377246,281.888 L185.377246,212.428 L245.241517,212.428 L245.241517,161.276 C245.241517,101.844 281.417166,69.552 334.39521,69.552 C359.736527,69.552 381.497006,71.484 387.832335,72.312 L387.832335,134.32 L351.105788,134.32 C322.367265,134.32 316.766467,148.028 316.766467,168.084 L316.766467,212.428 L385.353293,212.428 L376.447106,281.888 L316.766467,281.888 L316.766467,460 L433.740519,460 C447.696607,460 459.081836,448.592 459.081836,434.608 L459.081836,25.392 C459.081836,11.408 447.696607,0 433.740519,0 L433.740519,0 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

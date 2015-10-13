@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: bin/sketchtool 1.4 (305) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with bin/sketchtool.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="linkedin" sketch:type="MSArtboardGroup" fill="#000000">
+            <g sketch:type="MSLayerGroup" transform="translate(26.000000, 26.000000)" id="Shape">
+                <path d="M425.96,0 L33.948,0 C15.18,0 0,14.812 0,33.12 L0,426.788 C0,445.188 15.18,460 33.948,460 L425.96,460 C444.728,460 460,445.188 460,426.788 L460,33.12 C460,14.812 444.636,0 425.96,0 L425.96,0 Z M136.436,392.012 L68.172,392.012 L68.172,172.5 L136.436,172.5 L136.436,392.012 L136.436,392.012 Z M102.304,142.416 C80.408,142.416 62.744,124.66 62.744,102.856 C62.744,81.052 80.408,63.296 102.304,63.296 C124.108,63.296 141.864,81.052 141.864,102.856 C141.864,124.752 124.108,142.416 102.304,142.416 L102.304,142.416 Z M391.92,392.012 L323.748,392.012 L323.748,285.292 C323.748,259.808 323.288,227.056 288.328,227.056 C252.816,227.056 247.388,254.748 247.388,283.36 L247.388,392.012 L179.216,392.012 L179.216,172.5 L244.628,172.5 L244.628,202.492 L245.548,202.492 C254.656,185.196 276.92,167.072 310.132,167.072 C379.224,167.072 391.92,212.52 391.92,271.676 L391.92,392.012 L391.92,392.012 Z" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
