@@ -28,7 +28,19 @@ block content
       a(href="#", role="button").button.button--danger Link
       button.button.button--danger Button
       input(type="submit", value="Input").button.button--danger
-
+    
+    h2 State
+    h3 Desabled
+    .exemple
+      a.button.is-disabled(href="#", role="button") Link
+      button.button(disabled) Button
+      input.button(type="submit", value="Input", disabled)
+    h3 Active
+    .exemple
+      a.button.is-active(href="#", role="button") Link
+      button.button.is-active Button
+      input.button.is-active(type="submit", value="Input")
+      
     h2 Sizes button
     h3 Standard sizes
     .exemple
@@ -110,4 +122,3 @@ block content
           span Close
         a(href="#", role="button").button.button--secondary.icon-trash
           span Trash
-

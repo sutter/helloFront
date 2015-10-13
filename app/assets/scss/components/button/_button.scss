@@ -33,7 +33,10 @@
   &:disabled,
   &.is-disabled {
     cursor: default;
-    opacity: 0.35;
+    opacity: .45!important;
+    background-image: none!important;
+    box-shadow: none!important;
+    pointer-events: none;
   }
   .no-flexbox & {
     display: inline-block;
