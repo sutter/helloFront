@@ -1,0 +1,68 @@
+extend ../layout/base
+
+append config
+  - var title = "Form | Hello FRONT"
+  - var metaDesc = "SCSS Form components"
+  - var template = 't-home'
+  - var navLinkActive = 'Input'
+
+block content
+
+    +contentHeader("Input", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/form/_formInput.scss")
+
+    h2 Base Input
+    .exemple
+      form.form(action="")
+        .form-group
+          label.form-label(for="input1") Text
+          input#input1.form-control(type="text", name="input1", placeholder="Placeholder")
+        .form-group
+          label.form-label(for="input2") Number
+          input#input2.form-control(type="number", name="input2", placeholder="Placeholder")
+        .form-group
+          label.form-label.form-label--required(for="input3") Email
+          input#input3.form-control(type="email", name="input3", placeholder="Placeholder", required)
+          small Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        .form-group
+          label.form-label(for="select1") Select
+          select#select1.form-control(name="select1")
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+        .form-group
+          label(for="textarea") Message
+          textarea#textarea.form-control
+        .form-group
+          p.form-label Radio
+          ul.listInline
+            li
+              input#radioCustom1(type="radio", name="radioCustom")
+              label(name="radioCustom",for="radioCustom1") Radio 1
+            li
+              input#radioCustom2(type="radio", name="radioCustom")
+              label(name="radioCustom",for="radioCustom2") Radio 2
+            li
+              input#radioCustom3(type="radio", name="radioCustom")
+              label(name="radioCustom",for="radioCustom3") Radio 3
+        .form-group
+          p.form-label Checkbox
+          input#checkbox1(type="checkbox", name="checkbox1")
+          label(name="checkbox1",for="checkbox1") Checkbox 1
+    
+    h2 Input state
+    .exemple
+      form.form(action="")
+        .form-group.form-group--error
+          label.form-label(for="input4") Input with error
+          input#input4.form-control(type="text", name="input4")
+          .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        .form-group.form-group--warning
+          label.form-label(for="input5") Input with warning
+          input#input5.form-control(type="text", name="input5")
+          .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
+        .form-group.form-group--success
+          label.form-label(for="input6") Input with success
+          input#input6.form-control(type="text", name="input6")
+          .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
