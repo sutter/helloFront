@@ -84,7 +84,7 @@ input[type="checkbox"] + label::before {
   margin-right: em(8);
   background: $clr-light center no-repeat;
   border: 1px solid $form-border-color;
-  transition: $trans;
+  transition: border-color .3s ease-in-out, background-color .3s ease-in-out;
 }
 
 input[type="radio"] + label
