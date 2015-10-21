@@ -173,3 +173,13 @@ input[type="checkbox"]:checked + label::before {
 .form-group--success .form-message {
   color: $clr-success;
 }
+
+/**
+ * Desabled
+ */
+
+.form-group--desabled .form-label,
+.form-group--desabled .form-control {
+  opacity: 0.45;
+  pointer-events: none;
+}
