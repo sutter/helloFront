@@ -38,19 +38,6 @@ module.exports = {
     jshint: [
       appSource + '/assets/js/application.js'
     ],
-    modernizr_settings : {
-      "options": [
-        "html5shiv",
-        "setClasses"
-      ],
-      "tests": [
-        "touchevents",
-        "flexbox",
-        "csscalc",
-        "csstransforms3d",
-        "csspositionsticky"
-      ]
-    }
   },
   images: {
     src: appSource + '/assets/img/**/*.{jpg,png,gif,svg}',

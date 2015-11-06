@@ -5,7 +5,7 @@ gulp.task('build', function(cb){
   runSequence(
     'clean',
     'font-icon',
-    ['rootfiles','images','fonts', 'normalize', 'styles', 'modernizr', 'jshint', 'scripts', 'template'],
+    ['rootfiles','images','fonts', 'normalize', 'styles', 'jshint', 'scripts', 'template'],
     cb
   )
 });
