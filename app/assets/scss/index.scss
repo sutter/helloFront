@@ -2,7 +2,9 @@
 @import "_settings";
 @import "tools/_extend";
 
+//
 // Base
+//
 
 @import "base/_b-normalize";
 @import "base/_b-font-face";
@@ -15,7 +17,9 @@
 @import "base/_b-form";
 @import "base/_b-table";
 
+//
 // Components
+//
 
 @import "components/_app";
 @import "components/_content";
@@ -25,17 +29,23 @@
 @import "components/_header";
 @import "components/_menu";
 @import "components/_footer";
-@import "components/button/_button";
-@import "components/button/_buttonGrouped";
-@import "components/form/_formInput";
-@import "components/form/_formInputToggle";
-@import "components/form/_formGrouped";
 @import "components/_icons";
 @import "components/_exemple";
 @import "components/_videoWrapper";
 @import "components/_swatch";
 
+// Form
+@import "components/form/_formInput";
+@import "components/form/_formInputToggle";
+@import "components/form/_formGrouped";
+
+// Button
+@import "components/button/_button";
+@import "components/button/_buttonGrouped";
+
+//
 // Utils
+//
 
 @import "utils/_u-layout";
 @import "utils/_u-show-hide";

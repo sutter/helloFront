@@ -1,13 +1,7 @@
-/**
- * Base font Size
- */
-
+// Base font Size
 $em-base: 16px !default;
 
-/**
- * PX to EM
- */
-
+// PX to EM
 @function em($pxval, $base: $em-base) {
   @if not unitless($pxval) {
     $pxval: strip-units($pxval);
@@ -18,10 +12,7 @@ $em-base: 16px !default;
   @return ($pxval / $base) * 1em;
 }
 
-/**
- * PX to REM
- */
-
+// PX to REM
 @function rem($pxval) {
   @if not unitless($pxval) {
     $pxval: strip-units($pxval);
@@ -33,26 +24,17 @@ $em-base: 16px !default;
   @return ($pxval / $base) * 1rem;
 }
 
-/**
- * Strip units
- */
-
+// Strip units
 @function strip-units($value) {
   @return ($value / ($value * 0 + 1));
 }
 
-/**
- * Mixes a color with black
- */
-
+// Mixes a color with black
 @function shade($color, $percent) {
   @return mix(#000, $color, $percent);
 }
 
-/**
- * Mixes a color with white.
- */
-
+// Mixes a color with white.
 @function tint($color, $percent) {
   @return mix(#fff, $color, $percent);
 }
