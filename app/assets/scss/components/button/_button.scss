@@ -38,10 +38,6 @@
     box-shadow: none!important;
     pointer-events: none;
   }
-  .no-flexbox & {
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
 
 .button {
@@ -110,12 +106,6 @@
 /* Button icon
 -------------------------- */
 
-.button[class*="icon-"]::before {
-  .no-flexbox & {
-    vertical-align: top;
-  }
-}
-
 .button[class*="icon-"] span {
   @extend %visually-hidden;
 }
@@ -125,9 +115,6 @@
 
 .button [class*="icon-"] {
   margin-right: em(10);
-  .no-flexbox & {
-    vertical-align: middle;
-  }
 }
 
 /* Button label icon
@@ -151,9 +138,6 @@
   top: 50%;
   text-align: center;
   transform: translateY(-50%);
-  .no-csstransforms3d & {
-    margin-top: -0.5em;
-  }
 }
 
 /* Left label */
