@@ -15,5 +15,6 @@ app/assets/font/app-font.woff
 
 npm-debug.log
 
+.idea
 *.sublime-project
 *.sublime-workspace
