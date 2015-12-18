@@ -76,6 +76,7 @@ This starter use *Normalize.css* with *NPM*.
 ## CSS naming convention
 
 ```
+
 // Component
 .myComponent { … }
 
@@ -91,9 +92,13 @@ This starter use *Normalize.css* with *NPM*.
 
 // JS for component
 .js-myComponent { … }
+
 ```
 
 ## Icon design
+
 Works on `app/assets/icon.sketch` file.
+
 Create a new artboard 512*512 for icon and name it.
+
 Vectorize all the strokes.
