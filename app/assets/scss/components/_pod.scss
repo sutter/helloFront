@@ -1,0 +1,16 @@
+/* ================================
+/* Component : Pod
+================================ */
+
+.pod {
+  margin: $spacer-m 0;
+}
+
+.pod-title {
+  margin-top: rem(26);
+  margin-bottom: rem(25);
+  padding-bottom: rem(6);
+  @extend %title;
+  font-size: $font-size-XL;
+  border-bottom: 4px solid;
+}
