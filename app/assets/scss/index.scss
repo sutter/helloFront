@@ -35,8 +35,9 @@
 @import "components/_swatch";
 
 // Form
-@import "components/form/_formInput";
+@import "components/form/form";
 @import "components/form/_formInputToggle";
+@import "components/form/_formControlIcon";
 @import "components/form/formInline";
 
 // Button

@@ -29,7 +29,7 @@
   border: 1px solid $form-border-color;
   background-color: $clr-light;
   font-family: $form-font-family;
-  font-size: $form-font-size;
+  font-size: em($form-font-size);
   border-radius: $form-border-radius;
   box-shadow: $form-box-shadow;
   transition: $trans;

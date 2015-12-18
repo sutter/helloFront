@@ -1,7 +1,6 @@
 input,
 label,
 select {
-
   display: block;
   font-family: $form-font-family;
   font-size: $form-font-size;
@@ -29,6 +28,10 @@ input[type="file"] {
   margin-bottom: $spacer-s;
   padding-bottom: ($spacer-s / 3);
   width: 100%;
+}
+
+input[type="search"]{
+ box-sizing: border-box;
 }
 
 select {

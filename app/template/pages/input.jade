@@ -17,8 +17,10 @@ block content
           label.form-label(for="input1") Text
           input#input1.form-control(type="text", name="input1", placeholder="Placeholder")
         .form-group
-          label.form-label(for="input2") Number
-          input#input2.form-control(type="number", name="input2", placeholder="Placeholder")
+          label.form-label(for="input2") Number + icon
+          .formControlIcon
+            span.icon-trash
+            input#input2.form-control(type="number", name="input2", placeholder="Placeholder")
         .form-group
           label.form-label.form-label--required(for="input3") Email
           input#input3.form-control(type="email", name="input3", placeholder="Placeholder", required)
@@ -33,7 +35,10 @@ block content
             option 5
         .form-group
           label(for="textarea") Message
-          textarea#textarea.form-control
+          textarea#textarea.form-control(rows="8")
+        .form-group
+          label.form-label(for="input2") Number
+          input.form-control(type="search", name="the_search", placeholder="Search")
         .form-group
           p.form-label Radio
           ul.listInline

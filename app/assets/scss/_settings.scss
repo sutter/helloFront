@@ -81,7 +81,7 @@ $form-border-radius      : $rad;
 $form-box-shadow         : none;
 $form-box-shadow-focus   : $form-box-shadow, 0 0 5px rgba(darken($form-border-color-focus, 5), 0.7);
 $color-mixin-placeholder : tint($clr-0, 60%);
-$form-font-size          : $base-font-size;
+$form-font-size          : 16;
 $form-font-family        : $base-font-family;
 
 // Spacing

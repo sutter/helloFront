@@ -1,0 +1,24 @@
+/* ================================
+/* Component : Form Control Icon
+================================ */
+
+.formControlIcon {
+  position: relative;
+}
+
+.formControlIcon .form-control {
+  padding-right: em(40, $form-font-size);
+}
+
+.formControlIcon [class*=icon-] {
+  pointer-events: none;
+  cursor: default;
+  position: absolute;
+  top: 50%;
+  right: em(14, 18);
+  line-height: 1;
+  text-align: center;
+  font-size: em(18,$form-font-size);
+  color: $clr-0-light;
+  transform: translateY(-50%);
+}
