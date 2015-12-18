@@ -2,8 +2,11 @@
 /* Component : Form
 ================================ */
 
-.form-group + .form-group {
-  margin-top: $spacer-s;
+.form-group {
+  margin-bottom: $spacer-s;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .form-label {

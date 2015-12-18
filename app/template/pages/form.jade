@@ -14,6 +14,43 @@ block content
     .exemple
       form.form.form--inline(action="")
         .form-group
+          label.form-label(for="input1") Text
+          input#input1.form-control(type="text", name="input1", placeholder="Placeholder")
+        input.button(type="submit", value="Inscription")
+
+    h2 Grid form
+    .exemple
+      form.form.grid
+        .grid-2-4.form-group
+          label.form-label(for="input1") Text
+          input#inpu2.form-control(type="text", name="input2", placeholder="Placeholder")
+        .grid-2-4.form-group
+          label.form-label(for="input3") Text
+          input#input3.form-control(type="text", name="input3", placeholder="Placeholder")
+        .grid-3-4.form-group
+          label.form-label(for="input4") Text
+          input#input4.form-control(type="text", name="input4", placeholder="Placeholder")
+        .grid-1-4.form-group
+          label.form-label(for="input5") Text
+          input#input5.form-control(type="text", name="input5", placeholder="Placeholder")
+        .grid-1-4.form-group
+          .form-group
+            label.form-label(for="select1") Select
+            select#select1.form-control(name="select1")
+              option 1
+              option 2
+              option 3
+              option 4
+              option 5
+        .grid-1-4.form-group
+          .form-group
+            label.form-label(for="select2") Select
+            select#select2.form-control(name="select2s")
+              option 1
+              option 2
+              option 3
+              option 4
+              option 5
+        .grid-2-4.form-group
           label.form-label(for="input6") Text
           input#input6.form-control(type="text", name="input6", placeholder="Placeholder")
-        input.button(type="submit", value="Inscription")
