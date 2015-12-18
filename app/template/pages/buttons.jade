@@ -8,9 +8,10 @@ append config
 
 block content
 
-    +contentHeader("Buttons", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/button")
+  +contentHeader("Buttons", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/button")
 
-    h2 Button style
+  .pod
+    h2.pod-title Button style
     h3 Basic button
     .exemple
       a(href="#", role="button").button Link
@@ -28,9 +29,10 @@ block content
       a(href="#", role="button").button.button--danger Link
       button.button.button--danger Button
       input(type="submit", value="Input").button.button--danger
-    
-    h2 State
-    h3 Desabled
+
+  .pod
+    h2.pod-title State
+    h3 Desable
     .exemple
       a.button.is-disabled(href="#", role="button") Link
       button.button(disabled) Button
@@ -40,14 +42,14 @@ block content
       a.button.is-active(href="#", role="button") Link
       button.button.is-active Button
       input.button.is-active(type="submit", value="Input")
-      
-    h2 Sizes button
+
+  .pod
+    h2.pod-title Sizes button
     h3 Standard sizes
     .exemple
       a(href="#", role="button").button.button--small .button--small
       a(href="#", role="button").button .button
       a(href="#", role="button").button.button--big .button--big
-
     h3 Full size
     p Button version that the whole length of its parent.
     .exemple
@@ -58,7 +60,8 @@ block content
     .exemple
       a(href="#", role="button").button.button--mobileFull .button--mobileFull
 
-    h2 Button with icon
+  .pod
+  h2.pod-title Button with icon
     h3 Icon only
     .exemple
       a(href="#", role="button").button.icon-check
@@ -67,7 +70,6 @@ block content
         span Close
       a(href="#", role="button").button.button--danger.icon-trash
         span Delete
-
     h3 Icon + text
     .exemple
       a(href="#", role="button").button
@@ -79,7 +81,6 @@ block content
       a(href="#", role="button").button.button--danger
         i.icon-trash
         | Danger
-
     h3 Icon label - left version
     .exemple
       a(href="#", role="button").button.button--labeled
@@ -91,7 +92,6 @@ block content
       a(href="#", role="button").button.button--danger.button--labeled
         i.icon-trash
         | Danger
-
     h3 Icon label - right version
     .exemple
       a(href="#", role="button").button.button--labeled-right
@@ -103,8 +103,8 @@ block content
       a(href="#", role="button").button.button--danger.button--labeled-right
         i.icon-trash
         | Danger
-
-    h2 Circular buttons
+  .pod
+    h2.pod-title Circular buttons
     .exemple
       a(href="#", role="button").button.button--circular.icon-check
         span Check
@@ -113,7 +113,8 @@ block content
       a(href="#", role="button").button.button--danger.button--circular.icon-trash
         span Trash
 
-    h2 Buttons grouped
+  .pod
+    h2.pod-title Buttons grouped
     .exemple
       .buttonGrouped
         a(href="#", role="button").button.button--secondary.icon-check

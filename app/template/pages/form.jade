@@ -8,9 +8,10 @@ append config
 
 block content
 
-    +contentHeader("Form", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/form")
+  +contentHeader("Form", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/form")
 
-    h2 Inline form
+  .pod
+    h2.pod-title Inline form
     .exemple
       form.form.form--inline(action="")
         .form-group
@@ -18,7 +19,8 @@ block content
           input#input1.form-control(type="text", name="input1", placeholder="Placeholder")
         input.button(type="submit", value="Inscription")
 
-    h2 Grid form
+  .pod
+    h2.pod-title Grid form
     .exemple
       form.form.grid
         .grid-2-4.form-group

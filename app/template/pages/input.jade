@@ -8,9 +8,10 @@ append config
 
 block content
 
-    +contentHeader("Input", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/form/_formInput.scss")
+  +contentHeader("Input", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/form/_formInput.scss")
 
-    h2 Base Input
+  .pod
+    h2.pod-title Base Input
     .exemple
       form.form(action="")
         .form-group
@@ -58,8 +59,9 @@ block content
 
           input#toggle1.form-toggle-input(type="checkbox", name="toggle1")
           label.form-toggle-label(name="toggle1",for="toggle1") Toggle 1
-    
-    h2 Input state
+
+  .pod
+    h2.pod-title Input state
     .exemple
       form.form(action="")
         .form-group.form-group--error

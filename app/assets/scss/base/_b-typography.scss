@@ -4,16 +4,11 @@ h1 {
 }
 
 h2 {
-  margin-top: em(26);
-  margin-bottom: em(15);
-  padding-bottom: em(6);
   @extend %title;
-  font-size: $font-size-XL;
-  border-bottom: 1px solid $clr-0-light;
+  font-size: $font-size-XL;;
 }
 
 h3 {
-  margin-top: em(26);
   @extend %title;
   font-size: $font-size-L;
 }

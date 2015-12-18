@@ -4,7 +4,8 @@
 
 .exemple {
   padding: em(15);
+  margin-bottom: em(30);
   background: $clr-light;
   border-radius: $rad;
-  border: 1px solid $clr-0-lighten
+  border: 1px solid $clr-0-light;
 }
