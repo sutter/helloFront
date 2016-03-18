@@ -1,27 +1,24 @@
-var gulp        = require('gulp');
-var config      = require('../config').scripts;
-var size        = require('gulp-size');
-var plumber     = require('gulp-plumber');
-var gutil       = require("gulp-util");
-var jshint      = require('gulp-jshint');
-var uglify      = require('gulp-uglify');
-var concat      = require('gulp-concat');
-var stripDebug  = require('gulp-strip-debug');
-var options     = require('minimist')(process.argv.slice(2));
+var gulp         = require('gulp');
+var config       = require('../config').scripts;
+var babelify     = require('babelify');
+var browserify   = require('browserify');
+var buffer       = require('vinyl-buffer');
+var source       = require('vinyl-source-stream');
+var sourcemaps   = require('gulp-sourcemaps');
+var uglify       = require('gulp-uglify');
 
-gulp.task('jshint', function() {
-  return gulp.src(config.jshint)
-    .pipe(jshint('.jshintrc'))
-    .pipe(jshint.reporter('jshint-stylish'));
-});
-
-gulp.task('scripts', function() {
-  return gulp.src(config.src)
-    .pipe(concat('index.js'))
-    .pipe(options.production ? stripDebug() : gutil.noop())
-    .pipe(options.production ? uglify() : gutil.noop())
-    .pipe(size({
-      title: 'Script'
-    }))
+gulp.task('scripts', function () {
+  var bundler = browserify({
+    entries: config.main_src,
+    debug: true
+  });
+  bundler.transform(babelify);
+  bundler.bundle()
+    .on('error', function (err) { console.error(err); })
+    .pipe(source(config.main_name))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
+    .pipe(uglify())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(config.dest));
 });

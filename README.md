@@ -1,15 +1,23 @@
-# helloFront
+# Starter STATIC components
 
-Simple starter GULP / SCSS Pattern / JADE for clean Front-end project.
+Simple starter GULP / SCSS / JADE  / BABEL / BROWSERIFY for clean and fast Front-end project.
 
 Work on **app/** folder and gulp build in **dist/**.
 
 ## Installation
 
-### Install NodeJs
-Go to [NodeJS.org](http://NodeJS.org) for installation.
+### Node version manager
+
+Install [NVM](https://github.com/creationix/nvm)
+
+Use the version 5.0 of NodeJS.
+
+```
+nvm use
+```
 
 ### Install Sass
+
 Go to [sass-lang.com/install](http://sass-lang.com/install) for installation in command line.
 
 ### Install Gulp
@@ -31,7 +39,7 @@ gulp -v
 npm install
 ```
 
-## Gulp Task
+## Gulp Tasks
 
 ### Run project
 
@@ -45,47 +53,55 @@ gulp
 gulp clean
 ```
 
-### Build & Optimize
+### Optimize for production
 
 * Minify HTML
 * Uglify Script
-* Strip console, alert, and debugger statements from JavaScript code
-* Optimise styles (csso) and regroup media queries
+* Optimise and minify styles with CSSO
+
+Run project before.
 
 ```
-gulp --production
+gulp production
 ```
 
 ### Deploy on GithubPages
 
+Run project before.
+
 ```
-gulp deploy
+gulp gh-pages
 ```
 
-## SCSS Structure
+## How the starter works
 
-This starter use *Normalize.css* with *NPM*.
+### Works with SCSS
+
+The SCSS files are located in `./app/assets/scss`
+
+This starter use **normalize.css** with **NPM**.
 
 * **base/** : Unclassed HTML elements (type selector)
 * **components/** : Designed components, chunks of UI
 * **tools/** : Default mixin and functions
 * **utils/** : Helpers and overrides
 * **_settings.scss** : Global variables
-* **index.scss** : Main stylesheet
+* **main.scss** : Main stylesheet
 
-## CSS naming convention
+#### CSS naming convention
 
 ```
-
 // Component
 .myComponent { … }
 
 // Component child
 .myComponent-element { … }
-.myComponent-element-elementChild { … }
 
 // Component modifier
-.myComponent--modifier { … }
+.myComponent--modifier {
+	.myComponent-element { … }
+	.myComponent-otherElement { … }
+}
 
 // Component state
 .myComponent.is-state { … }
@@ -95,10 +111,40 @@ This starter use *Normalize.css* with *NPM*.
 
 ```
 
-## Icon design
+### Works with jade templating
 
-Works on `app/assets/icon.sketch` file.
+The Jade files are located in `./app/template`
 
-Create a new artboard 512*512 for icon and name it.
+* **layout** : layout of html files generated
+* **mixin** : for reusable pattern
+* **pages** : the content of html files generated
+* **partial** : includes of html pattern
+* **config.jade** : global variables
 
-Vectorize all the strokes.
+### Works with JavaSript
+
+The Javascript files are located in `./app/assets/js`.
+
+**Use the ES6 syntaxe** Babel convert it in ES5 for you. You can use Browserify, for split your codebase into partials and require them.
+
+### Working with Images
+
+The Image files are located in `./app/assets/img`
+
+Accepted file formats : - jpg - png - gif - svg
+
+### Working with Fonts
+
+The font files are located in `./app/assets/font`
+
+### Works with sprite SVG inline
+
+Add svg files in folder `./app/assets/img/sprite` and uncomment lines *17 & 18* of file `./app/template/layout/base.jade`
+
+### Works with icons font
+
+ADD SVG Files in folder `./app/assets/icons` and gulp made magic.
+
+* Icon format: svg
+* Icon size: 512x512
+* Vectorize stroke

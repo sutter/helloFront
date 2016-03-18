@@ -1,73 +1,90 @@
-var appSource = './app';
-var appBuild  = './build';
+var app    = './app';
+var build  = './build';
 var fontName  = 'app-font';
 
 module.exports = {
-  appSource: appSource,
-  appBuild: appBuild,
-  fontName: fontName,
+
+  app: app,
+  build:  build,
+
   browserSync: {
     notify: false,
-    open: false,
-    server: appBuild,
+    open:   false,
+    server: build,
     files: [
-      appBuild + '/assets/css/index.css'
+      build + '/assets/css/styles.css'
     ],
   },
+
   styles: {
-    src :                appSource + '/assets/scss',
-    folder_src:          appSource + '/assets/scss/**/*.scss',
-    main_src:            appSource + '/assets/scss/index.scss',
-    dest:                appBuild + '/assets/css/',
+    src :                app + '/assets/scss',
+    files_src:           app + '/assets/scss/**/*.scss',
+    main_dest:           build + '/assets/css/main.css',
+    dest:                build + '/assets/css/',
     file_normalize_css:  './node_modules/normalize.css/normalize.css',
-    file_normalize_scss: appSource + '/assets/scss/base/_b-normalize.scss'
+    file_normalize_scss: app + '/assets/scss/base/_b-normalize.scss'
   },
-  template: {
-    src:        appSource + '/template',
-    files_src:  appSource + '/template/**/*.jade',
-    page_src:   appSource + '/template/pages/**/*.jade',
-    dest:       appBuild,
-    files_dest: appBuild + '/**/*.html'
-  },
+
   scripts: {
-    src: [
-     'node_modules/jquery/dist/jquery.min.js',
-      appSource + '/assets/js/application.js'
-    ],
-    dest: appBuild + '/assets/js/',
-    jshint: [
-      appSource + '/assets/js/application.js'
-    ],
+    files_src: app + '/assets/js/**/*.js',
+    main_src:  app + '/assets/js/main.js',
+    main_name: 'main.js',
+    dest:      build + '/assets/js/',
+    main_dest: build + '/assets/js/main.js'
   },
+
+  templates: {
+    src:        app + '/template',
+    files_src:  app + '/template/**/*.jade',
+    page_src:   app + '/template/pages/**/*.jade',
+    dest:       build,
+    files_dest: build + '/**/*.html'
+  },
+
   images: {
-    src: appSource + '/assets/img/**/*.{jpg,png,gif,svg}',
-    dest: appBuild + '/assets/img'
+    files_src: [
+      '!' + app + '/assets/img/sprite/**/*.svg',
+      '!' + app + '/assets/img/sprite.svg',
+      app + '/assets/img/**/*.{jpg,png,gif,svg}'
+    ],
+    dest:      build + '/assets/img'
   },
+
+  svgstore: {
+    files_src_svg_sprites: app + '/assets/img/sprite/*.svg',
+    dest:                  app + '/assets/img',
+    file_dest:             app + '/assets/img/sprite.svg'
+  },
+
+  rootfiles: {
+    src:  app + '/rootfiles/**',
+    dest: build
+  },
+
   fonts: {
-    src: appSource + '/assets/font/**',
-    dest: appBuild + '/assets/font'
+    src:  app + '/assets/fonts/**',
+    dest: build + '/assets/fonts'
   },
+
   font_icon: {
-    path_create_icon_font_file: appSource + '/assets/scss/components/_icons.scss',
-    src:                        appSource + '/assets/icon',
-    files_src:                  appSource + '/assets/icon/*.svg',
-    path:                       appSource + '/assets/scss/tools/_template-font-custom.scss',
+    path_create_icon_font_file: app + '/assets/scss/components/_icons.scss',
+    src:                        app + '/assets/icons',
+    files_src:                  app + '/assets/icons/*.svg',
+    path:                       app + '/assets/scss/tools/_template-font-custom.scss',
     target_path:                '../scss/components/_icons.scss',
-    font_path:                  '../font/',
-    dest:                       appSource + '/assets/font',
-    files_dest:                 appSource + '/assets/font/' + fontName + '.{eot,svg,ttf,woff}',
+    font_path:                  '../fonts/',
+    dest:                       app + '/assets/fonts',
+    files_dest:                 app + '/assets/fonts/' + fontName + '.{eot,svg,ttf,woff}',
     settings: {
-      font_name:         fontName,
-      append_codepoints: true,
-      normalize:        true,
-      font_height:       512
+      font_name:               fontName,
+      append_codepoints:       true,
+      normalize:               true,
+      font_height:             512
     }
   },
-  rootfiles: {
-    src: appSource + '/rootfiles/**',
-    dest: appBuild
-  },
+
   deploy: {
-    folderSrc: appBuild + '/**/*'
+    folderSrc:  build + '/**/*'
   }
+
 };

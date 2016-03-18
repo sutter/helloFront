@@ -1,12 +1,13 @@
-var gulp        = require('gulp');
-var fs          = require('fs');
-var iconfont    = require('gulp-iconfont');
-var iconfontCss = require('gulp-iconfont-css');
-var browserSync = require('browser-sync').create();
-var config      = require('../config').font_icon;
-var utils       = require('./utils');
-var plumber     = require('gulp-plumber');
-var notify      = require('gulp-notify');
+var gulp         = require('gulp');
+var fs           = require('fs');
+var iconfont     = require('gulp-iconfont');
+var iconfontCss  = require('gulp-iconfont-css');
+var config       = require('../config').font_icon;
+var utils        = require('./utils');
+var plumber      = require('gulp-plumber');
+var notify       = require('gulp-notify');
+var runTimestamp = Math.round(Date.now()/1000);
+
 
 gulp.task('font-icon', function() {
   if (utils.checkDirectoryForExt(config.src, '.svg')){
@@ -22,6 +23,9 @@ gulp.task('font-icon', function() {
       }))
       .pipe(iconfont({
         fontName: config.settings.font_name,
+        prependUnicode: true,
+        formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
+        timestamp: runTimestamp,
         appendCodepoints: config.settings.append_codepoints,
         normalize: config.settings.normalize,
         fontHeight: config.settings.font_height

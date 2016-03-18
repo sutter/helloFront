@@ -1,20 +1,26 @@
+# Mac OSX
 .DS_Store
 
-node_modules
-build
-
-app/assets/scss/base/_b-normalize.scss
-app/assets/scss/components/_icons.scss
-app/assets/font/app-font.eot
-app/assets/font/app-font.svg
-app/assets/font/app-font.ttf
-app/assets/font/app-font.woff
-.publish/
-.screenshots/
-.failures/
-
-npm-debug.log
-
+# IDE
 .idea
 *.sublime-project
 *.sublime-workspace
+
+# Npm
+/npm-debug.log
+node_modules
+
+# Generated folder
+.publish
+build
+
+# Generated fonts
+app/assets/fonts/app-font.eot
+app/assets/fonts/app-font.svg
+app/assets/fonts/app-font.ttf
+app/assets/fonts/app-font.woff
+app/assets/fonts/app-font.woff2
+
+# Generated files
+app/assets/scss/components/_icons.scss
+app/assets/scss/base/_b-normalize.scss
