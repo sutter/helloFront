@@ -24,7 +24,7 @@
 }
 
 .form-input {
-  input:not([type="color"]),
+  input:not([type="color"]):not([type="radio"]):not([type="checkbox"]),
   textarea,
   select {
     padding: em(10, $form-font-size);
