@@ -8,7 +8,19 @@ append config
 
 block content
 
-  +contentHeader("SCSS Components")
+  +contentHeader("Composants SCSS") 
 
   .wrapper
-    include:markdown ../../../README.md
+    .pod
+      p.txtLead Hello Front est un thème SCSS de démarrage de projet compatible à partir de IE10.
+      p Le thème utilise <strong>normalize.css</strong>.
+      ul
+        li <strong>base/</strong> : Éléments Html de base
+        li <strong>components/</strong> : Composants et morceaux de l'interface utilisateur
+        li <strong>tools/</strong> : Mixin et fonctions
+        li <strong>utils/</strong> : Helpers et overrides
+        li <strong>_settings.scss</strong> : Variables globales
+        li <strong>main.scss</strong> : Feuille de style principale
+      hr
+      h2.txtL Convention de nommage SCSS
+      include:markdown ../md/nommage-css.md
