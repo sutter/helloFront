@@ -1,4 +1,4 @@
-# Starter STATIC components
+# Hello Front
 
 Simple starter GULP / SCSS / JADE  / BABEL / BROWSERIFY for clean and fast Front-end project.
 
