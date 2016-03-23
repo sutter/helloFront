@@ -24,7 +24,15 @@
 }
 
 .form-input {
-  input:not([type="color"]):not([type="radio"]):not([type="checkbox"]),
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="url"],
+  input[type="email"],
+  input[type="search"],
+  input[type="date"],
+  input[type="month"],
+  input[type="number"],
   textarea,
   select {
     padding: em(10, $form-font-size);
