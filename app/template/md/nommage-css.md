@@ -5,7 +5,7 @@
 // Enfant de composant
 .myComponent-element { … }
 
-// Modifier de composant
+// Modificateur de composant
 .myComponent--modifier {
   .myComponent-element { … }
   .myComponent-otherElement { … }
