@@ -4,9 +4,7 @@
 
 .menu-inner {
   display: flex;
-  margin: 0;
-  padding-left: 0;
-  list-style: none;
+  @include listReset;
 }
 
 .menu-title {

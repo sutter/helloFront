@@ -2,14 +2,10 @@
  * Component : List
  * ======================================= */
 
-%listReset,
 .listReset {
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
+  @include listReset;
 }
 
-%listInline,
 .listInline {
   padding-left: 0;
   margin: 0;

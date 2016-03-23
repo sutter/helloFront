@@ -29,3 +29,10 @@
   clip: rect(0, 0, 0, 0) !important;
 }
 
+
+@mixin listReset {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
