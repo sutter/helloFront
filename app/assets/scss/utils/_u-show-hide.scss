@@ -12,5 +12,5 @@
 }
 
 .u-visuallyHidden {
-  @extend %visually-hidden;
+  @include visually-hidden;
 }

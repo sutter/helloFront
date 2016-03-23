@@ -13,7 +13,7 @@
   }
 
   .form-label {
-    @extend %visually-hidden;
+    @include visually-hidden;
   }
 
   .form-input input {

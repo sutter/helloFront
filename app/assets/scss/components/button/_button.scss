@@ -2,7 +2,7 @@
  * Component : Button
  * ======================================= */
 
-%button {
+.button {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -16,17 +16,24 @@
   text-decoration: none;
   font-size: em(14);
   font-weight: bold;
+  background-color: $clr-1;
+  color: $clr-light;
   border-radius: $rad;
   transition: $trans;
   -webkit-user-drag: none;
   user-select: none;
   -webkit-appearance: none;
-  &Truncate { @extend %truncate }
-  + [class*=button] {
-    @media (min-width: $mq-s-up) {
-      margin-left: rem(10);
-    }
+
+  &:hover, &:focus {
+    color: $clr-light;
+    background: $clr-1-darken;
   }
+
+  &.is-active,
+  .is-pressed {
+    background: shade($clr-1, 40%);
+  }
+
   &:disabled,
   &.is-disabled {
     cursor: default;
@@ -35,24 +42,18 @@
     box-shadow: none!important;
     pointer-events: none;
   }
+
+  + [class*=button] {
+    @media (min-width: $mq-s-up) {
+      margin-left: rem(10);
+    }
+  }
+
 }
 
-.button {
-  color: $clr-light;
-  background-color: $clr-1;
-  @extend %button;
-  &:hover, &:focus {
-    color: $clr-light;
-    background: $clr-1-darken;
-  }
-  &.is-active,
-  .is-pressed {
-    background: shade($clr-1, 40%);
-  }
-}
-
-/* Modifier : Color
--------------------------- */
+/**
+ * Modifier : Color
+ * --------------------------------------- */
 
 .button--secondary {
   color: $base-font-color;
@@ -77,8 +78,9 @@
   }
 }
 
-/* Modifier : Size
--------------------------- */
+/**
+ * Modifier : Size
+ * --------------------------------------- */
 
 .button--small {
   padding: em(8) em(18);

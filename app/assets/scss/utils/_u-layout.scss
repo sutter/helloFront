@@ -27,5 +27,5 @@
 
 // hidden but not for assistance tools
 .u-visually-hidden {
-  @extend %visually-hidden;
+  @include visually-hidden;
 }

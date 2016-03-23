@@ -4,7 +4,7 @@
  * --------------------------------------- */
 
 .button[class*="icon-"] span {
-  @extend %visually-hidden;
+  @include visually-hidden;
 }
 
 /**

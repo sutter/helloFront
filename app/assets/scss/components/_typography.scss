@@ -3,27 +3,27 @@
  * ======================================= */
 
 .txtXXL {
-  @extend %title;
+  @include title;
   font-size: $font-size-XXL;
 }
 .txtXL {
-  @extend %title;
+  @include title;
   font-size: $font-size-XL;
 }
 .txtL {
-  @extend %title;
+  @include title;
   font-size: $font-size-L;
 }
 .txtM {
-  @extend %title;
+  @include title;
   font-size: $font-size-M;
 }
 .txtS {
-  @extend %title;
+  @include title;
   font-size: $font-size-XS;
 }
 .txtXS {
-  @extend %title;
+  @include title;
   font-size: $font-size-XS;
 }
 

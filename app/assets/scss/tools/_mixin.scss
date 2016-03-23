@@ -1,4 +1,4 @@
-%title {
+@mixin title {
   margin: 0 0 $spacer-s 0;
   font-family: $header-font-family;
   line-height: $header-line-height;
@@ -10,7 +10,7 @@
   }
 }
 
-%truncate {
+@mixin truncate {
   max-width: 100%;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
@@ -18,7 +18,7 @@
   word-wrap: normal !important;
 }
 
-%visually-hidden {
+@mixin visually-hidden {
   position: absolute !important;
   border: 0 !important;
   height: 1px !important;
@@ -28,3 +28,4 @@
   overflow: hidden !important;
   clip: rect(0, 0, 0, 0) !important;
 }
+

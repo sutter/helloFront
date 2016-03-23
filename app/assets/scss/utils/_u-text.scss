@@ -12,7 +12,7 @@
 
 .u-txtNoWrap { white-space: nowrap !important }
 
-.u-txtTruncate { @extend %truncate }
+.u-txtTruncate { @include truncate }
 
 // http://blog.typekit.com/2014/02/05/kerning-on-the-web/
 .u-txtKern {
