@@ -13,19 +13,21 @@ $clr-notice    : #D9EDF7;
 
 $clr-danger    : #D24A53;
 
-$clr-0-darken  : #000;
+$clr-divider   : #ededed;
+
+$clr-0-darken  : #23292e;
 $clr-0-dark    : #212121;
 $clr-0         : #333;
-$clr-0-light   : #ededed;
+$clr-0-light   : #ddd;
 $clr-0-lighten : #fafafa;
 
-$clr-1         : #2D91D3;
+$clr-1         : #2fb2de;
 $clr-1-light   : tint($clr-1, 50%);
 $clr-1-lighten : tint($clr-1, 85%);
 $clr-1-dark    : shade($clr-1, 15%);
 $clr-1-darken  : shade($clr-1, 30%);
 
-$clr-2         : #AFBD36;
+$clr-2         : #605ce8;
 $clr-2-light   : tint($clr-2, 50%);
 $clr-2-lighten : tint($clr-2, 85%);
 $clr-2-dark    : shade($clr-2, 15%);

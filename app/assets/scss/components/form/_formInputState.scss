@@ -1,0 +1,77 @@
+/**
+ * Input state
+ * Dependencies : _form.scss
+ * --------------------------------------- */
+
+.form-message {
+  font-size: em(14)
+}
+
+/**
+ * Error
+ */
+
+.form-group--error.form-group--error {
+  input {
+    border-color: tint($clr-error, 50%);
+    color: $clr-error;
+    background-color: tint($clr-error, 95%);
+    &:hover {
+      border-color: tint($clr-error, 50%);
+    }
+  }
+  .form-label,
+  .form-message {
+    color: $clr-error;
+  }
+}
+
+/**
+ * warning
+ */
+
+.form-group--warning.form-group--warning {
+  input {
+    border-color: tint($clr-warning, 50%);
+    color: $clr-warning;
+    background-color: tint($clr-warning, 95%);
+    &:hover {
+      border-color: tint($clr-warning, 50%);
+    }
+  }
+  .form-label,
+  .form-message {
+    color: $clr-warning;
+  }
+}
+
+/**
+ * Success
+ */
+
+.form-group--success.form-group--success {
+  input {
+    border-color: tint($clr-success, 50%);
+    color: $clr-success;
+    background-color: tint($clr-success, 95%);
+    &:hover {
+      border-color: tint($clr-success, 50%);
+    }
+  }
+  .form-label,
+  .form-message {
+    color: $clr-success;
+  }
+}
+
+/**
+ * Disabled
+ */
+
+.form-group--disabled.form-group--disabled {
+  .form-label,
+  input {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

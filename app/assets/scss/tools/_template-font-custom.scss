@@ -1,54 +1,64 @@
-/* ================================
-/* Component : Icon font
-================================ */
-
 @font-face {
   font-family: "<%= fontName %>";
   src: url('<%= fontPath %><%= fontName %>.eot');
   src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
-    url('<%= fontPath %><%= fontName %>.woff') format('woff'),
-    url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
-    url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
+       url('<%= fontPath %><%= fontName %>.woff2') format('woff2'),
+       url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+       url('<%= fontPath %><%= fontName %>.ttf') format('truetype'),
+       url('<%= fontPath %><%= fontName %>.svg#<%= fontName %>') format('svg');
 }
 
 %icon {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: text-bottom;
   font-family:"<%= fontName %>";
   font-style: normal;
   font-weight: normal;
   line-height: 1;
   speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-decoration: inherit;
   text-transform: none;
 }
 
 @function icon-char($filename) {
   $char: "";
-<% _.each(glyphs, function(glyph) { %>
-  @if $filename == <%= glyph.fileName %> {
-    $char: "\<%= glyph.codePoint %>";
-  }<% }); %>
+  <% _.each(glyphs, function(glyph) { %>
+    @if $filename == <%= glyph.fileName %> {
+      $char: "\<%= glyph.codePoint %>";
+    }<% }); %>
+    @return $char;
+  }
 
-  @return $char;
-}
+  @mixin icon($filename) {
+    content: icon-char($filename);
+  }
 
-@mixin icon($filename) {
-  content: icon-char($filename);
-}
+  [class*="icon-"] {
+    @extend %icon;
+  }
 
-[class*="icon-"] {
-  @extend %icon;
-}
-
-<% _.each(glyphs, function(glyph) { %>
-.icon-<%= glyph.fileName %>{
-  &::before {
+  <% _.each(glyphs, function(glyph) { %>
+    .icon-<%= glyph.fileName %>{
+    &::before {
+      @include icon(<%= glyph.fileName %>);
+    }
+  }
+  %icon-<%= glyph.fileName %> {
     @include icon(<%= glyph.fileName %>);
   }
-}
-%icon-<%= glyph.fileName %> {
-  @include icon(<%= glyph.fileName %>);
-}
 <% }); %>
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.icon--mLeft {
+  margin-left: 10px;
+}
+
+.icon--mRight {
+  margin-right: 10px;
+}

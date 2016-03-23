@@ -1,13 +1,22 @@
-/* ================================
-/* Component : Content
-================================ */
+/** ======================================
+ * Component : Content
+ * ======================================= */
 
 [id="content"] {
   padding-top: $spacer-s;
   padding-bottom: $spacer-s;
 }
 
-[id="content-header"] {
-  display: flex;
-  align-items: center;
+.content-header {
+  padding: em(60) 0;
+  margin-bottom: $spacer-l;
+  background: $clr-2;
+  overflow: hidden;
+}
+
+.content-header-title {
+  color: $clr-light;
+  &:only-child {
+    margin: 0;
+  }
 }

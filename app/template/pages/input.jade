@@ -1,81 +1,163 @@
 extend ../layout/base
 
 append config
-  - var title = "Form | Hello FRONT"
-  - var metaDesc = "SCSS Form components"
+  - var title = "Hello Front - formulaires CSS"
+  - var metaDesc = "Style de base CSS pour élément de formulaire."
   - var template = 't-home'
-  - var navLinkActive = 'Input'
+  - var navLinkActive = 'Formulaire'
+  - var subNavLinkActive = 'Inputs'
 
 block content
 
-  +contentHeader("Input", "https://github.com/sutter/helloFront/tree/master/app/assets/scss/components/form/_formInput.scss")
+  +contentHeader("Formulaire")
 
-  .pod
-    h2.pod-title Base Input
-    .exemple
-      form.form(action="")
-        .form-group
-          label.form-label(for="input1") Text
-          input#input1.form-control(type="text", name="input1", placeholder="Placeholder")
-        .form-group
-          label.form-label(for="input2") Number + icon
-          .formControlIcon
-            span.icon-trash
-            input#input2.form-control(type="number", name="input2", placeholder="Placeholder")
-        .form-group
-          label.form-label.form-label--required(for="input3") Email
-          input#input3.form-control(type="email", name="input3", placeholder="Placeholder", required)
-          small Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        .form-group
-          label.form-label(for="select1") Select
-          select#select1.form-control(name="select1")
-            option 1
-            option 2
-            option 3
-            option 4
-            option 5
-        .form-group
-          label(for="textarea") Message
-          textarea#textarea.form-control(rows="8")
-        .form-group
-          label.form-label(for="input2") Number
-          input.form-control(type="search", name="the_search", placeholder="Search")
-        .form-group
-          p.form-label Radio
-          ul.listInline
-            li
-              input#radioCustom1(type="radio", name="radioCustom")
-              label(name="radioCustom",for="radioCustom1") Radio 1
-            li
-              input#radioCustom2(type="radio", name="radioCustom")
-              label(name="radioCustom",for="radioCustom2") Radio 2
-            li
-              input#radioCustom3(type="radio", name="radioCustom")
-              label(name="radioCustom",for="radioCustom3") Radio 3
-        .form-group
-          p.form-label Checkbox
-          input#checkbox1(type="checkbox", name="checkbox1")
-          label(name="checkbox1",for="checkbox1") Checkbox 1
+  .wrapper
 
-          input#toggle1.form-toggle-input(type="checkbox", name="toggle1")
-          label.form-toggle-label(name="toggle1",for="toggle1") Toggle 1
+    .grid
 
-  .pod
-    h2.pod-title Input state
-    .exemple
-      form.form(action="")
-        .form-group.form-group--error
-          label.form-label(for="input4") Input with error
-          input#input4.form-control(type="text", name="input4")
-          .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        .form-group.form-group--warning
-          label.form-label(for="input5") Input with warning
-          input#input5.form-control(type="text", name="input5")
-          .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        .form-group.form-group--success
-          label.form-label(for="input6") Input with success
-          input#input6.form-control(type="text", name="input6")
-          .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
-        .form-group.form-group--desabled
-          label.form-label(for="input6") Input desabled
-          input#input6.form-control(type="text", name="input6", disabled, placeholder="I'm desabled")
+      .grid-1-4
+        include ../partials/menuForm
+
+      .grid-3-4
+
+        .pod
+          h2.pod-title Input de base
+          .exemple
+            form.from(action="")
+              .form-group
+                label.form-label(for="input-text") Text
+                .form-input
+                  input#input-text(type="text", name="input-text", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-select") Select
+                .form-input
+                  select#input-select(name="input-select")
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+              .form-group
+                label.form-label(for="input-password") Password
+                .form-input
+                  input#input-password(type="password", name="input-password", placeholder="Placeholder")
+              .form-group
+                label(for="textarea") Message
+                .form-input
+                  textarea#textarea(rows="6")
+              .form-group
+                p.form-label Radio
+                .form-input
+                  ul.listInline
+                    li
+                      input#radioCustom1(type="radio")
+                      label(name="radioCustom",for="radioCustom1") Radio 1
+                    li
+                      input#radioCustom2(type="radio")
+                      label(name="radioCustom",for="radioCustom2") Radio 2
+                    li
+                      input#radioCustom3(type="radio")
+                      label(name="radioCustom",for="radioCustom3") Radio 3
+              .form-group
+                p.form-label Checkbox
+                .form-input
+                  input#checkbox(type="checkbox", name="checkbox")
+                  label(name="checkbox", for="checkbox") Checkbox
+              .form-group
+                p.form-label Toggle Checkbox
+                .form-input
+                  input#toggle.form-toggle-input(type="checkbox", name="toggle")
+                  label.form-toggle-label(name="toggle",for="toggle") Toggle
+              .form-group
+                label.form-label(for="input-tel") Tel
+                .form-input
+                  input#input-tel(type="tel", name="input-tel", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-url") Url
+                .form-input
+                  input#input-url(type="url", name="input-url", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-email") Email
+                .form-input
+                  input#input-email(type="email", name="input-email", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-search") Search
+                .form-input
+                  input#input-search(type="search", name="input-search", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-date") Date
+                .form-input
+                  input#input-date(type="date", name="input-date")
+              .form-group
+                label.form-label(for="input-month") Month
+                .form-input
+                  input#input-month(type="month", name="input-month")
+              .form-group
+                label.form-label(for="input-number") Number
+                .form-input
+                  input#input-number(type="number", name="input-number", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-range") Range
+                .form-input
+                  input#input-range(type="range", name="input-range")
+              .form-group
+                label.form-label(for="input-color") Color
+                .form-input
+                  input#input-color(type="color", value="#fad345" name="input-color")
+              .form-group
+                label.form-label(for="input-file") File
+                .form-input
+                  input#input-file(type="file" name="input-file")
+
+        .pod
+          h2.pod-title Input requis
+          .form-group
+            label.form-label.form-label--required(for="input-txt-required") lorem ipsum
+            .form-input
+              input#input-txt-required(type="text", name="input-txt-required", placeholder="Placeholder", required)
+
+        .pod
+          h2.pod-title Input avec message
+          .form-group
+            label.form-label(for="input-txt-msg") lorem ipsum
+            .form-input
+              input#input-txt-msg(type="text", name="input-txt-msg", placeholder="Placeholder", required)
+            small Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+        .pod
+          h2.pod-title Input avec icône
+          .form-group
+            label.form-label(for="input-icon") Icône à droite
+            .form-input.form-input--icon
+              span.icon-github
+              input#input-icon(type="text", name="input-icon", placeholder="Placeholder")
+            small Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .form-group
+            label.form-label(for="input-icon-inverse") Icône à gauche
+            .form-input.form-input--iconInverse
+              span.icon-github
+              input#input-icon-inverse(type="text", name="input-icon-inverse", placeholder="Placeholder")
+
+        .pod
+          h2.pod-title État des inputs
+          .exemple
+            form.form(action="")
+              .form-group.form-group--error
+                label.form-label(for="input-txt-error") Error
+                .form-input
+                  input#input-txt-error(type="text", name="input-txt-error")
+                .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              .form-group.form-group--warning
+                label.form-label(for="input-txt-warning") Warning
+                .form-input
+                  input#input-txt-warning(type="text", name="input-txt-warning")
+                .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              .form-group.form-group--success
+                label.form-label(for="input-sucsess") Success
+                .form-input
+                  input#input-sucsess(type="text", name="input-sucsess")
+                .form-message Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              .form-group.form-group--disabled
+                label.form-label(for="input-disabled") Disabled
+                .form-input
+                  input#input-disabled(type="text", name="input-disabled", disabled, placeholder="I'm desabled")

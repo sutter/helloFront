@@ -1,44 +1,48 @@
-/* ================================
-/* Component : Input Toggle
-================================ */
+/**
+ * Input toggle
+ * Dependencies : _form.scss
+ * --------------------------------------- */
 
 $toggle-width  : em(45);
 $toggle-height : em(20);
 
-input[type="checkbox"] + .form-toggle-label {
-  position: relative;
-  margin-left: $toggle-width + 0.5 ;
-  &::before,
-  &::after {
-    position: absolute;
-    left: -$toggle-width - 0.5;
-    top: 50%;
-    margin-top: -$toggle-height/2;
-    height: $toggle-height;
-    border-radius: $toggle-height;
+.form-input {
+  input[type="checkbox"] + .form-toggle-label {
+    position: relative;
+    margin-left: $toggle-width + 0.5;
+    &::before,
+    &::after {
+      position: absolute;
+      left: -$toggle-width - 0.5;
+      top: 50%;
+      margin-top: -$toggle-height/2;
+      height: $toggle-height;
+      border-radius: $toggle-height;
+    }
+    &::before {
+      width: $toggle-width;
+      background: $form-border-color;
+    }
+    &::after {
+      content: "";
+      width: $toggle-height;
+      background: $clr-light center no-repeat;
+      border: 2px solid $form-border-color;
+      transition: $trans;
+      border-radius: $toggle-height;
+    }
   }
-  &::before {
-    width: $toggle-width;
-    background: $form-border-color;
-  }
-  &::after {
-    content: "";
-    width: $toggle-height;
-    background: $clr-light center no-repeat;
-    border: 2px solid $form-border-color;
-    transition: $trans;
-    border-radius: $toggle-height;
-  }
-}
 
-input[type="checkbox"]:checked + .form-toggle-label {
-  &::before {
-    background-color: $clr-1;
-    background-position: left 8px center;
-    border-color: $clr-1;
+  input[type="checkbox"]:checked + .form-toggle-label {
+    &::before {
+      background-color: $clr-1;
+      background-position: left 8px center;
+      border-color: $clr-1;
+    }
+    &::after {
+      left: ($toggle-width - $toggle-height) + (-$toggle-width - 0.5);
+      border-color: $clr-1;
+    }
   }
-  &::after {
-    left: ($toggle-width - $toggle-height) + (-$toggle-width - 0.5) ;
-    border-color: $clr-1;
-  }
+
 }

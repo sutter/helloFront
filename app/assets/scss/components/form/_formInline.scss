@@ -1,30 +1,32 @@
-/* ================================
-/* Component : Form Inline
-================================ */
+/**
+ * Form inline
+ * Dependencies : _form.scss
+ * --------------------------------------- */
 
 .form--inline {
   display: flex;
   align-items: top;
-}
 
-.form--inline .form-group {
-  flex-grow: 1;
-  margin-bottom: 0;
-}
+  .form-group {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
 
-.form--inline .form-label {
-  @extend %visually-hidden;
-}
+  .form-label {
+    @extend %visually-hidden;
+  }
 
-.form--inline .form-control {
-  border-radius: 0;
-}
+  .form-input input {
+    border-radius: 0;
+  }
 
-.form--inline .form-group:first-child .form-control {
-  border-radius: $form-border-radius 0 0 $form-border-radius;
-  border-right: none;
-}
+  .form-group:first-child .form-input input {
+    border-radius: $form-border-radius 0 0 $form-border-radius;
+    border-right: none;
+  }
 
-.form--inline .button {
-  border-radius: 0 $form-border-radius $form-border-radius 0;
+  .button {
+    border-radius: 0 $form-border-radius $form-border-radius 0;
+  }
+
 }

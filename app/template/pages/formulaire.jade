@@ -1,0 +1,94 @@
+extend ../layout/base
+
+append config
+  - var title = "Hello Front - formulaire CSS"
+  - var metaDesc = "Style de base CSS pour élément de formulaire custom."
+  - var template = 't-home'
+  - var navLinkActive = 'Formulaire'
+  - var subNavLinkActive = 'Formulaire'
+
+block content
+
+  +contentHeader("Formulaire")
+
+  .wrapper
+
+    .grid
+
+      .grid-1-4
+        include ../partials/menuForm
+
+      .grid-3-4
+
+        .pod
+          h2.pod-title Formulaire de base
+          form.form(action="")
+            .form-group
+              label.form-label(for="input-login") Login
+              .form-input
+                input#input-login(type="text", name="input-login", placeholder="Votre identifiant")
+            .form-group
+              label.form-label(for="input-password") Password
+              .form-input
+                input#input-password(type="password", name="input-password", placeholder="Votre mot de passe")
+            .form-group
+              .form-input
+                input#checkbox(type="checkbox", name="checkbox")
+                label(name="checkbox", for="checkbox") Se souvenir de moi
+            .form-footer.u-txtCenter
+              input.button(type="submit", value="Connexion")
+
+        .pod
+          h2.pod-title Formulaire en grille
+          .exemple
+            form.form.grid
+              .grid-2-4.form-group
+                label.form-label(for="input-text") Text
+                .form-input
+                  input#inpu2(type="text", name="input-password", placeholder="Placeholder")
+              .grid-2-4.form-group
+                label.form-label(for="input-tel") Text
+                .form-input
+                  input#input-tel(type="text", name="input-tel", placeholder="Placeholder")
+              .grid-3-4.form-group
+                label.form-label(for="input-url") Text
+                .form-input
+                  input#input-url(type="text", name="input-url", placeholder="Placeholder")
+              .grid-1-4.form-group
+                label.form-label(for="input-email") Text
+                .form-input
+                  input#input-email(type="text", name="input-email", placeholder="Placeholder")
+              .grid-1-4.form-group
+                .form-group
+                  label.form-label(for="select1") Select
+                  .form-input
+                    select#select1(name="select1")
+                      option 1
+                      option 2
+                      option 3
+                      option 4
+                      option 5
+              .grid-1-4.form-group
+                .form-group
+                  label.form-label(for="select2") Select
+                  .form-input
+                    select#select2(name="select2")
+                      option 1
+                      option 2
+                      option 3
+                      option 4
+                      option 5
+              .grid-2-4.form-group
+                label.form-label(for="input-search") Text
+                .form-input
+                  input#input-search(type="text", name="input-search", placeholder="Placeholder")
+
+        .pod
+          h2.pod-title Formulaire en ligne
+          .exemple
+            form.form.form--inline(action="")
+              .form-group
+                label.form-label(for="input-text") Text
+                .form-input
+                  input#input-text(type="text", name="input-text", placeholder="Placeholder")
+              input.button(type="submit", value="Inscription")

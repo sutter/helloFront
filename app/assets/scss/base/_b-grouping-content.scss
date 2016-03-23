@@ -20,6 +20,9 @@ blockquote {
   padding-left: $spacer-s ;
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
+  p {
+    margin: 0;
+  }
   cite:before {
     content: '\2014 \00A0';
   }
@@ -56,13 +59,19 @@ samp {
   white-space: pre-wrap;
 }
 
-code {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0 .5em;
-  font-size: .75em;
-  border: 1px solid $clr-2-light;
-  color: $clr-2;
-  background-color: $clr-2-lighten;
+code,
+kbd {
+  font-size: .85em;
+  background-color: tint($clr-0-light, 20%);
   border-radius: $rad;
+}
+
+code {
+  padding: .25em .75em;
+  border: 1px solid $clr-0-light;
+}
+
+kbd {
+  padding: .25em .5em;
+  background-color: tint($clr-0-light, 20%);
 }

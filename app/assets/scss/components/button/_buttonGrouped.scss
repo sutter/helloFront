@@ -1,10 +1,12 @@
-/* ================================
-/* Component : Button groupped
-/*
-/* Dependenties : _button.scss
-/*
-================================ */
+/**
+ * Button grouped
+ * Dependencies : _button.scss
+ * --------------------------------------- */
 
+
+.buttonGrouped {
+  display: flex;
+}
 
 .buttonGrouped .button {
   border-radius: 0;

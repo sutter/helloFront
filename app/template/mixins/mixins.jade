@@ -1,0 +1,16 @@
+mixin menu(menu_items)
+  ul.menu-inner
+    each top_item in menu_items
+      li.menu-item
+        a(href=top_item.link, class=navLinkActive == top_item.title ? 'menu-link is-active' : 'menu-link')= top_item.title
+
+mixin menuAside(menu_items)
+  ul.menuAside
+    each top_item in menu_items
+      li.menuAside-item
+        a(href=top_item.link, class=subNavLinkActive == top_item.title ? 'menuAside-link is-active' : 'menuAside-link')= top_item.title
+
+mixin contentHeader(title, url)
+  header.content-header
+    .wrapper
+      h1.content-header-title= title

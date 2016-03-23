@@ -1,26 +1,27 @@
 append config
   include ../config
 
-include ../mixin/index
+include ../mixins/mixins
 
 doctype
 html(lang="#{lang}")
   head
-    meta(charset='UTF-8')
-    title #{title}
-    meta(name='description', content='#{metaDesc}')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel="icon", type="image/png", href="favicon-32x32.png",sizes="32x32")
-    link(rel="icon", type="image/png", href="favicon-16x16.png",sizes="16x16")
-    link(href='favicon.ico', rel='shortcut icon', type='image/x-icon')
-    link(rel='stylesheet', href='assets/css/index.css')
+    include ../partials/head
 
-    body(role='document', class="#{template}")
-      button#app-pusherButton Menu
-      #app
-        include ../partials/app-pusher
-        #app-content
-          main#main.main(role='main')
-            section.wrapper#content
-              block content
-          include ../partials/footer
+  body(role='document', class="#{template}")
+
+    //-
+    //- Uncomment lines 17-18 only if you use sprite SVG
+    //-
+
+    //- div(style='height: 0; width: 0; position: absolute; visibility: hidden')
+    //-   include ../../assets/img/sprite.svg
+
+    #app
+      include ../partials/header
+      main#app-main(role='main')
+        section
+          block content
+      include ../partials/footer
+
+    script(src="assets/js/main.js", async)

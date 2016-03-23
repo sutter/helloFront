@@ -1,0 +1,20 @@
+/**
+ * Custom select
+ * Dependencies : _form.scss
+ * --------------------------------------- */
+
+.form-input {
+  select {
+    height:      em(40);
+    line-height: em(40);
+    padding-top:    0;
+    padding-bottom: 0;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+ZG93bjwvdGl0bGU+PHBhdGggZD0iTTUuMzk3IDkuMTRsMy45NyAzLjZjLjM4NC4zNDguOTMuMzQ3IDEuMzE0LS4wMDVsMy45MjctMy42Yy40NTMtLjQxNS41MjUtMS4xNy4xNi0xLjY4Ny0uMzY0LS41MTYtMS4wMjYtLjU5OC0xLjQ4LS4xODNsLTMuOTI2IDMuNiAxLjMxNy0uMDA0LTMuOTctMy42Yy0uNDU0LS40MTItMS4xMTYtLjMyNi0xLjQ3OC4xOTMtLjM2My41MTgtLjI4OCAxLjI3My4xNjcgMS42ODZ6IiBmaWxsPSIjQURBREFEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+}

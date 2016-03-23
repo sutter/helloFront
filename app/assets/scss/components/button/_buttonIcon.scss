@@ -1,0 +1,66 @@
+/**
+ * Button icons
+ * Dependencies : _button.scss
+ * --------------------------------------- */
+
+.button[class*="icon-"] span {
+  @extend %visually-hidden;
+}
+
+/**
+ * Button icon + text
+ * --------------------------------------- */
+
+.button [class*="icon-"] {
+  margin-right: em(10);
+}
+
+/**
+ * Button label icon
+ * --------------------------------------- */
+
+.button--labeled [class*="icon-"],
+.button--labeledInverse [class*="icon-"] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: em(46);
+  margin-right: 0;
+  background: rgba(0,0,0,0.075);
+}
+
+.button--labeled [class*="icon-"]::before,
+.button--labeledInverse [class*="icon-"]::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  text-align: center;
+  transform: translateY(-50%);
+}
+
+/*
+ * Left label
+ */
+
+.button--labeled {
+  padding-left: em(64)
+}
+
+.button--labeled [class*="icon-"] {
+  left: 0;
+  border-radius: $rad 0 0 $rad;
+}
+
+/*
+ * Right label
+ */
+
+.button--labeledInverse {
+  padding-right: em(64);
+}
+
+.button--labeledInverse [class*="icon-"] {
+  right: 0;
+  border-radius: 0 $rad $rad 0;
+}

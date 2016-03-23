@@ -1,0 +1,72 @@
+/**
+ * Custom radio & checkbox
+ * Dependencies : _form.scss
+ * --------------------------------------- */
+
+.form-input {
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  input[type="radio"] + label,
+  input[type="checkbox"] + label {
+    font-weight: 400;
+  }
+
+  input[type="radio"] + label::before,
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: text-bottom;
+    width: em(16);
+    height: em(16);
+    margin-right: em(8);
+    background: $clr-light center no-repeat;
+    border: 1px solid $form-border-color;
+  }
+
+  input[type="radio"] + label
+  input[type="checkbox"] + label {
+    transition: $trans;
+  }
+
+  input[type="radio"]:checked + label,
+  input[type="radio"] + label:hover,
+  input[type="checkbox"]:checked + label,
+  input[type="checkbox"] + label:hover {
+    color: $clr-0;
+  }
+
+  /*
+   * Radio
+   */
+
+  input[type="radio"] + label::before {
+    border-radius: 50%;
+    transition: $trans;
+  }
+
+  input[type="radio"]:focus + label::before,
+  input[type="radio"]:checked + label::before {
+    border: em(5) solid $clr-1;
+  }
+
+  /*
+   * Checkbox
+   */
+
+  input[type="checkbox"] + label::before {
+    border-radius: em(3);
+    transition: border-color .3s ease-in-out, background-color .3s ease-in-out;
+  }
+
+  input[type="checkbox"]:checked + label::before {
+    border-color: $clr-1;
+    background: $clr-1 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%226%22%20viewBox%3D%220%200%208%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3EShape%20Copy%3C/title%3E%3Cpath%20d%3D%22M.185%203.245L2.47%205.53c.246.246.645.246.89%200l4.455-4.454c.247-.246.247-.645%200-.89-.246-.248-.645-.248-.89%200L2.47%204.638h.89L1.077%202.353c-.246-.247-.645-.247-.89%200-.248.246-.248.645%200%20.89z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E') center no-repeat; // app/assets/img/check.svg
+  }
+
+}

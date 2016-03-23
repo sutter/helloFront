@@ -1,19 +1,22 @@
-/* ================================
-/* Utils : Text
-================================ */
+.u-txtUpper  { text-transform: uppercase !important }
 
-.u-txt {
-  &Upper  { text-transform: uppercase !important }
-  &Lower  { text-transform: lowercase !important }
-  &Center { text-align: center !important }
-  &Left   { text-align: left !important }
-  &Right  { text-align: right !important }
-  &Break  { word-wrap: break-word !important }
-  &NoWrap { white-space: nowrap !important }
-  &Truncate { @extend %truncate }
-  &Kern { // http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+.u-txtLower  { text-transform: lowercase !important }
+
+.u-txtCenter { text-align: center !important }
+
+.u-txtLeft   { text-align: left !important }
+
+.u-txtRight  { text-align: right !important }
+
+.u-txtBreak  { word-wrap: break-word !important }
+
+.u-txtNoWrap { white-space: nowrap !important }
+
+.u-txtTruncate { @extend %truncate }
+
+// http://blog.typekit.com/2014/02/05/kerning-on-the-web/
+.u-txtKern {
     text-rendering: optimizeLegibility;
     font-feature-settings: "kern" 1;
     font-kerning: normal;
   }
-}

@@ -1,0 +1,9 @@
+/**
+ * Button circular
+ * Dependencies : _button.scss, _buttonIcon
+ * --------------------------------------- */
+
+.button--circular {
+  padding: em(12);
+  border-radius: em(666);
+}

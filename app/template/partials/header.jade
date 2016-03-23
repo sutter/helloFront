@@ -1,10 +1,17 @@
-header.header#header(role="banner")
+header#header(role="banner")
 
   .wrapper
 
-    a(href="/") Title of site
+    h1.header-logo
+      a.header-logo-link(href="./") Hello Front
 
-    +menu([
-      { 'title':'Accueil', 'link': '/' },
-      { 'title':'Styleguide', 'link': '/styleguide.html'}
-    ])
+    #header-nav.menu
+      +menu([
+        { 'title':'Typographie', 'link': 'typographie.html' },
+        { 'title':'Formulaire', 'link': 'formulaire.html' },
+        { 'title':'Boutons', 'link': 'bouton.html' },
+        { 'title':'Tableau', 'link': '' },
+        { 'title':'Grilles', 'link': '' },
+        { 'title':'Images', 'link': '' },
+        { 'title':'Autres composants', 'link': '' },
+      ])

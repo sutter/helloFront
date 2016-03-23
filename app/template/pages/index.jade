@@ -8,49 +8,7 @@ append config
 
 block content
 
-  +contentHeader("Hello FRONT", "https://github.com/sutter/helloFront")
+  +contentHeader("SCSS Components")
 
-  p Starter SCSS for clean project.
-
-  .pod
-    h2.pod-title SCSS Structure
-    p This starter use <strong>Normalize.css</strong> with <strong>NPM</strong>.
-    table
-      tr
-        td.w-25 <strong>base</strong>
-        td Unclassed HTML elements (type selector)
-      tr
-        td.w-25 <strong>components</strong>
-        td Designed components, chunks of UI
-      tr
-        td.w-25 <strong>tools</strong>
-        td Default mixin and functions
-      tr
-        td.w-25 <strong>utils</strong>
-        td Helpers and overrides
-      tr
-        td.w-25 <strong>_settings.scss</strong>
-        td Global variables
-      tr
-        td.w-25 <strong>application.scss</strong>
-        td Main stylesheet
-
-  .pod
-    h2.pod-title CSS naming convention
-    pre
-      code.css
-        | // Component
-        | .myComponent { &hellip; }
-        | &nbsp;
-        | // Component child
-        | .myComponent-element { &hellip; }
-        | .myComponent-element-elementChild { &hellip; }
-        | &nbsp;
-        | // Component modifier
-        | .myComponent--modifier { &hellip; }
-        | &nbsp;
-        | // Component state
-        | .myComponent.is-state { &hellip; }
-        | &nbsp;
-        | // JS for component
-        | .js-myComponent { &hellip; }
+  .wrapper
+    include:markdown ../../../README.md

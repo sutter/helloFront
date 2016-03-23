@@ -1,7 +1,3 @@
-/* ================================
-/* Utils : Show / hide
-================================ */
-
 .u-hideMobile {
   display: none !important;
   @media (min-width: $mq-s-up ) {
@@ -13,4 +9,8 @@
   @media (min-width: $mq-s-up ) {
     display: none !important;
   }
+}
+
+.u-visuallyHidden {
+  @extend %visually-hidden;
 }

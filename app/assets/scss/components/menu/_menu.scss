@@ -1,0 +1,32 @@
+/** ======================================
+ * Component : Menu
+ * ======================================= */
+
+.menu-inner {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu-title {
+  padding: em(6) em(14);
+  color: $clr-light;
+  font-weight: 700;
+}
+
+.menu-link {
+  padding: em(6) em(14);
+  font-size: em(14);
+  &.is-active {
+    color: $clr-light;
+  }
+}
+
+/**
+ * Modifier by parent
+ * --------------------------------------- */
+
+[id="header-nav"] {
+  margin-left: auto;
+}
