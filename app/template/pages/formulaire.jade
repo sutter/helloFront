@@ -90,7 +90,46 @@ block content
           .exemple
             form.form.form--inline(action="")
               .form-group
+                label.form-label(for="input-dolor") Text
+                .form-input
+                  input#input-dolor(type="text", name="input-dolor", placeholder="Placeholder")
+
+          .exemple
+            form.form.form--inline(action="")
+              .form-group
                 label.form-label(for="input-text") Text
                 .form-input
                   input#input-text(type="text", name="input-text", placeholder="Placeholder")
-              input.button(type="submit", value="Inscription")
+              .form-footer
+                input.button(type="submit", value="Inscription")
+
+          .exemple
+            form.form.form--inline(action="")
+              .form-group
+                label.form-label(for="input-lorem") Text
+                .form-input
+                  input#input-lorem(type="text", name="input-lorem", placeholder="Placeholder")
+              .form-group
+                label.form-label(for="input-ipsum") Text
+                .form-input
+                  input#input-ipsum(type="text", name="input-ipsum", placeholder="Placeholder")
+              .form-footer
+                input.button(type="submit", value="Ok")
+
+          .exemple
+            form.form.form--inline(action="")
+              .form-group.w-25
+                label.form-label(for="input-select") Select
+                .form-input
+                  select#input-select(name="input-select")
+                    option 1
+                    option 2
+                    option 3
+                    option 4
+                    option 5
+              .form-group
+                label.form-label(for="input-amet") Text
+                .form-input
+                  input#input-amet(type="text", name="input-amet", placeholder="Placeholder")
+              .form-footer.w-25
+                input.button(type="submit", value="Réserver")
