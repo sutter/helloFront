@@ -7,19 +7,19 @@
   position: relative;
 }
 
-[class*=form-input--icon] {
+[class*=form-input--icon][class*=form-input--icon] {
   input {
-    padding-right: em(40, $form-font-size);
+    padding-right: rem(40);
   }
   [class*=icon-] {
     pointer-events: none;
     cursor: default;
     position: absolute;
     top: 50%;
-    right: em(14, 18);
+    right: rem(12);
     line-height: 1;
     text-align: center;
-    font-size: em(18, $form-font-size);
+    font-size: rem(20);
     color: $clr-0;
     transform: translateY(-50%);
   }
@@ -27,11 +27,11 @@
 
 .form-input--iconInverse.form-input--iconInverse {
   input {
-    padding-right: em(10, $form-font-size);
-    padding-left: em(40, $form-font-size);
+    padding-right: rem(10);
+    padding-left: rem(40);
   }
   [class*=icon-] {
     right: auto;
-    left: em(14, 18);
+    left: rem(12);
   }
 }

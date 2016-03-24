@@ -35,12 +35,13 @@
   input[type="number"],
   textarea,
   select {
-    padding: em(10, $form-font-size);
+    padding: rem(7) rem(10);
+    line-height: 1.5;
     width: 100%;
     border: 1px solid $form-border-color;
     background-color: $clr-light;
     font-family: $form-font-family;
-    font-size: em($form-font-size);
+    font-size: $form-font-size;
     border-radius: $form-border-radius;
     box-shadow: $form-box-shadow;
     transition: $trans;
