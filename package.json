@@ -10,7 +10,7 @@
     ]
   },
   "devDependencies": {
-    "browser-sync": "^2.11.1",
+    "browser-sync": "^2.11.2",
     "gulp-gh-pages": "^0.5.4"
   },
   "dependencies": {
