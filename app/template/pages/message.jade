@@ -1,0 +1,36 @@
+extend ../layout/base
+
+append config
+  - var title = "Hello Front - Message CSS"
+  - var metaDesc = "Style de base CSS pour élément de message."
+  - var template = 't-home'
+  - var navLinkActive = 'Formulaire'
+  - var subNavLinkActive = 'Message'
+
+block content
+
+  +contentHeader("Formulaire")
+
+  .wrapper
+
+    .grid
+
+      .grid-1-4
+        include ../partials/menuForm
+
+      .grid-3-4
+
+        .pod
+          h2.pod-title Message
+          .msg
+            .msg-title Titre du message
+            p Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            ul
+              li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              li Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          .msg.msg--error
+            p Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          .msg.msg--warning
+            p Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          .msg.msg--success
+            p Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.

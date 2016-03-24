@@ -1,0 +1,49 @@
+/**
+ * Component : Msg
+ * --------------------------------------- */
+
+.msg {
+  padding: em(15, 14) em(20, 14);
+  border-radius: $rad;
+  font-size: em(14);
+  margin: $spacer-s 0;
+  color: $clr-0-dark;
+  background-color: $clr-0-lighten;
+  ul, p {
+    margin: em(5, 14) 0;
+    line-height: 1.25;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:only-child {
+      margin: 0;
+    }
+  }
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.msg-title {
+  font-size: em(18);
+  font-weight: 700;
+}
+
+/* Modifier : state
+-------------------------- */
+
+.msg--error  {
+  background-color: tint($clr-error, 90%);
+  color: shade($clr-error, 50%);
+}
+
+.msg--warning {
+  background-color: tint($clr-warning, 90%);
+  color: shade($clr-warning, 50%);
+}
+
+.msg--success {
+  background-color: tint($clr-success, 90%);
+  color: shade($clr-success, 50%);
+}
