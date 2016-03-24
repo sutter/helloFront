@@ -13,7 +13,7 @@
   margin-top: rem(26);
   margin-bottom: rem(25);
   padding-bottom: rem(6);
-  @extend %title;
+  @include title;
   font-size: $font-size-XL;
   border-bottom: 4px solid;
 }

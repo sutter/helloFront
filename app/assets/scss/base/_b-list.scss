@@ -2,7 +2,7 @@
  * Base : List
  * ======================================= */
 
-%space-list {
+ul, ol {
   margin-bottom: $base-line-height / 2;
   padding-left: $base-line-height;
   &:first-child {
@@ -11,12 +11,10 @@
 }
 
 ul {
-  @extend %space-list;
   list-style: disc;
 }
 
 ol {
-  @extend %space-list;
   list-style: decimal;
 }
 

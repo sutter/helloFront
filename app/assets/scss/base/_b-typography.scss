@@ -3,32 +3,32 @@
  * ======================================= */
 
 h1 {
-  @extend %title;
+  @include title;
   font-size: $font-size-XXL;
 }
 
 h2 {
-  @extend %title;
+  @include title;
   font-size: $font-size-XL;;
 }
 
 h3 {
-  @extend %title;
+  @include title;
   font-size: $font-size-L;
 }
 
 h4 {
-  @extend %title;
+  @include title;
   font-size: $font-size-M;
 }
 
 h5 {
-  @extend %title;
+  @include title;
   font-size: $font-size-XS;
 }
 
 h6 {
-  @extend %title;
+  @include title;
   font-size: $font-size-XS;
 }
 
