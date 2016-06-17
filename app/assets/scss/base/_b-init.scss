@@ -16,11 +16,11 @@ html {
 body {
   position: relative;
   height: 100%;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $font-base;
+  font-size: $font-size-base;
   font-weight: $font-weight-base;
   line-height: $line-height-base;
-  color: $base-font-color;
+  color: $font-color-base;
   background: $clr-light;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

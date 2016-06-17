@@ -6,8 +6,6 @@ input,
 label,
 select {
   display: block;
-  font-family: $form-font-family;
-  font-size: $form-font-size;
 }
 
 label {
@@ -46,7 +44,7 @@ select {
 fieldset {
   margin: 0 0 $spacer-s 0;
   padding: $spacer;
-  border: 1px solid $base-border-color;
+  border: 1px solid $clr-border;
   background: $clr-0-lighten;
   border-radius: $form-border-radius;
 }

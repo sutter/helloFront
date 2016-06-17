@@ -6,7 +6,7 @@ table {
   margin: $spacer-s 0;
   table-layout: fixed;
   width: 100%;
-  border: 1px solid $base-border-color;
+  border: 1px solid $clr-border;
 }
 
 tr,
@@ -17,11 +17,11 @@ th {
 
 th {
   padding: $spacer-s;
-  border-bottom: 2px solid $base-border-color;
+  border-bottom: 2px solid $clr-border;
   font-weight: bold;
   text-align: left;
   + th {
-    border-left: 1px solid tint($base-border-color, 50%);
+    border-left: 1px solid tint($clr-border, 50%);
   }
 }
 
@@ -33,9 +33,9 @@ tbody {
   }
   td {
     padding: $spacer-s/2 $spacer-s;
-    border-bottom: 1px solid $base-border-color;
+    border-bottom: 1px solid $clr-border;
     + td {
-      border-left: 1px solid tint($base-border-color, 50%);
+      border-left: 1px solid tint($clr-border, 50%);
     }
   }
 }

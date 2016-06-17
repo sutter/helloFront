@@ -1,9 +1,9 @@
 @mixin title {
   margin: 0 0 $spacer-s 0;
-  font-family: $header-font-family;
-  line-height: $header-line-height;
+  font-family: $font-title;
+  line-height: $line-height-small;
   font-weight: bold;
-  color: $header-font-color;
+  color: $clr-0-darken;
   text-rendering: optimizeLegibility;
   &:first-child {
     margin-top: 0

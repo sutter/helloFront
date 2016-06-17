@@ -11,10 +11,10 @@
 .buttonGrouped .button {
   border-radius: 0;
   &:first-child {
-    border-radius: $rad 0 0 $rad;
+    border-radius: $radS 0 0 $radS;
   }
   &:last-child {
-    border-radius: 0 $rad $rad 0;
+    border-radius: 0 $radS $radS 0;
   }
 }
 

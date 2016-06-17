@@ -8,12 +8,12 @@ figure {
 
 figcaption {
   font-style: italic;
-  font-size: em(14);
+  font-size: $font-size-XS;
 }
 
 hr {
   margin: $spacer-m 0;
-  border-bottom: 1px solid $base-border-color;
+  border-bottom: 1px solid $clr-border;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -22,8 +22,8 @@ hr {
 blockquote {
   margin: $spacer-m 0;
   padding-left: $spacer-s ;
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
+  border-left: 2px solid $clr-border;
+  color: lighten($font-color-base, 15);
   p {
     margin: 0;
   }
@@ -33,7 +33,7 @@ blockquote {
 }
 
 cite {
-  color: lighten($base-font-color, 25);
+  color: lighten($font-color-base, 25);
   font-style: italic;
 }
 
@@ -43,7 +43,7 @@ pre {
 
 pre code {
   display: block;
-  font-size: em(16);
+  font-size: $font-size-S;
   color: $clr-0;
   padding: em(15) em(20);
   border-color: $clr-0-light;
@@ -58,7 +58,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: $code-font;
+  font-family: $font-code;
   white-space: pre-line;
   white-space: pre-wrap;
 }
@@ -67,7 +67,7 @@ code,
 kbd {
   font-size: .85em;
   background-color: tint($clr-0-light, 20%);
-  border-radius: $rad;
+  border-radius: $radS;
 }
 
 code {

@@ -40,10 +40,8 @@
     width: 100%;
     border: 1px solid $form-border-color;
     background-color: $clr-light;
-    font-family: $form-font-family;
-    font-size: $form-font-size;
-    border-radius: $form-border-radius;
-    box-shadow: $form-box-shadow;
+    border-radius: $radS;
+    box-shadow: none;
     transition: $trans;
     &:hover {
       border-color: $form-border-color-hover;
