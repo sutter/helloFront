@@ -44,8 +44,8 @@ select {
 }
 
 fieldset {
-  margin: 0 0 ($base-line-height / 2) 0;
-  padding: $base-line-height;
+  margin: 0 0 $spacer-s 0;
+  padding: $spacer;
   border: 1px solid $base-border-color;
   background: $clr-0-lighten;
   border-radius: $form-border-radius;

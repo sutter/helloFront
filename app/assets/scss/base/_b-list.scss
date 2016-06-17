@@ -3,8 +3,8 @@
  * ======================================= */
 
 ul, ol {
-  margin-bottom: $base-line-height / 2;
-  padding-left: $base-line-height;
+  margin: $spacer-s 0;
+  padding-left: $spacer;
   &:first-child {
     margin-top: 0
   }
@@ -12,17 +12,23 @@ ul, ol {
 
 ul {
   list-style: disc;
+  ul {
+    margin-bottom: 0;
+  }
 }
 
 ol {
   list-style: decimal;
+  ol {
+    margin-bottom: 0;
+  }
 }
 
 dl {
-  margin-bottom: $base-line-height / 2;
+  margin-bottom: $spacer-s;
   dt {
     font-weight: bold;
-    margin-top: $base-line-height / 2;
+    margin-top: $spacer-s;
   }
   dd {
     margin: 0;
