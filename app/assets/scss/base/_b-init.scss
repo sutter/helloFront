@@ -18,8 +18,8 @@ body {
   height: 100%;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  font-weight: 400;
-  line-height: $base-line-height;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
   color: $base-font-color;
   background: $clr-light;
   text-rendering: optimizeLegibility;

@@ -45,12 +45,15 @@ $pinterest   : #bd081c;
 $base-font-family   : Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $code-font          : 'Source Code Pro', Consolas, monospace;
 $base-font-size     : 1em;
-$base-line-height   : 1.625em;
 $base-font-color    : $clr-0;
 
 $header-font-family : $base-font-family;
 $header-line-height : 1.25em;
 $header-font-color  : $clr-0-darken;
+
+$font-weight-bold : bold;
+$font-weight-base : 400;
+$font-weight-thin : 100;
 
 $font-size-XXL : em(40, $em-base);
 $font-size-XL  : em(28, $em-base);
@@ -58,6 +61,10 @@ $font-size-L   : em(20, $em-base);
 $font-size-M   : em(18, $em-base);
 $font-size-S   : em(16, $em-base);
 $font-size-XS  : em(14, $em-base);
+$font-size-XXS  : em(12, $em-base);
+
+$line-height-base  : 1.625em;
+$line-height-small : 1.25em;
 
 // Link
 $base-link-color  : $clr-1;
@@ -89,7 +96,7 @@ $form-font-family        : $base-font-family;
 // Spacing
 $spacer   : rem(26);
 $spacer-n : 0;
-$spacer-s : $gutter-width;
+$spacer-s : $spacer/2;
 $spacer-m : $spacer * 2;
 $spacer-l : $spacer * 3;
 
