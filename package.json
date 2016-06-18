@@ -42,7 +42,7 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "imagemin-pngquant": "^5.0.0",
-    "jquery": "^2.2.2",
+    "jquery": "^3.0.0",
     "lodash.assign": "^4.0.6",
     "minimist": "^1.2.0",
     "normalize.css": "^4.0.0",
