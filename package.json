@@ -26,7 +26,7 @@
     "gulp-csso": "^2.0.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-iconfont": "^8.0.0",
-    "gulp-iconfont-css": "^2.0.0",
+    "gulp-iconfont-css": "^2.1.0",
     "gulp-imagemin": "^3.0.1",
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
