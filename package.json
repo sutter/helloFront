@@ -48,7 +48,7 @@
     "normalize.css": "^4.1.1",
     "plumber": "^0.4.8",
     "require-dir": "^0.3.0",
-    "run-sequence": "^1.1.5",
+    "run-sequence": "^1.2.1",
     "size": "^1.0.0",
     "uglifyify": "^3.0.1",
     "utils-merge": "^1.0.0",
