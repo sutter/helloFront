@@ -64,7 +64,7 @@ $font-base          : Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $font-code          : 'Source Code Pro', Consolas, monospace;
 $font-title         : $font-base;
 
-$font-size-base     : 1rem;
+$font-size-base     : 1.6rem;
 // Don't touch this, it's for em convertion
 $em-base            : strip-units($font-size-base)*10;
 
