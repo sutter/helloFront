@@ -1,5 +1,10 @@
+// Strip units
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
 // Base font Size
-$em-base: 16px !default;
+$em-base: 16 !default;
 
 // PX to EM
 @function em($pxval, $base: $em-base) {
@@ -10,23 +15,6 @@ $em-base: 16px !default;
     $base: strip-units($base);
   }
   @return ($pxval / $base) * 1em;
-}
-
-// PX to REM
-@function rem($pxval) {
-  @if not unitless($pxval) {
-    $pxval: strip-units($pxval);
-  }
-  $base: $em-base;
-  @if not unitless($base) {
-    $base: strip-units($base);
-  }
-  @return ($pxval / $base) * 1rem;
-}
-
-// Strip units
-@function strip-units($value) {
-  @return ($value / ($value * 0 + 1));
 }
 
 // Mixes a color with black

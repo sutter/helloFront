@@ -9,17 +9,17 @@
 
 [class*=form-input--icon][class*=form-input--icon] {
   input {
-    padding-right: rem(40);
+    padding-right: 4rem;
   }
   [class*=icon-] {
     pointer-events: none;
     cursor: default;
     position: absolute;
     top: 50%;
-    right: rem(12);
+    right: 1.2rem;
     line-height: 1;
     text-align: center;
-    font-size: rem(20);
+    font-size: 2rem;
     color: $clr-0;
     transform: translateY(-50%);
   }
@@ -27,11 +27,11 @@
 
 .form-input--iconInverse.form-input--iconInverse {
   input {
-    padding-right: rem(10);
-    padding-left: rem(40);
+    padding-right: 1rem;
+    padding-left: 4rem;
   }
   [class*=icon-] {
     right: auto;
-    left: rem(12);
+    left: 1.2rem;
   }
 }

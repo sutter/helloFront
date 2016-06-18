@@ -2,9 +2,13 @@
  * Base : Init
  * ======================================= */
 
+// 1 - Set the font-size to 10px, which is adapted to rem unit
+// 2  IE9-IE11 math fixing. See http://bit.ly/1g4X0bX
 html {
-  height: 100%;
   box-sizing: border-box;
+  height: 100%;
+  font-size: 62.5%; // 1
+  font-size: calc(1em * 0.625); // 2
 }
 
 *,

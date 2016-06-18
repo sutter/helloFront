@@ -10,9 +10,9 @@
 }
 
 .pod-title {
-  margin-top: rem(26);
-  margin-bottom: rem(25);
-  padding-bottom: rem(6);
+  margin-top: $spacer;
+  margin-bottom: $spacer;
+  padding-bottom: 0.6rem;
   @include title;
   font-size: $font-size-XL;
   border-bottom: 4px solid;

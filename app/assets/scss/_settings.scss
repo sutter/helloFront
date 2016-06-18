@@ -64,38 +64,41 @@ $font-base          : Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $font-code          : 'Source Code Pro', Consolas, monospace;
 $font-title         : $font-base;
 
-$font-size-base     : 1em;
+$font-size-base     : 1.6rem;
+// Don't touch this, it's for em convertion
+$em-base            : strip-units($font-size-base)*10;
+
 $font-color-base    : $clr-0;
 
 $font-weight-bold : bold;
 $font-weight-base : 400;
 $font-weight-thin : 100;
 
-$font-size-XXL : em(40, $em-base);
-$font-size-XL  : em(28, $em-base);
-$font-size-L   : em(20, $em-base);
-$font-size-M   : em(18, $em-base);
-$font-size-S   : em(16, $em-base);
-$font-size-XS  : em(14, $em-base);
-$font-size-XXS  : em(12, $em-base);
+$font-size-XXL : 4rem;
+$font-size-XL  : 2.8rem;
+$font-size-L   : 2rem;
+$font-size-M   : 1.8rem;
+$font-size-S   : 1.6rem;
+$font-size-XS  : 1.4rem;
+$font-size-XXS : 1.2rem;
 
-$line-height-base  : 1.625em;
-$line-height-small : 1.25em;
+$line-height-base  : 1.625;
+$line-height-small : 1.25;
 
 //
 // 3 - Grid
 // ---------------------------------------
 
-$wrap-max-width : em(1000, $em-base);
-$wrap-min-width : em(320, $em-base);
-$gutter-width   : rem(20);
+$wrap-max-width : 100rem;
+$wrap-min-width : 320rem;
+$gutter-width   : 2rem;
 
 //
 // 4 - Radius
 // ---------------------------------------
 
-$radS : rem(3);
-$radL : rem(10);
+$radS : 0.3rem;
+$radL : 1rem;
 
 //
 // 5 - Forms
@@ -113,7 +116,7 @@ $form-font-size          : $font-size-base;
 // 6 - Spacing
 // ---------------------------------------
 
-$spacer   : rem(26);
+$spacer   : 2.6rem;
 $spacer-n : 0;
 $spacer-s : $spacer/2;
 $spacer-m : $spacer * 2;
