@@ -1,24 +1,43 @@
 var gulp         = require('gulp');
+var webpack      = require('webpack-stream');
 var config       = require('../config').scripts;
-var babelify     = require('babelify');
-var browserify   = require('browserify');
-var buffer       = require('vinyl-buffer');
-var source       = require('vinyl-source-stream');
-var sourcemaps   = require('gulp-sourcemaps');
-var uglify       = require('gulp-uglify');
+var named        = require('vinyl-named');
+var browserSync  = require('browser-sync');
+var gutil        = require('gulp-util');
+var plumber      = require('gulp-plumber');
 
-gulp.task('scripts', function () {
-  var bundler = browserify({
-    entries: config.main_src,
-    debug: true
-  });
-  bundler.transform(babelify);
-  bundler.bundle()
-    .on('error', function (err) { console.error(err); })
-    .pipe(source(config.main_name))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(uglify())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(config.dest));
+var webpackConfig = require('../../webpack.config.js');
+
+function webpackChangeHandler (_, stats) {
+  gutil.log("[webpack]", stats.toString({
+    hash: false,
+    timings: true,
+    chunks: false,
+    chunkModules: false,
+    modules: false,
+    children: false,
+    version: false,
+    cached: false,
+    cachedAssets: false,
+    reasons: false,
+    source: false,
+    errorDetails: false
+  }));
+  browserSync.reload();
+}
+
+gulp.task('scripts', function() {
+  if (process.WATCH_SCRIPTS) webpackConfig.watch = true;
+
+  var webpackStream = gulp.src(config.main_src)
+      .pipe(plumber({
+        errorHandler: gutil.noop, // prevent double errors in console
+      }))
+      .pipe(named())
+      .pipe(webpack(webpackConfig, null, webpackChangeHandler))
+      .pipe(gulp.dest(config.dest));
+
+  if (!process.WATCH_SCRIPTS) {
+    return webpackStream; // return the stream if scripts watch is disabled to properly finish the script tasks
+  }
 });
