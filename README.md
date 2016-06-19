@@ -1,6 +1,6 @@
 # Hello Front
 
-Simple starter GULP / SCSS / JADE  / BABEL / BROWSERIFY for clean and fast Front-end project.
+Simple starter SCSS / PUG / ES6  for clean and fast Front-end project.
 
 Work on **app/** folder and gulp build in **dist/**.
 
@@ -10,7 +10,7 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version 5.0 of NodeJS.
+Use the version 4.4.5 of NodeJS.
 
 ```
 nvm use
@@ -56,13 +56,11 @@ gulp clean
 ### Optimize for production
 
 * Minify HTML
-* Uglify Script
+* Optimise images
 * Optimise and minify styles with CSSO
 
-Run project before.
-
 ```
-gulp production
+gulp --production
 ```
 
 ### Deploy on GithubPages
@@ -111,7 +109,7 @@ This starter use **normalize.css** with **NPM**.
 
 ```
 
-### Works with jade templating
+### Works with Pug templating
 
 The Jade files are located in `./app/template`
 
@@ -125,7 +123,7 @@ The Jade files are located in `./app/template`
 
 The Javascript files are located in `./app/assets/js`.
 
-**Use the ES6 syntaxe** Babel convert it in ES5 for you. You can use Browserify, for split your codebase into partials and require them.
+**Use the ES6 syntaxe** Babel convert it in ES5 for you via webpack.
 
 ### Working with Images
 
