@@ -1,1 +1,24 @@
-{ "presets": ["es2015"] }
+{
+  "ignore": "./node_modules",
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0"
+  ],
+  "plugins": [
+    [
+      "transform-decorators-legacy"
+    ]
+  ],
+  "sourceMaps": false,
+  "env": {
+    "production": {
+      "presets": [
+        "es2015",
+        "react",
+        "stage-0",
+        "react-optimize"
+      ]
+    }
+  }
+}

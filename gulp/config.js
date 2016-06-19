@@ -35,8 +35,8 @@ module.exports = {
 
   templates: {
     src:        app + '/template',
-    files_src:  app + '/template/**/*.jade',
-    page_src:   app + '/template/pages/**/*.jade',
+    files_src:  app + '/template/**/*.pug',
+    page_src:   app + '/template/pages/**/*.pug',
     dest:       build,
     files_dest: build + '/**/*.html'
   },

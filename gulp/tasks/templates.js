@@ -1,6 +1,7 @@
 var gulp         = require('gulp');
 var config       = require('../config').templates;
-var jade         = require('gulp-jade');
+var pug          = require('gulp-pug');
+var md           = require('jstransformer')(require('jstransformer-markdown-it'));
 var plumber      = require('gulp-plumber');
 var notify       = require('gulp-notify');
 var gutil        = require("gulp-util");
@@ -12,12 +13,9 @@ gulp.task('templates', function() {
   var YOUR_LOCALS = {};
   return gulp.src(config.page_src)
     .pipe(plumber({
-      errorHandler: notify.onError('JADE Error: <%= error.message %>')
+      errorHandler: notify.onError('PUG Error: <%= error.message %>')
     }))
-    .pipe( jade({
-      pretty: true,
-      locals: YOUR_LOCALS
-    }))
+    .pipe( pug({pretty: true}))
     .pipe(options.production ? htmlmin({collapseWhitespace: true}) : gutil.noop())
     .pipe(size({ title: 'template' }))
     .pipe(gulp.dest(config.dest));
