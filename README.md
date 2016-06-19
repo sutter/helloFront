@@ -119,7 +119,7 @@ The Jade files are located in `./app/template`
 * **partial** : includes of html pattern
 * **config.jade** : global variables
 
-### Works with JavaSript
+### Works with JavaScript
 
 The Javascript files are located in `./app/assets/js`.
 
