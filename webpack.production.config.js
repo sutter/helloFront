@@ -1,8 +1,7 @@
 var path                  = require('path');
 var webpack               = require('webpack');
-var WebpackNotifierPlugin = require('webpack-notifier');
 
-console.log('Webpack : basic');
+console.log('Webpack : production');
 
 module.exports = {
     watch: false, // dynamically changed by gulp
@@ -47,12 +46,34 @@ module.exports = {
     },
 
     plugins: [
-        new WebpackNotifierPlugin()
-        /* Uncomment to have access to the debugger in a JetBrains IDE */
-        /* new webpack.SourceMapDevToolPlugin(
-         '[file].map', null,
-         '[absolute-resource-path]', '[absolute-resource-path]'
-         )*/
+        // Force NODE_ENV='production'
+        new webpack.DefinePlugin({
+            'process.env': {
+                'NODE_ENV': JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.DedupePlugin(),
+        new webpack.optimize.AggressiveMergingPlugin(),
+        new webpack.optimize.UglifyJsPlugin({
+            sourceMap: false,
+            compress: {
+                sequences: true,
+                dead_code: true,
+                conditionals: true,
+                booleans: true,
+                unused: true,
+                if_return: true,
+                join_vars: true,
+                drop_console: true,
+                warnings: false // Disable warnings. Set to true when checking for issues
+            },
+            mangle: {
+                except: ['$super', '$', 'exports', 'require']
+            },
+            output: {
+                comments: false
+            }
+        })
     ]
 
 };
