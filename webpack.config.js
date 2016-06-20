@@ -2,8 +2,6 @@ var path                  = require('path');
 var webpack               = require('webpack');
 var WebpackNotifierPlugin = require('webpack-notifier');
 
-console.log('Webpack : basic');
-
 module.exports = {
     watch: false, // dynamically changed by gulp
 

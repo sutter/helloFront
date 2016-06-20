@@ -4,5 +4,6 @@ var browserSync  = require('browser-sync');
 var runSequence  = require('run-sequence');
 
 gulp.task('default', function(callback) {
+  process.WATCH_SCRIPTS = true;
   runSequence('build', 'browserSync', 'watch', callback);
 });

@@ -7,16 +7,7 @@ var gutil        = require('gulp-util');
 var plumber      = require('gulp-plumber');
 var options      = require('minimist')(process.argv.slice(2));
 
-var webpackConfig = function() {
-  if ( options.production ) {
-    console.log('true');
-    require('../../webpack.production.config.js');
-  } else {
-    require('../../webpack.config.js');
-  }
-};
-
-webpackConfig();
+var webpackConfig = options.production ? require('../../webpack.production.config.js') : require('../../webpack.config.js');
 
 function webpackChangeHandler (_, stats) {
   gutil.log("[webpack]", stats.toString({

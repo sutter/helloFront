@@ -1,13 +1,8 @@
 var path                  = require('path');
 var webpack               = require('webpack');
 
-console.log('Webpack : production');
-
 module.exports = {
     watch: false, // dynamically changed by gulp
-
-    /* Comment this to have access to the debugger in a JetBrains IDE */
-    devtool: 'eval-cheap-module-source-map',
 
     output: {
         filename: '[name].js',
@@ -18,6 +13,7 @@ module.exports = {
     externals: {
         'jquery': 'jQuery'
     },
+    
 
     resolve: {
         extensions: [
