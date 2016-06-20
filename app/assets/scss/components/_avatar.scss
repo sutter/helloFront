@@ -1,0 +1,18 @@
+/** ======================================
+ * Component : Avatar
+ * ======================================= */
+
+ .avatar {
+   display: inline-flex;
+   align-items: center;
+ }
+
+.avatar-thumb img {
+  display: block;
+  border-radius: 50%;
+}
+
+.avatar-name {
+  margin-left: 1rem;
+  line-height: 1;
+}
