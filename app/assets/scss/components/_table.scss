@@ -1,0 +1,33 @@
+/** ======================================
+ * Component : Table
+ * ======================================= */
+
+.table {
+  margin: $spacer-s 0;
+  width: 100%;
+  border: 1px solid $clr-border;
+
+  th {
+    padding: $spacer-s;
+    border-bottom: 2px solid $clr-border;
+    + th {
+      border-left: 1px solid tint($clr-border, 50%);
+    }
+  }
+
+  tbody {
+    tr {
+      &:nth-child(even) {
+        background: $clr-0-lighten;
+      }
+    }
+    td {
+      padding: $spacer-s/2 $spacer-s;
+      border-bottom: 1px solid $clr-border;
+      + td {
+        border-left: 1px solid tint($clr-border, 50%);
+      }
+    }
+  }
+
+}
