@@ -47,6 +47,12 @@ npm install
 gulp
 ```
 
+### Build project
+
+```
+gulp build
+```
+
 ### Clean project
 
 ```
@@ -57,10 +63,11 @@ gulp clean
 
 * Minify HTML
 * Optimise images
+* Optimise and minify scripts with webpack
 * Optimise and minify styles with CSSO
 
 ```
-gulp --production
+gulp build --production
 ```
 
 ### Deploy on GithubPages

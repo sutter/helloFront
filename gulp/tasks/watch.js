@@ -21,14 +21,6 @@ gulp.task('watch', function () {
     reload();
   });
 
-  watch(config.scripts.files_src, function() {
-    gulp.start('scripts');
-  });
-
-  watch(config.scripts.main_dest, function() {
-    reload();
-  });
-
   watch(config.font_icon.files_src, function() {
     gulp.start('font-icon');
     gulp.start('styles');

@@ -5,8 +5,9 @@ var named        = require('vinyl-named');
 var browserSync  = require('browser-sync');
 var gutil        = require('gulp-util');
 var plumber      = require('gulp-plumber');
+var options      = require('minimist')(process.argv.slice(2));
 
-var webpackConfig = require('../../webpack.config.js');
+var webpackConfig = options.production ? require('../../webpack.production.config.js') : require('../../webpack.config.js');
 
 function webpackChangeHandler (_, stats) {
   gutil.log("[webpack]", stats.toString({
