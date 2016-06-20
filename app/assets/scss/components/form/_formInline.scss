@@ -50,8 +50,8 @@
     display: block;
     width: 100%;
     text-align: center;
-    line-height:  em(40, 14);
-    height: em(40, 14);
+    line-height:  $form-input-height;
+    height: $form-input-height;
     padding-top: 0;
     padding-bottom: 0;
     border-radius: 0 $form-border-radius $form-border-radius 0;
