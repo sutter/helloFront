@@ -2,11 +2,17 @@
  * Base : embed
  * ======================================= */
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
+img {
   vertical-align: bottom;
+  &:not([src$=".svg"]) {
+    height: auto;
+  }
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
 }
 
 iframe {
