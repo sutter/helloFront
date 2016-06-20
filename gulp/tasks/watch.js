@@ -2,34 +2,28 @@ var gulp         = require('gulp');
 var config       = require('../config');
 var browserSync  = require('browser-sync');
 var watch        = require('gulp-watch');
-var reload       = browserSync.reload;
+var runSequence  = require('run-sequence');
 
 gulp.task('watch', function () {
 
   watch(config.styles.files_src, function() {
     gulp.start('styles');
-    reload();
   });
 
   watch(config.images.files_src, function() {
-    gulp.start('images');
-    reload();
+    runSequence('images', browserSync.reload);
   });
 
   watch(config.templates.files_src, function() {
-    gulp.start('templates');
-    reload();
+    runSequence('templates', browserSync.reload);
   });
 
   watch(config.font_icon.files_src, function() {
-    gulp.start('font-icon');
-    gulp.start('styles');
-    reload();
+    runSequence('font-icon', 'styles', browserSync.reload);
   });
 
   watch(config.fonts.src, function() {
-    gulp.start('fonts');
-    reload();
+    runSequence('fonts', browserSync.reload);
   });
 
 });

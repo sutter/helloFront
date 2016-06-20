@@ -12,7 +12,7 @@ module.exports = {
     open:   false,
     server: build,
     files: [
-      build + '/assets/css/styles.css'
+      build + '/**/*.css'
     ],
   },
 

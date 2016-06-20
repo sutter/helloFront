@@ -10,7 +10,6 @@ var size         = require('gulp-size');
 var options      = require('minimist')(process.argv.slice(2));
 
 gulp.task('templates', function() {
-  var YOUR_LOCALS = {};
   return gulp.src(config.page_src)
     .pipe(plumber({
       errorHandler: notify.onError('PUG Error: <%= error.message %>')
