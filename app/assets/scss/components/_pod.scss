@@ -10,10 +10,7 @@
 }
 
 .pod-title {
-  margin-top: $spacer;
-  margin-bottom: $spacer;
-  padding-bottom: 0.6rem;
-  @include title;
+  margin: $spacer 0;
   font-size: $font-size-XL;
   border-bottom: 4px solid;
 }
