@@ -6,7 +6,6 @@
   padding: em(15, 14) em(20, 14);
   border-radius: $radS;
   font-size: em(14);
-  margin: $spacer-s 0;
   color: $clr-0-dark;
   background-color: $clr-0-lighten;
   ul, p {
@@ -22,6 +21,9 @@
   a {
     color: inherit;
     text-decoration: underline;
+  }
+  &:not(:first-child) {
+    margin-top: $spacer;
   }
 }
 
