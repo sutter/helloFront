@@ -1,7 +1,6 @@
 var gulp         = require('gulp');
 var config       = require('../config').templates;
 var pug          = require('gulp-pug');
-var md           = require('jstransformer')(require('jstransformer-markdown-it'));
 var plumber      = require('gulp-plumber');
 var notify       = require('gulp-notify');
 var gutil        = require("gulp-util");
