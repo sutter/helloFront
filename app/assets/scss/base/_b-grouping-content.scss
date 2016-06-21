@@ -65,17 +65,20 @@ samp {
 
 code,
 kbd {
-  font-size: .85em;
-  background-color: tint($clr-0-light, 20%);
+  padding: .3rem .5rem;
+  vertical-align: middle;
+  font-weight: $font-weight-base;
+  font-size: $font-size-XXS;
   border-radius: $radS;
 }
 
 code {
-  padding: .25em .75em;
-  border: 1px solid $clr-0-light;
+  background-color: tint($clr-2-light, 70%);
+  color: $clr-2;
+  border: 1px solid tint($clr-2-light, 50%);
 }
 
 kbd {
-  padding: .25em .5em;
-  background-color: tint($clr-0-light, 20%);
+  background-color: tint($clr-0-light, 40%);
+  color: tint($clr-0, 30%);
 }
