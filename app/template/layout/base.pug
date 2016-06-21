@@ -1,14 +1,13 @@
-append config
-  include ../config
-
+include ../config
+block config
 include ../mixins/mixins
 
 doctype
-html(lang="#{lang}")
+html(lang= lang)
   head
     include ../partials/head
 
-  body(role='document', class="#{template}")
+  body(role='document', class= template)
 
     //-
     //- Uncomment lines 17-18 only if you use sprite SVG
