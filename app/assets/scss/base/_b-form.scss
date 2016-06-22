@@ -8,6 +8,10 @@ select {
   display: block;
 }
 
+input, select {
+  appearance: none;
+}
+
 label {
   font-weight: bold;
   cursor: pointer;
