@@ -10,11 +10,25 @@
 
 .buttonGrouped .button {
   border-radius: 0;
+  background-color: transparent;
+  color: $font-color-base;
+  box-shadow: inset 0 0 0 1px $clr-border;
   &:first-child {
     border-radius: $radS 0 0 $radS;
   }
   &:last-child {
     border-radius: 0 $radS $radS 0;
+  }
+  &.is-active {
+    background: $clr-1-darken;
+    color: $clr-light;
+    box-shadow: none;
+  }
+  &:not(.is-active) {
+    &:hover, &:focus {
+      color: $font-color-base;
+      background: $clr-border;
+    }
   }
 }
 
