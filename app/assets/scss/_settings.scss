@@ -4,7 +4,7 @@
 
 // 1 - Color
 // 2 - Font
-// 3 - Grid
+// 3 - Grid and wrapper
 // 4 - Radius
 // 5 - Forms
 // 6 - Spacing
@@ -86,11 +86,12 @@ $line-height-base  : 1.625;
 $line-height-small : 1.25;
 
 //
-// 3 - Grid
+// 3 - Grid and wrapper
 // ---------------------------------------
 
 $wrap-max-width : 100rem;
-$wrap-min-width : 320rem;
+$wrap-min-width : 32rem;
+$wrapSmall-max-width : 60rem;
 $gutter-width   : 2rem;
 
 //

@@ -2,30 +2,15 @@
  * Component : Grid
  * ======================================= */
 
-/**
- * Wrapper
- * --------------------------------------- */
-
-.wrapper {
-  padding-left:  $gutter-width;
-  padding-right: $gutter-width;
-  @media (min-width: $mq-s-up ) {
-    margin-right: auto;
-    margin-left:  auto;
-    max-width: $wrap-max-width;
-  }
-}
-
-/**
- * Grid
- * --------------------------------------- */
-
 .grid {
   display: flex;
   flex-wrap: wrap;
   > * {
     width: 100%;
   }
+}
+
+.grid:not(.grid--noGutter) {
   @media (min-width: $mq-s-up) {
     margin-left: -$gutter-width;
     > * { margin-left: $gutter-width }
@@ -33,12 +18,27 @@
 }
 
 /**
- * Child grid options
+ * Grid child options
  * --------------------------------------- */
 
 .grid-itemFirst { order: -1 }
 .grid-push { margin-left: auto }
 .grid-itemBig { flex-grow: 1 }
+
+/*  Grid child custom size  */
+@media (min-width: $mq-s-up) {
+  .grid-w20 { width: calc(20% - #{$gutter-width}) }
+  .grid-w25 { width: calc(25% - #{$gutter-width}) }
+  .grid-w33 { width: calc(33.333% - #{$gutter-width}) }
+  .grid-w40 { width: calc(40% - #{$gutter-width}) }
+  .grid-w50 { width: calc(50% - #{$gutter-width}) }
+  .grid-w60 { width: calc(60% - #{$gutter-width}) }
+  .grid-w66 { width: calc(66.666% - #{$gutter-width}) }
+  .grid-w75 { width: calc(75% - #{$gutter-width}) }
+  .grid-w80 { width: calc(80% - #{$gutter-width}) }
+  .grid-w100 { width: calc(100% - #{$gutter-width}) }
+}
+
 
 /**
  * Modifier : column
@@ -82,46 +82,59 @@
 }
 
 /**
- * Modifier : option grid
+ * Modifier : noGutter
+ * --------------------------------------- */
+
+.grid--noGutter {
+  @media (min-width: $mq-s-up) {
+    &.grid--4 {
+      > * { width: 25% }
+      .grid-itemDouble { width: 50% }
+    }
+    &.grid--3 > * { width: 33.333% }
+    &.grid--2 > * { width: 50% }
+    &.grid--3-1 > {
+      :nth-child(2n+1) { width: 75% }
+      :nth-child(2n+2) { width: 25% }
+    }
+    &.grid--1-3 > {
+      :nth-child(2n+1) { width: 25% }
+      :nth-child(2n+2) { width: 75% }
+    }
+    &.grid--2-1 > {
+      :nth-child(2n+1) { width: 66.666% }
+      :nth-child(2n+2) { width: 33.333% }
+    }
+    &.grid--1-2 > {
+      :nth-child(2n+1) { width: 33.333% }
+      :nth-child(2n+2) { width: 66.666% }
+    }
+  }
+
+  @media (max-width: $mq-m) and (min-width: $mq-s-up) {
+    &.grid--m3 > *:nth-child(1n+1) { width: 33.333% }
+    &.grid--m2 > *:nth-child(1n+1) { width: 50% }
+    &.grid--m1 > *:nth-child(1n+1) { width: 100% }
+  }
+
+  /*  Grid child custom size  */
+  @media (min-width: $mq-s-up) {
+    .grid-w20 { width: 20% }
+    .grid-w25 { width: 25% }
+    .grid-w33 { width: 33.333% }
+    .grid-w40 { width: 40% }
+    .grid-w50 { width: 50% }
+    .grid-w60 { width: 60% }
+    .grid-w66 { width: 66.666% }
+    .grid-w75 { width: 75% }
+    .grid-w80 { width: 80% }
+    .grid-w100 { width: 100% }
+  }
+}
+
+/**
+ * Modifier : grid option
  * --------------------------------------- */
 
 .grid--itemsBig > * { flex-grow: 1 }
-.grid--hcenter  { justify-content: center }
-
-
-/**
- * Grid child custom size
- * --------------------------------------- */
-
-@media (min-width: $mq-s-up) {
-  .grid-w20 {
-    width: calc(20% - #{$gutter-width})
-  }
-  .grid-w25 {
-    width: calc(25% - #{$gutter-width})
-  }
-  .grid-w33 {
-    width: calc(33.333% - #{$gutter-width})
-  }
-  .grid-w40 {
-    width: calc(40% - #{$gutter-width})
-  }
-  .grid-w50 {
-    width: calc(50% - #{$gutter-width})
-  }
-  .grid-w60 {
-    width: calc(60% - #{$gutter-width})
-  }
-  .grid-w66 {
-    width: calc(66.666% - #{$gutter-width})
-  }
-  .grid-w75 {
-    width: calc(75% - #{$gutter-width})
-  }
-  .grid-w80 {
-    width: calc(80% - #{$gutter-width})
-  }
-  .grid-w100 {
-    width: calc(100% - #{$gutter-width})
-  }
-}
+.grid--horizontalCenter  { justify-content: center }
