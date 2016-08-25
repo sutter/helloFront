@@ -32,11 +32,6 @@ block content
       pre
         code
          | &lt;div class="grid grid--4"&gt;…&lt;/div&gt;</code>
-      h3.u-mtm Gestion des gouttières de grille
-      p Il est possible de supprimer les gouttières de grille en ajoutant la classe modifier <code>grid-noGutter</code> au composant de grille de base.
-      .buttonGrouped.u-mbm
-        button.button.is-active#haveGutter Avec gouttières
-        button.button#noGutter Sans gouttières
       h3 4 colonnes <code>.grid.grid--4</code>
       .grid.grid--4
         div &nbsp;
@@ -164,8 +159,19 @@ block content
 
     .pod
       h3.pod-title Grille custom
-      p Les différentes tailles sont dans le fichier <code>assets/scss/utils/_u-width.scss</code>
+      h4 Grille responsive
       .grid
+        div.grid-w50 &nbsp;
+        div.grid-w50 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+      h4 Grille non-responsive
+      .grid.grid--fixed
         div.grid-w50 &nbsp;
         div.grid-w50 &nbsp;
         div.grid-w33 &nbsp;
