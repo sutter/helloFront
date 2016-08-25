@@ -8,8 +8,10 @@
 }
 
 .grid:not(.grid--fixed) {
-  > * {
-    width: 100%;
+  @media (max-width: $mq-s) {
+    > * {
+      width: 100%;
+    }
   }
 }
 
@@ -53,9 +55,11 @@
         width: calc(50% - #{$gutter-width})
       }
     }
+
     &.grid--3 > * {
       width: calc(33.333% - #{$gutter-width})
     }
+
     &.grid--2 > * {
       width: calc(50% - #{$gutter-width})
     }
@@ -99,15 +103,19 @@
   }
 
   @media (max-width: $mq-m) and (min-width: $mq-s-up) {
+
     &.grid--m3 > *:nth-child(1n+1) {
       width: calc(33.333% - #{$gutter-width})
     }
+
     &.grid--m2 > *:nth-child(1n+1) {
       width: calc(50% - #{$gutter-width})
     }
+
     &.grid--m1 > *:nth-child(1n+1) {
       width: calc(100% - #{$gutter-width})
     }
+    
   }
 
 }
