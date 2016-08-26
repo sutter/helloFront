@@ -8,11 +8,12 @@ append config
 block content
 
   style.
-    [class*=grid--] > * {
+    [class*=grid] > * {
       background: #ededed;
       padding: 1rem;
       margin-bottom: 2rem;
       text-align: center;
+      box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
     }
     .grid-push, .grid-itemDouble, .grid-itemBig {
       background: #E7E7FC;
@@ -22,8 +23,15 @@ block content
   .wrapper
     .pod
       h2.pod-title Grille Fluide
-      p La grille est construite avec <strong>flexbox</strong>, il faut donc veiller a bien ajouter les préfixes via autoprefixer. <br>Elle est <strong>mobile first</strong> et se déclanche au dessus du breackpoint <strong>$mq-s-up</strong> (réglage dans _settings.scss).
-      p.u-mbm Le composant se déclare avec la classe <code>.grid</code>.<br/>Il suffit d'ajouter un <em>modifier</em> sur le composant afin de regler le nombre de colonnes.
+      p La grille est construite en <strong>flexbox</strong>, il faut donc veiller a bien ajouter les préfixes via autoprefixer. <br>La grille est <strong>mobile first</strong> et se déclanche au dessus du breackpoint <strong>$mq-s-up</strong> (réglage dans <code>app/scss/_settings.scss</code>).
+      p Exemple de déclaration de grille :
+      pre
+        code
+          | &lt;div class="grid"&gt;…&lt;/div&gt;</code>
+      p Il suffit d'ajouter un <em>modifier</em> sur le composant afin de regler le nombre de colonnes :
+      pre
+        code
+         | &lt;div class="grid grid--4"&gt;…&lt;/div&gt;</code>
       h3 4 colonnes <code>.grid.grid--4</code>
       .grid.grid--4
         div &nbsp;
@@ -38,12 +46,6 @@ block content
       .grid.grid--3
         div &nbsp;
         div &nbsp;
-        div &nbsp;
-        div &nbsp;
-        div &nbsp;
-        div &nbsp;
-      h3 2 colonnes <code>.grid.grid--2</code>
-      .grid.grid--2
         div &nbsp;
         div &nbsp;
         div &nbsp;
@@ -138,7 +140,7 @@ block content
         div &nbsp;
         div.grid-itemBig &nbsp;
       h3 Modifiers du composant
-      p Répartition sur l'espace disponible <code>.grid--itemsBig</code>
+      p Répartition des éléments enfants sur l'espace disponible <code>.grid--itemsBig</code>
       .grid.grid--4.grid--itemsBig
         div &nbsp;
         div &nbsp;
@@ -146,11 +148,36 @@ block content
         div &nbsp;
         div &nbsp;
         div &nbsp;
-      p Centrage horizontal <code>.grid--hcenter</code>
-      .grid.grid--4.grid--hcenter
+      p Centrage horizontal des éléments enfants <code>.grid--horizontalCenter</code>
+      .grid.grid--4.grid--horizontalCenter
         div &nbsp;
         div &nbsp;
         div &nbsp;
         div &nbsp;
         div &nbsp;
         div &nbsp;
+
+    .pod
+      h3.pod-title Grille custom
+      h4 Grille responsive
+      .grid
+        div.grid-w50 &nbsp;
+        div.grid-w50 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+      h4 Grille non-responsive
+      .grid.grid--fixed
+        div.grid-w50 &nbsp;
+        div.grid-w50 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w33 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;
+        div.grid-w25 &nbsp;

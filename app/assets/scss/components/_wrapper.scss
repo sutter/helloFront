@@ -1,0 +1,22 @@
+/** ======================================
+ *  * Component : Wrapper
+ * ======================================= */
+
+.wrapper {
+  padding-left:  $gutter-width;
+  padding-right: $gutter-width;
+  @media (min-width: $mq-s-up ) {
+    margin-right: auto;
+    margin-left:  auto;
+    max-width: $wrap-max-width;
+  }
+}
+
+/* Modifier : size
+-------------------------- */
+
+.wrapper--small {
+  @media (min-width: $mq-s-up ) {
+    max-width: $wrapSmall-max-width;
+  }
+}

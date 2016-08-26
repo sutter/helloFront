@@ -27,8 +27,8 @@
   &:hover, &:focus {
     color: $clr-light;
     background: $clr-1-darken;
+    outline: none;
   }
-
   &.is-active,
   .is-pressed {
     background: shade($clr-1, 40%);

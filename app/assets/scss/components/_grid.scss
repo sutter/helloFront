@@ -2,78 +2,136 @@
  * Component : Grid
  * ======================================= */
 
-/**
- * Wrapper
- * --------------------------------------- */
-
-.wrapper {
-  padding-left:  $gutter-width;
-  padding-right: $gutter-width;
-  @media (min-width: $mq-s-up ) {
-    margin-right: auto;
-    margin-left:  auto;
-    max-width: $wrap-max-width;
-  }
-}
-
-/**
- * Grid
- * --------------------------------------- */
-
 .grid {
   display: flex;
   flex-wrap: wrap;
-  > * { width: 100% }
 }
 
-@media (min-width: $mq-s-up) {
-
-  .grid { margin-left: -$gutter-width }
-
-  [class*=grid--] > * { margin-left: $gutter-width }
-
-  .grid--4  {
-    > * { width: calc(25% - #{$gutter-width}) }
-    .grid-itemDouble { width: calc(50% - #{$gutter-width}) }
+.grid:not(.grid--fixed) {
+  @media (max-width: $mq-s) {
+    > * {
+      width: 100%;
+    }
   }
-  .grid--3 > * { width: calc(33.333% - #{$gutter-width}) }
-  .grid--2 > * { width: calc(50% - #{$gutter-width}) }
-
-  .grid--3-1 > {
-    :nth-child(2n+1) { width: calc(75% - #{$gutter-width}) }
-    :nth-child(2n+2) { width: calc(25% - #{$gutter-width}) }
-  }
-
-  .grid--1-3 > {
-    :nth-child(2n+1) { width: calc(25% - #{$gutter-width}) }
-    :nth-child(2n+2) { width: calc(75% - #{$gutter-width}) }
-  }
-
-  .grid--2-1 > {
-    :nth-child(2n+1) { width: calc(66.666% - #{$gutter-width}) }
-    :nth-child(2n+2) { width: calc(33.333% - #{$gutter-width}) }
-  }
-
-  .grid--1-2 > {
-    :nth-child(2n+1) { width: calc(33.333% - #{$gutter-width}) }
-    :nth-child(2n+2) { width: calc(66.666% - #{$gutter-width}) }
-  }
-
 }
 
-@media (max-width: $mq-m) and (min-width: $mq-s-up) {
-  .grid--m3 > *:nth-child(1n+1) { width: calc(33.333% - #{$gutter-width}) }
-  .grid--m2 > *:nth-child(1n+1) { width: calc(50% - #{$gutter-width}) }
-  .grid--m1 > *:nth-child(1n+1) { width: calc(100% - #{$gutter-width}) }
-}
+/**
+ * Grid child options
+ * --------------------------------------- */
 
 .grid-itemFirst { order: -1 }
 .grid-push { margin-left: auto }
 .grid-itemBig { flex-grow: 1 }
 
+/*  Grid child custom size  */
+
+.grid-w20 { width: calc(20% - #{$gutter-width}) }
+.grid-w25 { width: calc(25% - #{$gutter-width}) }
+.grid-w33 { width: calc(33.333% - #{$gutter-width}) }
+.grid-w40 { width: calc(40% - #{$gutter-width}) }
+.grid-w50 { width: calc(50% - #{$gutter-width}) }
+.grid-w60 { width: calc(60% - #{$gutter-width}) }
+.grid-w66 { width: calc(66.666% - #{$gutter-width}) }
+.grid-w75 { width: calc(75% - #{$gutter-width}) }
+.grid-w80 { width: calc(80% - #{$gutter-width}) }
+.grid-w100 { width: calc(100% - #{$gutter-width}) }
+
 /**
- * Modifier
+ * Modifier : column
+ * --------------------------------------- */
+
+.grid {
+
+  @media (min-width: $mq-s-up) {
+
+    margin-left: -$gutter-width;
+    > * { margin-left: $gutter-width }
+
+    &.grid--4 {
+      > * {
+        width: calc(25% - #{$gutter-width})
+      }
+      &.grid-itemDouble {
+        width: calc(50% - #{$gutter-width})
+      }
+    }
+
+    &.grid--3 > * {
+      width: calc(33.333% - #{$gutter-width})
+    }
+
+    &.grid--2 > * {
+      width: calc(50% - #{$gutter-width})
+    }
+
+    &.grid--3-1 > {
+      :nth-child(2n+1) {
+        width: calc(75% - #{$gutter-width})
+      }
+      :nth-child(2n+2) {
+        width: calc(25% - #{$gutter-width})
+      }
+    }
+
+    &.grid--1-3 > {
+      :nth-child(2n+1) {
+        width: calc(25% - #{$gutter-width})
+      }
+      :nth-child(2n+2) {
+        width: calc(75% - #{$gutter-width})
+      }
+    }
+
+    &.grid--2-1 > {
+      :nth-child(2n+1) {
+        width: calc(66.666% - #{$gutter-width})
+      }
+      :nth-child(2n+2) {
+        width: calc(33.333% - #{$gutter-width})
+      }
+    }
+
+    &.grid--1-2 > {
+      :nth-child(2n+1) {
+        width: calc(33.333% - #{$gutter-width})
+      }
+      :nth-child(2n+2) {
+        width: calc(66.666% - #{$gutter-width})
+      }
+    }
+
+  }
+
+  @media (max-width: $mq-m) and (min-width: $mq-s-up) {
+
+    &.grid--m3 > *:nth-child(1n+1) {
+      width: calc(33.333% - #{$gutter-width})
+    }
+
+    &.grid--m2 > *:nth-child(1n+1) {
+      width: calc(50% - #{$gutter-width})
+    }
+
+    &.grid--m1 > *:nth-child(1n+1) {
+      width: calc(100% - #{$gutter-width})
+    }
+    
+  }
+
+}
+
+/**
+ * Modifier : grid option
  * --------------------------------------- */
 
 .grid--itemsBig > * { flex-grow: 1 }
-.grid--hcenter  { justify-content: center }
+.grid--horizontalCenter  { justify-content: center }
+
+/**
+ * Modifier : fixed custom grid
+ * --------------------------------------- */
+
+.grid--fixed {
+  margin-left: -$gutter-width;
+  > * { margin-left: $gutter-width }
+}
