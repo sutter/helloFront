@@ -33,6 +33,12 @@ To check if everything is installed and Gulp is active:
 gulp -v
 ```
 
+### Install Gem
+
+```
+bundle install
+``
+
 ### Download the dependencies NPM
 
 ```

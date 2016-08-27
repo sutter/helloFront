@@ -8,6 +8,7 @@ var notify       = require('gulp-notify');
 var sourcemaps   = require('gulp-sourcemaps');
 var gutil        = require("gulp-util");
 var size         = require('gulp-size');
+var scsslint     = require('gulp-scss-lint');
 var csso         = require("gulp-csso");
 var options      = require('minimist')(process.argv.slice(2));
 
@@ -24,6 +25,10 @@ gulp.task('styles', function() {
   return gulp.src(config.files_src)
     .pipe(plumber({
       errorHandler: notify.onError('SASS Error: <%= error.message %>')
+    }))
+    .pipe(scsslint({
+        'bundleExec': true,
+        'config': 'scsslint.yml'
     }))
     .pipe(!options.production ? sourcemaps.init() : gutil.noop())
     .pipe(sass({ precision: 10 }))
