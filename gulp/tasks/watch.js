@@ -8,6 +8,7 @@ gulp.task('watch', function () {
 
   watch(config.styles.files_src, function() {
     gulp.start('styles');
+    gulp.start('scsslinter');
   });
 
   watch(config.images.files_src, function() {
