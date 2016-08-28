@@ -1,0 +1,25 @@
+/*
+---
+name: Button Groupped
+tag:
+  - base
+category:
+  - component
+  - component/button
+---
+
+## Button groupped
+
+```html
+<div class="buttonGrouped">
+  <a class="button" href="#" role="button">Share</a>
+  <a class="button icon-close" href="#" role="button">
+    <span>Close</span>
+  </a>
+  <a class="button icon-trash" href="#" role="button">
+    <span>Trash</span>
+  </a>
+</div>
+```
+
+*/

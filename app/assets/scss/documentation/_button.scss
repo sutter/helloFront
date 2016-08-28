@@ -1,0 +1,75 @@
+/*
+---
+name: Button - style, state and sizes
+tag:
+  - base
+category:
+  - component
+  - component/button
+---
+
+## Button style
+
+Use `a`, `input` or `button` tag.
+
+### Base style
+
+```html
+<a class="button" href="#" role="button">Link</a>
+<button class="button">Button</button>
+<input class="button" type="submit" value="Input">
+```
+
+### Secondary style
+
+```html
+<a class="button button--secondary" href="#" role="button">Link</a>
+<button class="button button--secondary">Button</button>
+<input class="button button--secondary" type="submit" value="Input">
+```
+
+### Button danger
+
+```html
+<a class="button button--danger" href="#" role="button">Link</a>
+<button class="button button--danger">Button</button>
+<input class="button button--danger" type="submit" value="Input">
+```
+
+### Button state
+
+#### Disabled
+
+```html
+<a class="button is-disabled" href="#" role="button">Link</a>
+<button class="button button--secondary" disabled>Button</button>
+<input class="button button--danger" type="submit" value="Input" disabled>
+```
+#### Active
+
+```html
+<a class="button is-active" href="#" role="button">Link</a>
+<button class="button button--secondary is-active">Button</button>
+```
+
+### Button sizes
+
+```html
+<a class="button button--small" href="#" role="button">button small</a>
+<a class="button" href="#" role="button">button</a>
+<a class="button button--big" href="#" role="button">button big</a>
+```
+
+Version of the button taking the length of his parent.
+
+```html
+<a class="button button--block" href="#" role="button">button block</a>
+```
+
+Version of the button taking the length of his parent only on small screen.
+
+```html
+<a class="button button--blockMobile" href="#" role="button">button blockMobile</a>
+```
+
+*/

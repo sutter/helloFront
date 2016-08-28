@@ -1,0 +1,75 @@
+/*
+---
+name: Button with icon
+tag:
+  - base
+category:
+  - component
+  - component/button
+---
+
+## Button with icon
+
+```html
+<a class="button icon-check" href="#" role="button">
+  <span>Check</span>
+</a>
+
+<a class="button button--secondary icon-close" href="#" role="button">
+  <span>Close</span>
+</a>
+
+<a class="button button--danger icon-trash" href="#" role="button">
+  <span>Delete</span>
+</a>
+```
+
+## Button with icon and text
+
+```html
+<a class="button" href="#" role="button">
+  <span class="icon-check"></span> Default
+</a>
+
+<a class="button button--secondary" href="#" role="button">
+  <span class="icon-close"></span> Secondary
+</a>
+
+<a class="button button--danger" href="#" role="button">
+  <span class="icon-trash"></span> Danger
+</a>
+```
+
+### Button icon labeled
+
+```html
+<a class="button button--labeled" href="#" role="button">
+  <span class="icon-check"></span> Default
+</a>
+
+<a class="button button--secondary button--labeled" href="#" role="button">
+  <span class="icon-close"></span> Secondary
+</a>
+
+<a class="button button--danger button--labeled" href="#" role="button">
+  <span class="icon-trash"></span> Danger
+</a>
+```
+
+Reverse version
+
+```html
+<a class="button button--labeledInverse" href="#" role="button">
+  <span class="icon-check"></span> Default
+</a>
+
+<a class="button button--secondary button--labeledInverse" href="#" role="button">
+  <span class="icon-close"></span> Secondary
+</a>
+
+<a class="button button--danger button--labeledInverse" href="#" role="button">
+  <span class="icon-trash"></span> Danger
+</a>
+```
+
+*/
