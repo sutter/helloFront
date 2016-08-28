@@ -1,37 +1,40 @@
+// scss-lint:disable ImportantRule
+
 @mixin title {
   font-family: $font-title;
-  line-height: $line-height-small;
   font-weight: bold;
-  color: $clr-0-darken;
+  line-height: $line-height-small;
   text-rendering: optimizeLegibility;
+  color: $clr-0-darken;
+
   &:first-child {
-    margin-top: 0
+    margin-top: 0;
   }
 }
 
 @mixin truncate {
+  overflow: hidden !important; // No lint reported
   max-width: 100%;
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-  word-wrap: normal !important;
+  white-space: nowrap !important; // No lint reported
+  text-overflow: ellipsis !important; // No lint reported
+  word-wrap: normal !important; // No lint reported
 }
 
 @mixin visually-hidden {
-  position: absolute !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  margin: -1px;
-  padding: 0 !important;
-  overflow: hidden !important;
-  clip: rect(0, 0, 0, 0) !important;
+  position: absolute !important; // No lint reported
+  overflow: hidden !important; // No lint reported
+  clip: rect(0, 0, 0, 0) !important; // No lint reported
+  width: 1px !important; // No lint reported
+  height: 1px !important; // No lint reported
+  margin: -1px; // No lint reported
+  padding: 0 !important; // No lint reported
+  border: 0 !important; // No lint reported
 }
 
 
 @mixin listReset {
-  margin-bottom: 0;
   margin-top: 0;
+  margin-bottom: 0;
   padding-left: 0;
   list-style: none;
 }

@@ -5,11 +5,11 @@
 [id="header"] {
   padding: em(20) 0;
   background: $clr-0-darken;
-}
 
-[id="header"] .wrapper {
-  display: flex;
-  align-items: center;
+  .wrapper {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-logo {
@@ -22,8 +22,9 @@
   text-transform: uppercase;
   color: $clr-light;
   transition: $trans;
+
   &:hover {
+    opacity: .75;
     color: $clr-light;
-    opacity: 0.75;
   }
 }

@@ -3,8 +3,8 @@
  * ======================================= */
 
 .menuAside {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   border: 1px solid $clr-divider;
 }
@@ -17,6 +17,7 @@
   display: block;
   padding: em(10) em(20) em(10) em(14);
   border-left: 6px solid transparent;
+
   &.is-active {
     border-left-color: $clr-1;
   }

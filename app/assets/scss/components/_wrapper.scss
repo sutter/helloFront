@@ -3,12 +3,13 @@
  * ======================================= */
 
 .wrapper {
-  padding-left:  $gutter-width;
   padding-right: $gutter-width;
-  @media (min-width: $mq-s-up ) {
-    margin-right: auto;
-    margin-left:  auto;
+  padding-left: $gutter-width;
+
+  @media (min-width: $mq-s-up) {
     max-width: $wrap-max-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -16,7 +17,7 @@
 -------------------------- */
 
 .wrapper--small {
-  @media (min-width: $mq-s-up ) {
+  @media (min-width: $mq-s-up) {
     max-width: $wrapSmall-max-width;
   }
 }

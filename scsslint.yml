@@ -1,0 +1,455 @@
+# Default application configuration that all configurations inherit from.
+
+scss_files: "**/*.scss"
+plugin_directories: ['.scss-linters']
+
+# List of gem names to load custom linters from (make sure they are already
+# installed)
+plugin_gems: []
+
+# Default severity of all linters.
+severity: warning
+
+linters:
+  BangFormat:
+    enabled: true
+    space_before_bang: true
+    space_after_bang: false
+
+  BemDepth:
+    enabled: false
+    max_elements: 1
+
+  BorderZero:
+    enabled: true
+    convention: zero # or `none`
+
+  ChainedClasses:
+    enabled: false
+
+  ColorKeyword:
+    enabled: true
+
+  ColorVariable:
+    enabled: true
+
+  Comment:
+    enabled: false
+    style: silent
+
+  DebugStatement:
+    enabled: true
+
+  DeclarationOrder:
+    enabled: true
+
+  DisableLinterReason:
+    enabled: false
+
+  DuplicateProperty:
+    enabled: true
+
+  ElsePlacement:
+    enabled: true
+    style: same_line # or 'new_line'
+
+  EmptyLineBetweenBlocks:
+    enabled: true
+    ignore_single_line_blocks: true
+
+  EmptyRule:
+    enabled: true
+
+  ExtendDirective:
+    enabled: false
+
+  FinalNewline:
+    enabled: true
+    present: true
+
+  HexLength:
+    enabled: true
+    style: short # or 'long'
+
+  HexNotation:
+    enabled: true
+    style: lowercase # or 'uppercase'
+
+  HexValidation:
+    enabled: true
+
+  IdSelector:
+    enabled: true
+
+  ImportantRule:
+    enabled: true
+
+  ImportPath:
+    enabled: true
+    leading_underscore: false
+    filename_extension: false
+
+  Indentation:
+    enabled: true
+    allow_non_nested_indentation: false
+    character: space # or 'tab'
+    width: 2
+
+  LeadingZero:
+    enabled: true
+    style: exclude_zero # or 'include_zero'
+
+  MergeableSelector:
+    enabled: true
+    force_nesting: true
+
+  NameFormat:
+    enabled: true
+    allow_leading_underscore: true
+    convention: ^[a-zA-Z0-9-]+$ # hyphenated_lowercase or 'camel_case', or 'snake_case', or a regex pattern
+
+  NestingDepth:
+    enabled: true
+    max_depth: 3
+    ignore_parent_selectors: false
+
+  PlaceholderInExtend:
+    enabled: true
+
+  PrivateNamingConvention:
+    enabled: false
+    prefix: _
+
+  PropertyCount:
+    enabled: false
+    include_nested: false
+    max_properties: 10
+
+  PropertySortOrder:
+    enabled: true
+    ignore_unspecified: false
+    min_properties: 2
+    separate_groups: false
+    order:
+      - position
+      - z-index
+      - top
+      - right
+      - bottom
+      - left
+
+      - display
+      - visibility
+      - float
+      - clear
+      - overflow
+      - overflow-x
+      - overflow-y
+      - -ms-overflow-x
+      - -ms-overflow-y
+      - clip
+      - zoom
+      - flex-direction
+      - flex-order
+      - flex-pack
+      - flex-align
+      - flex-grow
+      - flex-wrap
+      - flex-flow
+      - flex-basis
+      - flex-shrink
+      - flex
+      - order
+      - align-self
+      - align-items
+      - align-content
+      - justify-content
+
+      - box-sizing
+      - width
+      - min-width
+      - max-width
+      - height
+      - min-height
+      - max-height
+      - margin
+      - margin-top
+      - margin-right
+      - margin-bottom
+      - margin-left
+      - padding
+      - padding-top
+      - padding-right
+      - padding-bottom
+      - padding-left
+
+      - table-layout
+      - empty-cells
+      - caption-side
+      - border-spacing
+      - border-collapse
+      - list-style
+      - list-style-position
+      - list-style-type
+      - list-style-image
+
+      - font
+      - font-family
+      - font-size
+      - font-weight
+      - font-style
+      - font-variant
+      - font-size-adjust
+      - font-stretch
+      - font-effect
+      - font-emphasize
+      - font-emphasize-position
+      - font-emphasize-style
+      - font-smooth
+      - line-height
+
+      - text-align
+      - text-align-last
+      - vertical-align
+      - white-space
+      - text-decoration
+      - text-emphasis
+      - text-emphasis-color
+      - text-emphasis-style
+      - text-emphasis-position
+      - text-indent
+      - text-justify
+      - letter-spacing
+      - word-spacing
+      - -ms-writing-mode
+      - text-outline
+      - text-transform
+      - text-wrap
+      - text-overflow
+      - text-overflow-ellipsis
+      - text-overflow-mode
+      - text-rendering
+      - word-wrap
+      - word-break
+      - tab-size
+      - hyphens
+      - pointer-events
+
+      - opacity
+      - filter:progid:DXImageTransform.Microsoft.Alpha(Opacity
+      - -ms-filter:\\'progid:DXImageTransform.Microsoft.Alpha
+      - -ms-interpolation-mode
+      - color
+      - border
+      - border-width
+      - border-style
+      - border-color
+      - border-top
+      - border-top-width
+      - border-top-style
+      - border-top-color
+      - border-right
+      - border-right-width
+      - border-right-style
+      - border-right-color
+      - border-bottom
+      - border-bottom-width
+      - border-bottom-style
+      - border-bottom-color
+      - border-left
+      - border-left-width
+      - border-left-style
+      - border-left-color
+      - border-radius
+      - border-top-left-radius
+      - border-top-right-radius
+      - border-bottom-right-radius
+      - border-bottom-left-radius
+      - border-image
+      - border-image-source
+      - border-image-slice
+      - border-image-width
+      - border-image-outset
+      - border-image-repeat
+      - outline
+      - outline-width
+      - outline-style
+      - outline-color
+      - outline-offset
+      - background
+      - filter:progid:DXImageTransform.Microsoft.AlphaImageLoader
+      - background-color
+      - background-image
+      - background-repeat
+      - background-attachment
+      - background-position
+      - background-position-x
+      - background-position-y
+      - background-clip
+      - background-origin
+      - background-size
+      - box-decoration-break
+      - box-shadow
+      - filter:progid:DXImageTransform.Microsoft.gradient
+      - -ms-filter:\\'progid:DXImageTransform.Microsoft.gradient
+      - text-shadow
+
+      - content
+      - quotes
+      - counter-reset
+      - counter-increment
+      - resize
+      - -webkit-user-drag
+      - cursor
+      - user-select
+      - nav-index
+      - nav-up
+      - nav-right
+      - nav-down
+      - nav-left
+      - transition
+      - transition-delay
+      - transition-timing-function
+      - transition-duration
+      - transition-property
+      - transform
+      - transform-origin
+      - animation
+      - animation-name
+      - animation-duration
+      - animation-play-state
+      - animation-timing-function
+      - animation-delay
+      - animation-iteration-count
+      - animation-direction
+      - speak
+      - -webkit-user-drag
+      - -webkit-appearance
+      - -webkit-font-smoothing
+      - -moz-osx-font-smoothing
+
+  PropertySpelling:
+    enabled: true
+    extra_properties: []
+    disabled_properties: []
+
+  PropertyUnits:
+    enabled: true
+    global: [
+      'ch', 'em', 'ex', 'rem',                 # Font-relative lengths
+      'cm', 'in', 'mm', 'pc', 'pt', 'px', 'q', # Absolute lengths
+      'vh', 'vw', 'vmin', 'vmax',              # Viewport-percentage lengths
+      'deg', 'grad', 'rad', 'turn',            # Angle
+      'ms', 's',                               # Duration
+      'Hz', 'kHz',                             # Frequency
+      'dpi', 'dpcm', 'dppx',                   # Resolution
+      '%']                                     # Other
+    properties: {}
+
+  PseudoElement:
+    enabled: true
+
+  QualifyingElement:
+    enabled: true
+    allow_element_with_attribute: false
+    allow_element_with_class: false
+    allow_element_with_id: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+
+  SelectorFormat:
+    enabled: true
+    convention: ^[a-zA-Z0-9-]+$ # hyphenated_lowercase or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
+
+  Shorthand:
+    enabled: true
+    allowed_shorthands: [1, 2, 3, 4]
+
+  SingleLinePerProperty:
+    enabled: true
+    allow_single_line_rule_sets: true
+
+  SingleLinePerSelector:
+    enabled: true
+
+  SpaceAfterComma:
+    enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space'
+
+  SpaceAfterComment:
+    enabled: true
+    style: at_least_one_space # or 'no_space', or 'at_least_one_space'
+    allow_empty_comments: true
+
+  SpaceAfterPropertyColon:
+    enabled: true
+    style: one_space # or 'no_space', or 'at_least_one_space', or 'aligned'
+
+  SpaceAfterPropertyName:
+    enabled: true
+
+  SpaceAfterVariableColon:
+    enabled: false
+    style: one_space # or 'no_space', 'at_least_one_space' or 'one_space_or_newline'
+
+  SpaceAfterVariableName:
+    enabled: true
+
+  SpaceAroundOperator:
+    enabled: true
+    style: one_space # or 'at_least_one_space', or 'no_space'
+
+  SpaceBeforeBrace:
+    enabled: true
+    style: space # or 'new_line'
+    allow_single_line_padding: false
+
+  SpaceBetweenParens:
+    enabled: true
+    spaces: 0
+
+  StringQuotes:
+    enabled: true
+    style: single_quotes # or double_quotes
+
+  TrailingSemicolon:
+    enabled: true
+
+  TrailingWhitespace:
+    enabled: true
+
+  TrailingZero:
+    enabled: false
+
+  TransitionAll:
+    enabled: false
+
+  UnnecessaryMantissa:
+    enabled: true
+
+  UnnecessaryParentReference:
+    enabled: true
+
+  UrlFormat:
+    enabled: true
+
+  UrlQuotes:
+    enabled: true
+
+  VariableForProperty:
+    enabled: false
+    properties: []
+
+  VendorPrefix:
+    enabled: true
+    identifier_list: base
+    additional_identifiers: []
+    excluded_identifiers: []
+
+  ZeroUnit:
+    enabled: true
+
+  Compass::*:
+    enabled: false

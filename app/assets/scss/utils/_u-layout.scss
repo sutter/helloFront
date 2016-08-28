@@ -2,27 +2,30 @@
  * Utils : Layout
  * ======================================= */
 
+// scss-lint:disable ImportantRule
+
 .u-cf {
-  &:before,
-  &:after {
-    content: " ";
+  &::before,
+  &::after {
     display: table;
+    content: ' ';
   }
-  &:after {
+
+  &::after {
     clear: both;
   }
 }
 
 .u-noBfc {
-  overflow: hidden !important;
+  overflow: hidden !important; // No lint reported
 }
 
 .u-floatLeft {
-  float: left !important;
+  float: left !important; // No lint reported
 }
 
 .u-floatRight {
-  float: right !important;
+  float: right !important; // No lint reported
 }
 
 .u-flexPushleft {

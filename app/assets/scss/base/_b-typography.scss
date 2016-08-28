@@ -2,6 +2,8 @@
  * Base : Typography
  * ======================================= */
 
+// scss-lint:disable QualifyingElement
+
 h1 {
   @include title;
   margin: $spacer-s 0;
@@ -11,7 +13,7 @@ h1 {
 h2 {
   @include title;
   margin: $spacer-s 0;
-  font-size: $font-size-XL;;
+  font-size: $font-size-XL;
 }
 
 h3 {
@@ -40,8 +42,9 @@ h6 {
 
 p {
   margin: $spacer-s 0;
+
   &:first-child {
-    margin-top: 0
+    margin-top: 0;
   }
 }
 
@@ -50,6 +53,7 @@ small {
 }
 
 abbr[title] {
+  // No lint reported
   text-transform: lowercase;
 }
 

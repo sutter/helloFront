@@ -3,55 +3,57 @@
  * ======================================= */
 
 figure {
-  margin: 0 0 $spacer-s 0;
+  margin: 0 0 $spacer-s;
 }
 
 figcaption {
-  font-style: italic;
   font-size: $font-size-XS;
+  font-style: italic;
 }
 
 hr {
   margin: $spacer-m 0;
+  border-top: 0;
+  border-right: 0;
   border-bottom: 1px solid $clr-border;
-  border-left: none;
-  border-right: none;
-  border-top: none;
+  border-left: 0;
 }
 
 blockquote {
   margin: $spacer-m 0;
-  padding-left: $spacer-s ;
-  border-left: 2px solid $clr-border;
+  padding-left: $spacer-s;
   color: lighten($font-color-base, 15);
+  border-left: 2px solid $clr-border;
+
   p {
     margin: 0;
   }
-  cite:before {
+
+  cite::before {
     content: '\2014 \00A0';
   }
 }
 
 cite {
-  color: lighten($font-color-base, 25);
   font-style: italic;
+  color: lighten($font-color-base, 25);
 }
 
 pre {
   font-size: em(13);
-}
 
-pre code {
-  display: block;
-  font-size: $font-size-S;
-  color: $clr-0;
-  padding: em(15) em(20);
-  border-color: $clr-0-light;
-  background-color: $clr-0-lighten;
-}
+  code {
+    display: block;
+    padding: em(15) em(20);
+    font-size: $font-size-S;
+    color: $clr-0;
+    border-color: $clr-0-light;
+    background-color: $clr-0-lighten;
+  }
 
-pre code p {
-  margin: 0;
+  p {
+    margin: 0;
+  }
 }
 
 code,
@@ -59,26 +61,25 @@ kbd,
 pre,
 samp {
   font-family: $font-code;
-  white-space: pre-line;
   white-space: pre-wrap;
 }
 
 code,
 kbd {
   padding: .3rem .5rem;
-  vertical-align: middle;
-  font-weight: $font-weight-base;
   font-size: $font-size-XXS;
+  font-weight: $font-weight-base;
+  vertical-align: middle;
   border-radius: $radS;
 }
 
 code {
-  background-color: tint($clr-2-light, 70%);
   color: $clr-2;
   border: 1px solid tint($clr-2-light, 50%);
+  background-color: tint($clr-2-light, 70%);
 }
 
 kbd {
-  background-color: tint($clr-0-light, 40%);
   color: tint($clr-0, 30%);
+  background-color: tint($clr-0-light, 40%);
 }

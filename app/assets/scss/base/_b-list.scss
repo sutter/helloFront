@@ -2,16 +2,19 @@
  * Base : List
  * ======================================= */
 
-ul, ol {
+ul,
+ol {
   margin: $spacer-s 0;
   padding-left: $spacer;
+
   &:first-child {
-    margin-top: 0
+    margin-top: 0;
   }
 }
 
 ul {
   list-style: disc;
+
   ul {
     margin-bottom: 0;
   }
@@ -19,6 +22,7 @@ ul {
 
 ol {
   list-style: decimal;
+
   ol {
     margin-bottom: 0;
   }
@@ -26,10 +30,12 @@ ol {
 
 dl {
   margin-bottom: $spacer-s;
+
   dt {
-    font-weight: bold;
     margin-top: $spacer-s;
+    font-weight: bold;
   }
+
   dd {
     margin: 0;
   }

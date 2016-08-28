@@ -3,46 +3,49 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-$toggle-width  : em(45);
-$toggle-height : em(20);
+$toggle-width: em(45);
+$toggle-height: em(20);
 
 .form-input {
-  input[type="checkbox"] + .form-toggle-label {
+  [type="checkbox"] + .form-toggle-label {
     position: relative;
-    margin-left: $toggle-width + 0.5;
+    margin-left: $toggle-width + .5;
+
     &::before,
     &::after {
       position: absolute;
-      left: -$toggle-width - 0.5;
       top: 50%;
-      margin-top: -$toggle-height/2;
+      left: -$toggle-width - .5;
       height: $toggle-height;
+      margin-top: -$toggle-height / 2;
       border-radius: $toggle-height;
     }
+
     &::before {
       width: $toggle-width;
       background: $form-border-color;
     }
+
     &::after {
-      content: "";
       width: $toggle-height;
-      background: $clr-light center no-repeat;
       border: 2px solid $form-border-color;
-      transition: $trans;
       border-radius: $toggle-height;
+      background: $clr-light center no-repeat;
+      content: '';
+      transition: $trans;
     }
   }
 
-  input[type="checkbox"]:checked + .form-toggle-label {
+  [type="checkbox"]:checked + .form-toggle-label {
     &::before {
+      border-color: $clr-1;
       background-color: $clr-1;
       background-position: left 8px center;
-      border-color: $clr-1;
     }
+
     &::after {
-      left: ($toggle-width - $toggle-height) + (-$toggle-width - 0.5);
+      left: ($toggle-width - $toggle-height) + (-$toggle-width - .5);
       border-color: $clr-1;
     }
   }
-
 }

@@ -3,19 +3,20 @@
  * ======================================= */
 
 .menu-inner {
-  display: flex;
   @include listReset;
+  display: flex;
 }
 
 .menu-title {
   padding: em(6) em(14);
-  color: $clr-light;
   font-weight: 700;
+  color: $clr-light;
 }
 
 .menu-link {
   padding: em(6) em(14);
   font-size: em(14);
+
   &.is-active {
     color: $clr-light;
   }

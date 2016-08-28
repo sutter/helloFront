@@ -4,8 +4,14 @@
 
 .form-group {
   margin-bottom: $spacer-s;
+
   &:last-child {
     margin-bottom: 0;
+  }
+
+  small {
+    font-size: 80%;
+    color: tint($clr-0, 40%);
   }
 }
 
@@ -15,43 +21,40 @@
 }
 
 .form-label--required::after {
-  content: " *";
-}
-
-.form-group small {
-  font-size: 80%;
-  color: tint($clr-0, 40%);
+  content: ' *';
 }
 
 .form-input {
-  input[type="text"],
-  input[type="password"],
-  input[type="tel"],
-  input[type="url"],
-  input[type="email"],
-  input[type="search"],
-  input[type="date"],
-  input[type="month"],
-  input[type="number"],
+  [type="text"],
+  [type="password"],
+  [type="tel"],
+  [type="url"],
+  [type="email"],
+  [type="search"],
+  [type="date"],
+  [type="month"],
+  [type="number"],
   textarea,
   select {
     display: block;
+    width: 100%;
+    height: $form-input-height;
     padding: 0 1rem;
     line-height: 1;
-    height: $form-input-height;
-    width: 100%;
     border: 1px solid $form-border-color;
-    background-color: $clr-light;
     border-radius: $radS;
+    background-color: $clr-light;
     box-shadow: none;
     transition: $trans;
+
     &:hover {
       border-color: $form-border-color-hover;
     }
+
     &:focus {
       border-color: $form-border-color-focus;
-      box-shadow: $form-box-shadow-focus;
       outline: none;
+      box-shadow: $form-box-shadow-focus;
     }
   }
 }

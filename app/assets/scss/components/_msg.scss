@@ -4,24 +4,30 @@
 
 .msg {
   padding: em(15, 14) em(20, 14);
-  border-radius: $radS;
   font-size: em(14);
   color: $clr-0-dark;
+  border-radius: $radS;
   background-color: $clr-0-lighten;
-  ul, p {
+
+  ul,
+  p {
     margin: em(5, 14) 0;
     line-height: 1.25;
+
     &:last-child {
       margin-bottom: 0;
     }
+
     &:only-child {
       margin: 0;
     }
   }
+
   a {
-    color: inherit;
     text-decoration: underline;
+    color: inherit;
   }
+
   &:not(:first-child) {
     margin-top: $spacer;
   }
@@ -35,17 +41,17 @@
 /* Modifier : state
 -------------------------- */
 
-.msg--error  {
-  background-color: tint($clr-error, 90%);
+.msg--error {
   color: shade($clr-error, 50%);
+  background-color: tint($clr-error, 90%);
 }
 
 .msg--warning {
-  background-color: tint($clr-warning, 90%);
   color: shade($clr-warning, 50%);
+  background-color: tint($clr-warning, 90%);
 }
 
 .msg--success {
-  background-color: tint($clr-success, 90%);
   color: shade($clr-success, 50%);
+  background-color: tint($clr-success, 90%);
 }

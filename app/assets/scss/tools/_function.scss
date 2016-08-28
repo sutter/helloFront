@@ -1,3 +1,5 @@
+// scss-lint:disable ColorVariable
+
 // Strip units
 @function strip-units($value) {
   @return ($value / ($value * 0 + 1));
@@ -19,10 +21,10 @@ $em-base: 16 !default;
 
 // Mixes a color with black
 @function shade($color, $percent) {
-  @return mix(#000, $color, $percent);
+  @return mix(#000, $color, $percent); // No lint reported
 }
 
 // Mixes a color with white.
 @function tint($color, $percent) {
-  @return mix(#fff, $color, $percent);
+  @return mix(#fff, $color, $percent); // No lint reported
 }

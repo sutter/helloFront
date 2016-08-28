@@ -11,16 +11,17 @@
   input {
     padding-right: 4rem;
   }
+
   [class*=icon-] {
-    pointer-events: none;
-    cursor: default;
     position: absolute;
     top: 50%;
     right: 1.2rem;
+    font-size: 2rem;
     line-height: 1;
     text-align: center;
-    font-size: 2rem;
+    pointer-events: none;
     color: $clr-0;
+    cursor: default;
     transform: translateY(-50%);
   }
 }
@@ -30,6 +31,7 @@
     padding-right: 1rem;
     padding-left: 4rem;
   }
+
   [class*=icon-] {
     right: auto;
     left: 1.2rem;

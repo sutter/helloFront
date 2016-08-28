@@ -2,33 +2,37 @@
  * Component : Button
  * ======================================= */
 
+// scss-lint:disable ImportantRule
+
 .button {
   position: relative;
   display: inline-flex;
   align-items: center;
   margin: 0;
-  padding: em(10,14) em(18,14);
-  line-height: normal;
-  white-space: nowrap;
-  text-align: center;
-  cursor: pointer;
-  border: none;
-  text-decoration: none;
+  padding: em(10, 14) em(18, 14);
   font-size: em(14);
   font-weight: bold;
-  background-color: $clr-1;
+  line-height: normal;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
   color: $clr-light;
+  border: 0;
   border-radius: $radS;
+  background-color: $clr-1;
+  cursor: pointer;
+  user-select: none;
   transition: $trans;
   -webkit-user-drag: none;
-  user-select: none;
   -webkit-appearance: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $clr-light;
-    background: $clr-1-darken;
     outline: none;
+    background: $clr-1-darken;
   }
+
   &.is-active,
   .is-pressed {
     background: shade($clr-1, 40%);
@@ -36,11 +40,11 @@
 
   &:disabled,
   &.is-disabled {
-    cursor: default;
-    opacity: .45!important;
-    background-image: none!important;
-    box-shadow: none!important;
     pointer-events: none;
+    opacity: .45 !important; // No lint reported
+    background-image: none !important; // No lint reported
+    box-shadow: none !important; // No lint reported
+    cursor: default;
   }
 
   + [class*=button] {
@@ -48,7 +52,6 @@
       margin-left: 1rem;
     }
   }
-
 }
 
 /**
@@ -59,10 +62,13 @@
   color: $font-color-base;
   background: $clr-light;
   box-shadow: inset 0 0 0 1px $clr-border;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     color: $font-color-base;
     background: $clr-border;
   }
+
   &.is-active,
   .is-pressed {
     color: $clr-light;
@@ -73,7 +79,9 @@
 
 .button--danger {
   background-color: $clr-danger;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     background: shade($clr-danger, 20%);
   }
 }
