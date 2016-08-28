@@ -1,0 +1,9 @@
+source:
+  - ./build/assets/css/main.css
+  - ./app/assets/scss/main.scss
+
+template_engine: jade
+dest: ./build/styleguide
+
+dependencies:
+  - ./aigis_assets/css

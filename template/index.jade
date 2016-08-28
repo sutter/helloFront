@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width')
+    link(href='http://localhost:3000/styleguide/css/highlight/okadia.css', rel='stylesheet')
+    link(href='http://localhost:3000/styleguide/css/theme.css', rel='stylesheet')
+    link(href='http://localhost:3000/assets/css/main.css', rel='stylesheet')
+  body
+    .aigis-container
+      include ./sidemenu
+      .aigis-contents
+        .aigis-contents__body
+          include ./components
+          footer.aigis-footer Last update at #{timestamp}
