@@ -37,13 +37,21 @@ gulp -v
 
 ```
 bundle install
-``
+```
 
 ### Download the dependencies NPM
 
 ```
 npm install
 ```
+
+### Install Tooling
+
+Use [CSScomb](http://csscomb.com/) for clean your scss files.
+
+For Jetbrains IDE -> [CSScomb plugin](https://github.com/csscomb/jetbrains-csscomb)
+
+`.csscomb.json` is the config file.
 
 ## Gulp Tasks
 
