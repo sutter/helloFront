@@ -2,10 +2,13 @@
  * Component : Table
  * ======================================= */
 
+@import "documentation/table";
+
 .table {
   width: 100%;
   margin: $spacer-s 0;
   border: 1px solid $clr-border;
+  background: $clr-light;
 
   th {
     padding: $spacer-s;

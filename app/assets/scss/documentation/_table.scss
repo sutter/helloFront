@@ -1,0 +1,41 @@
+/*
+---
+name: Table
+tag:
+  - latest
+  - base
+category:
+  - component
+  - component/table
+---
+
+## Table
+
+```html
+<table class="table">
+  <thead>
+    <tr>
+      <th>Countries</th>
+      <th>Capitals</th>
+      <th>Population</th>
+      <th>Language</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>US</td>
+      <td>Washington D.C.</td>
+      <td>309 millions</td>
+      <td>English</td>
+    </tr>
+    <tr>
+      <td>Suede</td>
+      <td>Stockholm</td>
+      <td>9 millions</td>
+      <td>Swedish</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+*/
