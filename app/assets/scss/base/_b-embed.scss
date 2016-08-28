@@ -1,9 +1,10 @@
 /** ======================================
- * Base : embed
+ * Base : embe
  * ======================================= */
 
 img {
   vertical-align: bottom;
+
   &:not([src$=".svg"]) {
     height: auto;
   }

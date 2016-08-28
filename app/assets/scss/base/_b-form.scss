@@ -8,13 +8,15 @@ select {
   display: block;
 }
 
-input, select {
+input:not([type="range"]),
+select {
   appearance: none;
 }
 
 label {
   font-weight: bold;
   cursor: pointer;
+
   abbr {
     display: none;
   }
@@ -24,20 +26,20 @@ textarea {
   resize: vertical;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+[type="checkbox"],
+[type="radio"] {
   display: inline;
-  margin-right: $spacer-s/2;
+  margin-right: $spacer-s / 2;
 }
 
-input[type="file"] {
+[type="file"] {
+  width: 100%;
   margin-bottom: $spacer-s;
   padding-bottom: ($spacer-s / 3);
-  width: 100%;
 }
 
-input[type="search"]{
- box-sizing: border-box;
+[type="search"] {
+  box-sizing: border-box;
 }
 
 select {
@@ -46,27 +48,13 @@ select {
 }
 
 fieldset {
-  margin: 0 0 $spacer-s 0;
+  margin: 0 0 $spacer-s;
   padding: $spacer;
   border: 1px solid $clr-border;
-  background: $clr-0-lighten;
   border-radius: $form-border-radius;
+  background: $clr-0-lighten;
 }
 
-input::-webkit-input-placeholder {
-  color: $color-mixin-placeholder;
-}
-
-// Firefox 18
-input:-moz-placeholder {
-  color: $color-mixin-placeholder;
-}
-
-// Firefox 19+
-input::-moz-placeholder {
-  color: $color-mixin-placeholder;
-}
-
-input:-ms-input-placeholder {
+::placeholder {
   color: $color-mixin-placeholder;
 }

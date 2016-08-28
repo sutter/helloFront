@@ -2,16 +2,19 @@
  * Utils : Show / Hide
  * ======================================= */
 
+// scss-lint:disable ImportantRule
+
 .u-hideMobile {
-  display: none !important;
-  @media (min-width: $mq-s-up ) {
-    display: block !important;
+  display: none !important; // No lint reported
+
+  @media (min-width: $mq-s-up) {
+    display: block !important; // No lint reported
   }
 }
 
 .u-showMobile {
-  @media (min-width: $mq-s-up ) {
-    display: none !important;
+  @media (min-width: $mq-s-up) {
+    display: none !important; // No lint reported
   }
 }
 

@@ -10,29 +10,30 @@
   .form-group {
     flex-grow: 1;
     margin-bottom: 0;
+
     &[class*=w-] {
       flex-grow: 0;
     }
-    &:first-child {
-      .form-input {
-        input, select {
-          border-radius: $form-border-radius 0 0 $form-border-radius;
-        }
-      }
+
+    .form-input input,
+    .form-input select {
+      border-right: 0;
+      border-radius: 0;
     }
-    &:only-child {
-      .form-input {
-        input, select {
-          border-right: 1px solid $form-border-color;
-          border-radius: $form-border-radius;
-        }
-      }
+  }
+
+  .form-group:first-child {
+    .form-input input,
+    .form-input  select {
+      border-radius: $form-border-radius 0 0 $form-border-radius;
     }
-    .form-input {
-      input, select {
-        border-right: none;
-        border-radius: 0;
-      }
+  }
+
+  .form-group:only-child {
+    .form-input input,
+    .form-input select {
+      border-right: 1px solid $form-border-color;
+      border-radius: $form-border-radius;
     }
   }
 
@@ -49,12 +50,11 @@
   .button {
     display: block;
     width: 100%;
-    text-align: center;
-    line-height:  $form-input-height;
     height: $form-input-height;
     padding-top: 0;
     padding-bottom: 0;
+    line-height: $form-input-height;
+    text-align: center;
     border-radius: 0 $form-border-radius $form-border-radius 0;
   }
-
 }

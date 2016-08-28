@@ -4,9 +4,10 @@
 
 .videoWrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: em(25);
   height: 0;
+  padding-top: em(25);
+  padding-bottom: 56.25%; /* 16:9 */
+
   iframe {
     position: absolute;
     top: 0;

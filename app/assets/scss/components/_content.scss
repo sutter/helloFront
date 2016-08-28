@@ -8,14 +8,15 @@
 }
 
 .content-header {
-  padding: em(60) 0;
-  margin-bottom: $spacer-l;
-  background: $clr-2;
   overflow: hidden;
+  margin-bottom: $spacer-l;
+  padding: em(60) 0;
+  background: $clr-2;
 }
 
 .content-header-title {
   color: $clr-light;
+
   &:only-child {
     margin: 0;
   }

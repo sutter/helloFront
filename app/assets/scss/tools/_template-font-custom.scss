@@ -2,8 +2,10 @@
  * Component : Icon
  * ======================================= */
 
+// scss-lint:disable FinalNewline
+
 @font-face {
-  font-family: "<%= fontName %>";
+  font-family: '<%= fontName %>';
   src: url('<%= fontPath %><%= fontName %>.eot');
   src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
        url('<%= fontPath %><%= fontName %>.woff2') format('woff2'),
@@ -15,44 +17,46 @@
 %icon {
   position: relative;
   display: inline-block;
-  vertical-align: text-bottom;
-  font-family:"<%= fontName %>";
-  font-style: normal;
+  font-family: 'app-font';
   font-weight: normal;
-  line-height: 1;
-  speak: none;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  vertical-align: text-bottom;
   text-decoration: inherit;
   text-transform: none;
+  speak: none;
 }
 
 @function icon-char($filename) {
-  $char: "";
+  $char: '';
   <% _.each(glyphs, function(glyph) { %>
-    @if $filename == <%= glyph.fileName %> {
-      $char: "\<%= glyph.codePoint %>";
-    }<% }); %>
-    @return $char;
-  }
+  @if $filename == <%= glyph.fileName %> {
+    $char: '\<%= glyph.codePoint %>';
+  }<% });
+  %>
+  @return $char;
+}
 
-  @mixin icon($filename) {
-    content: icon-char($filename);
-  }
+@mixin icon($filename) {
+  content: icon-char($filename);
+}
 
-  [class*="icon-"] {
-    @extend %icon;
-  }
+[class*="icon-"] {
+  @extend %icon;
+}
 
-  <% _.each(glyphs, function(glyph) { %>
-    .icon-<%= glyph.fileName %>{
-    &::before {
-      @include icon(<%= glyph.fileName %>);
-    }
-  }
-  %icon-<%= glyph.fileName %> {
+<% _.each(glyphs, function(glyph) { %>
+.icon-<%= glyph.fileName %> {
+  &::before {
     @include icon(<%= glyph.fileName %>);
   }
+}
+
+%icon-<%= glyph.fileName %> {
+  @include icon(<%= glyph.fileName %>);
+}
 <% }); %>
 
 /**

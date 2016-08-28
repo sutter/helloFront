@@ -3,6 +3,8 @@
  * Dependencies : _button.scss
  * --------------------------------------- */
 
+// scss-lint:disable ColorVariable
+
 .button[class*="icon-"] span {
   @include visually-hidden;
 }
@@ -26,17 +28,16 @@
   bottom: 0;
   width: em(46);
   margin-right: 0;
-  background: rgba(0,0,0,0.075);
-}
+  background: rgba(0, 0, 0, .075); // No lint reported
 
-.button--labeled [class*="icon-"]::before,
-.button--labeledInverse [class*="icon-"]::before {
-  display: block;
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  text-align: center;
-  transform: translateY(-50%) scale(1.2);
+  &::before {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%) scale(1.2);
+  }
 }
 
 /*
@@ -44,12 +45,12 @@
  */
 
 .button--labeled {
-  padding-left: em(64)
-}
+  padding-left: em(64);
 
-.button--labeled [class*="icon-"] {
-  left: 0;
-  border-radius: $radS 0 0 $radS;
+  [class*="icon-"] {
+    left: 0;
+    border-radius: $radS 0 0 $radS;
+  }
 }
 
 /*
@@ -58,9 +59,9 @@
 
 .button--labeledInverse {
   padding-right: em(64);
-}
 
-.button--labeledInverse [class*="icon-"] {
-  right: 0;
-  border-radius: 0 $radS $radS 0;
+  [class*="icon-"] {
+    right: 0;
+    border-radius: 0 $radS $radS 0;
+  }
 }
