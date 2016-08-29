@@ -2,6 +2,9 @@
  * Component : Grid
  * ======================================= */
 
+@import '../documentation/grid';
+@import '../documentation/gridResponsive';
+
 .grid {
   display: flex;
   flex-wrap: wrap;

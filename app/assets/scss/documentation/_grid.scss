@@ -1,0 +1,82 @@
+/*
+---
+name: Grid
+tag:
+  - latest
+  - base
+category:
+  - component
+  - component/grid
+---
+
+## Define column number
+
+The grid is mobile first and starts above the breackpoint **mq-s-up** in `app/scss/_settings.scss` file.
+
+### 4 columns
+
+```html
+<div class="grid grid--4">
+  <div>Element 1</div>
+  <div>Element 2</div>
+  <div>Element 3</div>
+  <div>Element 4</div>
+</div>
+```
+
+### 3 columns
+
+```html
+<div class="grid grid--3">
+  <div>Element 1</div>
+  <div>Element 2</div>
+  <div>Element 3</div>
+</div>
+```
+
+### 2 columns
+
+```html
+<div class="grid grid--2">
+  <div>Element 1</div>
+  <div>Element 2</div>
+</div>
+```
+
+###  3/4 column + 1/4 column
+
+```html
+<div class="grid grid--3-1">
+  <div>Element 1</div>
+  <div>Element 2</div>
+</div>
+```
+
+###  1/4 column + 3/4 column
+
+```html
+<div class="grid grid--1-3">
+  <div>Element 1</div>
+  <div>Element 2</div>
+</div>
+```
+
+###  2/3 column + 1/3 column
+
+```html
+<div class="grid grid--2-1">
+  <div>Element 1</div>
+  <div>Element 2</div>
+</div>
+```
+
+###  1/3 column + 2/3 column
+
+```html
+<div class="grid grid--1-2">
+  <div>Element 1</div>
+  <div>Element 2</div>
+</div>
+```
+
+*/
