@@ -3,7 +3,7 @@
  * Dependencies : _button.scss
  * --------------------------------------- */
 
-@import "documentation/buttonGrouped";
+@import '../../documentation/buttonGrouped';
 
 .buttonGrouped {
   display: flex;
@@ -11,7 +11,7 @@
   .button {
     color: $font-color-base;
     border-radius: 0;
-    background-color: transparent;
+    background-color: $clr-light;
     box-shadow: inset 0 0 0 1px $clr-border;
 
     .is-active {
