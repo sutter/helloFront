@@ -1,0 +1,83 @@
+/*
+---
+name: Form inputs
+tag:
+  - latest
+  - base
+category:
+  - component
+  - component/form
+---
+
+## Input base
+
+### Input text
+
+```html
+<div class="form-group">
+  <label for="name" class="form-label">Name</label>
+  <div class="form-input">
+    <input id="name" type="text" name="name" placeholder="Your name">
+  </div>
+</div>
+```
+
+### Input select
+
+```html
+<div class="form-group">
+  <label for="product-number" class="form-label"></label>
+  <div class="form-input">
+    <select id="product-number"  name="product-number">
+      <option>1</option>
+      <option>2</option>
+    </select>
+   </div>
+</div>
+```
+
+### Input radio
+
+```html
+<div class="form-group">
+  <ul class="listInline">
+    <li>
+      <div class="form-input">
+        <input id="radio1" type="radio" name="radio-custom" checked>
+        <label for="radio1">Radio 1</label>
+      </div>
+    </li>
+    <li>
+      <div class="form-input">
+        <input id="radio2" type="radio" name="radio-custom">
+        <label for="radio2">Radio 2</label>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+
+### Input checkbox
+
+```html
+<div class="form-group">
+  <div class="form-input">
+    <input id="checkbox" type="checkbox" value="checkbox-value">
+    <label for="checkbox">Checkbox</label>
+  </div>
+</div>
+```
+
+### Input checkbox toggle
+
+```html
+<div class="form-group">
+  <div class="form-input">
+    <input class="form-toggle-input" id="toggle" type="checkbox" value="toggle-value">
+    <label class="form-toggle-label" for="toggle">Checkbox toggle</label>
+  </div>
+</div>
+```
+
+
+*/
