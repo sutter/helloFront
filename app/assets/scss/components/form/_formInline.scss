@@ -15,33 +15,33 @@
       flex-grow: 0;
     }
 
-    .form-input input,
-    .form-input select {
+    .form-group-input input,
+    .form-group-input select {
       border-right: 0;
       border-radius: 0;
     }
   }
 
   .form-group:first-child {
-    .form-input input,
-    .form-input  select {
+    .form-group-input input,
+    .form-group-input select {
       border-radius: $form-border-radius 0 0 $form-border-radius;
     }
   }
 
   .form-group:only-child {
-    .form-input input,
-    .form-input select {
+    .form-group-input input,
+    .form-group-input select {
       border-right: 1px solid $form-border-color;
       border-radius: $form-border-radius;
     }
   }
 
-  .form-label {
+  .form-group-label {
     @include visually-hidden;
   }
 
-  .form-input {
+  .form-group-input {
     input {
       border-radius: 0;
     }
@@ -50,10 +50,10 @@
   .button {
     display: block;
     width: 100%;
-    height: $form-input-height;
+    height: $form-group-input-height;
     padding-top: 0;
     padding-bottom: 0;
-    line-height: $form-input-height;
+    line-height: $form-group-input-height;
     text-align: center;
     border-radius: 0 $form-border-radius $form-border-radius 0;
   }

@@ -3,7 +3,6 @@
  * ======================================= */
 
 input,
-label,
 select {
   display: block;
 }
@@ -14,6 +13,7 @@ select {
 }
 
 label {
+  display: inline-block;
   font-weight: bold;
   cursor: pointer;
 

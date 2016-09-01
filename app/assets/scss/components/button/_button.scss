@@ -21,7 +21,7 @@
   color: $clr-light;
   border: 0;
   border-radius: $radS;
-  background-color: $clr-1;
+  background: $clr-1;
   cursor: pointer;
   user-select: none;
   transition: $trans;
@@ -35,6 +35,11 @@
     background: $clr-1-darken;
   }
 
+  &:disabled:hover,
+  &.is-disabled:hover {
+    background: $clr-1;
+  }
+
   &.is-active,
   .is-pressed {
     background: shade($clr-1, 40%);
@@ -42,11 +47,9 @@
 
   &:disabled,
   &.is-disabled {
-    pointer-events: none;
-    opacity: .45 !important; // No lint reported
     background-image: none !important; // No lint reported
     box-shadow: none !important; // No lint reported
-    cursor: default;
+    cursor: not-allowed;
   }
 
   + [class*=button] {
@@ -71,6 +74,11 @@
     background: $clr-border;
   }
 
+  &:disabled:hover,
+  &.is-disabled:hover {
+    background: $clr-light;
+  }
+
   &.is-active,
   .is-pressed {
     color: $clr-light;
@@ -80,7 +88,12 @@
 }
 
 .button--danger {
-  background-color: $clr-danger;
+  background: $clr-danger;
+
+  &:disabled:hover,
+  &.is-disabled:hover {
+    background: $clr-danger;
+  }
 
   &:hover,
   &:focus {
