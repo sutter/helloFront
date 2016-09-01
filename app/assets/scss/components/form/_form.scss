@@ -2,6 +2,7 @@
  * Component : Form
  * ======================================= */
 
+@import '../../documentation/form';
 @import '../../documentation/formInput';
 @import '../../documentation/formInputIcon';
 @import '../../documentation/formInputMessage';
@@ -89,6 +90,33 @@
     min-height: $form-group-input-height * 2;
     padding: 1rem;
     line-height: 1.25;
+  }
+}
+
+.form-footer {
+  padding-top: $spacer-s;
+  text-align: center;
+  border-top: 1px solid $clr-divider;
+
+  @media (min-width: $mq-s-up) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.form-footer-alpha {
+  margin-bottom: $spacer-s;
+
+  @media (min-width: $mq-s-up) {
+    margin-bottom: 0;
+    padding-right: $spacer-s;
+  }
+}
+
+.form-footer-beta {
+  @media (min-width: $mq-s-up) {
+    margin-left: auto;
   }
 }
 
