@@ -5,7 +5,7 @@
 
 .form--inline {
   display: flex;
-  align-items: top;
+  align-items: flex-start;
 
   .form-group {
     flex-grow: 1;
@@ -45,6 +45,11 @@
     input {
       border-radius: 0;
     }
+  }
+
+  .form-footer {
+    padding-top: 0;
+    border-top: 0;
   }
 
   .button {
