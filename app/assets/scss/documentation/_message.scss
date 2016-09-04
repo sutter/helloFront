@@ -1,0 +1,35 @@
+/*
+---
+name: Message
+tag:
+  - latest
+  - base
+category:
+  - Component
+  - Component/Message
+---
+
+```html
+<div class="msg">
+  <div class="msg-title">Titre du message</div>
+  <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  <ul>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+  </ul>
+</div>
+
+<div class="msg msg--error">
+  <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+<div class="msg msg--warning">
+  <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+
+<div class="msg msg--success">
+  <p>Lorem ipsum dolor sit amet, consectetur <a href="#">adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+</div>
+```
+
+*/
