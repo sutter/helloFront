@@ -2,6 +2,8 @@
  * Component : List
  * ======================================= */
 
+@import '../documentation/list';
+
 .listReset {
   @include listReset;
 }
@@ -14,8 +16,8 @@
     display: inline-block;
     vertical-align: middle;
 
-    + li {
-      margin-left: 5rem;
+    &:not(:first-child) {
+      margin-left: 1rem;
     }
   }
 }
