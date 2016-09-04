@@ -2,6 +2,8 @@
  * Component : Header
  * ======================================= */
 
+@import "../documentation/header";
+
 [id="header"] {
   padding: em(20) 0;
   background: $clr-0-darken;
@@ -14,7 +16,7 @@
 
 .header-logo {
   display: block;
-  margin: 0;
+  margin: 0 $gutter-width 0 0;
   font-size: em(20);
 }
 
