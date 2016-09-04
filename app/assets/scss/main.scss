@@ -23,23 +23,15 @@
 //  Components
 // ===================================================
 
-@import 'components/app';
-@import 'components/content';
-@import 'components/wrapper';
-@import 'components/grid';
-@import 'components/list';
-@import 'components/header';
-@import 'components/footer';
-@import 'components/pod';
-@import 'components/icons';
-@import 'components/msg';
-@import 'components/table';
-@import 'components/videoWrapper';
 @import 'components/avatar';
+@import 'components/app';
 
-// Menu
-@import 'components/menu/menu';
-@import 'components/menu/menuAside';
+// Button
+@import 'components/button/button';
+@import 'components/button/buttonIcon';
+@import 'components/button/buttonGrouped';
+
+@import 'components/content';
 
 // Form
 @import 'components/form/form';
@@ -50,10 +42,21 @@
 @import 'components/form/formInputToggle';
 @import 'components/form/formInline';
 
-// Button
-@import 'components/button/button';
-@import 'components/button/buttonIcon';
-@import 'components/button/buttonGrouped';
+@import 'components/footer';
+@import 'components/grid';
+@import 'components/header';
+@import 'components/icons';
+@import 'components/list';
+
+// Menu
+@import 'components/menu/menu';
+@import 'components/menu/menuAside';
+
+@import 'components/msg';
+@import 'components/pod';
+@import 'components/table';
+@import 'components/videoWrapper';
+@import 'components/wrapper';
 
 // ===================================================
 // Utils
