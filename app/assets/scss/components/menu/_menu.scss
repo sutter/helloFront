@@ -2,6 +2,13 @@
  * Component : Menu
  * ======================================= */
 
+@import "../../documentation/menu";
+
+.menu {
+  display: flex;
+  font-size: em(14);
+}
+
 .menu-inner {
   @include listReset;
   display: flex;
@@ -13,19 +20,35 @@
   color: $clr-light;
 }
 
-.menu-link {
+.menu-inner-item-link {
   padding: em(6) em(14);
-  font-size: em(14);
 
   &.is-active {
-    color: $clr-light;
+    color: $clr-0;
   }
+}
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.menu-inner--push {
+  margin-left: auto;
+  padding-left: $gutter-width;
 }
 
 /**
  * Modifier by parent
  * --------------------------------------- */
 
-[id="header-nav"] {
-  margin-left: auto;
+[id=header] {
+  .menu {
+    flex-grow: 1;
+  }
+
+  .menu-inner-item-link {
+    &.is-active {
+      color: $clr-light;
+    }
+  }
 }
