@@ -14,4 +14,5 @@ if components.length
           li.aigis-tags__item(class='aigis-tags__item--' + tag) #{tag}
       != component.html
 else
-  != html
+  .aigis-module
+    != html

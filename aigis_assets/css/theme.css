@@ -141,33 +141,16 @@ tag: latest
   color: #f8f8f2;
   font-size: 14px;
   position: relative;
-  padding: 0.5em;
+  padding: 20px;
   border-radius: 3px;
   margin: 0 auto 3em;
-  overflow: scroll;
-  border: 1px solid #A0A0A0; }
-.aigis-module > table {
-  margin: 20px 0;
-  border: 1px solid #ededed;
-}
-.aigis-module > table td {
-  padding: 5px 15px;
-  border-bottom: 1px solid #ededed;
-}
-.aigis-module > table th {
-  padding: 10px 15px;
-  border-bottom: 1px solid #ededed;
-}
-.aigis-module > table td + td,
-.aigis-module > table th + th {
-  border-left: 1px solid #ededed;
-}
+  overflow: scroll;}
+
 .aigis-preview {
-  border: 1px solid #A0A0A0;
+  border: 1px solid #ededed;
   border-radius: 3px;
   border-radius: 3px 3px 0 0;
-  padding: 20px 10px;
-  padding: 16px;
+  padding: 20px;
   margin: 0;
   margin-top: 10px; }
 
