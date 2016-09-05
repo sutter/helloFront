@@ -5,7 +5,7 @@ name: Styleguide
 # The directory containing the source files to parse recursively
 source:
   - ./build/assets/css/main.css
-  - ./app/assets/scss/main.scss
+
 # You may alternately specify multiple directories
 # source:
 #  - ./sass
@@ -17,6 +17,7 @@ source_type:
   - .sass
   - .scss
   - .styl
+
 # If you want to generate documents from markdown
 #source_type: .md
 
@@ -26,17 +27,17 @@ dest: ./build/styleguide
 # The assets needed to build the docs
 # You may put doc related assets here too: images, css, etc.
 dependencies:
-  - ./aigis_assets
+  - ./aigis/aigis_assets
 
 # Index page created from markdown file
-index: ./index.md
+index: ./aigis/index.md
 
 # You can choose template engine : ejs, jade, handlebars
 template_engine: jade
 
 # The directory containing the tempalte files to generate pages
 # It must contain 'layout.xxx' and 'index.xxx' (.ejs or .jade or .hbs)
-template_dir: ./template
+template_dir: ./aigis/template
 
 # Aigis displays logs
 log: false
@@ -64,7 +65,7 @@ output_collection:
   - tag
 
 highlight: true
-highlight_theme: monokai
+highlight_theme: okadia
 
 # plugin directory
 # plugin: ./plugin
