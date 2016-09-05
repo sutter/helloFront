@@ -4,6 +4,38 @@
 
 // scss-lint:disable FinalNewline
 
+/*
+---
+name: Icon
+tag:
+  - latest
+  - base
+category:
+  - Component
+  - Component/Icon
+---
+
+```html
+<% _.each(glyphs, function(glyph) { %><span class="icon icon--<%= glyph.fileName %>"></span>
+<% }); %>
+```
+
+To add a space has left of the icon it is necessary to add to him the modify <code>.icon--mLeft</code>
+
+```html
+<span class="icon icon--add icon--mLeft"></span>
+<span class="icon icon--check icon--mLeft"></span>
+```
+
+To add a space has right of the icon it is necessary to add to him the modify <code>.icon--mRight</code>
+
+```html
+<span class="icon icon--add icon--mRight"></span>
+<span class="icon icon--check icon--mRight"></span>
+```
+
+*/
+
 @font-face {
   font-family: '<%= fontName %>';
   src: url('<%= fontPath %><%= fontName %>.eot');
@@ -43,24 +75,28 @@
   content: icon-char($filename);
 }
 
-[class*="icon-"] {
+.icon {
   @extend %icon;
 }
 
+/**
+ * Modifier : Picture
+ * --------------------------------------- */
+
 <% _.each(glyphs, function(glyph) { %>
-.icon-<%= glyph.fileName %> {
+.icon--<%= glyph.fileName %> {
   &::before {
     @include icon(<%= glyph.fileName %>);
   }
 }
 
-%icon-<%= glyph.fileName %> {
+%icon--<%= glyph.fileName %> {
   @include icon(<%= glyph.fileName %>);
 }
 <% }); %>
 
 /**
- * Modifier
+ * Modifier : push
  * --------------------------------------- */
 
 .icon--mLeft {
