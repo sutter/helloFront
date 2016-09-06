@@ -23,10 +23,9 @@ gulp.task('font-icon', function() {
       }))
       .pipe(iconfont({
         fontName: config.settings.font_name,
-        prependUnicode: true,
+        prependUnicode: config.settings.prependUnicode,
         formats: ['ttf', 'eot', 'woff', 'woff2', 'svg'],
         timestamp: runTimestamp,
-        appendCodepoints: config.settings.append_codepoints,
         normalize: config.settings.normalize,
         fontHeight: config.settings.font_height
       }))

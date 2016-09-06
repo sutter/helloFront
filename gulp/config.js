@@ -76,8 +76,8 @@ module.exports = {
     dest:                       app + '/assets/fonts',
     files_dest:                 app + '/assets/fonts/' + fontName + '.{eot,svg,ttf,woff}',
     settings: {
+      prependUnicode:          true,
       font_name:               fontName,
-      append_codepoints:       true,
       normalize:               true,
       font_height:             512
     }
