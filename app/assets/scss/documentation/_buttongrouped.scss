@@ -1,9 +1,6 @@
 /*
 ---
 name: Button Groupped
-tag:
-  - latest
-  - base
 category:
   - Component
   - Component/Button
@@ -12,10 +9,10 @@ category:
 ```html
 <div class="buttonGrouped">
   <a class="button" href="#" role="button">Share</a>
-  <a class="button icon-close" href="#" role="button">
+  <a class="button icon icon--close" href="#" role="button">
     <span>Close</span>
   </a>
-  <a class="button icon-trash" href="#" role="button">
+  <a class="button icon icon--trash" href="#" role="button">
     <span>Trash</span>
   </a>
 </div>

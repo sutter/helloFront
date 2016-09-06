@@ -1,9 +1,6 @@
 /*
 ---
 name: Button with icon
-tag:
-  - latest
-  - base
 category:
   - Component
   - Component/Button
@@ -12,15 +9,15 @@ category:
 ## Button with icon
 
 ```html
-<a class="button icon-check" href="#" role="button">
+<a class="button icon icon--check" href="#" role="button">
   <span>Check</span>
 </a>
 
-<a class="button button--secondary icon-close" href="#" role="button">
+<a class="button button--secondary icon icon--close" href="#" role="button">
   <span>Close</span>
 </a>
 
-<a class="button button--danger icon-trash" href="#" role="button">
+<a class="button button--danger icon icon--trash" href="#" role="button">
   <span>Delete</span>
 </a>
 ```
@@ -29,15 +26,15 @@ category:
 
 ```html
 <a class="button" href="#" role="button">
-  <span class="icon-check"></span> Default
+  <span class="icon icon--check"></span> Default
 </a>
 
 <a class="button button--secondary" href="#" role="button">
-  <span class="icon-close"></span> Secondary
+  <span class="icon icon--close"></span> Secondary
 </a>
 
 <a class="button button--danger" href="#" role="button">
-  <span class="icon-trash"></span> Danger
+  <span class="icon icon--trash"></span> Danger
 </a>
 ```
 
@@ -45,15 +42,15 @@ category:
 
 ```html
 <a class="button button--labeled" href="#" role="button">
-  <span class="icon-check"></span> Default
+  <span class="icon icon--check"></span> Default
 </a>
 
 <a class="button button--secondary button--labeled" href="#" role="button">
-  <span class="icon-close"></span> Secondary
+  <span class="icon icon--close"></span> Secondary
 </a>
 
 <a class="button button--danger button--labeled" href="#" role="button">
-  <span class="icon-trash"></span> Danger
+  <span class="icon icon--trash"></span> Danger
 </a>
 ```
 
@@ -61,15 +58,15 @@ Reverse version
 
 ```html
 <a class="button button--labeledInverse" href="#" role="button">
-  <span class="icon-check"></span> Default
+  <span class="icon icon--check"></span> Default
 </a>
 
 <a class="button button--secondary button--labeledInverse" href="#" role="button">
-  <span class="icon-close"></span> Secondary
+  <span class="icon icon--close"></span> Secondary
 </a>
 
 <a class="button button--danger button--labeledInverse" href="#" role="button">
-  <span class="icon-trash"></span> Danger
+  <span class="icon icon--trash"></span> Danger
 </a>
 ```
 
