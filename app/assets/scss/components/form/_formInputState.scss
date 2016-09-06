@@ -3,7 +3,7 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-.form-message {
+.form-group-message {
   font-size: em(14);
 }
 
@@ -15,15 +15,15 @@
   input {
     color: $clr-error;
     border-color: tint($clr-error, 50%);
-    background-color: tint($clr-error, 95%);
 
     &:hover {
       border-color: tint($clr-error, 50%);
     }
   }
 
-  .form-label,
-  .form-message {
+  .form-group-label,
+  .form-group-feedback,
+  .form-group-message {
     color: $clr-error;
   }
 }
@@ -36,15 +36,15 @@
   input {
     color: $clr-warning;
     border-color: tint($clr-warning, 50%);
-    background-color: tint($clr-warning, 95%);
 
     &:hover {
       border-color: tint($clr-warning, 50%);
     }
   }
 
-  .form-label,
-  .form-message {
+  .form-group-label,
+  .form-group-feedback,
+  .form-group-message {
     color: $clr-warning;
   }
 }
@@ -57,15 +57,15 @@
   input {
     color: $clr-success;
     border-color: tint($clr-success, 50%);
-    background-color: tint($clr-success, 95%);
 
     &:hover {
       border-color: tint($clr-success, 50%);
     }
   }
 
-  .form-label,
-  .form-message {
+  .form-group-label,
+  .form-group-feedback,
+  .form-group-message {
     color: $clr-success;
   }
 }
@@ -75,9 +75,7 @@
  */
 
 .form-group--disabled.form-group--disabled {
-  .form-label,
-  input {
+  .form-group-label {
     pointer-events: none;
-    opacity: .5;
   }
 }

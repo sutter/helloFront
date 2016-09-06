@@ -40,15 +40,10 @@ cite {
 }
 
 pre {
-  font-size: em(13);
-
   code {
     display: block;
-    padding: em(15) em(20);
-    font-size: $font-size-S;
-    color: $clr-0;
-    border-color: $clr-0-light;
-    background-color: $clr-0-lighten;
+    border: 0;
+    background: none;
   }
 
   p {

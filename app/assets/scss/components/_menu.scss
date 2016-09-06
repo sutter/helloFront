@@ -1,0 +1,69 @@
+/** ======================================
+ * Component : Menu
+ * ======================================= */
+
+@import '../documentation/menu';
+
+.menu {
+  display: flex;
+  font-size: em(14);
+}
+
+.menu-inner {
+  @include listReset;
+  display: flex;
+}
+
+.menu-title {
+  padding: em(6) em(14);
+  font-weight: 700;
+  color: $clr-light;
+}
+
+.menu-inner-item-link {
+  display: block;
+  padding: em(6) em(14);
+
+  &.is-active {
+    color: $clr-0;
+  }
+}
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.menu-inner--push {
+  margin-left: auto;
+  padding-left: $gutter-width;
+}
+
+.menu--vertical {
+  display: block;
+
+  .menu-inner {
+    flex-direction: column;
+  }
+
+  .menu-inner-item {
+    &:not(:first-child) {
+      border-top: 1px solid $clr-divider;
+    }
+  }
+}
+
+/**
+ * Modifier by parent
+ * --------------------------------------- */
+
+.header {
+  .menu {
+    flex-grow: 1;
+  }
+
+  .menu-inner-item-link {
+    &.is-active {
+      color: $clr-light;
+    }
+  }
+}

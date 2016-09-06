@@ -1,0 +1,60 @@
+/*
+---
+name: Grid custom
+category:
+  - Component
+  - Component/Grid
+---
+
+## Customize grid
+
+Add class on direct child of `.grid` component.
+
+**Available sizes :**
+
+* 20%  : `.grid-w20`
+* 25%  : `.grid-w25`
+* 33%  : `.grid-w33`
+* 40%  : `.grid-w40`
+* 50%  : `.grid-w50`
+* 60%  : `.grid-w60`
+* 66%  : `.grid-w66`
+* 75%  : `.grid-w75`
+* 80%  : `.grid-w80`
+* 100% : `.grid-w100`
+
+### Responsive custom grid
+
+```html
+<div class="grid">
+  <div class="grid-w50">Element 1</div>
+  <div class="grid-w50">Element 2</div>
+  <div class="grid-w33">Element 3</div>
+  <div class="grid-w33">Element 4</div>
+  <div class="grid-w33">Element 5</div>
+  <div class="grid-w25">Element 6</div>
+  <div class="grid-w25">Element 7</div>
+  <div class="grid-w25">Element 8</div>
+  <div class="grid-w25">Element 9</div>
+</div>
+```
+
+### No responsive custom grid
+
+Add modifier `.grid--fixed` on `.grid` component.
+
+```html
+<div class="grid grid--fixed">
+  <div class="grid-w50">Element 1</div>
+  <div class="grid-w50">Element 2</div>
+  <div class="grid-w33">Element 3</div>
+  <div class="grid-w33">Element 4</div>
+  <div class="grid-w33">Element 5</div>
+  <div class="grid-w25">Element 6</div>
+  <div class="grid-w25">Element 7</div>
+  <div class="grid-w25">Element 8</div>
+  <div class="grid-w25">Element 9</div>
+</div>
+```
+
+*/

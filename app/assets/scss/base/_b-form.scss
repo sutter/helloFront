@@ -3,17 +3,13 @@
  * ======================================= */
 
 input,
-label,
-select {
+select,
+textarea {
   display: block;
 }
 
-input:not([type="range"]),
-select {
-  appearance: none;
-}
-
 label {
+  display: inline-block;
   font-weight: bold;
   cursor: pointer;
 

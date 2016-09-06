@@ -3,11 +3,11 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-[class*=form-input--icon] {
+[class*=form-group-input--icon] {
   position: relative;
 }
 
-[class*=form-input--icon][class*=form-input--icon] {
+[class*=form-group-input--icon][class*=form-group-input--icon] {
   input {
     padding-right: 4rem;
   }
@@ -26,7 +26,7 @@
   }
 }
 
-.form-input--iconInverse.form-input--iconInverse {
+.form-group-input--iconInverse.form-group-input--iconInverse {
   input {
     padding-right: 1rem;
     padding-left: 4rem;

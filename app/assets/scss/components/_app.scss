@@ -2,14 +2,14 @@
  * Component : app
  * ======================================= */
 
-[id="app"] {
+.app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: $clr-light;
 }
 
-[id="app-main"] {
+.app-main {
   flex-grow: 1;
   padding: 0 0 em(30);
 }

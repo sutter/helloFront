@@ -5,6 +5,8 @@
 
 // scss-lint:disable ColorVariable
 
+@import '../../documentation/buttonIcon';
+
 .button[class*="icon-"] span {
   @include visually-hidden;
 }

@@ -1,0 +1,52 @@
+/*
+---
+name: Form inline
+category:
+  - Component
+  - Component/Form
+---
+
+## Form inline
+
+```html
+<form class="form form--inline" action="">
+
+  <div class="form-group">
+    <label for="login" class="form-group-label">Login</label>
+    <div class="form-group-input">
+      <input id="search" type="search" name="search" placeholder="Search">
+    </div>
+  </div>
+
+  <div class="form-footer">
+    <input class="button" type="submit" value="Search">
+  </div>
+
+</form>
+```
+
+```html
+<form class="form form--inline" action="">
+
+   <div class="form-group">
+    <label for="login" class="form-group-label">Login</label>
+    <div class="form-group-input">
+      <input id="login" type="text" name="login" placeholder="Login">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="password" class="form-group-label">Password</label>
+    <div class="form-group-input">
+      <input id="password" type="password" name="password" placeholder="Password">
+    </div>
+  </div>
+
+  <div class="form-footer">
+    <input class="button" type="submit" value="Log in">
+  </div>
+
+</form>
+```
+
+*/

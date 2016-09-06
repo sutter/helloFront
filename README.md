@@ -73,6 +73,14 @@ gulp build
 gulp clean
 ```
 
+### Generate Styleguide
+
+Generate by [aigis](https://pxgrid.github.io/aigis/)
+
+```
+gulp styleguide
+```
+
 ### Optimize for production
 
 * Minify HTML

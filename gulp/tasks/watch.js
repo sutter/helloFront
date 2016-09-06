@@ -6,9 +6,8 @@ var runSequence  = require('run-sequence');
 
 gulp.task('watch', function () {
 
-  watch(config.styles.files_src, function() {
-    gulp.start('styles');
-    gulp.start('scsslinter');
+  watch(config.styles.files_src, './app/assets', function() {
+    runSequence('styles', 'scsslinter');
   });
 
   watch(config.images.files_src, function() {

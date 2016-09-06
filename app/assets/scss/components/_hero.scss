@@ -1,0 +1,19 @@
+/** ======================================
+ * Component : Hero
+ * ======================================= */
+
+@import '../documentation/hero';
+
+.hero {
+  padding: $spacer-l 0;
+}
+
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.15;
+}
+
+.hero-baseline {
+  font-size: 1.6rem;
+  line-height: 1.25;
+}

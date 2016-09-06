@@ -1,0 +1,9 @@
+.aigis-sidemenu
+  header.aigis-header
+    a(href=root + 'index.html') #{config.name}
+  nav.aigis-categoryList
+    != helper.renderCollectionTree('category')
+  // .aigis-sidemenu__heading Tag
+  nav.aigis-tags.aigis-tagList
+    each tag in config.collection.tag
+      a.aigis-tags__item(class="aigis-tags__item--" + tag, href=root + 'tag/' + tag + '/index.html') #{tag}

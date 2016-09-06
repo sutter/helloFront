@@ -1,0 +1,66 @@
+/*
+---
+name: Menu
+category:
+  - Component
+  - Component/Menu
+---
+
+## Menu base
+
+```html
+<nav class="menu">
+  <ul class="menu-inner">
+    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Item 1</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 2</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 3</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 4</a></li>
+  </ul>
+</nav>
+```
+
+## Menu push right
+
+```html
+<nav class="menu">
+  <ul class="menu-inner menu-inner--push">
+    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Item 1</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 2</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 3</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 4</a></li>
+  </ul>
+</nav>
+```
+
+## Menu base + menu push right
+
+```html
+<nav class="menu">
+  <ul class="menu-inner">
+    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Item 1</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 2</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 3</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 4</a></li>
+  </ul>
+  <ul class="menu-inner menu-inner--push">
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Other item 1</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Other item 2</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Other item 3</a></li>
+  </ul>
+</nav>
+```
+
+## Menu vertical
+
+```html
+<nav class="menu menu--vertical">
+  <ul class="menu-inner">
+    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Item 1</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 2</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 3</a></li>
+    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Item 4</a></li>
+  </ul>
+</nav>
+```
+
+*/

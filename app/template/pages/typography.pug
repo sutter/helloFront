@@ -1,0 +1,422 @@
+extends ../layout/base
+
+append config
+  - var template = 't-base'
+  - var title = "Typography CSS | HelloFront"
+  - var metaDesc = "Gase typography preview"
+  - var navLinkActive = 'Typography'
+
+block content
+
+  .wrapper.u-mtm
+    h1#headings Heading 1
+      h2 Heading 2
+      h3 Heading 3
+      h4 Heading 4
+      h5 Heading 5
+      h6 Heading 6
+      hr
+
+      h1#headings-with-text Headings with Text
+      p
+        | Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      h2 Heading 2
+      p
+        | Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      h3 Heading 3
+      p
+        | Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      h4 Heading 4
+      p
+        | Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      h5 Heading 5
+      p
+        | Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      h6 Heading 6
+      p
+        | Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+      hr
+      h1#text-block Block Elements
+      h2#paragraph Paragraphs and Images
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      p
+        | Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.
+      p
+        img(alt='Placeholder Image and Some Alt Text', src='http://placehold.it/350x150', title='A title element for this placeholder image.')
+      p
+        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem.
+      h2#blockquote Blockquote
+      p
+        | This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      blockquote
+        | "
+        strong This is a blockquote.
+        |  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl."
+      p
+        | This is a standard paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+      h2#figure-caption Figure-Caption
+      figure
+        img(src='http://placehold.it/350x150', alt='A placeholder figure image.')
+        figcaption The figcaption element example
+      h2#details-summary Details-Summary
+      details
+        summary The summary element example
+        p
+          | The details example text. It may be styled differently based on what browser or operating system you are using.
+      hr
+      h1#text-elements  Text Elements
+      p
+        | The
+        a(href='#') a element
+        |  and
+        a(href='http://example.com', target='_blank') external a element
+        |  examples
+      p
+        | The
+        abbr abbr element
+        |  and an
+        abbr(title='Abbreviation') abbr
+        |  element with title examples
+      p
+        | The
+        acronym(title='A Cowboy Ran One New York Marathon') ACRONYM
+        |  element example
+      p
+        | The
+        b b element
+        |  example
+      p
+        | The
+        cite cite element
+        |  example
+      p
+        | The
+        code code element
+        |  example
+      p
+        | The
+        data(value='3967381398') data element
+        |  example
+      p
+        | The
+        del del element
+        |  example
+      p
+        | The
+        dfn dfn element
+        |  and
+        dfn(title='Title text') dfn element with title
+        |  examples
+      p
+        | The
+        em em element
+        |  example
+      p
+        | The
+        i i element
+        |  example
+      p
+        | The
+        ins ins element
+        |  example
+      p
+        | The
+        kbd kbd element
+        |  example
+      p
+        | The
+        mark mark element
+        |  example
+      p
+        | The
+        q q element
+        |  example
+      p
+        | The
+        q
+          | q element
+          q inside
+          |  a q element
+        |  example
+      p
+        | The
+        s s element
+        |  example
+      p
+        | The
+        samp samp element
+        |  example
+      p
+        | The
+        small small element
+        |  example
+      p
+        | The
+        span span element
+        |  example
+      p
+        | The
+        strong strong element
+        |  example
+      p
+        | The
+        sub sub element
+        |  example
+      p
+        | The
+        sup sup element
+        |  example
+      p
+        | The
+        time(datetime='2005-05-15 19:00') time element
+        |  example
+      p
+        | The
+        u u element
+        |  example
+      p
+        | The
+        var var element
+        |  example
+      hr
+      h1#list-types List Types
+      h2#ordered-list Ordered List
+      ol
+        li List Item 1
+        li List Item 2
+        li
+          | List Item 3
+          ol
+            li List Item 3.1
+            li
+              | List Item 3.2
+              ol
+                li List Item 3.2.1
+                li List Item 3.2.2
+            li List Item 3.3
+        li List Item 4
+      h2#unordered-list Unordered List
+      ul
+        li List Item 1
+        li List Item 2
+        li
+          | List Item 3
+          ul
+            li List Item 3.1
+            li
+              | List Item 3.2
+              ul
+                li List Item 3.2.1
+                li List Item 3.2.2
+            li List Item 3.3
+        li List Item 4
+      h2#definition-list Definition List
+      dl
+        dt Definition Term 1
+        dd Definition Description 1
+        dt Definition Term 2
+        dd Definition Description 2
+      hr
+      h1#tables Tables
+      table(cellspacing='0', cellpadding='0')
+        caption This is a table caption
+        thead
+          tr
+            th Table Header 1
+            th Table Header 2
+            th Table Header 3
+        tbody
+          tr
+            td Division 1
+            td Division 2
+            td Division 3
+          tr.even
+            td Division 1
+            td Division 2
+            td Division 3
+          tr
+            td Division 1
+            td Division 2
+            td Division 3
+          tr
+            td(colspan='3') A row with a cell spanning all 3 columns
+        tfoot
+          tr
+            th Table Footer 1
+            th Table Footer 2
+            th Table Footer 3
+      hr
+      h1#media-elements Media
+      h2 The Audio Element:
+      audio(controls='')
+        source(src='http://www.w3schools.com/tags/horse.ogg', type='audio/ogg')
+        source(src='http://www.w3schools.com/tags/horse.mp3', type='audio/mpeg')
+        |   Your browser does not support the audio element.
+      h2 The Video Element:
+      video(width='320', height='240', controls='')
+        source(src='http://www.w3schools.com/tags/movie.mp4', type='video/mp4')
+        source(src='http://www.w3schools.com/tags/movie.ogg', type='video/ogg')
+        |   Your browser does not support the video tag.
+      h2 Embedded content:
+      p YouTube video (iframe):
+      iframe(width='560', height='315', src='http://www.youtube.com/embed/l4f9QF0SGuQ', frameborder='0', allowfullscreen='')
+      hr
+      h1#form-elements Form Elements
+      p The Fieldset:
+      fieldset
+        legend Legend
+        p The Form:
+        form
+          p
+            label(for='text_field') Text Field:
+            br
+            input#text_field(type='text')
+          p
+            label(for='text_field_disabled') Disabled Text Field:
+            br
+            input#text_field_disabled(type='text', disabled='', value="I'm disabled")
+          p
+            label(for='text_field_readonly') Readonly Text Field:
+            br
+            input#text_field_readonly(type='text', readonly='', value="I'm readonly")
+          p
+            label(for='text_area') Text Area:
+            br
+            textarea#text_area
+          p
+            label(for='text_area_disabled') Disabled Text Area:
+            br
+            textarea#text_area_disabled(disabled='') I'm disabled
+          p
+            label(for='text_area') Readonly Text Area:
+            br
+            textarea#text_area(readonly='') I'm readonly
+          p
+            label(for='select_element') Select Element:
+            br
+            select#select_element
+              optgroup(label='Option Group 1')
+                option(value='1') Option 1
+                option(value='2') Option 2
+              optgroup(label='Option Group 2')
+                option(value='1') Option 1
+                option(value='2') Option 2
+                option(value='3', disabled='') Disabled Option
+          p
+            label(for='select_element_disabled') Disabled Select Element:
+            br
+            select#select_element_disabled(disabled='')
+              option(value='1') Unselectable Option
+              option(value='2') This option should not even be seen
+          p
+            | Radio Buttons:
+            br
+            label
+              input.radio(type='radio', name='radio_button', value='radio_1')
+              |  Radio 1
+            br
+            label
+              input.radio(type='radio', name='radio_button', value='radio_2')
+              |  Radio 2
+            br
+            label
+              input.radio(type='radio', name='radio_button', value='radio_3')
+              |  Radio 3
+            br
+            label
+              input.radio(type='radio', name='radio_button', value='radio_4', disabled='')
+              |  Radio Disabled
+            br
+          p
+            | Checkboxes:
+            br
+            label
+              input.checkbox(type='checkbox', name='checkboxes', value='check_1')
+              |  Checkbox 1
+            br
+            label
+              input.checkbox(type='checkbox', name='checkboxes', value='check_2')
+              |  Checkbox 2
+            br
+            label
+              input.checkbox(type='checkbox', name='checkboxes', value='check_3')
+              |  Checkbox 3
+            br
+            label
+              input.checkbox(type='checkbox', name='checkboxes', value='check_4', disabled='')
+              |  Checkbox Disabled
+            br
+          p
+            label(for='password') Password:
+            br
+            input#password.password(type='password')
+          p
+            label(for='file') File Input:
+            br
+            input#file.file(type='file')
+          h3 HTML5-specific Form Elements
+          p
+            label(for='email') Email:
+            br
+            input#email(type='email')
+          p
+            label(for='url') URL:
+            br
+            input#url(type='url')
+          p
+            label(for='tel') Telephone:
+            br
+            input#tel(type='tel')
+          p
+            label(for='number') Number:
+            br
+            input#number(type='number', min='0', max='10', step='1', value='5')
+          p
+            label(for='search') Search:
+            br
+            input#search(type='search')
+          p
+            label(for='date') Date:
+            br
+            input#date(type='date')
+          p
+            label(for='time') Time:
+            br
+            input#time(type='time')
+          p
+            label(for='color') Color:
+            br
+            input#color(type='color')
+          p
+            label(for='datalist') Datalist:
+            br
+            input#datalist(list='browsers', name='browser', type='datalist')
+            datalist#browsers
+              option(value='Internet Explorer')
+              option(value='Firefox')
+              option(value='Chrome')
+              option(value='Opera')
+              option(value='Safari')
+          p
+            label(for='range') Range:
+            br
+            input#range(type='range', name='points', min='1', max='10')
+          p
+            label(for='output') Output:
+            br
+            output#output(name='result') 42
+          p
+            label(for='progress') Progress:
+            br
+            progress#progress(value='65', max='100')
+          p
+            label(for='meter') Meter:
+            br
+            meter#meter(min='200', max='500', value='350') 350 degrees
+          p
+            button Button Element
+          p
+            input(type='reset', value='Clear')
+          p
+            input(type='submit', value='Submit')

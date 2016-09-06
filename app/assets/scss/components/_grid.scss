@@ -2,6 +2,10 @@
  * Component : Grid
  * ======================================= */
 
+@import '../documentation/grid';
+@import '../documentation/gridResponsive';
+@import '../documentation/gridCustom';
+
 .grid {
   display: flex;
   flex-wrap: wrap;

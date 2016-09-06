@@ -2,26 +2,11 @@ extends ../layout/base
 
 append config
   - var template = 't-home'
+  - var title = "HelloFront"
+  - var metaDesc = "HelloFront is a theme SCSS of starting up of compatible project from IE10."
 
 block content
-
-  +contentHeader("Composants SCSS")
-
-  .wrapper
-    .pod
-      p.txtLead Hello Front est un thème SCSS de démarrage de projet compatible à partir de IE10.
-      a(href="https://github.com/sutter/helloFront", role="button", target="_blank").button.button--secondary.button--labeled
-        i.icon-github
-        | Voir sur Github
-      hr
-      h2.txtL Organisation des fichiers SCSS
-      ul
-        li <strong>base/</strong> : Éléments Html de base
-        li <strong>components/</strong> : Composants et morceaux de l'interface utilisateur
-        li <strong>tools/</strong> : Mixin et fonctions
-        li <strong>utils/</strong> : Helpers et overrides
-        li <strong>_settings.scss</strong> : Variables globales
-        li <strong>main.scss</strong> : Feuille de style principale
-      hr
-      h2.txtL Convention de nommage SCSS
-      include:markdown-it ../md/nommage-css.md
+  .hero.u-txtCenter
+    .wrapper
+      h1.hero-title HelloFront starter template
+      p.hero-baseline Use this document as a way to quickly start any new project.

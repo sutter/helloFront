@@ -76,11 +76,16 @@ module.exports = {
     dest:                       app + '/assets/fonts',
     files_dest:                 app + '/assets/fonts/' + fontName + '.{eot,svg,ttf,woff}',
     settings: {
+      prependUnicode:          true,
       font_name:               fontName,
-      append_codepoints:       true,
       normalize:               true,
       font_height:             512
     }
+  },
+
+  url: {
+    urlLocal : 'http://localhost:3000',
+    urlProd : 'http://sutter.github.io/helloFront'
   },
 
   deploy: {
