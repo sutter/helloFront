@@ -1,17 +1,22 @@
 .aigis-header {
   margin-bottom: 20px;
-  padding: 10px;
-  font-size: 22px;
-  font-weight: 600;
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: 400;
   line-height: 1.5em;
   color: #fff;
-  background: #111;
+  background: #272822;
 }
 
 .aigis-header a {
   text-decoration: none;
   color: inherit;
 }
+
+.aigis-sidemenu .aigis-header a:hover {
+  color: #fff;
+}
+
 
 .aigis-footer {
   margin-top: 2rem;
