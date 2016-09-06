@@ -2,9 +2,9 @@
  * Component : Header
  * ======================================= */
 
-@import "../documentation/header";
+@import '../documentation/header';
 
-[id="header"] {
+.header {
   padding: em(20) 0;
   background: $clr-0-darken;
 
