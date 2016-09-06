@@ -2,7 +2,7 @@
  * Component : Menu
  * ======================================= */
 
-@import "../../documentation/menu";
+@import '../documentation/menu';
 
 .menu {
   display: flex;
@@ -21,6 +21,7 @@
 }
 
 .menu-inner-item-link {
+  display: block;
   padding: em(6) em(14);
 
   &.is-active {
@@ -35,6 +36,20 @@
 .menu-inner--push {
   margin-left: auto;
   padding-left: $gutter-width;
+}
+
+.menu--vertical {
+  display: block;
+
+  .menu-inner {
+    flex-direction: column;
+  }
+
+  .menu-inner-item {
+    &:not(:first-child) {
+      border-top: 1px solid $clr-divider;
+    }
+  }
 }
 
 /**
