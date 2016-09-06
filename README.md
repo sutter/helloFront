@@ -172,6 +172,8 @@ Add svg files in folder `./app/assets/img/sprite` and uncomment lines *17 & 18* 
 
 ADD SVG Files in folder `./app/assets/icons` and gulp made magic.
 
+[Preparing-svgs](https://www.npmjs.com/package/gulp-iconfont#preparing-svgs)
+
 * Icon format: svg
 * Icon size: 512x512
 * Vectorize stroke
