@@ -39,6 +39,11 @@
 }
 
 .form-group-input {
+  input:not([type="range"]),
+  select {
+    appearance: none;
+  }
+
   [type="text"],
   [type="password"],
   [type="tel"],

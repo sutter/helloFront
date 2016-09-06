@@ -3,13 +3,9 @@
  * ======================================= */
 
 input,
-select {
+select,
+textarea {
   display: block;
-}
-
-input:not([type="range"]),
-select {
-  appearance: none;
 }
 
 label {
