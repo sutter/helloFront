@@ -1,12 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>close</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="close" sketch:type="MSArtboardGroup" fill="#000000">
-            <path d="M256,199.409412 L397.737774,57.6716385 C413.358746,42.0506668 438.685345,42.0506668 454.306316,57.6716385 C469.927288,73.2926101 469.927288,98.6192093 454.306316,114.240181 L312.568542,255.977955 L454.306316,397.715729 C469.927288,413.3367 469.927288,438.6633 454.306316,454.284271 C438.685345,469.905243 413.358746,469.905243 397.737774,454.284271 L256,312.546497 L114.262226,454.284271 C98.6412544,469.905243 73.3146553,469.905243 57.6936836,454.284271 C42.0727119,438.6633 42.0727119,413.3367 57.6936836,397.715729 L199.431458,255.977955 L57.6936836,114.240181 C42.0727119,98.6192093 42.0727119,73.2926101 57.6936836,57.6716385 C73.3146553,42.0506668 98.6412544,42.0506668 114.262226,57.6716385 L256,199.409412 Z" id="Shape" sketch:type="MSShapeGroup"></path>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px"
+	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<title>close</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="close" sketch:type="MSArtboardGroup">
+		<path id="Shape" sketch:type="MSShapeGroup" d="M256,199.4L397.7,57.7c15.6-15.6,40.9-15.6,56.6,0s15.6,40.9,0,56.6L312.6,256
+			l141.7,141.7c15.6,15.6,15.6,40.9,0,56.6s-40.9,15.6-56.6,0L256,312.5L114.3,454.3c-15.6,15.6-40.9,15.6-56.6,0s-15.6-40.9,0-56.6
+			L199.4,256L57.7,114.2c-15.6-15.6-15.6-40.9,0-56.6s40.9-15.6,56.6,0L256,199.4z"/>
+	</g>
+</g>
 </svg>

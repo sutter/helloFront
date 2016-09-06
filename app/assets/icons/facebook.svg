@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
-    <title>facebook</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="facebook" sketch:type="MSArtboardGroup" fill="#010202">
-            <g sketch:type="MSLayerGroup" transform="translate(26.000000, 26.000000)" id="Shape">
-                <path d="M433.740519,0 L25.3413174,0 C11.3852295,0 0,11.408 0,25.392 L0,434.608 C0,448.592 11.3852295,460 25.3413174,460 L245.241517,460 L245.241517,281.888 L185.377246,281.888 L185.377246,212.428 L245.241517,212.428 L245.241517,161.276 C245.241517,101.844 281.417166,69.552 334.39521,69.552 C359.736527,69.552 381.497006,71.484 387.832335,72.312 L387.832335,134.32 L351.105788,134.32 C322.367265,134.32 316.766467,148.028 316.766467,168.084 L316.766467,212.428 L385.353293,212.428 L376.447106,281.888 L316.766467,281.888 L316.766467,460 L433.740519,460 C447.696607,460 459.081836,448.592 459.081836,434.608 L459.081836,25.392 C459.081836,11.408 447.696607,0 433.740519,0 L433.740519,0 Z" sketch:type="MSShapeGroup"></path>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px"
+	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<title>facebook</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="facebook" sketch:type="MSArtboardGroup">
+		<g id="Shape" transform="translate(26.000000, 26.000000)" sketch:type="MSLayerGroup">
+			<path sketch:type="MSShapeGroup" fill="#010202" d="M433.7,0H25.3C11.4,0,0,11.4,0,25.4v409.2c0,14,11.4,25.4,25.3,25.4h219.9
+				V281.9h-59.9v-69.5h59.9v-51.2c0-59.4,36.2-91.7,89.2-91.7c25.3,0,47.1,1.9,53.4,2.8v62h-36.7c-28.7,0-34.3,13.7-34.3,33.8v44.3
+				h68.6l-8.9,69.5h-59.7V460h117c14,0,25.3-11.4,25.3-25.4V25.4C459.1,11.4,447.7,0,433.7,0L433.7,0z"/>
+		</g>
+	</g>
+</g>
 </svg>
