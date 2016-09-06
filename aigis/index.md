@@ -8,6 +8,8 @@ View HelloFront on [Github](https://github.com/sutter/helloFront)
 
 ## SCSS guidelines
 
+* * *
+
 ### Organization of files SCSS
 
 * **base/** : Unclassed HTML elements (type selector)
@@ -16,6 +18,8 @@ View HelloFront on [Github](https://github.com/sutter/helloFront)
 * **utils/** : Helpers and overrides
 * **_settings.scss** : Global variables
 * **main.scss** : Main stylesheet
+
+* * *
 
 ### CSS naming convention
 
@@ -39,6 +43,7 @@ View HelloFront on [Github](https://github.com/sutter/helloFront)
 /* JS for component */
 .js-myComponent { … }
 ```
+* * *
 
 ### Comments
 

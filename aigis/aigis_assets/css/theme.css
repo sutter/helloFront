@@ -1,12 +1,11 @@
 .aigis-header {
-  margin-top: 10px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   padding: 10px;
-  padding-left: 10px;
   font-size: 22px;
   font-weight: 600;
   line-height: 1.5em;
-  color: #33331a;
+  color: #fff;
+  background: #111;
 }
 
 .aigis-header a {
@@ -18,7 +17,7 @@
   margin-top: 2rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 1.75;
   text-align: center;
   color: #7a7a7a;
@@ -29,7 +28,7 @@
 .aigis-codeblock,
 .aigis-preview {
   position: relative;
-  overflow: scroll; 
+  overflow: scroll;
   margin: 0;
 }
 
@@ -39,7 +38,7 @@
 
 .ex-ag-btn {
   display: inline-block;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   min-width: 200px;
   padding: 10px 20px;
   font-size: 20px;
@@ -69,7 +68,7 @@
 
 .aigis-preview {
   margin: 0;
-  margin-top: 10px; 
+  margin-top: 10px;
   padding: 20px;
   border: 1px solid #ededed;
   border-radius: 3px;
@@ -98,7 +97,7 @@
 }
 
 .aigis-preview + pre {
-  margin-top: 0; 
+  margin-top: 0;
   border-top: none;
   border-radius: 0 0 3px 3px;
 }
@@ -111,22 +110,31 @@
   overflow-x: scroll;
   box-sizing: border-box;
   width: 280px;
-  height: 100%; 
+  height: 100%;
+  color: #666;
+  background-color: #fafafa;
+}
+
+.aigis-sidemenu a:hover {
+  color: #111;
+}
+
+.aigis-categoryList > ul > li > a,
+.aigis-sidemenu__heading {
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: normal;
+  font-weight: 400 !important;
+  line-height: 1em;
   color: #33331a;
-  background-color: #f9faf9;
 }
 
 .aigis-sidemenu__heading {
   margin: 12px 0;
-  padding-left: 10px;
-  font-size: 20px;
-  font-weight: normal;
-  line-height: 1em; 
-  color: #33331a;
 }
 
 .aigis-sidemenu__heading a {
-  text-decoration: none; 
+  text-decoration: none;
   color: inherit;
 }
 
@@ -135,36 +143,35 @@
 }
 
 .aigis-categoryList ul {
-  padding: 3px 10px;
+  padding: 3px 0;
   font-size: 14px;
 }
 
 .aigis-categoryList ul ul {
-  margin-top: 0;
+  margin: 0 0 0 30px;
+}
+
+.aigis-categoryList ul ul li {
+  list-style: disc;
 }
 
 .aigis-categoryList li a {
   position: relative;
-  display: block;
   overflow: hidden;
-  padding: 3px 10px 3px 10px;
   white-space: nowrap;
-  text-decoration: none; 
+  text-decoration: none;
   text-overflow: ellipsis;
-  color: #454545;
+  color: #666;
   border-radius: 0;
   outline: none;
 }
 
 .aigis-categoryList li:hover a[href]:hover {
-  color: #fff; 
-  background-color: #5d5d5d;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+  color: #111;
 }
 
 .aigis-categoryList li[data-path-depth] a:before {
-  margin-right: 10px; 
-  content: "└";
+  margin-right: 10px;
 }
 
 .aigis-categoryList li[data-path-depth="1"] a:before {
@@ -184,12 +191,12 @@
 }
 
 .aigis-categoryList li[data-path-depth] [data-tree-current] {
-  color: #fff;
-  background-color: #8c8c8c;
+  font-weight: bold;
+  color: #111;
 }
 
 .aigis-tags {
-  margin: 0; 
+  margin: 0;
   padding: 10px;
   padding-left: 0;
 }
@@ -200,19 +207,19 @@
   margin-right: 5px;
   padding: 3px 5px;
   font-size: 12px;
-  text-decoration: none; 
+  text-decoration: none;
   color: #fff;
   border-radius: 1px;
   background-color: #454545;
 }
 
 .aigis-tags__item--deprecated {
-  color: #fff; 
+  color: #fff;
   background-color: #ff4f4f;
 }
 
 .aigis-tags__item--latest {
-  color: #fff; 
+  color: #fff;
   background-color: #00c655;
 }
 
@@ -221,12 +228,12 @@
 }
 
 .aigis-moduleList {
-  font-size: 16px; 
+  font-size: 16px;
   line-height: 1.6;
 }
 
 .aigis-moduleList__item a {
-  text-decoration: none; 
+  text-decoration: none;
   color: #08f;
 }
 
@@ -235,7 +242,8 @@
 }
 
 .aigis-module__heading {
-  position: relative; 
+  position: relative;
+  margin-top: 30px !important;
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225;
@@ -244,13 +252,15 @@
 
 .aigis-module__heading:hover a {
   position: relative;
+  color: #ccc;
 }
+
 .aigis-module__heading:hover a:before {
   position: absolute;
   right: 100%;
   bottom: 5px;
   padding-right: 5px;
-  padding-left: 5px; 
+  padding-left: 5px;
   font-size: 20px;
   color: #000;
   content: "\00a7";
@@ -272,13 +282,13 @@
   display: inline-block;
   width: 50%;
   height: 40px;
-  margin-right: 5px; 
+  margin-right: 5px;
   vertical-align: middle;
 }
 
 .aigis-colorPalette__label {
   display: inline-block;
-  line-height: 40px; 
+  line-height: 40px;
   vertical-align: middle;
 }
 
@@ -291,7 +301,7 @@
 
 .aigis-container:after {
   display: table;
-  clear: both; 
+  clear: both;
   content: "";
 }
 
@@ -305,7 +315,7 @@
 .aigis-contents__body {
   min-width: 600px;
   max-width: 960px;
-  margin: 0 auto; 
+  margin: 0 auto;
   padding: 20px 20px;
 }
 
