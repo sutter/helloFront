@@ -33,8 +33,3 @@
 .u-flexPushleft {
   margin-left: auto;
 }
-
-// hidden but not for assistance tools
-.u-visually-hidden {
-  @include visually-hidden;
-}
