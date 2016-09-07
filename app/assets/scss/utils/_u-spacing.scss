@@ -10,71 +10,99 @@
  * Margin
  */
 
-.u-man {
-  margin: 0  !important; // No lint reported
-}
-
-.u-mbn {
+.u-mbn,
+.u-man,
+.u-mvn {
   margin-bottom: 0  !important; // No lint reported
 }
 
-.u-mbs {
+.u-mbs,
+.u-mas,
+.u-mvs {
   margin-bottom: $spacer-s  !important; // No lint reported
 }
 
-.u-mbm {
+.u-mbm,
+.u-mam,
+.u-mvm {
   margin-bottom: $spacer-m  !important; // No lint reported
 }
 
-.u-mbl {
+.u-mbl,
+.u-mal,
+.u-mvl {
   margin-bottom: $spacer-l  !important; // No lint reported
 }
 
-.u-mtn {
+.u-mtn,
+.u-man,
+.u-mvn {
   margin-top: 0  !important; // No lint reported
 }
 
-.u-mts {
+.u-mts,
+.u-mas,
+.u-mvs {
   margin-top: $spacer-s  !important; // No lint reported
 }
 
-.u-mtm {
+.u-mtm,
+.u-mam,
+.u-mvm {
   margin-top: $spacer-m  !important; // No lint reported
 }
 
-.u-mtl {
+.u-mtl,
+.u-mal,
+.u-mvl {
   margin-top: $spacer-l  !important; // No lint reported
 }
 
-.u-mln {
+.u-mln,
+.u-man,
+.u-mhn {
   margin-left: 0  !important; // No lint reported
 }
 
-.u-mls {
+.u-mls,
+.u-mas,
+.u-mhs {
   margin-left: $spacer-s  !important; // No lint reported
 }
 
-.u-mlm {
+.u-mlm,
+.u-mam,
+.u-mhm {
   margin-left: $spacer-m  !important; // No lint reported
 }
 
-.u-mll {
+.u-mll,
+.u-mal,
+.u-mhl {
   margin-left: $spacer-l  !important; // No lint reported
 }
 
-.u-mrn {
+.u-mrn,
+.u-man,
+.u-mhn {
   margin-right: 0  !important; // No lint reported
 }
 
-.u-mrs {
+.u-mrs,
+.u-mas,
+.u-mhs {
   margin-right: $spacer-s  !important; // No lint reported
 }
 
-.u-mrm {
+.u-mrm,
+.u-mam,
+.u-mhm {
   margin-right: $spacer-m  !important; // No lint reported
 }
 
-.u-mrl {
+.u-mrl,
+.u-mal,
+.u-mhl {
   margin-right: $spacer-l  !important; // No lint reported
 }
 
@@ -82,70 +110,98 @@
  * Padding
  */
 
-.u-pan {
-  padding: 0  !important; // No lint reported
-}
-
-.u-pbn {
+.u-pbn,
+.u-pan,
+.u-pvn {
   padding-bottom: 0  !important; // No lint reported
 }
 
-.u-pbs {
+.u-pbs,
+.u-pas,
+.u-pvs {
   padding-bottom: $spacer-s  !important; // No lint reported
 }
 
-.u-pbm {
+.u-pbm,
+.u-pam,
+.u-pvm {
   padding-bottom: $spacer-m  !important; // No lint reported
 }
 
-.u-pbl {
+.u-pbl,
+.u-pal,
+.u-pvl {
   padding-bottom: $spacer-l  !important; // No lint reported
 }
 
-.u-ptn {
+.u-ptn,
+.u-pan,
+.u-pvn {
   padding-top: 0  !important; // No lint reported
 }
 
-.u-pts {
+.u-pts,
+.u-pas,
+.u-pvs {
   padding-top: $spacer-s  !important; // No lint reported
 }
 
-.u-ptm {
+.u-ptm,
+.u-pam,
+.u-pvm {
   padding-top: $spacer-m  !important; // No lint reported
 }
 
-.u-ptl {
+.u-ptl,
+.u-pal,
+.u-pvl {
   padding-top: $spacer-l  !important; // No lint reported
 }
 
-.u-pln {
+.u-pln,
+.u-pan,
+.u-phn {
   padding-left: 0  !important; // No lint reported
 }
 
-.u-pls {
+.u-pls,
+.u-pas,
+.u-phs {
   padding-left: $spacer-s  !important; // No lint reported
 }
 
-.u-plm {
+.u-plm,
+.u-pam,
+.u-phm {
   padding-left: $spacer-m  !important; // No lint reported
 }
 
-.u-pll {
+.u-pll,
+.u-pal,
+.u-phl {
   padding-left: $spacer-l  !important; // No lint reported
 }
 
-.u-prn {
+.u-prn,
+.u-pan,
+.u-phn {
   padding-right: 0  !important; // No lint reported
 }
 
-.u-prs {
+.u-prs,
+.u-pas,
+.u-phs {
   padding-right: $spacer-s  !important; // No lint reported
 }
 
-.u-prm {
+.u-prm,
+.u-pam,
+.u-phm {
   padding-right: $spacer-m  !important; // No lint reported
 }
 
-.u-prl {
+.u-prl,
+.u-pal,
+.u-phl {
   padding-right: $spacer-l  !important; // No lint reported
 }
