@@ -19,6 +19,8 @@ category:
 
 ### Menu push right
 
+Add class modifier `.menu-inner--push` on `.menu-inner` component tu push it on right.
+
 ```html
 <nav class="menu">
   <ul class="menu-inner menu-inner--push">
@@ -48,6 +50,8 @@ category:
 ```
 
 ### Menu vertical
+
+Add class modifier `.menu--vertical` on `.menu` component to put menu in vertical.
 
 ```html
 <nav class="menu menu--vertical">
