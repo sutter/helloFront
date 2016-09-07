@@ -6,31 +6,13 @@ category:
   - Utils/Layout
 ---
 
-```html
-<table class="table">
-  <thead>
-    <tr>
-      <th>Countries</th>
-      <th>Capitals</th>
-      <th>Population</th>
-      <th>Language</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>US</td>
-      <td>Washington D.C.</td>
-      <td>309 millions</td>
-      <td>English</td>
-    </tr>
-    <tr>
-      <td>Suede</td>
-      <td>Stockholm</td>
-      <td>9 millions</td>
-      <td>Swedish</td>
-    </tr>
-  </tbody>
-</table>
-```
+| Class | Usage |
+|---|---|
+| `.u-cf` | Easily clear floats by adding **.u-cf** to the parent element. |
+| `.u-floatLeft` | Floating element on left. |
+| `.u-floatRight` | Floating element on right. |
+| `.u-noBfc` | Remove box formating context. |
+| `.u-flexPushleft` | Push element to left when is parent have flex display. |
+| `.u-visually-hidden` | Hidden but not for assistance tools. |
 
 */
