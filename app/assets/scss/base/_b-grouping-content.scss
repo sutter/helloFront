@@ -61,8 +61,8 @@ samp {
 
 code,
 kbd {
-  padding: .3rem .5rem;
-  font-size: $font-size-XXS;
+  padding: .2rem .6rem;
+  font-size: $font-size-XS;
   font-weight: $font-weight-base;
   vertical-align: middle;
   border-radius: $radS;
@@ -70,8 +70,7 @@ kbd {
 
 code {
   color: $clr-2;
-  border: 1px solid tint($clr-2-light, 50%);
-  background-color: tint($clr-2-light, 70%);
+  background-color: tint($clr-2-light, 85%);
 }
 
 kbd {
