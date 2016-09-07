@@ -16,6 +16,8 @@ category:
 
 ### Secondary style
 
+Add class modifier `.button--secondary` on `.button` component to modify button style.
+
 ```html
 <a class="button button--secondary" href="#" role="button">Link</a>
 <button class="button button--secondary">Button</button>
@@ -23,6 +25,8 @@ category:
 ```
 
 ### Button danger
+
+Add class modifier `.button--danger` on `.button` component to modify button style.
 
 ```html
 <a class="button button--danger" href="#" role="button">Link</a>
@@ -34,12 +38,17 @@ category:
 
 #### Disabled
 
+Add class `.is-disabled` for link and attribute `disabled` for button and input to `.button` when the state is disabled.
+
 ```html
 <a class="button is-disabled" href="#" role="button">Link</a>
 <button class="button button--secondary" disabled>Button</button>
 <input class="button button--danger" type="submit" value="Input" disabled>
 ```
+
 #### Active
+
+Add class `.is-active` to `.button` when the state is active.
 
 ```html
 <a class="button is-active" href="#" role="button">Link</a>
@@ -48,19 +57,27 @@ category:
 
 ### Button sizes
 
+#### Small and big button
+
+Add class modifier `.button--small` or `.button--big` on `.button` component to modify button size.
+
 ```html
 <a class="button button--small" href="#" role="button">button small</a>
 <a class="button" href="#" role="button">button</a>
 <a class="button button--big" href="#" role="button">button big</a>
 ```
 
-Version of the button taking the length of his parent.
+#### Version of the button taking the length of his parent.
+
+Add class modifier `.button--block` on `.button` component to modify the behavior of the button.
 
 ```html
 <a class="button button--block" href="#" role="button">button block</a>
 ```
 
-Version of the button taking the length of his parent only on small screen.
+### Version of the button taking the length of his parent only on small screen.
+
+Add class modifier `.button--blockMobil` on `.button` component to modify the behavior of the button.
 
 ```html
 <a class="button button--blockMobile" href="#" role="button">button blockMobile</a>
