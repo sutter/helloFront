@@ -106,11 +106,12 @@
  * --------------------------------------- */
 
 .button--small {
-  padding: em(8) em(18);
+  padding: em(5) em(15);
+  font-size: em(12);
 }
 
 .button--big {
-  padding: em(20) em(64);
+  padding: em(15) em(40);
   font-size: em(18);
 }
 
