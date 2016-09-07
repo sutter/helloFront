@@ -6,6 +6,10 @@ category:
   - Component/Button
 ---
 
+### Button with icon and without text
+
+Add font-icon in pseudo element **::before** inside the button and visualy hide text.
+
 ```html
 <a class="button icon icon--check" href="#" role="button">
   <span>Check</span>
@@ -21,6 +25,8 @@ category:
 ```
 
 ### Button with icon and text
+
+Add font-icon in pseudo element **::before** and text inside the button.
 
 ```html
 <a class="button" href="#" role="button">
@@ -38,6 +44,8 @@ category:
 
 #### Button icon labeled
 
+Add font-icon in pseudo element **::before** and text inside the button.
+
 ```html
 <a class="button button--labeled" href="#" role="button">
   <span class="icon icon--check"></span> Default
@@ -53,6 +61,8 @@ category:
 ```
 
 #### Button icon labeled - Reverse version
+
+Add font-icon in pseudo element **::before** and text inside the button.
 
 ```html
 <a class="button button--labeledInverse" href="#" role="button">
