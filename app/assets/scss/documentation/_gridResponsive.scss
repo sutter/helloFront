@@ -6,9 +6,9 @@ category:
   - Component/Grid
 ---
 
-## Redefine column number for medium screen
+### Redefine column number for medium screen
 
-### 4 columns becomes 3 columns
+#### 4 columns becomes 3 columns
 
 ```html
 <div class="grid grid--4 grid--m3">
@@ -19,7 +19,7 @@ category:
 </div>
 ```
 
-### 3 columns becomes 2 columns
+#### 3 columns becomes 2 columns
 
 ```html
 <div class="grid grid--3 grid--m2">
@@ -29,7 +29,7 @@ category:
 </div>
 ```
 
-### 2 columns becomes 1 column
+#### 2 columns becomes 1 column
 
 ```html
 <div class="grid grid--2 grid--m1">
@@ -38,7 +38,7 @@ category:
 </div>
 ```
 
-### 3/4 column + 1/4 column becomes 2 columns
+#### 3/4 column + 1/4 column becomes 2 columns
 
 ```html
 <div class="grid grid--3-1 grid--m2">

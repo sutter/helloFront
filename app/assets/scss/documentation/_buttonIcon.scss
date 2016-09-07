@@ -6,8 +6,6 @@ category:
   - Component/Button
 ---
 
-## Button with icon
-
 ```html
 <a class="button icon icon--check" href="#" role="button">
   <span>Check</span>
@@ -22,7 +20,7 @@ category:
 </a>
 ```
 
-## Button with icon and text
+### Button with icon and text
 
 ```html
 <a class="button" href="#" role="button">
@@ -38,7 +36,7 @@ category:
 </a>
 ```
 
-### Button icon labeled
+#### Button icon labeled
 
 ```html
 <a class="button button--labeled" href="#" role="button">
@@ -54,7 +52,7 @@ category:
 </a>
 ```
 
-Reverse version
+#### Button icon labeled - Reverse version
 
 ```html
 <a class="button button--labeledInverse" href="#" role="button">

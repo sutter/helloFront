@@ -6,8 +6,6 @@ category:
   - Component/Menu
 ---
 
-## Menu base
-
 ```html
 <nav class="menu">
   <ul class="menu-inner">
@@ -19,7 +17,7 @@ category:
 </nav>
 ```
 
-## Menu push right
+### Menu push right
 
 ```html
 <nav class="menu">
@@ -32,7 +30,7 @@ category:
 </nav>
 ```
 
-## Menu base + menu push right
+### Menu base + menu push right
 
 ```html
 <nav class="menu">
@@ -50,7 +48,7 @@ category:
 </nav>
 ```
 
-## Menu vertical
+### Menu vertical
 
 ```html
 <nav class="menu menu--vertical">

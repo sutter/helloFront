@@ -1,14 +1,13 @@
 if components.length
   nav
-    h2.aigis-module__heading Components
+    .aigis-module__bigHeading Summary
     ul.aigis-moduleList
       each component in components
         li.aigis-moduleList__item
           a(href='#' + component.config.name) #{component.config.name}
   each component in components
     .aigis-module
-      h2.aigis-module__heading(id=component.config.name, style="margin: 0") #{component.config.name}
-      .aigis-module__filepath(style="margin-top: -30px; margin-bottom: 20px")!= component.sourcePath
+      h2.aigis-module__heading(id=component.config.name) #{component.config.name}
       ul.aigis-tags
         each tag in component.config.tag
           li.aigis-tags__item(class='aigis-tags__item--' + tag) #{tag}
