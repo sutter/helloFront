@@ -6,6 +6,8 @@ category:
   - Component/Menu
 ---
 
+Add class `.is-active` to `.menu-inner-item-link` when the state is active.
+
 ```html
 <nav class="menu">
   <ul class="menu-inner">
