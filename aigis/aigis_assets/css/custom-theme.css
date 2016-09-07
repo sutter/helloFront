@@ -123,6 +123,20 @@
 }
 
 /**
+ * aigis-bullet
+ * --------------------------------------- */
+
+.aigis-bullet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  vertical-align: middle;
+  border: rgba(0, 0, 0, .1);
+  border-radius: 50%;
+}
+
+/**
  * aigis-module
  * --------------------------------------- */
 
@@ -201,6 +215,20 @@
 
 .aigis-module > table tbody td:not(:first-child) {
   border-left: 1px solid #f7f7f9;
+}
+
+/**
+ * aigis-bullet
+ * --------------------------------------- */
+
+.aigis-bullet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 
 /**
