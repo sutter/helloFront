@@ -8,72 +8,72 @@ category:
 
 * **p, m** = padding, margin
 * **a, t, r, b, l, h, v** = all, top, right, bottom, left, horizontal, vertical
-* **s, m, l, n** = small (#{$spacer-s}), medium (#{$spacer-m}), large (#{$spacer-l}) , none (0)
+* **s, m, l, n** = small (#{strip-units($spacer-s)*10} px), medium (#{strip-units($spacer-m)*10} px), large (#{strip-units($spacer-l)*10} px) , none (0)
 
 ### Margin
 
 | Class | Usage |
 |---|---|
-| `.u-mas` | margin: #{$spacer-s}; |
-| `.u-mam` | margin: #{$spacer-m}; |
-| `.u-mal` | margin: #{$spacer-l}; |
+| `.u-mas` | margin: #{strip-units($spacer-s)*10} px; |
+| `.u-mam` | margin: #{strip-units($spacer-m)*10} px; |
+| `.u-mal` | margin: #{strip-units($spacer-l)*10} px; |
 | `.u-man` | margin: 0; |
-| `.u-mts` | margin-top: #{$spacer-s}; |
-| `.u-mtm` | margin-top: #{$spacer-m}; |
-| `.u-mtl` | margin-top: #{$spacer-l}; |
+| `.u-mts` | margin-top: #{strip-units($spacer-s)*10} px; |
+| `.u-mtm` | margin-top: #{strip-units($spacer-m)*10} px; |
+| `.u-mtl` | margin-top: #{strip-units($spacer-l)*10} px; |
 | `.u-mtn` | margin-top: 0; |
-| `.u-mrs` | margin-right: #{$spacer-s}; |
-| `.u-mrm` | margin-right: #{$spacer-m}; |
-| `.u-mrl` | margin-right: #{$spacer-l}; |
+| `.u-mrs` | margin-right: #{strip-units($spacer-s)*10} px; |
+| `.u-mrm` | margin-right: #{strip-units($spacer-m)*10} px; |
+| `.u-mrl` | margin-right: #{strip-units($spacer-l)*10} px; |
 | `.u-mrn` | margin-right: 0; |
-| `.u-mbs` | margin-bottom: #{$spacer-s}; |
-| `.u-mbm` | margin-bottom: #{$spacer-m}; |
-| `.u-mbl` | margin-bottom: #{$spacer-l}; |
+| `.u-mbs` | margin-bottom: #{strip-units($spacer-s)*10} px; |
+| `.u-mbm` | margin-bottom: #{strip-units($spacer-m)*10} px; |
+| `.u-mbl` | margin-bottom: #{strip-units($spacer-l)*10} px; |
 | `.u-mbn` | margin-bottom: 0; |
-| `.u-mls` | margin-left: #{$spacer-s}; |
-| `.u-mlm` | margin-left: #{$spacer-m}; |
-| `.u-mll` | margin-left: #{$spacer-l}; |
+| `.u-mls` | margin-left: #{strip-units($spacer-s)*10} px; |
+| `.u-mlm` | margin-left: #{strip-units($spacer-m)*10} px; |
+| `.u-mll` | margin-left: #{strip-units($spacer-l)*10} px; |
 | `.u-mln` | margin-left: 0; |
-| `.u-mhs` | margin-left: #{$spacer-s}; margin-right: #{$spacer-s}; |
-| `.u-mhm` | margin-left: #{$spacer-m}; margin-right: #{$spacer-m} |
-| `.u-mhl` | margin-left: #{$spacer-l}; margin-right: #{$spacer-l} |
+| `.u-mhs` | margin-left: #{strip-units($spacer-s)*10} px; margin-right: #{strip-units($spacer-s)*10} px; |
+| `.u-mhm` | margin-left: #{strip-units($spacer-m)*10} px; margin-right: #{strip-units($spacer-m)*10} px |
+| `.u-mhl` | margin-left: #{strip-units($spacer-l)*10} px; margin-right: #{strip-units($spacer-l)*10} px |
 | `.u-mhn` | margin-left: 0; margin-right: 0; |
-| `.u-mvs` | margin-top: #{$spacer-s}; margin-bottom: #{$spacer-s}; |
-| `.u-mvm` | margin-top: #{$spacer-m}; margin-bottom: #{$spacer-m} |
-| `.u-mvl` | margin-top: #{$spacer-l}; margin-bottom: #{$spacer-l} |
+| `.u-mvs` | margin-top: #{strip-units($spacer-s)*10} px; margin-bottom: #{strip-units($spacer-s)*10} px; |
+| `.u-mvm` | margin-top: #{strip-units($spacer-m)*10} px; margin-bottom: #{strip-units($spacer-m)*10} px |
+| `.u-mvl` | margin-top: #{strip-units($spacer-l)*10} px; margin-bottom: #{strip-units($spacer-l)*10} px |
 | `.u-mvn` | margin-top: 0; margin-right: 0; |
 
 ### Padding
 
 | Class | Usage |
 |---|---|
-| `.u-pas` | padding: #{$spacer-s}; |
-| `.u-pam` | padding: #{$spacer-m}; |
-| `.u-pal` | padding: #{$spacer-l}; |
+| `.u-pas` | padding: #{strip-units($spacer-s)*10} px; |
+| `.u-pam` | padding: #{strip-units($spacer-m)*10} px; |
+| `.u-pal` | padding: #{strip-units($spacer-l)*10} px; |
 | `.u-pan` | padding: 0; |
-| `.u-pts` | padding-top: #{$spacer-s}; |
-| `.u-ptm` | padding-top: #{$spacer-m}; |
-| `.u-ptl` | padding-top: #{$spacer-l}; |
+| `.u-pts` | padding-top: #{strip-units($spacer-s)*10} px; |
+| `.u-ptm` | padding-top: #{strip-units($spacer-m)*10} px; |
+| `.u-ptl` | padding-top: #{strip-units($spacer-l)*10} px; |
 | `.u-ptn` | padding-top: 0; |
-| `.u-prs` | padding-right: #{$spacer-s}; |
-| `.u-prm` | padding-right: #{$spacer-m}; |
-| `.u-prl` | padding-right: #{$spacer-l}; |
+| `.u-prs` | padding-right: #{strip-units($spacer-s)*10} px; |
+| `.u-prm` | padding-right: #{strip-units($spacer-m)*10} px; |
+| `.u-prl` | padding-right: #{strip-units($spacer-l)*10} px; |
 | `.u-prn` | padding-right: 0; |
-| `.u-pbs` | padding-bottom: #{$spacer-s}; |
-| `.u-pbm` | padding-bottom: #{$spacer-m}; |
-| `.u-pbl` | padding-bottom: #{$spacer-l}; |
+| `.u-pbs` | padding-bottom: #{strip-units($spacer-s)*10} px; |
+| `.u-pbm` | padding-bottom: #{strip-units($spacer-m)*10} px; |
+| `.u-pbl` | padding-bottom: #{strip-units($spacer-l)*10} px; |
 | `.u-pbn` | padding-bottom: 0; |
-| `.u-pls` | padding-left: #{$spacer-s}; |
-| `.u-plm` | padding-left: #{$spacer-m}; |
-| `.u-pll` | padding-left: #{$spacer-l}; |
+| `.u-pls` | padding-left: #{strip-units($spacer-s)*10} px; |
+| `.u-plm` | padding-left: #{strip-units($spacer-m)*10} px; |
+| `.u-pll` | padding-left: #{strip-units($spacer-l)*10} px; |
 | `.u-pln` | padding-left: 0; |
-| `.u-phs` | padding-left: #{$spacer-s}; padding-right: #{$spacer-s}; |
-| `.u-phm` | padding-left: #{$spacer-m}; padding-right: #{$spacer-m} |
-| `.u-phl` | padding-left: #{$spacer-l}; padding-right: #{$spacer-l} |
+| `.u-phs` | padding-left: #{strip-units($spacer-s)*10} px; padding-right: #{strip-units($spacer-s)*10} px; |
+| `.u-phm` | padding-left: #{strip-units($spacer-m)*10} px; padding-right: #{strip-units($spacer-m)*10} px |
+| `.u-phl` | padding-left: #{strip-units($spacer-l)*10} px; padding-right: #{strip-units($spacer-l)*10} px |
 | `.u-phn` | padding-left: 0; padding-right: 0; |
-| `.u-pvs` | padding-top: #{$spacer-s}; padding-bottom: #{$spacer-s}; |
-| `.u-pvm` | padding-top: #{$spacer-m}; padding-bottom: #{$spacer-m} |
-| `.u-pvl` | padding-top: #{$spacer-l}; padding-bottom: #{$spacer-l} |
+| `.u-pvs` | padding-top: #{strip-units($spacer-s)*10} px; padding-bottom: #{strip-units($spacer-s)*10} px; |
+| `.u-pvm` | padding-top: #{strip-units($spacer-m)*10} px; padding-bottom: #{strip-units($spacer-m)*10} px |
+| `.u-pvl` | padding-top: #{strip-units($spacer-l)*10} px; padding-bottom: #{strip-units($spacer-l)*10} px |
 | `.u-pvn` | padding-top: 0; padding-right: 0; |
 
 */
