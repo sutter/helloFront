@@ -2,13 +2,9 @@
  * Utils : Spacing
  * ======================================= */
 
-// scss-lint:disable ImportantRule
+@import '../documentation/u-spacing';
 
-/* Spacing helpers
- *   p,m = padding, margin
- *   a,t,r,b,l = all, top, bottom, left, right
- *   n,s,m,l = none, small, medium, large
- */
+// scss-lint:disable ImportantRule
 
 /*
  * Margin

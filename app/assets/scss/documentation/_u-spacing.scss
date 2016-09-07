@@ -1,0 +1,79 @@
+/*
+---
+name: Spacing
+category:
+  - Utils
+  - Utils/Spacing
+---
+
+* **p, m** = padding, margin
+* **a, t, r, b, l, h, v** = all, top, right, bottom, left, horizontal, vertical
+* **s, m, l, n** = small (#{$spacer-s}), medium (#{$spacer-m}), large (#{$spacer-l}) , none (0)
+
+### Margin
+
+| Class | Usage |
+|---|---|
+| `.u-mas` | margin: #{$spacer-s}; |
+| `.u-mam` | margin: #{$spacer-m}; |
+| `.u-mal` | margin: #{$spacer-l}; |
+| `.u-man` | margin: 0; |
+| `.u-mts` | margin-top: #{$spacer-s}; |
+| `.u-mtm` | margin-top: #{$spacer-m}; |
+| `.u-mtl` | margin-top: #{$spacer-l}; |
+| `.u-mtn` | margin-top: 0; |
+| `.u-mrs` | margin-right: #{$spacer-s}; |
+| `.u-mrm` | margin-right: #{$spacer-m}; |
+| `.u-mrl` | margin-right: #{$spacer-l}; |
+| `.u-mrn` | margin-right: 0; |
+| `.u-mbs` | margin-bottom: #{$spacer-s}; |
+| `.u-mbm` | margin-bottom: #{$spacer-m}; |
+| `.u-mbl` | margin-bottom: #{$spacer-l}; |
+| `.u-mbn` | margin-bottom: 0; |
+| `.u-mls` | margin-left: #{$spacer-s}; |
+| `.u-mlm` | margin-left: #{$spacer-m}; |
+| `.u-mll` | margin-left: #{$spacer-l}; |
+| `.u-mln` | margin-left: 0; |
+| `.u-mhs` | margin-left: #{$spacer-s}; margin-right: #{$spacer-s}; |
+| `.u-mhm` | margin-left: #{$spacer-m}; margin-right: #{$spacer-m} |
+| `.u-mhl` | margin-left: #{$spacer-l}; margin-right: #{$spacer-l} |
+| `.u-mhn` | margin-left: 0; margin-right: 0; |
+| `.u-mvs` | margin-top: #{$spacer-s}; margin-bottom: #{$spacer-s}; |
+| `.u-mvm` | margin-top: #{$spacer-m}; margin-bottom: #{$spacer-m} |
+| `.u-mvl` | margin-top: #{$spacer-l}; margin-bottom: #{$spacer-l} |
+| `.u-mvn` | margin-top: 0; margin-right: 0; |
+
+### Padding
+
+| Class | Usage |
+|---|---|
+| `.u-pas` | padding: #{$spacer-s}; |
+| `.u-pam` | padding: #{$spacer-m}; |
+| `.u-pal` | padding: #{$spacer-l}; |
+| `.u-pan` | padding: 0; |
+| `.u-pts` | padding-top: #{$spacer-s}; |
+| `.u-ptm` | padding-top: #{$spacer-m}; |
+| `.u-ptl` | padding-top: #{$spacer-l}; |
+| `.u-ptn` | padding-top: 0; |
+| `.u-prs` | padding-right: #{$spacer-s}; |
+| `.u-prm` | padding-right: #{$spacer-m}; |
+| `.u-prl` | padding-right: #{$spacer-l}; |
+| `.u-prn` | padding-right: 0; |
+| `.u-pbs` | padding-bottom: #{$spacer-s}; |
+| `.u-pbm` | padding-bottom: #{$spacer-m}; |
+| `.u-pbl` | padding-bottom: #{$spacer-l}; |
+| `.u-pbn` | padding-bottom: 0; |
+| `.u-pls` | padding-left: #{$spacer-s}; |
+| `.u-plm` | padding-left: #{$spacer-m}; |
+| `.u-pll` | padding-left: #{$spacer-l}; |
+| `.u-pln` | padding-left: 0; |
+| `.u-phs` | padding-left: #{$spacer-s}; padding-right: #{$spacer-s}; |
+| `.u-phm` | padding-left: #{$spacer-m}; padding-right: #{$spacer-m} |
+| `.u-phl` | padding-left: #{$spacer-l}; padding-right: #{$spacer-l} |
+| `.u-phn` | padding-left: 0; padding-right: 0; |
+| `.u-pvs` | padding-top: #{$spacer-s}; padding-bottom: #{$spacer-s}; |
+| `.u-pvm` | padding-top: #{$spacer-m}; padding-bottom: #{$spacer-m} |
+| `.u-pvl` | padding-top: #{$spacer-l}; padding-bottom: #{$spacer-l} |
+| `.u-pvn` | padding-top: 0; padding-right: 0; |
+
+*/
