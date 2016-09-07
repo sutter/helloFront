@@ -7,13 +7,25 @@
 .footer {
   padding: $spacer 0;
   background: $clr-0-lighten;
-
-  .wrapper {
-    display: flex;
-  }
 }
 
 .footer-innerPush {
   margin-left: auto;
   padding-left: $gutter-width;
+}
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.footer--innerSeparated {
+  .wrapper {
+    display: flex;
+  }
+}
+
+.footer--txtCenter {
+  .wrapper {
+    text-align: center;
+  }
 }
