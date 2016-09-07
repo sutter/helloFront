@@ -1,0 +1,29 @@
+/*
+---
+name: Text
+category:
+  - Utils
+  - Utils/Text
+---
+
+
+| Class | Usage |
+|---|---|
+| `.u-txtUpper` | Text uppercase |
+| `.u-txtLower` | Text Lowercase |
+| `.u-txtCenter` | Text align center |
+| `.u-txtLeft` |  Text align left |
+| `.u-txtRight` |  Text align right |
+| `.u-txtBreak` |  Indicates that normally unbreakable words may be broken at arbitrary points if there are no otherwise acceptable break points in the line. |
+| `.u-txtTruncate` | Truncate text with ellipsis |
+| `.u-txtLead` | font-size: #{strip-units($font-size-M)*10} px, bold and dark color |
+| `.u-small` | font-size: #{strip-units($font-size-XXS)*10} px, and small line-height |
+| `.u-txtXXL` | font-size: #{strip-units($font-size-XXL)*10} px |
+| `.u-txtXL` | font-size: #{strip-units($font-size-XL)*10} px |
+| `.u-txtL` | font-size: #{strip-units($font-size-L)*10} px |
+| `.u-txtM` | font-size: #{strip-units($font-size-M)*10} px |
+| `.u-txtS` | font-size: #{strip-units($font-size-S)*10} px |
+| `.u-txtXS` | font-size: #{strip-units($font-size-XS)*10} px |
+| `.u-txtXXS` | font-size: #{strip-units($font-size-XXS)*10} px |
+
+*/
