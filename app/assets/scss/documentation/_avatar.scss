@@ -6,10 +6,48 @@ category:
   - Component/Avatar
 ---
 
+An image may be formatted to appear inline with text as an avatar.
+
 ```html
 <div class="avatar">
   <div class="avatar-thumb">
     <img src="https://avatars0.githubusercontent.com/u/709456?v=3&amp;s=460" width="50" height="50" alt="Laurent sutterlity" />
+  </div>
+  <div class="avatar-name">Laurent Sutterlity</div>
+</div>
+```
+
+### Without text
+
+```html
+<div class="avatar">
+  <div class="avatar-thumb">
+    <img src="https://avatars0.githubusercontent.com/u/709456?v=3&amp;s=460" width="50" height="50" alt="Laurent sutterlity" />
+  </div>
+</div>
+```
+
+### Vertical avatar
+
+Add class modifier `.avatar--vertical` on `.avatar` component to put avatar in vertical.
+
+```html
+<div class="avatar avatar--vertical">
+  <div class="avatar-thumb">
+    <img src="https://avatars0.githubusercontent.com/u/709456?v=3&amp;s=460" width="50" height="50" alt="Laurent sutterlity" />
+  </div>
+  <div class="avatar-name">Laurent Sutterlity</div>
+</div>
+```
+
+### Avatar size
+
+For changing size of `.avatar-thumb`, modify attribute **width** and **height** of image.
+
+```html
+<div class="avatar avatar--vertical">
+  <div class="avatar-thumb">
+    <img src="https://avatars0.githubusercontent.com/u/709456?v=3&amp;s=460" width="100" height="100" alt="Laurent sutterlity" />
   </div>
   <div class="avatar-name">Laurent Sutterlity</div>
 </div>

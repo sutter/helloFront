@@ -18,3 +18,15 @@
   margin-left: 1rem;
   line-height: 1;
 }
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.avatar--vertical {
+  flex-direction: column;
+
+  .avatar-name {
+    margin-top: $spacer-s;
+  }
+}
