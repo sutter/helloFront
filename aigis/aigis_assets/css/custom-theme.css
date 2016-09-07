@@ -217,6 +217,18 @@
   border-left: 1px solid #f7f7f9;
 }
 
+.aigis-module code {
+  color: #736e3a;
+  background-color: #f5f1c7;
+}
+
+.aigis-module pre code {
+  padding: 0;
+  color: #fff;
+  border: 0;
+  background-color: transparent;
+}
+
 /**
  * aigis-bullet
  * --------------------------------------- */
@@ -257,6 +269,7 @@
  * --------------------------------------- */
 
 .aigis-preview {
+  margin-top: 30px;
   padding: 20px;
   border-style: solid;
   border-color: #f7f7f9;
