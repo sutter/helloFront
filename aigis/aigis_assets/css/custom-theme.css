@@ -194,6 +194,11 @@
   padding: 0.65rem 1.3rem;
   border-bottom: 1px solid #f7f7f9;
 }
+
+.aigis-module > table tbody td:first-child code {
+  white-space: nowrap;
+}
+
 .aigis-module > table tbody td:not(:first-child) {
   border-left: 1px solid #f7f7f9;
 }
