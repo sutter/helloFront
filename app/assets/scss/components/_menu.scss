@@ -14,7 +14,7 @@
   display: flex;
 }
 
-.menu-inner-item-link {
+.menu-link {
   display: block;
   padding: em(6) em(14);
 
@@ -39,7 +39,7 @@
     flex-direction: column;
   }
 
-  .menu-inner-item {
+  .menu-item {
     &:not(:first-child) {
       border-top: 1px solid $clr-divider;
     }
@@ -55,7 +55,7 @@
     flex-grow: 1;
   }
 
-  .menu-inner-item-link {
+  .menu-link {
     &.is-active {
       color: $clr-light;
     }

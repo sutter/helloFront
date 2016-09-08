@@ -8,16 +8,27 @@ category:
 
 A menu displays grouped navigation actions.
 
-Add class `.is-active` to `.menu-inner-item-link` when the state is active.
+Add class `.is-active` to `.menu-link` when the state is active.
 
 ```html
 <nav class="menu">
   <ul class="menu-inner">
-    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Reviews</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Circuit breaker</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Science</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Entertainment</a></li>
+    <li class="menu-item"><a class="menu-link is-active" href="#">Reviews</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Circuit breaker</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Science</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Entertainment</a></li>
   </ul>
+</nav>
+```
+
+Or use simple markup.
+
+```html
+<nav class="menu">
+  <a class="menu-link is-active" href="#">Reviews</a>
+  <a class="menu-link" href="#">Circuit breaker</a>
+  <a class="menu-link" href="#">Science</a>
+  <a class="menu-link" href="#">Entertainment</a>
 </nav>
 ```
 
@@ -28,10 +39,10 @@ Add class modifier `.menu-inner--push` on `.menu-inner` component tu push it on 
 ```html
 <nav class="menu">
   <ul class="menu-inner menu-inner--push">
-    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Reviews</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Circuit breaker</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Science</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Entertainment</a></li>
+    <li class="menu-item"><a class="menu-link is-active" href="#">Reviews</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Circuit breaker</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Science</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Entertainment</a></li>
   </ul>
 </nav>
 ```
@@ -41,14 +52,14 @@ Add class modifier `.menu-inner--push` on `.menu-inner` component tu push it on 
 ```html
 <nav class="menu">
   <ul class="menu-inner">
-    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Reviews</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Circuit breaker</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Science</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Entertainment</a></li>
+    <li class="menu-item"><a class="menu-link is-active" href="#">Reviews</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Circuit breaker</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Science</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Entertainment</a></li>
   </ul>
   <ul class="menu-inner menu-inner--push">
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Login</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Sign up</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Login</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Sign up</a></li>
   </ul>
 </nav>
 ```
@@ -60,10 +71,10 @@ Add class modifier `.menu--vertical` on `.menu` component to put menu in vertica
 ```html
 <nav class="menu menu--vertical">
   <ul class="menu-inner">
-    <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Reviews</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Circuit breaker</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Science</a></li>
-    <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Entertainment</a></li>
+    <li class="menu-item"><a class="menu-link is-active" href="#">Reviews</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Circuit breaker</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Science</a></li>
+    <li class="menu-item"><a class="menu-link" href="#">Entertainment</a></li>
   </ul>
 </nav>
 ```
