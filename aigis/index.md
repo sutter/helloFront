@@ -10,6 +10,15 @@ View HelloFront on [Github](https://github.com/sutter/helloFront)
 
 * * *
 
+### Syntax and Formatting
+
+* Two (2) space indents, no tabs;
+* 80 character wide columns;
+* multi-line CSS;
+* meaningful use of whitespace.
+
+* * *
+
 ### Organization of files SCSS
 
 * **base/** : Unclassed HTML elements (type selector)
