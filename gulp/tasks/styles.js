@@ -47,6 +47,6 @@ gulp.task('scsslinter', function() {
     }))
     .pipe(scsslint({
       'bundleExec': true,
-      'config': 'scsslint.yml'
+      'config': 'scss-lint.yml'
     }))
 });
