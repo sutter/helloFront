@@ -322,6 +322,7 @@ linters:
       - animation-delay
       - animation-iteration-count
       - animation-direction
+      - animation-fill-mode
       - speak
       - -webkit-user-drag
       - -webkit-appearance
