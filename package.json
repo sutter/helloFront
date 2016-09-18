@@ -22,7 +22,7 @@
     ]
   },
   "devDependencies": {
-    "browser-sync": "^2.13.0",
+    "browser-sync": "^2.16.0",
     "gulp-gh-pages": "^0.5.4"
   },
   "dependencies": {
