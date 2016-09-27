@@ -5,6 +5,9 @@
 
 .formInputCheckbox,
 .formInputRadio {
+  position: relative;
+  line-height: $line-height-small;
+
   [type="radio"],
   [type="checkbox"] {
     position: absolute;
@@ -21,13 +24,17 @@
   }
 
   label {
+    padding-left: $inputRadioCheckboxSize + em(8);
     font-weight: 400;
     transition: $trans;
 
     &::before {
+      position: absolute;
+      top: $inputRadioCheckboxTop;
+      left: 0;
       display: inline-block;
-      width: em(16);
-      height: em(16);
+      width: $inputRadioCheckboxSize;
+      height: $inputRadioCheckboxSize;
       margin-right: em(8);
       vertical-align: text-bottom;
       border: 1px solid $form-border-color;
@@ -54,6 +61,16 @@
     border-color: $clr-1;
     background: $clr-1 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%226%22%20viewBox%3D%220%200%208%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3EShape%20Copy%3C/title%3E%3Cpath%20d%3D%22M.185%203.245L2.47%205.53c.246.246.645.246.89%200l4.455-4.454c.247-.246.247-.645%200-.89-.246-.248-.645-.248-.89%200L2.47%204.638h.89L1.077%202.353c-.246-.247-.645-.247-.89%200-.248.246-.248.645%200%20.89z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E') center no-repeat; // app/assets/img/check.svg
   }
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  .form-group-input--inline & {
+    &:not(:first-child) {
+      margin-top: 0;
+    }
+  }
 }
 
 .formInputRadio {
@@ -65,5 +82,15 @@
   [type="radio"]:focus + label::before,
   [type="radio"]:checked + label::before {
     border: em(5) solid $clr-1;
+  }
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+
+  .form-group-input--inline & {
+    &:not(:first-child) {
+      margin-top: 0;
+    }
   }
 }

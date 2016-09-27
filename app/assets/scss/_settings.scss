@@ -105,6 +105,12 @@ $color-mixin-placeholder:  tint($clr-0, 60%);
 $form-font-size:           $font-size-base;
 $form-group-input-height:        4rem;
 
+$inputRadioCheckboxSize: em(16);
+$inputRadioCheckboxTop: em(1);
+
+$toggle-width: 4.5rem;
+$toggle-height: 2rem;
+
 //
 // 6 - Spacing
 // ---------------------------------------
