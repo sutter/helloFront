@@ -15,7 +15,6 @@
   }
 
   [type="checkbox"] + label {
-    // No lint reported
     position: relative;
     margin-left: $toggle-width + 1;
     font-weight: 400;

@@ -7,16 +7,16 @@
 // scss-lint:disable ImportantRule
 
 .u-hideMobile {
-  display: none !important; // No lint reported
+  display: none !important;
 
   @media (min-width: $mq-s-up) {
-    display: block !important; // No lint reported
+    display: block !important;
   }
 }
 
 .u-showMobile {
   @media (min-width: $mq-s-up) {
-    display: none !important; // No lint reported
+    display: none !important;
   }
 }
 

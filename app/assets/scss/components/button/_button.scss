@@ -47,8 +47,8 @@
 
   &:disabled,
   &.is-disabled {
-    background-image: none !important; // No lint reported
-    box-shadow: none !important; // No lint reported
+    background-image: none !important;
+    box-shadow: none !important;
     cursor: not-allowed;
   }
 

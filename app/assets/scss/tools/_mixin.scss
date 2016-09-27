@@ -13,22 +13,22 @@
 }
 
 @mixin truncate {
-  overflow: hidden !important; // No lint reported
+  overflow: hidden !important;
   max-width: 100%;
-  white-space: nowrap !important; // No lint reported
-  text-overflow: ellipsis !important; // No lint reported
-  word-wrap: normal !important; // No lint reported
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+  word-wrap: normal !important;
 }
 
 @mixin visually-hidden {
-  position: absolute !important; // No lint reported
-  overflow: hidden !important; // No lint reported
-  clip: rect(0, 0, 0, 0) !important; // No lint reported
-  width: 1px !important; // No lint reported
-  height: 1px !important; // No lint reported
-  margin: -1px; // No lint reported
-  padding: 0 !important; // No lint reported
-  border: 0 !important; // No lint reported
+  position: absolute !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px;
+  padding: 0 !important;
+  border: 0 !important;
 }
 
 @mixin listReset {

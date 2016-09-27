@@ -21,10 +21,10 @@ $em-base: 16 !default;
 
 // Mixes a color with black
 @function shade($color, $percent) {
-  @return mix(#000, $color, $percent); // No lint reported
+  @return mix(#000, $color, $percent);
 }
 
 // Mixes a color with white.
 @function tint($color, $percent) {
-  @return mix(#fff, $color, $percent); // No lint reported
+  @return mix(#fff, $color, $percent);
 }
