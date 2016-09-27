@@ -16,8 +16,8 @@
 /* Modifier : size
 -------------------------- */
 
-.wrapper--small {
+.wrapper--S {
   @media (min-width: $mq-s-up) {
-    max-width: $wrapSmall-max-width;
+    max-width: $wrap-S-max-width;
   }
 }
