@@ -328,6 +328,7 @@ linters:
       - -webkit-appearance
       - -webkit-font-smoothing
       - -moz-osx-font-smoothing
+      - touch-action
 
   PropertySpelling:
     enabled: true

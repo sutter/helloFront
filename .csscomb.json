@@ -219,6 +219,7 @@
         "-webkit-user-drag",
         "-webkit-appearance",
         "-webkit-font-smoothing",
-        "-moz-osx-font-smoothing"
+        "-moz-osx-font-smoothing",
+        "touch-action"
     ]
 }
