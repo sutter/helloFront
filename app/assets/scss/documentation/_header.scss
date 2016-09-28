@@ -12,12 +12,12 @@ Refer to the component of menu for various style of menu.
 <header class="header" role="banner">
   <div class="wrapper">
     <h1 class="header-logo"><a class="header-logo-link" href="./">Hello Front</a></h1>
-    <nav class="menu" id="header-nav">
+    <nav class="menu">
       <ul class="menu-inner">
-        <li class="menu-inner-item"><a class="menu-inner-item-link is-active" href="#">Reviews</a></li>
-        <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Circuit breaker</a></li>
-        <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Science</a></li>
-        <li class="menu-inner-item"><a class="menu-inner-item-link" href="#">Entertainment</a></li>
+        <li class="menu-item"><a class="menu-link is-active" href="#">Reviews</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Circuit breaker</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Science</a></li>
+        <li class="menu-item"><a class="menu-link" href="#">Entertainment</a></li>
       </ul>
     </nav>
   </div>
