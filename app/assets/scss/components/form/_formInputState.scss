@@ -3,6 +3,16 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
+$formStateMarkup: (
+  '.form-group-label',
+  '.form-group-feedback',
+  '.form-group-message',
+  '.formInputRadio',
+  '.formInputCheckbox',
+  '.formInputToggle'
+);
+$assignFormStateMarkup: _assign($formStateMarkup);
+
 .form-group-message {
   font-size: em(14);
 }
@@ -21,9 +31,7 @@
     }
   }
 
-  .form-group-label,
-  .form-group-feedback,
-  .form-group-message {
+  #{$assignFormStateMarkup} {
     color: $clr-error;
   }
 }
@@ -42,9 +50,7 @@
     }
   }
 
-  .form-group-label,
-  .form-group-feedback,
-  .form-group-message {
+  #{$assignFormStateMarkup} {
     color: $clr-warning;
   }
 }
@@ -63,9 +69,7 @@
     }
   }
 
-  .form-group-label,
-  .form-group-feedback,
-  .form-group-message {
+  #{$assignFormStateMarkup} {
     color: $clr-success;
   }
 }
