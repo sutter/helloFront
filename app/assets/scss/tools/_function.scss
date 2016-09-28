@@ -28,3 +28,31 @@ $em-base: 16 !default;
 @function tint($color, $percent) {
   @return mix(#fff, $color, $percent);
 }
+
+/// Append pseudo-classes to a selector(s).
+///
+/// @argument {list | string} $inputs
+///   A selector, or list of selectors, to apply the pseudo-class to.
+///
+/// @argument {pseudo-class} $pseudo [null]
+///   The pseudo-class to be appended.
+///
+/// @return {list}
+///
+/// @access private
+
+@function _assign(
+  $inputs,
+  $pseudo: null
+) {
+
+  $list: ();
+
+  @each $input in $inputs {
+    $input: unquote($input);
+    $input: if($pseudo, $input + ':' + $pseudo, $input);
+    $list: append($list, $input, comma);
+  }
+
+  @return $list;
+}
