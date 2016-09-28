@@ -12,65 +12,25 @@ $formStateMarkup: (
   '.formInputToggle'
 );
 $assignFormStateMarkup: _assign($formStateMarkup);
+$stateTypes: (error $clr-error) (success $clr-success) (warning $clr-warning);
 
-.form-group-message {
-  font-size: em(14);
-}
+@each $state in $stateTypes {
+  $type: nth($state, 1);
+  $color: nth($state, 2);
 
-/**
- * Error
- */
+  .form-group--#{$type}.form-group--#{$type} {
+    input {
+      color: $color;
+      border-color: tint($color, 50%);
 
-.form-group--error.form-group--error {
-  input {
-    color: $clr-error;
-    border-color: tint($clr-error, 50%);
-
-    &:hover {
-      border-color: tint($clr-error, 50%);
+      &:hover {
+        border-color: tint($color, 50%);
+      }
     }
-  }
 
-  #{$assignFormStateMarkup} {
-    color: $clr-error;
-  }
-}
-
-/**
- * warning
- */
-
-.form-group--warning.form-group--warning {
-  input {
-    color: $clr-warning;
-    border-color: tint($clr-warning, 50%);
-
-    &:hover {
-      border-color: tint($clr-warning, 50%);
+    #{$assignFormStateMarkup} {
+      color: $color;
     }
-  }
-
-  #{$assignFormStateMarkup} {
-    color: $clr-warning;
-  }
-}
-
-/**
- * Success
- */
-
-.form-group--success.form-group--success {
-  input {
-    color: $clr-success;
-    border-color: tint($clr-success, 50%);
-
-    &:hover {
-      border-color: tint($clr-success, 50%);
-    }
-  }
-
-  #{$assignFormStateMarkup} {
-    color: $clr-success;
   }
 }
 
