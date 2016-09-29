@@ -6,7 +6,7 @@
   padding-right: $gutter-width;
   padding-left: $gutter-width;
 
-  @media (min-width: $mq-s-up) {
+  @media (min-width: $mq-S-up) {
     max-width: $wrap-max-width;
     margin-right: auto;
     margin-left: auto;
@@ -17,7 +17,7 @@
 -------------------------- */
 
 .wrapper--S {
-  @media (min-width: $mq-s-up) {
+  @media (min-width: $mq-S-up) {
     max-width: $wrap-S-max-width;
   }
 }

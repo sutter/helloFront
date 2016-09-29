@@ -11,7 +11,7 @@
 @import '../../documentation/formInputState';
 
 .form {
-  @media (max-width: $mq-s) {
+  @media (max-width: $mq-S) {
     > .grid {
       margin-bottom: $spacer-S;
 
@@ -118,7 +118,7 @@
   text-align: center;
   border-top: 1px solid $clr-divider;
 
-  @media (min-width: $mq-s-up) {
+  @media (min-width: $mq-S-up) {
     display: flex;
     align-items: center;
     text-align: left;
@@ -128,14 +128,14 @@
 .form-footer-alpha {
   margin-bottom: $spacer-S;
 
-  @media (min-width: $mq-s-up) {
+  @media (min-width: $mq-S-up) {
     margin-bottom: 0;
     padding-right: $spacer-S;
   }
 }
 
 .form-footer-beta {
-  @media (min-width: $mq-s-up) {
+  @media (min-width: $mq-S-up) {
     margin-left: auto;
   }
 }

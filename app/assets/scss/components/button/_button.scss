@@ -53,7 +53,7 @@
   }
 
   + [class*=button] {
-    @media (min-width: $mq-s-up) {
+    @media (min-width: $mq-S-up) {
       margin-left: 1rem;
     }
   }
@@ -121,7 +121,7 @@
 }
 
 .button--blockMobile {
-  @media (max-width: $mq-s-up) {
+  @media (max-width: $mq-S-up) {
     display: block;
     width: 100%;
   }
