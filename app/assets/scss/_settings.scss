@@ -22,22 +22,24 @@ $clr-warning:   #f9b134;
 $clr-notice:    #d9edf7;
 $clr-danger:    #d24a53;
 $clr-divider:   #ededed;
+
 $clr-0-darken:  #23292e;
 $clr-0-dark:    #212121;
 $clr-0:         #333;
 $clr-0-light:   #ddd;
 $clr-0-lighten: #fafafa;
+
 $clr-1:         #2fb2de;
 $clr-1-light:   tint($clr-1, 50%);
 $clr-1-lighten: tint($clr-1, 85%);
 $clr-1-dark:    shade($clr-1, 15%);
 $clr-1-darken:  shade($clr-1, 30%);
+
 $clr-2:         #605ce8;
 $clr-2-light:   tint($clr-2, 50%);
 $clr-2-lighten: tint($clr-2, 85%);
 $clr-2-dark:    shade($clr-2, 15%);
 $clr-2-darken:  shade($clr-2, 30%);
-$clr-border:    $clr-0-light;
 
 // Link
 $base-link-color: $clr-1;

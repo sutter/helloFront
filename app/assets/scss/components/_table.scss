@@ -7,16 +7,16 @@
 .table {
   width: 100%;
   margin: $spacer-S 0;
-  border: 1px solid $clr-border;
+  border: 1px solid $clr-0-light;
   background: $clr-light;
 
   th {
     padding: $spacer-S;
-    border-bottom: 2px solid $clr-border;
+    border-bottom: 2px solid $clr-0-light;
   }
 
   th:not(:first-child) {
-    border-left: 1px solid tint($clr-border, 50%);
+    border-left: 1px solid tint($clr-0-light, 50%);
   }
 
   tbody {
@@ -26,11 +26,11 @@
 
     td {
       padding: $spacer-S / 2 $spacer-S;
-      border-bottom: 1px solid $clr-border;
+      border-bottom: 1px solid $clr-0-light;
     }
 
     td:not(:first-child) {
-      border-left: 1px solid tint($clr-border, 50%);
+      border-left: 1px solid tint($clr-0-light, 50%);
     }
   }
 }

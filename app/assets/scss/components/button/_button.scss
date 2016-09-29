@@ -66,12 +66,12 @@
 .button--secondary {
   color: $font-color-base;
   background: $clr-light;
-  box-shadow: inset 0 0 0 1px $clr-border;
+  box-shadow: inset 0 0 0 1px $clr-0-light;
 
   &:hover,
   &:focus {
     color: $font-color-base;
-    background: $clr-border;
+    background: $clr-0-light;
   }
 
   &:disabled:hover,
@@ -82,7 +82,7 @@
   &.is-active,
   .is-pressed {
     color: $clr-light;
-    background: shade($clr-border, 40%);
+    background: shade($clr-0-light, 40%);
     box-shadow: none;
   }
 }

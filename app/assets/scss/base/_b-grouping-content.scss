@@ -15,7 +15,7 @@ hr {
   margin: $spacer-M 0;
   border-top: 0;
   border-right: 0;
-  border-bottom: 1px solid $clr-border;
+  border-bottom: 1px solid $clr-0-light;
   border-left: 0;
 }
 
@@ -23,7 +23,7 @@ blockquote {
   margin: $spacer-M 0;
   padding-left: $spacer-S;
   color: lighten($font-color-base, 15);
-  border-left: 2px solid $clr-border;
+  border-left: 2px solid $clr-0-light;
 
   p {
     margin: 0;
