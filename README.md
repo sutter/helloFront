@@ -94,10 +94,10 @@ gulp build --production
 
 ### Deploy on GithubPages
 
-Run project before.
+Build project before.
 
 ```
-gulp gh-pages
+gulp deploy
 ```
 
 ## How the starter works

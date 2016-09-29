@@ -84,12 +84,17 @@ module.exports = {
   },
 
   url: {
-    urlLocal : 'http://localhost:3000',
-    urlProd : 'http://sutter.github.io/helloFront'
+    urlLocal: 'http://localhost:3000',
+    urlProd: 'http://sutter.github.io/helloFront'
   },
 
   deploy: {
-    folderSrc:  build + '/**/*'
+    folderSrc:  build + '/**/*',
+    folderReplaceSrc:  [
+      build + '/**/*.html',
+      build + '/**/*.js',
+      build + '/**/*.css'
+    ]
   }
 
 };
