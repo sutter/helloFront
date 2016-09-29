@@ -42,9 +42,7 @@
 
 /*  Grid child custom size  */
 
-$widths: (25 25%) (33 33.333%) (50 50%) (66 66.666%) (75 75%) (100 100%);
-
-@each $width in $widths {
+@each $width in $width-list {
   $prefix: nth($width, 1);
   $size: nth($width, 2);
 
