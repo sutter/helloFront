@@ -55,23 +55,24 @@ $clr-pinterest:    #bd081c;
 // ---------------------------------------
 
 $font-base: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$font-title: $font-base;
+$font-alternate: $font-base;
 $font-size-base: 1.6rem;
 // Don't touch this, it's for em convertion
 $em-base: strip-units($font-size-base) * 10;
-$font-color-base: $clr-0;
 $font-weight-bold: bold;
 $font-weight-base: 400;
 $font-weight-thin: 100;
 $font-size-XXL: 4rem;
 $font-size-XL: 2.8rem;
 $font-size-L: 2rem;
-$font-size-M: 1.8rem;
-$font-size-S: 1.6rem;
-$font-size-XS: 1.4rem;
-$font-size-XXS: 1.2rem;
-$line-height-base: 1.625;
-$line-height-small: 1.25;
+$font-size-M: 1.6rem;
+$font-size-S: 1.4rem;
+$font-size-XS: 1.2rem;
+$font-size-XXS: 1rem;
+$line-height-L: 1.625;
+$line-height-M: 1.5;
+$line-height-S: 1.25;
+$line-height-XS: 1;
 
 //
 // 3 - Grid and wrapper
@@ -88,24 +89,11 @@ $gutter-width: 2rem;
 $rad-S: .3rem;
 $rad-M: 1rem;
 
-//
+//@
 // 5 - Forms
 // ---------------------------------------
 
-$form-border-color:        $clr-0-light;
-$form-border-color-hover:  shade($clr-0-light, 10%);
-$form-border-color-focus:  shade($clr-0-light, 20%);
-$form-border-radius:       $rad-S;
-$form-box-shadow-focus:    none, 0 0 5px rgba(darken($form-border-color-focus, 5), .7);
-$color-mixin-placeholder:  tint($clr-0, 60%);
-$form-font-size:           $font-size-base;
-$form-group-input-height:        4rem;
-
-$inputRadioCheckboxSize: em(16);
-$inputRadioCheckboxTop: em(1);
-
-$toggle-width: 4.5rem;
-$toggle-height: 2rem;
+$form-group-input-height: 4rem;
 
 //
 // 6 - Spacing

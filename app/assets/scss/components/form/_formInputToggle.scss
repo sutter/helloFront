@@ -5,8 +5,11 @@
 
 // scss-lint:disable MergeableSelector
 
+$toggle-width: 4.5rem;
+$toggle-height: 2rem;
+
 .formInputToggle {
-  line-height: $line-height-small;
+  line-height: $line-height-S;
 
   [type="checkbox"] {
     position: absolute;
@@ -34,7 +37,7 @@
       width: $toggle-width;
       height: $toggle-height;
       margin-top: -$toggle-height / 2;
-      background: $form-border-color;
+      background: $clr-0;
       transition: background-color .2s .1s ease-in-out;
       transform: translateY(50%);
     }

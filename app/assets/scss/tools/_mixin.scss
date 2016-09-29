@@ -1,9 +1,9 @@
 // scss-lint:disable ImportantRule
 
 @mixin title {
-  font-family: $font-title;
+  font-family: $font-alternate;
   font-weight: bold;
-  line-height: $line-height-small;
+  line-height: $line-height-S;
   text-rendering: optimizeLegibility;
   color: $clr-0-darken;
 

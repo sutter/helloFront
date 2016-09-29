@@ -3,10 +3,13 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
+$inputRadioCheckboxSize: em(16);
+$inputRadioCheckboxTop: em(1);
+
 .formInputCheckbox,
 .formInputRadio {
   position: relative;
-  line-height: $line-height-small;
+  line-height: $line-height-S;
 
   [type="radio"],
   [type="checkbox"] {
@@ -37,7 +40,7 @@
       height: $inputRadioCheckboxSize;
       margin-right: em(8);
       vertical-align: text-bottom;
-      border: 1px solid $form-border-color;
+      border: 1px solid $clr-0;
       background: $clr-light center no-repeat;
       content: '';
     }

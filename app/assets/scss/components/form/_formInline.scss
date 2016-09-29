@@ -25,15 +25,15 @@
   .form-group:first-child {
     .form-group-input input,
     .form-group-input select {
-      border-radius: $form-border-radius 0 0 $form-border-radius;
+      border-radius: $rad-S 0 0 $rad-S;
     }
   }
 
   .form-group:only-child {
     .form-group-input input,
     .form-group-input select {
-      border-right: 1px solid $form-border-color;
-      border-radius: $form-border-radius;
+      border-right: 1px solid $clr-0-light;
+      border-radius: $rad-S;
     }
   }
 
@@ -60,6 +60,6 @@
     padding-bottom: 0;
     line-height: $form-group-input-height;
     text-align: center;
-    border-radius: 0 $form-border-radius $form-border-radius 0;
+    border-radius: 0 $rad-S $rad-S 0;
   }
 }

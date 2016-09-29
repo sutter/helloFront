@@ -22,7 +22,7 @@ hr {
 blockquote {
   margin: $spacer-M 0;
   padding-left: $spacer-S;
-  color: lighten($font-color-base, 15);
+  color: lighten($clr-0, 15);
   border-left: 2px solid $clr-0-light;
 
   p {
@@ -36,7 +36,7 @@ blockquote {
 
 cite {
   font-style: italic;
-  color: lighten($font-color-base, 25);
+  color: lighten($clr-0, 25);
 }
 
 pre {
