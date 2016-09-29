@@ -3,15 +3,15 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-$formStateMarkup: (
+$formStateMarkup: _assign((
   '.form-group-label',
   '.form-group-feedback',
   '.form-group-message',
   '.formInputRadio',
   '.formInputCheckbox',
   '.formInputToggle'
-);
-$assignFormStateMarkup: _assign($formStateMarkup);
+));
+
 $stateTypes: (error $clr-error) (success $clr-success) (warning $clr-warning);
 
 @each $state in $stateTypes {
@@ -28,7 +28,7 @@ $stateTypes: (error $clr-error) (success $clr-success) (warning $clr-warning);
       }
     }
 
-    #{$assignFormStateMarkup} {
+    #{$formStateMarkup} {
       color: $color;
     }
   }
