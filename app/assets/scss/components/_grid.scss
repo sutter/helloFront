@@ -42,44 +42,15 @@
 
 /*  Grid child custom size  */
 
-.grid-w20 {
-  width: calc(20% - #{$gutter-width});
-}
+$widths: (25 25%) (33 33.333%) (50 50%) (66 66.666%) (75 75%) (100 100%);
 
-.grid-w25 {
-  width: calc(25% - #{$gutter-width});
-}
+@each $width in $widths {
+  $prefix: nth($width, 1);
+  $size: nth($width, 2);
 
-.grid-w33 {
-  width: calc(33.333% - #{$gutter-width});
-}
-
-.grid-w40 {
-  width: calc(40% - #{$gutter-width});
-}
-
-.grid-w50 {
-  width: calc(50% - #{$gutter-width});
-}
-
-.grid-w60 {
-  width: calc(60% - #{$gutter-width});
-}
-
-.grid-w66 {
-  width: calc(66.666% - #{$gutter-width});
-}
-
-.grid-w75 {
-  width: calc(75% - #{$gutter-width});
-}
-
-.grid-w80 {
-  width: calc(80% - #{$gutter-width});
-}
-
-.grid-w100 {
-  width: calc(100% - #{$gutter-width});
+  .grid-w#{$prefix} {
+    width: calc(#{$size} - #{$gutter-width});
+  }
 }
 
 /**
