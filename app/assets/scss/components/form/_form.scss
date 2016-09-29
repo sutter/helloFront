@@ -48,30 +48,14 @@
     appearance: none;
   }
 
-  [type="text"],
-  [type="password"],
-  [type="tel"],
-  [type="url"],
-  [type="email"],
-  [type="search"],
-  [type="date"],
-  [type="month"],
-  [type="number"],
+  #{$form-list-input},
   select {
     height: $form-group-input-height;
     padding: 0 1rem;
     line-height: 1;
   }
 
-  [type="text"],
-  [type="password"],
-  [type="tel"],
-  [type="url"],
-  [type="email"],
-  [type="search"],
-  [type="date"],
-  [type="month"],
-  [type="number"],
+  #{$form-list-input},
   select,
   textarea {
     display: block;

@@ -95,6 +95,18 @@ $rad-M: 1rem;
 
 $form-group-input-height: 4rem;
 
+$form-list-input: _assign((
+  '[type="text"]',
+  '[type="password"]',
+  '[type="tel"]',
+  '[type="url"]',
+  '[type="email"]',
+  '[type="search"]',
+  '[type="date"]',
+  '[type="month"]',
+  '[type="number"]'
+));
+
 //
 // 6 - Spacing
 // ---------------------------------------
