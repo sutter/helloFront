@@ -30,7 +30,7 @@ dependencies:
   - ./aigis/aigis_assets
 
 # Index page created from markdown file
-index: ./aigis/index.md
+index: ./aigis/index.html
 
 # You can choose template engine : ejs, jade, handlebars
 template_engine: jade
