@@ -2,14 +2,6 @@
  * Component : Form
  * ======================================= */
 
-@import '../../documentation/form';
-@import '../../documentation/formGrid';
-@import '../../documentation/formInline';
-@import '../../documentation/formInput';
-@import '../../documentation/formInputIcon';
-@import '../../documentation/formInputMessage';
-@import '../../documentation/formInputState';
-
 .form {
   @media (max-width: $mq-S) {
     > .grid {
