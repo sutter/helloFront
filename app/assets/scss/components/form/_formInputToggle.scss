@@ -37,7 +37,7 @@ $toggle-height: 2rem;
       width: $toggle-width;
       height: $toggle-height;
       margin-top: -$toggle-height / 2;
-      background: $clr-0;
+      background: $clr-0-light;
       transition: background-color .2s .1s ease-in-out;
       transform: translateY(50%);
     }
