@@ -88,8 +88,8 @@ $gutter-width: 2rem;
 // 4 - Radius
 // ---------------------------------------
 
-$radS: .3rem;
-$radL: 1rem;
+$rad-S: .3rem;
+$rad-M: 1rem;
 
 //
 // 5 - Forms
@@ -98,7 +98,7 @@ $radL: 1rem;
 $form-border-color:        $clr-0-light;
 $form-border-color-hover:  shade($clr-0-light, 10%);
 $form-border-color-focus:  shade($clr-0-light, 20%);
-$form-border-radius:       $radS;
+$form-border-radius:       $rad-S;
 $form-box-shadow-focus:    none, 0 0 5px rgba(darken($form-border-color-focus, 5), .7);
 $color-mixin-placeholder:  tint($clr-0, 60%);
 $form-font-size:           $font-size-base;

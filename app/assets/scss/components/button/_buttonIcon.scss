@@ -51,7 +51,7 @@
 
   [class*="icon-"] {
     left: 0;
-    border-radius: $radS 0 0 $radS;
+    border-radius: $rad-S 0 0 $rad-S;
   }
 }
 
@@ -64,6 +64,6 @@
 
   [class*="icon-"] {
     right: 0;
-    border-radius: 0 $radS $radS 0;
+    border-radius: 0 $rad-S $rad-S 0;
   }
 }
