@@ -6,202 +6,49 @@
 
 // scss-lint:disable ImportantRule
 
-/*
- * Margin
- */
+$spacers: (N 0) (S $spacer-S) (M $spacer-M) (L $spacer-L);
 
-.u-mbn,
-.u-man,
-.u-mvn {
-  margin-bottom: 0  !important;
-}
+@each $spacer in $spacers {
+  $type: nth($spacer, 1);
+  $size: nth($spacer, 2);
 
-.u-mbs,
-.u-mas,
-.u-mvs {
-  margin-bottom: $spacer-s  !important;
-}
+  .u-mt#{$type},
+  .u-ma#{$type} {
+    margin-top: $size !important;
+  }
 
-.u-mbm,
-.u-mam,
-.u-mvm {
-  margin-bottom: $spacer-m  !important;
-}
+  .u-mb#{$type},
+  .u-ma#{$type} {
+    margin-bottom: $size !important;
+  }
 
-.u-mbl,
-.u-mal,
-.u-mvl {
-  margin-bottom: $spacer-l  !important;
-}
+  .u-ml#{$type},
+  .u-ma#{$type} {
+    margin-left: $size !important;
+  }
 
-.u-mtn,
-.u-man,
-.u-mvn {
-  margin-top: 0  !important;
-}
+  .u-mr#{$type},
+  .u-ma#{$type} {
+    margin-right: $size !important;
+  }
 
-.u-mts,
-.u-mas,
-.u-mvs {
-  margin-top: $spacer-s  !important;
-}
+  .u-pt#{$type},
+  .u-pa#{$type} {
+    padding-top: $size !important;
+  }
 
-.u-mtm,
-.u-mam,
-.u-mvm {
-  margin-top: $spacer-m  !important;
-}
+  .u-pb#{$type},
+  .u-pa#{$type} {
+    padding-bottom: $size !important;
+  }
 
-.u-mtl,
-.u-mal,
-.u-mvl {
-  margin-top: $spacer-l  !important;
-}
+  .u-pl#{$type},
+  .u-pa#{$type} {
+    padding-left: $size !important;
+  }
 
-.u-mln,
-.u-man,
-.u-mhn {
-  margin-left: 0  !important;
-}
-
-.u-mls,
-.u-mas,
-.u-mhs {
-  margin-left: $spacer-s  !important;
-}
-
-.u-mlm,
-.u-mam,
-.u-mhm {
-  margin-left: $spacer-m  !important;
-}
-
-.u-mll,
-.u-mal,
-.u-mhl {
-  margin-left: $spacer-l  !important;
-}
-
-.u-mrn,
-.u-man,
-.u-mhn {
-  margin-right: 0  !important;
-}
-
-.u-mrs,
-.u-mas,
-.u-mhs {
-  margin-right: $spacer-s  !important;
-}
-
-.u-mrm,
-.u-mam,
-.u-mhm {
-  margin-right: $spacer-m  !important;
-}
-
-.u-mrl,
-.u-mal,
-.u-mhl {
-  margin-right: $spacer-l  !important;
-}
-
-/*
- * Padding
- */
-
-.u-pbn,
-.u-pan,
-.u-pvn {
-  padding-bottom: 0  !important;
-}
-
-.u-pbs,
-.u-pas,
-.u-pvs {
-  padding-bottom: $spacer-s  !important;
-}
-
-.u-pbm,
-.u-pam,
-.u-pvm {
-  padding-bottom: $spacer-m  !important;
-}
-
-.u-pbl,
-.u-pal,
-.u-pvl {
-  padding-bottom: $spacer-l  !important;
-}
-
-.u-ptn,
-.u-pan,
-.u-pvn {
-  padding-top: 0  !important;
-}
-
-.u-pts,
-.u-pas,
-.u-pvs {
-  padding-top: $spacer-s  !important;
-}
-
-.u-ptm,
-.u-pam,
-.u-pvm {
-  padding-top: $spacer-m  !important;
-}
-
-.u-ptl,
-.u-pal,
-.u-pvl {
-  padding-top: $spacer-l  !important;
-}
-
-.u-pln,
-.u-pan,
-.u-phn {
-  padding-left: 0  !important;
-}
-
-.u-pls,
-.u-pas,
-.u-phs {
-  padding-left: $spacer-s  !important;
-}
-
-.u-plm,
-.u-pam,
-.u-phm {
-  padding-left: $spacer-m  !important;
-}
-
-.u-pll,
-.u-pal,
-.u-phl {
-  padding-left: $spacer-l  !important;
-}
-
-.u-prn,
-.u-pan,
-.u-phn {
-  padding-right: 0  !important;
-}
-
-.u-prs,
-.u-pas,
-.u-phs {
-  padding-right: $spacer-s  !important;
-}
-
-.u-prm,
-.u-pam,
-.u-phm {
-  padding-right: $spacer-m  !important;
-}
-
-.u-prl,
-.u-pal,
-.u-phl {
-  padding-right: $spacer-l  !important;
+  .u-pr#{$type},
+  .u-pa#{$type} {
+    padding-right: $size !important;
+  }
 }

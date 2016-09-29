@@ -6,42 +6,42 @@
 
 h1 {
   @include title;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   font-size: $font-size-XXL;
 }
 
 h2 {
   @include title;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   font-size: $font-size-XL;
 }
 
 h3 {
   @include title;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   font-size: $font-size-L;
 }
 
 h4 {
   @include title;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   font-size: $font-size-M;
 }
 
 h5 {
   @include title;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   font-size: $font-size-XS;
 }
 
 h6 {
   @include title;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   font-size: $font-size-XS;
 }
 
 p {
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
 
   &:first-child {
     margin-top: 0;

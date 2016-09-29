@@ -4,8 +4,8 @@
 
 ul,
 ol {
-  margin: $spacer-s 0;
-  padding-left: $spacer;
+  margin: $spacer-S 0;
+  padding-left: $spacer-L;
 
   &:first-child {
     margin-top: 0;
@@ -29,10 +29,10 @@ ol {
 }
 
 dl {
-  margin-bottom: $spacer-s;
+  margin-bottom: $spacer-S;
 
   dt {
-    margin-top: $spacer-s;
+    margin-top: $spacer-S;
     font-weight: bold;
   }
 

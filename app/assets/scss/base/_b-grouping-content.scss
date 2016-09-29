@@ -3,7 +3,7 @@
  * ======================================= */
 
 figure {
-  margin: 0 0 $spacer-s;
+  margin: 0 0 $spacer-S;
 }
 
 figcaption {
@@ -12,7 +12,7 @@ figcaption {
 }
 
 hr {
-  margin: $spacer-m 0;
+  margin: $spacer-M 0;
   border-top: 0;
   border-right: 0;
   border-bottom: 1px solid $clr-border;
@@ -20,8 +20,8 @@ hr {
 }
 
 blockquote {
-  margin: $spacer-m 0;
-  padding-left: $spacer-s;
+  margin: $spacer-M 0;
+  padding-left: $spacer-S;
   color: lighten($font-color-base, 15);
   border-left: 2px solid $clr-border;
 

@@ -13,7 +13,7 @@
 .form {
   @media (max-width: $mq-s) {
     > .grid {
-      margin-bottom: $spacer-s;
+      margin-bottom: $spacer-S;
 
       &:last-child {
         margin-bottom: 0;
@@ -23,7 +23,7 @@
 }
 
 .form-group {
-  margin-bottom: $spacer-s;
+  margin-bottom: $spacer-S;
 
   &:last-child {
     margin-bottom: 0;
@@ -113,8 +113,8 @@
 }
 
 .form-footer {
-  margin-top: $spacer-s;
-  padding-top: $spacer-s;
+  margin-top: $spacer-S;
+  padding-top: $spacer-S;
   text-align: center;
   border-top: 1px solid $clr-divider;
 
@@ -126,11 +126,11 @@
 }
 
 .form-footer-alpha {
-  margin-bottom: $spacer-s;
+  margin-bottom: $spacer-S;
 
   @media (min-width: $mq-s-up) {
     margin-bottom: 0;
-    padding-right: $spacer-s;
+    padding-right: $spacer-S;
   }
 }
 

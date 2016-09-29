@@ -25,13 +25,13 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
-  margin-right: $spacer-s / 2;
+  margin-right: $spacer-S / 2;
 }
 
 [type="file"] {
   width: 100%;
-  margin-bottom: $spacer-s;
-  padding-bottom: ($spacer-s / 3);
+  margin-bottom: $spacer-S;
+  padding-bottom: ($spacer-S / 3);
 }
 
 [type="search"] {
@@ -44,8 +44,8 @@ select {
 }
 
 fieldset {
-  margin: 0 0 $spacer-s;
-  padding: $spacer;
+  margin: 0 0 $spacer-S;
+  padding: $spacer-L;
   border: 1px solid $clr-border;
   border-radius: $form-border-radius;
   background: $clr-0-lighten;

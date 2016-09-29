@@ -6,12 +6,12 @@
 
 .table {
   width: 100%;
-  margin: $spacer-s 0;
+  margin: $spacer-S 0;
   border: 1px solid $clr-border;
   background: $clr-light;
 
   th {
-    padding: $spacer-s;
+    padding: $spacer-S;
     border-bottom: 2px solid $clr-border;
   }
 
@@ -25,7 +25,7 @@
     }
 
     td {
-      padding: $spacer-s / 2 $spacer-s;
+      padding: $spacer-S / 2 $spacer-S;
       border-bottom: 1px solid $clr-border;
     }
 

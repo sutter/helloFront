@@ -115,11 +115,11 @@ $toggle-height: 2rem;
 // 6 - Spacing
 // ---------------------------------------
 
-$spacer:    2.6rem;
-$spacer-n:  0;
-$spacer-s:  $spacer / 2;
-$spacer-m:  $spacer * 2;
-$spacer-l:  $spacer * 3;
+$spacer-N:  0;
+$spacer-S:  1rem;
+$spacer-M:  2rem;
+$spacer-L:  4rem;
+
 
 //
 // 7 - Breakpoints
