@@ -4,40 +4,16 @@
 
 // scss-lint:disable QualifyingElement
 
-h1 {
-  @include title;
-  margin: $spacer-S 0;
-  font-size: $font-size-XXL;
-}
-
-h2 {
-  @include title;
-  margin: $spacer-S 0;
-  font-size: $font-size-XL;
-}
-
-h3 {
-  @include title;
-  margin: $spacer-S 0;
-  font-size: $font-size-L;
-}
-
-h4 {
-  @include title;
-  margin: $spacer-S 0;
-  font-size: $font-size-M;
-}
-
-h5 {
-  @include title;
-  margin: $spacer-S 0;
-  font-size: $font-size-XS;
-}
-
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
-  @include title;
   margin: $spacer-S 0;
-  font-size: $font-size-XS;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 p {
@@ -49,7 +25,7 @@ p {
 }
 
 small {
-  font-size: em(16);
+  font-size: inherit;
 }
 
 abbr[title] {

@@ -44,11 +44,9 @@ select {
 }
 
 fieldset {
-  margin: 0 0 $spacer-S;
-  padding: $spacer-L;
-  border: 1px solid $clr-0-light;
-  border-radius: $rad-S;
-  background: $clr-0-lighten;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 ::placeholder {
