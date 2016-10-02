@@ -1,0 +1,25 @@
+/** ======================================
+ * Component: Breadcrumb
+ * ======================================= */
+
+.breadcrumb {
+  @include listReset;
+  display: flex;
+  font-size: 1.4rem;
+}
+
+.breadcrumb-item {
+  display: flex;
+  justify-content: center;
+
+  &:not(:first-child) {
+    margin-left: .5rem;
+
+    &::before {
+      display: block;
+      margin-right: .5rem;
+      color: $clr-0-light;
+      content: '/';
+    }
+  }
+}

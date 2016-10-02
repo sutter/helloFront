@@ -1,0 +1,25 @@
+/*
+---
+name: Breadcrumb
+category:
+  - Component
+  - Component/Breadcrumb
+---
+
+Simple breadcrumb component.
+
+```html
+<ul class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">Home</a>
+    </li>
+    <li class="breadcrumb-item">
+      <a class="breadcrumb-link" href="#">Styleguide</a>
+    </li>
+    <li class="breadcrumb-item">
+      <span class="breadcrumb-active">Breadcrumb</span>
+    </li>
+</ul>
+```
+
+*/
