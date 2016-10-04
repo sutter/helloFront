@@ -120,6 +120,12 @@
  * Modifier
  * --------------------------------------- */
 
+.from-group--noLabel {
+  .form-group-label {
+    @include visually-hidden;
+  }
+}
+
 .form-group-input--inline {
   display: flex;
 

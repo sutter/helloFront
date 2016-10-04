@@ -35,4 +35,17 @@ category:
 </form>
 ```
 
+### No Label
+
+Add class modifier `.form-group--noLabel` on `.form-group` component to hide label (not for screen reader).
+
+```html
+<div class="form-group form-group--noLabel">
+  <label for="input-base" class="form-group-label">Label</label>
+  <div class="form-group-input">
+    <input id="input-base" type="text" name="input-base" placeholder="Your placeholder">
+  </div>
+</div>
+```
+
 */
