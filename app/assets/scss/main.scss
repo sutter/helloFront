@@ -10,16 +10,16 @@
 // Base
 // ===================================================
 
-@import 'base/b-normalize';
-@import 'base/b-font-face';
-@import 'base/b-init';
-@import 'base/b-link';
-@import 'base/b-list';
-@import 'base/b-typography';
-@import 'base/b-embed';
-@import 'base/b-grouping-content';
-@import 'base/b-form';
-@import 'base/b-table';
+@import 'base/b_normalize';
+@import 'base/b_font_face';
+@import 'base/b_init';
+@import 'base/b_link';
+@import 'base/b_list';
+@import 'base/b_typography';
+@import 'base/b_embed';
+@import 'base/b_grouping_content';
+@import 'base/b_form';
+@import 'base/b_table';
 
 // ===================================================
 //  Components
@@ -31,19 +31,19 @@
 
 // Button
 @import 'components/button/button';
-@import 'components/button/buttonIcon';
-@import 'components/button/buttonGrouped';
+@import 'components/button/button_icon';
+@import 'components/button/button_grouped';
 
 @import 'components/content';
 
 // Form
 @import 'components/form/form';
-@import 'components/form/formInputSelect';
-@import 'components/form/formInputRadioCheckbox';
-@import 'components/form/formInputIcon';
-@import 'components/form/formInputState';
-@import 'components/form/formInputToggle';
-@import 'components/form/formInline';
+@import 'components/form/form_input_select';
+@import 'components/form/form_input_radio_checkbox';
+@import 'components/form/form_input_icon';
+@import 'components/form/form_input_state';
+@import 'components/form/form_input_toggle';
+@import 'components/form/form_inline';
 
 @import 'components/footer';
 @import 'components/grid';
@@ -55,7 +55,7 @@
 @import 'components/msg';
 @import 'components/pod';
 @import 'components/table';
-@import 'components/videoWrapper';
+@import 'components/video_wrapper';
 @import 'components/wrapper';
 
 // ===================================================
