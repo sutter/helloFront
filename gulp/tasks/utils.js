@@ -1,7 +1,7 @@
-var fs = require('fs');
+const fs = require('fs');
 
-module.exports.createEmptyFile = function(path){
-  fs.writeFile(path, '', function(error){
+module.exports.createEmptyFile = path => {
+  fs.writeFile(path, '', error => {
     if (error){ return console.error(error) }
   })
 }
@@ -12,9 +12,9 @@ module.exports.createEmptyFile = function(path){
  * @param  {string} ext  A string of the extension, ex. '.svg'
  * @return {boolean}
  */
-module.exports.checkDirectoryForExt = function (path, ext){
+module.exports.checkDirectoryForExt = (path, ext) => {
   files = fs.readdirSync(path);
-  return files.some(function(file){
+  return files.some(file => {
     return file.substr(- ext.length) === ext;
   })
 }

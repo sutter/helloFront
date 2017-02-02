@@ -1,6 +1,6 @@
-var gulp         = require('gulp');
-var del          = require('del');
-var config       = require('../config');
+const gulp         = require('gulp');
+const del          = require('del');
+const config       = require('../config');
 
 
 gulp.task('clean', del.bind(null, [

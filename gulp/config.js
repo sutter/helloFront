@@ -1,6 +1,6 @@
-var app    = './app';
-var build  = './build';
-var fontName  = 'app-font';
+const app    = './app';
+const build  = './build';
+const fontName  = 'app-font';
 
 module.exports = {
 

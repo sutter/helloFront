@@ -1,9 +1,9 @@
-var gulp         = require('gulp');
-var config       = require('../config');
-var browserSync  = require('browser-sync');
-var runSequence  = require('run-sequence');
+const gulp         = require('gulp');
+const config       = require('../config');
+const browserSync  = require('browser-sync');
+const runSequence  = require('run-sequence');
 
-gulp.task('default', function(callback) {
+gulp.task('default', callback => {
   process.WATCH_SCRIPTS = true;
   runSequence('build', 'browserSync', 'watch', callback);
 });

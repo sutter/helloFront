@@ -1,14 +1,14 @@
-var gulp         = require('gulp');
-var config       = require('../config').templates;
-var pug          = require('gulp-pug');
-var plumber      = require('gulp-plumber');
-var notify       = require('gulp-notify');
-var gutil        = require("gulp-util");
-var htmlmin      = require('gulp-htmlmin');
-var size         = require('gulp-size');
-var options      = require('minimist')(process.argv.slice(2));
+const gulp         = require('gulp');
+const config       = require('../config').templates;
+const pug          = require('gulp-pug');
+const plumber      = require('gulp-plumber');
+const notify       = require('gulp-notify');
+const gutil        = require("gulp-util");
+const htmlmin      = require('gulp-htmlmin');
+const size         = require('gulp-size');
+const options      = require('minimist')(process.argv.slice(2));
 
-gulp.task('templates', function() {
+gulp.task('templates', () => {
   return gulp.src(config.page_src)
     .pipe(plumber({
       errorHandler: notify.onError('PUG Error: <%= error.message %>')

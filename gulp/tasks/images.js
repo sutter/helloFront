@@ -1,12 +1,12 @@
-var gulp         = require('gulp');
-var config       = require('../config').images;
-var imagemin     = require('gulp-imagemin');
-var pngquant     = require('imagemin-pngquant');
-var size         = require('gulp-size');
-var plumber      = require('gulp-plumber');
-var notify       = require('gulp-notify');
+const gulp         = require('gulp');
+const config       = require('../config').images;
+const imagemin     = require('gulp-imagemin');
+const pngquant     = require('imagemin-pngquant');
+const size         = require('gulp-size');
+const plumber      = require('gulp-plumber');
+const notify       = require('gulp-notify');
 
-gulp.task('images', function() {
+gulp.task('images', () => {
   return gulp.src(config.files_src)
     .pipe(plumber({
       errorHandler: notify.onError("Images Error: <%= error.message %>")

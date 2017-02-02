@@ -1,15 +1,15 @@
-var gulp         = require('gulp');
-var fs           = require('fs');
-var iconfont     = require('gulp-iconfont');
-var iconfontCss  = require('gulp-iconfont-css');
-var config       = require('../config').font_icon;
-var utils        = require('./utils');
-var plumber      = require('gulp-plumber');
-var notify       = require('gulp-notify');
-var runTimestamp = Math.round(Date.now()/1000);
+const gulp         = require('gulp');
+const fs           = require('fs');
+const iconfont     = require('gulp-iconfont');
+const iconfontCss  = require('gulp-iconfont-css');
+const config       = require('../config').font_icon;
+const utils        = require('./utils');
+const plumber      = require('gulp-plumber');
+const notify       = require('gulp-notify');
+const runTimestamp = Math.round(Date.now()/1000);
 
 
-gulp.task('font-icon', function() {
+gulp.task('font-icon', () => {
   if (utils.checkDirectoryForExt(config.src, '.svg')){
     return gulp.src(config.files_src)
       .pipe(plumber({

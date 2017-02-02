@@ -1,15 +1,15 @@
-var gulp         = require('gulp');
-var webpack      = require('webpack-stream');
-var config       = require('../config').scripts;
-var named        = require('vinyl-named');
-var browserSync  = require('browser-sync');
-var gutil        = require('gulp-util');
-var plumber      = require('gulp-plumber');
-var options      = require('minimist')(process.argv.slice(2));
+const gulp         = require('gulp');
+const webpack      = require('webpack-stream');
+const config       = require('../config').scripts;
+const named        = require('vinyl-named');
+const browserSync  = require('browser-sync');
+const gutil        = require('gulp-util');
+const plumber      = require('gulp-plumber');
+const options      = require('minimist')(process.argv.slice(2));
 
-var webpackConfig = options.production ? require('../../webpack.production.config.js') : require('../../webpack.config.js');
+const webpackConfig = options.production ? require('../../webpack.production.config.js') : require('../../webpack.config.js');
 
-function webpackChangeHandler (_, stats) {
+const webpackChangeHandler = (_, stats) => {
   gutil.log("[webpack]", stats.toString({
     hash: false,
     timings: true,
@@ -27,10 +27,10 @@ function webpackChangeHandler (_, stats) {
   browserSync.reload();
 }
 
-gulp.task('scripts', function() {
+gulp.task('scripts', () => {
   if (process.WATCH_SCRIPTS) webpackConfig.watch = true;
 
-  var webpackStream = gulp.src(config.main_src)
+  const webpackStream = gulp.src(config.main_src)
       .pipe(plumber({
         errorHandler: gutil.noop, // prevent double errors in console
       }))

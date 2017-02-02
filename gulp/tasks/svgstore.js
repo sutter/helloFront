@@ -1,14 +1,14 @@
-var gulp         = require('gulp');
-var config       = require('../config').svgstore;
-var svgstore     = require('gulp-svgstore');
-var svgmin       = require('gulp-svgmin');
-var path         = require('path');
+const gulp         = require('gulp');
+const config       = require('../config').svgstore;
+const svgstore     = require('gulp-svgstore');
+const svgmin       = require('gulp-svgmin');
+const path         = require('path');
 
-gulp.task('svgstore', function () {
+gulp.task('svgstore', () => {
   return gulp
     .src(config.files_src_svg_sprites)
     .pipe(svgmin(function (file) {
-      var prefix = path.basename(file.relative, path.extname(file.relative));
+      const prefix = path.basename(file.relative, path.extname(file.relative));
       return {
         plugins: [{
           cleanupIDs: {

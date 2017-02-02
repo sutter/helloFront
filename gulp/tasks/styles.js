@@ -1,27 +1,27 @@
-var gulp         = require('gulp');
-var config       = require('../config');
-var fs           = require('fs');
-var sass         = require('gulp-sass');
-var plumber      = require('gulp-plumber');
-var autoprefixer = require('gulp-autoprefixer');
-var notify       = require('gulp-notify');
-var sourcemaps   = require('gulp-sourcemaps');
-var gutil        = require("gulp-util");
-var size         = require('gulp-size');
-var scsslint     = require('gulp-scss-lint');
-var csso         = require("gulp-csso");
-var options      = require('minimist')(process.argv.slice(2));
+const gulp         = require('gulp');
+const config       = require('../config');
+const fs           = require('fs');
+const sass         = require('gulp-sass');
+const plumber      = require('gulp-plumber');
+const autoprefixer = require('gulp-autoprefixer');
+const notify       = require('gulp-notify');
+const sourcemaps   = require('gulp-sourcemaps');
+const gutil        = require("gulp-util");
+const size         = require('gulp-size');
+const scsslint     = require('gulp-scss-lint');
+const csso         = require("gulp-csso");
+const options      = require('minimist')(process.argv.slice(2));
 
-function createNormalizeScss() {
+const createNormalizeScss = () => {
   fs.createReadStream(config.styles.file_normalize_css)
     .pipe(fs.createWriteStream(config.styles.file_normalize_scss));
 }
 
-gulp.task('normalize', function() {
+gulp.task('normalize', () => {
   createNormalizeScss();
 });
 
-gulp.task('styles', function() {
+gulp.task('styles', () => {
   return gulp.src(config.styles.files_src)
     .pipe(plumber({
       errorHandler: notify.onError('SASS Error: <%= error.message %>')
@@ -35,7 +35,7 @@ gulp.task('styles', function() {
     .pipe(gulp.dest(config.styles.dest));
 });
 
-gulp.task('scsslinter', function() {
+gulp.task('scsslinter', () => {
   return gulp.src([
     config.styles.files_src,
     '!' + config.styles.file_normalize_scss,

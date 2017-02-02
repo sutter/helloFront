@@ -1,7 +1,7 @@
-var gulp         = require('gulp');
-var config       = require('../config').rootfiles;
+const gulp         = require('gulp');
+const config       = require('../config').rootfiles;
 
-gulp.task('rootfiles', function() {
+gulp.task('rootfiles', () => {
   return gulp.src(config.src, {
       dot: true
     })
