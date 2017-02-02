@@ -23,23 +23,23 @@ $clr-notice:    #d9edf7;
 $clr-danger:    #d24a53;
 $clr-divider:   #ededed;
 
-$clr-0-darken:  #23292e;
+$clr-0-darker:  #23292e;
 $clr-0-dark:    #212121;
 $clr-0:         #333;
 $clr-0-light:   #ccc;
-$clr-0-lighten: #fafafa;
+$clr-0-lighter: #fafafa;
 
 $clr-1:         #5ca1f3;
 $clr-1-light:   tint($clr-1, 50%);
-$clr-1-lighten: tint($clr-1, 85%);
+$clr-1-lighter: tint($clr-1, 85%);
 $clr-1-dark:    shade($clr-1, 15%);
-$clr-1-darken:  shade($clr-1, 30%);
+$clr-1-darker:  shade($clr-1, 30%);
 
 $clr-2:         #605ce8;
 $clr-2-light:   tint($clr-2, 50%);
-$clr-2-lighten: tint($clr-2, 85%);
+$clr-2-lighter: tint($clr-2, 85%);
 $clr-2-dark:    shade($clr-2, 15%);
-$clr-2-darken:  shade($clr-2, 30%);
+$clr-2-darker:  shade($clr-2, 30%);
 
 // Social color
 $clr-facebook:     #3b5998;
@@ -117,7 +117,7 @@ $spacer-N:  0;
 $spacer-S:  1rem;
 $spacer-M:  2rem;
 $spacer-L:  4rem;
-
+$spacer-XL: 8rem;
 
 //
 // 7 - Breakpoints

@@ -22,7 +22,7 @@ module.exports = {
     main_dest:           build + '/assets/css/main.css',
     dest:                build + '/assets/css/',
     file_normalize_css:  './node_modules/normalize.css/normalize.css',
-    file_normalize_scss: app + '/assets/scss/base/_b-normalize.scss'
+    file_normalize_scss: app + '/assets/scss/base/_b_normalize.scss'
   },
 
   scripts: {
