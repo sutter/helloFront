@@ -20,6 +20,10 @@ nvm use
 
 Go to [sass-lang.com/install](http://sass-lang.com/install) for installation in command line.
 
+### Install Yarn
+
+Got to [https://yarnpkg.com/docs/install](https://yarnpkg.com/docs/install/#mac-tab)
+
 ### Install Gulp
 We begin by installing Gulp in global mode with `-g`.
 
@@ -42,7 +46,7 @@ bundle install
 ### Download the dependencies NPM
 
 ```
-npm install
+yarn install
 ```
 
 ### Install Tooling
