@@ -10,7 +10,7 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version 6.5.0 of NodeJS.
+Use the version 7.5.0 of NodeJS.
 
 ```
 nvm use
