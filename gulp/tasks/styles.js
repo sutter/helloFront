@@ -1,16 +1,16 @@
-const gulp         = require('gulp');
-const config       = require('../config');
-const fs           = require('fs');
-const sass         = require('gulp-sass');
-const plumber      = require('gulp-plumber');
+const gulp = require('gulp');
+const config = require('../config');
+const fs = require('fs');
+const sass = require('gulp-sass');
+const plumber = require('gulp-plumber');
 const autoprefixer = require('gulp-autoprefixer');
-const notify       = require('gulp-notify');
-const sourcemaps   = require('gulp-sourcemaps');
-const gutil        = require("gulp-util");
-const size         = require('gulp-size');
-const scsslint     = require('gulp-scss-lint');
-const csso         = require("gulp-csso");
-const options      = require('minimist')(process.argv.slice(2));
+const notify = require('gulp-notify');
+const sourcemaps = require('gulp-sourcemaps');
+const gutil = require("gulp-util");
+const size = require('gulp-size');
+const scsslint = require('gulp-scss-lint');
+const csso = require("gulp-csso");
+const options = require('minimist')(process.argv.slice(2));
 
 const createNormalizeScss = () => {
   fs.createReadStream(config.styles.file_normalize_css)

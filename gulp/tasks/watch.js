@@ -1,13 +1,13 @@
-const gulp         = require('gulp');
-const config       = require('../config');
-const browserSync  = require('browser-sync');
-const watch        = require('gulp-watch');
-const runSequence  = require('run-sequence');
+const gulp = require('gulp');
+const config = require('../config');
+const browserSync = require('browser-sync');
+const watch = require('gulp-watch');
+const runSequence = require('run-sequence');
 
 gulp.task('watch', () => {
 
-  watch(config.styles.files_src, './app/assets', function() {
-    runSequence('styles', 'scsslinter');
+  watch(config.styles.files_src, './app/assets', function () {
+    runSequence('styles', 'scsslinter', 'styleguide');
   });
 
   watch(config.images.files_src, () => {

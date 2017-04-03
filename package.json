@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp --production"
+    "build": "gulp build --production"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,7 @@
     ]
   },
   "devDependencies": {
-    "browser-sync": "^2.16.0",
-    "gulp-gh-pages": "^0.5.4"
+    "browser-sync": "^2.16.0"
   },
   "dependencies": {
     "app-config": "^1.0.0",

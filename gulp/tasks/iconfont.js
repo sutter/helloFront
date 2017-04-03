@@ -1,16 +1,16 @@
-const gulp         = require('gulp');
-const fs           = require('fs');
-const iconfont     = require('gulp-iconfont');
-const iconfontCss  = require('gulp-iconfont-css');
-const config       = require('../config').font_icon;
-const utils        = require('./utils');
-const plumber      = require('gulp-plumber');
-const notify       = require('gulp-notify');
-const runTimestamp = Math.round(Date.now()/1000);
+const gulp = require('gulp');
+const fs = require('fs');
+const iconfont = require('gulp-iconfont');
+const iconfontCss = require('gulp-iconfont-css');
+const config = require('../config').font_icon;
+const utils = require('./utils');
+const plumber = require('gulp-plumber');
+const notify = require('gulp-notify');
+const runTimestamp = Math.round(Date.now() / 1000);
 
 
 gulp.task('font-icon', () => {
-  if (utils.checkDirectoryForExt(config.src, '.svg')){
+  if (utils.checkDirectoryForExt(config.src, '.svg')) {
     return gulp.src(config.files_src)
       .pipe(plumber({
         errorHandler: notify.onError('IconFont Error: <%= error.message %>')

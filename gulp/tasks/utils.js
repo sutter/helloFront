@@ -2,7 +2,7 @@ const fs = require('fs');
 
 module.exports.createEmptyFile = path => {
   fs.writeFile(path, '', error => {
-    if (error){ return console.error(error) }
+    if (error) { return console.error(error) }
   })
 }
 

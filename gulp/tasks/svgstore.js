@@ -1,8 +1,8 @@
-const gulp         = require('gulp');
-const config       = require('../config').svgstore;
-const svgstore     = require('gulp-svgstore');
-const svgmin       = require('gulp-svgmin');
-const path         = require('path');
+const gulp = require('gulp');
+const config = require('../config').svgstore;
+const svgstore = require('gulp-svgstore');
+const svgmin = require('gulp-svgmin');
+const path = require('path');
 
 gulp.task('svgstore', () => {
   return gulp

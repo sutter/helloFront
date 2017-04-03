@@ -62,27 +62,19 @@ For Jetbrains IDE -> [CSScomb plugin](https://github.com/csscomb/jetbrains-cssco
 ### Run project
 
 ```
-gulp
+yarn start
 ```
 
 ### Build project
 
 ```
-gulp build
+yarn build
 ```
 
 ### Clean project
 
 ```
-gulp clean
-```
-
-### Generate Styleguide
-
-Generate by [aigis](https://pxgrid.github.io/aigis/)
-
-```
-gulp styleguide
+yarn clean
 ```
 
 ### Optimize for production
@@ -91,18 +83,6 @@ gulp styleguide
 * Optimise images
 * Optimise and minify scripts with webpack
 * Optimise and minify styles with CSSO
-
-```
-gulp build --production
-```
-
-### Deploy on GithubPages
-
-Build project before.
-
-```
-gulp deploy
-```
 
 ## How the starter works
 
@@ -144,13 +124,13 @@ This starter use **normalize.css** with **NPM**.
 
 ### Works with Pug templating
 
-The Jade files are located in `./app/template`
+The PUG files are located in `./app/template`
 
 * **layout** : layout of html files generated
 * **mixin** : for reusable pattern
 * **pages** : the content of html files generated
 * **partial** : includes of html pattern
-* **config.jade** : global variables
+* **config.pug** : global variables
 
 ### Works with JavaScript
 
