@@ -15,7 +15,6 @@ gulp.task('build', callback => {
       'fonts',
       'scripts'
     ],
-    'styleguide',
     callback
   )
 });

@@ -4,5 +4,5 @@ const browserSync = require('browser-sync');
 const runSequence = require('run-sequence');
 
 gulp.task('default', callback => {
-  runSequence('build', 'scsslinter', 'browserSync', 'watch', callback);
+  runSequence('build', 'scsslinter', 'styleguide', 'browserSync', 'watch', callback);
 });
