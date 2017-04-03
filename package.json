@@ -4,7 +4,8 @@
   "description": "starter",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "build": "gulp --production"
   },
   "repository": {
     "type": "git",
@@ -31,8 +32,6 @@
     "babel-loader": "^6.2.10",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-es2015": "^6.22.0",
-    "babel-preset-react": "^6.22.0",
-    "babel-preset-react-optimize": "^1.0.1",
     "babel-preset-stage-0": "^6.22.0",
     "babel-runtime": "^6.22.0",
     "del": "^2.2.2",
