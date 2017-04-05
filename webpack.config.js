@@ -1,12 +1,12 @@
-var path                  = require('path');
-var webpack               = require('webpack');
+var path = require('path');
+var webpack = require('webpack');
 var WebpackNotifierPlugin = require('webpack-notifier');
 
 module.exports = {
     watch: false, // dynamically changed by gulp
 
     /* Comment this to have access to the debugger in a JetBrains IDE */
-    devtool: 'eval-cheap-module-source-map',
+    devtool: 'source-map',
 
     output: {
         filename: '[name].js',
