@@ -45,7 +45,6 @@ $em-base: 16 !default;
   $inputs,
   $pseudo: null
 ) {
-
   $list: ();
 
   @each $input in $inputs {

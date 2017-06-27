@@ -3,14 +3,16 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-$formStateMarkup: _assign((
-  '.form-group-label',
-  '.form-group-feedback',
-  '.form-group-message',
-  '.formInputRadio',
-  '.formInputCheckbox',
-  '.formInputToggle'
-));
+$formStateMarkup: _assign(
+  (
+    '.form-group-label',
+    '.form-group-feedback',
+    '.form-group-message',
+    '.formInputRadio',
+    '.formInputCheckbox',
+    '.formInputToggle'
+  )
+);
 
 $stateTypes: (error $clr-error) (success $clr-success) (warning $clr-warning);
 

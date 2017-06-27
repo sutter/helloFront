@@ -2,9 +2,7 @@
  * Base : Form
  * ======================================= */
 
-input,
-select,
-textarea {
+input, select, textarea {
   display: block;
 }
 
@@ -22,8 +20,7 @@ textarea {
   resize: vertical;
 }
 
-[type="checkbox"],
-[type="radio"] {
+[type="checkbox"], [type="radio"] {
   display: inline;
   margin-right: $spacer-S / 2;
 }

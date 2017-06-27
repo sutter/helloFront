@@ -4,12 +4,7 @@
 
 // scss-lint:disable QualifyingElement
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: $spacer-S 0;
   font-size: inherit;
   font-weight: inherit;
@@ -32,7 +27,6 @@ abbr[title] {
   text-transform: lowercase;
 }
 
-abbr,
-acronym {
+abbr, acronym {
   cursor: help;
 }

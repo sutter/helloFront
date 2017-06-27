@@ -21,8 +21,7 @@
  * Button label icon
  * --------------------------------------- */
 
-.button--labeled [class*="icon-"],
-.button--labeledInverse [class*="icon-"] {
+.button--labeled [class*="icon-"], .button--labeledInverse [class*="icon-"] {
   position: absolute;
   top: 0;
   bottom: 0;

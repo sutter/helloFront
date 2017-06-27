@@ -40,16 +40,12 @@ pre {
   }
 }
 
-code,
-kbd,
-pre,
-samp {
+code, kbd, pre, samp {
   font-family: 'Source Code Pro', Consolas, monospace;
   white-space: pre-wrap;
 }
 
-code,
-kbd {
+code, kbd {
   padding: .2rem .6rem;
   font-size: $font-size-XS;
   font-weight: $font-weight-base;
