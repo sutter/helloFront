@@ -24,8 +24,33 @@
   </ul>
   <hr/>
   <h3 id="css-naming-convention">CSS naming convention</h3>
-  <pre></pre>
+  <pre><code style="background: #000; padding: 20px"><span style="color: #666">// Component</span>
+.myComponent { … }
+
+<span style="color: #666">// Component child</span>
+.myComponent-element { <span style="color: #666">…</span> }
+
+<span style="color: #666">// Component modifier</span>
+.myComponent--modifier {
+  .myComponent-element {<span style="color: #666"> …</span> }
+  .myComponent-otherElement { <span style="color: #666">…</span> }
+}
+
+<span style="color: #666">// Component state</span>
+.myComponent.is-state { <span style="color: #666">…</span> }
+
+<span style="color: #666">// JS for component</span>
+.js-myComponent { <span style="color: #666">…</span> }
+</code></pre>
   <hr/>
   <h3 id="comments">Comments</h3>
-  <pre></pre>
+  <pre><code style="background: #000; padding: 20px">/&#42;&#42; ======================================
+ &#42; Big Comment
+ &#42; ======================================= &#42;/
+ 
+ /&#42;&#42;
+ &#42; Small Comment
+ &#42; --------------------------------------- &#42;/
+ 
+ /&#42; One line comment &#42;/</code></pre>
 </div>
