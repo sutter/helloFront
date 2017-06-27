@@ -11,6 +11,6 @@
   "strict": true,
   "globals": {
     "jQuery": true,
-    "hljs":true
+    "hljs": true
   }
 }

@@ -1,10 +1,12 @@
-const fs = require('fs');
+const fs = require("fs");
 
 module.exports.createEmptyFile = path => {
-  fs.writeFile(path, '', error => {
-    if (error) { return console.error(error) }
-  })
-}
+  fs.writeFile(path, "", error => {
+    if (error) {
+      return console.error(error);
+    }
+  });
+};
 
 /**
  * Check if a directory contains a specified file extension
@@ -15,6 +17,6 @@ module.exports.createEmptyFile = path => {
 module.exports.checkDirectoryForExt = (path, ext) => {
   files = fs.readdirSync(path);
   return files.some(file => {
-    return file.substr(- ext.length) === ext;
-  })
-}
+    return file.substr(-ext.length) === ext;
+  });
+};
