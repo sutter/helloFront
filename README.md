@@ -51,11 +51,12 @@ yarn install
 
 ### Install Tooling
 
-Use [CSScomb](http://csscomb.com/) for clean your scss files.
+Use [Prettier](https://github.com/prettier/prettier) for clean your **JS** / **SCSS** files.
 
-For Jetbrains IDE -> [CSScomb plugin](https://github.com/csscomb/jetbrains-csscomb)
-
-`.csscomb.json` is the config file.
+Plugin for IDE :
+* [Visual Code Studio](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+* [Atom](https://atom.io/packages/prettier-atom)
+* [Sublime text](https://github.com/danreeves/sublime-prettier)
 
 ## Gulp Tasks
 
@@ -119,7 +120,6 @@ This starter use **normalize.css** with **NPM**.
 
 // JS for component
 .js-myComponent { … }
-
 ```
 
 ### Works with Pug templating
