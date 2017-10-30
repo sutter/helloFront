@@ -26,7 +26,7 @@ const webpackChangeHandler = (_, stats) => {
       cachedAssets: false,
       reasons: false,
       source: false,
-      errorDetails: false
+      errorDetails: false,
     })
   );
   browserSync.reload();
@@ -39,7 +39,7 @@ gulp.task("scripts", () => {
     .src(config.main_src)
     .pipe(
       plumber({
-        errorHandler: gutil.noop // prevent double errors in console
+        errorHandler: gutil.noop, // prevent double errors in console
       })
     )
     .pipe(named())

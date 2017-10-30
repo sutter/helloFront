@@ -26,7 +26,7 @@ gulp.task("styles", () => {
     .src(config.styles.files_src)
     .pipe(
       plumber({
-        errorHandler: notify.onError("SASS Error: <%= error.message %>")
+        errorHandler: notify.onError("SASS Error: <%= error.message %>"),
       })
     )
     .pipe(!options.production ? sourcemaps.init() : gutil.noop())

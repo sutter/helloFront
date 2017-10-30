@@ -4,7 +4,7 @@ const config = require("../config").rootfiles;
 gulp.task("rootfiles", () => {
   return gulp
     .src(config.src, {
-      dot: true
+      dot: true,
     })
     .pipe(gulp.dest(config.dest));
 });

@@ -13,7 +13,7 @@ gulp.task("build", callback => {
       "images",
       "rootfiles",
       "fonts",
-      "scripts"
+      "scripts",
     ],
     callback
   );

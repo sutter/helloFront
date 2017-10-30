@@ -13,7 +13,7 @@ gulp.task("templates", () => {
     .src(config.page_src)
     .pipe(
       plumber({
-        errorHandler: notify.onError("PUG Error: <%= error.message %>")
+        errorHandler: notify.onError("PUG Error: <%= error.message %>"),
       })
     )
     .pipe(pug({ pretty: true }))

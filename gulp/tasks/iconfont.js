@@ -14,7 +14,7 @@ gulp.task("font-icon", () => {
       .src(config.files_src)
       .pipe(
         plumber({
-          errorHandler: notify.onError("IconFont Error: <%= error.message %>")
+          errorHandler: notify.onError("IconFont Error: <%= error.message %>"),
         })
       )
       .pipe(
@@ -22,7 +22,7 @@ gulp.task("font-icon", () => {
           fontName: config.settings.font_name,
           path: config.path,
           targetPath: config.target_path,
-          fontPath: config.font_path
+          fontPath: config.font_path,
         })
       )
       .pipe(
@@ -32,7 +32,7 @@ gulp.task("font-icon", () => {
           formats: ["ttf", "eot", "woff", "woff2", "svg"],
           timestamp: runTimestamp,
           normalize: config.settings.normalize,
-          fontHeight: config.settings.font_height
+          fontHeight: config.settings.font_height,
         })
       )
       .pipe(gulp.dest(config.dest));

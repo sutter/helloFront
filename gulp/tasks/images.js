@@ -11,7 +11,7 @@ gulp.task("images", () => {
     .src(config.files_src)
     .pipe(
       plumber({
-        errorHandler: notify.onError("Images Error: <%= error.message %>")
+        errorHandler: notify.onError("Images Error: <%= error.message %>"),
       })
     )
     .pipe(
@@ -19,15 +19,15 @@ gulp.task("images", () => {
         progressive: true,
         svgoPlugins: [
           {
-            removeViewBox: false
-          }
+            removeViewBox: false,
+          },
         ],
-        use: [pngquant()]
+        use: [pngquant()],
       })
     )
     .pipe(
       size({
-        title: "image"
+        title: "image",
       })
     )
     .pipe(gulp.dest(config.dest));

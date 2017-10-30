@@ -18,10 +18,10 @@ gulp.task("svgstore", () => {
             {
               cleanupIDs: {
                 prefix: prefix + "-",
-                minify: true
-              }
-            }
-          ]
+                minify: true,
+              },
+            },
+          ],
         };
       })
     )
