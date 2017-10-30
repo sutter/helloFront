@@ -10,10 +10,12 @@ html {
   box-sizing: border-box;
   height: 100%;
   font-size: 62.5%; // 1 // No lint reported
-  font-size: calc(1em * .625); // 2 // No lint reported
+  font-size: calc(1em * 0.625); // 2 // No lint reported
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 

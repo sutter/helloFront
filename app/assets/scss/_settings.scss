@@ -54,7 +54,7 @@ $clr-pinterest: #bd081c;
 // 2 - Font
 // ---------------------------------------
 
-$font-base: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-base: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $font-alternate: $font-base;
 $font-size-base: 1.6rem;
 // Don't touch this, it's for em convertion
@@ -88,7 +88,7 @@ $width-list: (25 25%) (33 33.333%) (50 50%) (66 66.666%) (75 75%) (100 100%);
 // 4 - Radius
 // ---------------------------------------
 
-$rad-S: .3rem;
+$rad-S: 0.3rem;
 $rad-M: 1rem;
 
 //
@@ -98,6 +98,7 @@ $rad-M: 1rem;
 $form-group-input-height: 4rem;
 
 $form-list-input: _assign(
+
   (
     '[type="text"]',
     '[type="password"]',
@@ -136,4 +137,4 @@ $mq-L-up: em(1025, $em-base);
 // 8 - Transitions
 // ---------------------------------------
 
-$trans: all .3s ease-in-out;
+$trans: all 0.3s ease-in-out;

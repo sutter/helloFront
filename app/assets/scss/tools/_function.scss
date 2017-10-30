@@ -49,7 +49,7 @@ $em-base: 16 !default;
 
   @each $input in $inputs {
     $input: unquote($input);
-    $input: if($pseudo, $input + ':' + $pseudo, $input);
+    $input: if($pseudo, $input + ":" + $pseudo, $input);
     $list: append($list, $input, comma);
   }
 

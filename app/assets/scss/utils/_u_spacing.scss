@@ -10,35 +10,43 @@ $spacers: (N 0) (S $spacer-S) (M $spacer-M) (L $spacer-L);
   $type: nth($spacer, 1);
   $size: nth($spacer, 2);
 
-  .u-mt#{$type}, .u-ma#{$type} {
+  .u-mt#{$type},
+  .u-ma#{$type} {
     margin-top: $size !important;
   }
 
-  .u-mb#{$type}, .u-ma#{$type} {
+  .u-mb#{$type},
+  .u-ma#{$type} {
     margin-bottom: $size !important;
   }
 
-  .u-ml#{$type}, .u-ma#{$type} {
+  .u-ml#{$type},
+  .u-ma#{$type} {
     margin-left: $size !important;
   }
 
-  .u-mr#{$type}, .u-ma#{$type} {
+  .u-mr#{$type},
+  .u-ma#{$type} {
     margin-right: $size !important;
   }
 
-  .u-pt#{$type}, .u-pa#{$type} {
+  .u-pt#{$type},
+  .u-pa#{$type} {
     padding-top: $size !important;
   }
 
-  .u-pb#{$type}, .u-pa#{$type} {
+  .u-pb#{$type},
+  .u-pa#{$type} {
     padding-bottom: $size !important;
   }
 
-  .u-pl#{$type}, .u-pa#{$type} {
+  .u-pl#{$type},
+  .u-pa#{$type} {
     padding-left: $size !important;
   }
 
-  .u-pr#{$type}, .u-pa#{$type} {
+  .u-pr#{$type},
+  .u-pa#{$type} {
     padding-right: $size !important;
   }
 }

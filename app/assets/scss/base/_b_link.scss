@@ -5,9 +5,11 @@
 a {
   text-decoration: none;
   color: $clr-1;
-  transition: color .3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 
-  &:active, &:hover, &:focus {
+  &:active,
+  &:hover,
+  &:focus {
     color: $clr-1-dark;
   }
 }

@@ -13,13 +13,13 @@
   justify-content: center;
 
   &:not(:first-child) {
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 
     &::before {
       display: block;
-      margin-right: .5rem;
+      margin-right: 0.5rem;
       color: $clr-0-light;
-      content: '/';
+      content: "/";
     }
   }
 }

@@ -21,13 +21,14 @@
  * Button label icon
  * --------------------------------------- */
 
-.button--labeled [class*="icon-"], .button--labeledInverse [class*="icon-"] {
+.button--labeled [class*="icon-"],
+.button--labeledInverse [class*="icon-"] {
   position: absolute;
   top: 0;
   bottom: 0;
   width: em(46);
   margin-right: 0;
-  background: rgba(0, 0, 0, .075);
+  background: rgba(0, 0, 0, 0.075);
 
   &::before {
     position: absolute;

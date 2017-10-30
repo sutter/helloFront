@@ -11,24 +11,27 @@
     flex-grow: 1;
     margin-bottom: 0;
 
-    &[class*=w-] {
+    &[class*="w-"] {
       flex-grow: 0;
     }
 
-    .form-group-input input, .form-group-input select {
+    .form-group-input input,
+    .form-group-input select {
       border-right: 0;
       border-radius: 0;
     }
   }
 
   .form-group:first-child {
-    .form-group-input input, .form-group-input select {
+    .form-group-input input,
+    .form-group-input select {
       border-radius: $rad-S 0 0 $rad-S;
     }
   }
 
   .form-group:only-child {
-    .form-group-input input, .form-group-input select {
+    .form-group-input input,
+    .form-group-input select {
       border-right: 1px solid $clr-0-light;
       border-radius: $rad-S;
     }

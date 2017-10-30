@@ -3,16 +3,16 @@
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-[class*=form-group-input--icon] {
+[class*="form-group-input--icon"] {
   position: relative;
 }
 
-[class*=form-group-input--icon][class*=form-group-input--icon] {
+[class*="form-group-input--icon"][class*="form-group-input--icon"] {
   input {
     padding-right: 4rem;
   }
 
-  [class*=icon-] {
+  [class*="icon-"] {
     position: absolute;
     top: 50%;
     right: 1.2rem;
@@ -32,7 +32,7 @@
     padding-left: 4rem;
   }
 
-  [class*=icon-] {
+  [class*="icon-"] {
     right: auto;
     left: 1.2rem;
   }

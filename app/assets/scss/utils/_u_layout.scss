@@ -5,9 +5,10 @@
 // scss-lint:disable ImportantRule
 
 .u-cf {
-  &::before, &::after {
+  &::before,
+  &::after {
     display: table;
-    content: ' ';
+    content: " ";
   }
 
   &::after {

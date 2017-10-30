@@ -40,13 +40,17 @@ pre {
   }
 }
 
-code, kbd, pre, samp {
-  font-family: 'Source Code Pro', Consolas, monospace;
+code,
+kbd,
+pre,
+samp {
+  font-family: "Source Code Pro", Consolas, monospace;
   white-space: pre-wrap;
 }
 
-code, kbd {
-  padding: .2rem .6rem;
+code,
+kbd {
+  padding: 0.2rem 0.6rem;
   font-size: $font-size-XS;
   font-weight: $font-weight-base;
   vertical-align: middle;

@@ -30,7 +30,8 @@
       margin-left: -1px;
     }
 
-    &:not(.is-active):hover, &:not(.is-active):focus {
+    &:not(.is-active):hover,
+    &:not(.is-active):focus {
       color: $clr-0;
       background: $clr-0-light;
     }

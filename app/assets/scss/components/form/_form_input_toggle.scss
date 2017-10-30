@@ -23,12 +23,13 @@ $toggle-height: 2rem;
     font-weight: 400;
     transition: $trans;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       position: absolute;
       top: 0;
       display: block;
       border-radius: $toggle-height;
-      content: '';
+      content: "";
       transform: translateY(50%);
     }
 
@@ -38,7 +39,7 @@ $toggle-height: 2rem;
       height: $toggle-height;
       margin-top: -$toggle-height / 2;
       background: $clr-0-light;
-      transition: background-color .2s .1s ease-in-out;
+      transition: background-color 0.2s 0.1s ease-in-out;
     }
 
     &::after {
@@ -49,8 +50,8 @@ $toggle-height: 2rem;
       border: 2px solid $clr-0-light;
       border-radius: 50%;
       background: $clr-light center no-repeat;
-      content: '';
-      transition: left .2s ease-in-out, border-color .2s .1s ease-in-out;
+      content: "";
+      transition: left 0.2s ease-in-out, border-color 0.2s 0.1s ease-in-out;
     }
   }
 
@@ -58,19 +59,14 @@ $toggle-height: 2rem;
     &::before {
       border-color: $clr-1;
       background: $clr-1
-        url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%226%22%20viewBox%3D%220%200%208%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3EShape%20Copy%3C/title%3E%3Cpath%20d%3D%22M.185%203.245L2.47%205.53c.246.246.645.246.89%200l4.455-4.454c.247-.246.247-.645%200-.89-.246-.248-.645-.248-.89%200L2.47%204.638h.89L1.077%202.353c-.246-.247-.645-.247-.89%200-.248.246-.248.645%200%20.89z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E')
-        left
-        8px
-        center
-        no-repeat; // app/assets/img/check.svg
+        url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%226%22%20viewBox%3D%220%200%208%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3EShape%20Copy%3C/title%3E%3Cpath%20d%3D%22M.185%203.245L2.47%205.53c.246.246.645.246.89%200l4.455-4.454c.247-.246.247-.645%200-.89-.246-.248-.645-.248-.89%200L2.47%204.638h.89L1.077%202.353c-.246-.247-.645-.247-.89%200-.248.246-.248.645%200%20.89z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E")
+        left 8px center no-repeat; // app/assets/img/check.svg
       background-color: $clr-1;
     }
 
     &::after {
-      left: ($toggle-width - $toggle-height) +
-        (
-          -$toggle-width - ($toggle-height / 2)
-        );
+      left: ($toggle-width - $toggle-height) + (-$toggle-width - ($toggle-height /
+                2));
       border-color: $clr-1;
     }
   }
