@@ -1,6 +1,6 @@
 # Hello Front
 
-Simple starter SCSS / PUG / ES6  for clean and fast Front-end project.
+Simple starter SCSS / PUG / ES6 for clean and fast Front-end project.
 
 Work on **app/** folder and gulp build in **dist/**.
 
@@ -10,7 +10,7 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version 7.5.0 of NodeJS.
+Use the version 8.5.0 of NodeJS.
 
 ```
 nvm use
@@ -22,20 +22,11 @@ Go to [sass-lang.com/install](http://sass-lang.com/install) for installation in 
 
 ### Install Yarn
 
-Got to [https://yarnpkg.com/docs/install](https://yarnpkg.com/docs/install/#mac-tab)
+Go to [https://yarnpkg.com/docs/install](https://yarnpkg.com/docs/install/#mac-tab)
 
 ### Install Gulp
-We begin by installing Gulp in global mode with `-g`.
 
-```
-npm install -g gulp
-```
-
-To check if everything is installed and Gulp is active:
-
-```
-gulp -v
-```
+Go to [https://gulpjs.com/](https://gulpjs.com/)
 
 ### Install Gem
 
