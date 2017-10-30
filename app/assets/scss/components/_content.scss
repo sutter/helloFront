@@ -39,6 +39,14 @@
     font-size: $font-size-XXS;
   }
 
+  a {
+    color: $clr-1;
+    &:hover,
+    &:focus {
+      color: $clr-1-light;
+    }
+  }
+
   blockquote {
     margin: $spacer-M 0;
     padding-left: $spacer-S;
