@@ -5,11 +5,10 @@
 .app {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
   background: $clr-light;
 }
 
 .app-main {
   flex: 1 auto;
-  padding: 0 0 em(30);
 }

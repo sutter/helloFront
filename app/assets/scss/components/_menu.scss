@@ -15,6 +15,11 @@
 .menu-link {
   display: block;
   padding: em(6) em(14);
+  color: $clr-1;
+  &:hover,
+  &:focus {
+    color: $clr-1-light;
+  }
 
   &.is-active {
     color: $clr-0;
