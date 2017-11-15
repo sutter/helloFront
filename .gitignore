@@ -12,7 +12,6 @@
 node_modules
 
 # Generated folder
-.publish
 build
 
 # Generated fonts
@@ -24,4 +23,3 @@ app/assets/fonts/app-font.woff2
 
 # Generated files
 app/assets/scss/components/_icons.scss
-app/assets/scss/base/_b-normalize.scss

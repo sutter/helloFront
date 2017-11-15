@@ -18,8 +18,6 @@ module.exports = {
     files_src: app + "/assets/scss/**/*.scss",
     main_dest: build + "/assets/css/main.css",
     dest: build + "/assets/css/",
-    file_normalize_css: "./node_modules/normalize.css/normalize.css",
-    file_normalize_scss: app + "/assets/scss/base/_b_normalize.scss",
   },
 
   scripts: {
@@ -64,6 +62,7 @@ module.exports = {
   },
 
   font_icon: {
+    enable: false,
     path_create_icon_font_file: app + "/assets/scss/components/_icons.scss",
     src: app + "/assets/icons",
     files_src: app + "/assets/icons/*.svg",

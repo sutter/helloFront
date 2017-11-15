@@ -11,16 +11,6 @@ const size = require("gulp-size");
 const csso = require("gulp-csso");
 const options = require("minimist")(process.argv.slice(2));
 
-const createNormalizeScss = () => {
-  fs
-    .createReadStream(config.styles.file_normalize_css)
-    .pipe(fs.createWriteStream(config.styles.file_normalize_scss));
-};
-
-gulp.task("normalize", () => {
-  createNormalizeScss();
-});
-
 gulp.task("styles", () => {
   return gulp
     .src(config.styles.files_src)

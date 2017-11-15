@@ -6,15 +6,7 @@ gulp.task("build", callback => {
     "clean",
     "svgstore",
     "font-icon",
-    [
-      "normalize",
-      "styles",
-      "templates",
-      "images",
-      "rootfiles",
-      "fonts",
-      "scripts",
-    ],
+    ["styles", "templates", "images", "rootfiles", "fonts", "scripts"],
     callback
   );
 });

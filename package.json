@@ -1,7 +1,7 @@
 {
-  "name": "hello",
+  "name": "helloFront",
   "version": "1.0.0",
-  "description": "starter",
+  "description": "Front-end boilerplate",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
@@ -11,16 +11,14 @@
     "type": "git",
     "url": "git+https://sutter@github.com/sutter/helloFront.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Sutter <laurent@sutterlity.fr>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/sutter/helloFront/issues"
   },
   "homepage": "https://github.com/sutter/helloFront#readme",
   "browserify": {
-    "transform": [
-      "babelify"
-    ]
+    "transform": ["babelify"]
   },
   "devDependencies": {
     "browser-sync": "^2.16.0"
@@ -35,9 +33,7 @@
     "babel-runtime": "^6.22.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-aigis": "^1.1.4",
     "gulp-autoprefixer": "^4.0.0",
-    "gulp-csslint": "^1.0.0",
     "gulp-csso": "^3.0.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-iconfont": "^9.0.2",
@@ -46,7 +42,6 @@
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.0.4",
-    "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-shell": "^0.6.3",
     "gulp-size": "^2.1.0",
@@ -56,20 +51,12 @@
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.10",
     "imagemin-pngquant": "^5.0.0",
-    "jstransformer": "^1.0.0",
-    "jstransformer-markdown-it": "^2.0.0",
-    "lodash.assign": "^4.2.0",
     "minimist": "^1.2.0",
-    "normalize.css": "^7.0.0",
     "plumber": "^0.4.8",
     "require-dir": "^0.3.0",
     "run-sequence": "^2.2.0",
     "size": "^1.0.0",
-    "utils-merge": "^1.0.0",
-    "vinyl-buffer": "^1.0.0",
     "vinyl-named": "^1.1.0",
-    "vinyl-source-stream": "^1.1.0",
-    "watchify": "^3.7.0",
     "webpack": "^2.2.1",
     "webpack-notifier": "^1.4.1",
     "webpack-stream": "^3.2.0"

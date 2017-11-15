@@ -5,5 +5,5 @@ const runSequence = require("run-sequence");
 
 gulp.task("default", callback => {
   process.WATCH_SCRIPTS = true;
-  runSequence("build", "styleguide", "browserSync", "watch", callback);
+  runSequence("build", "browserSync", "watch", callback);
 });

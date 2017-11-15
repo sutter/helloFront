@@ -1,6 +1,6 @@
 # Hello Front
 
-Simple starter SCSS / PUG / ES6 for clean and fast Front-end project.
+Naked boilerplate SCSS / PUG / ES6 for clean and fast Front-end project.
 
 Work on **app/** folder and gulp build in **dist/**.
 
@@ -10,9 +10,9 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version 8.5.0 of NodeJS.
+Use the version 8.9.0 of NodeJS.
 
-```
+```bash
 nvm use
 ```
 
@@ -28,15 +28,9 @@ Go to [https://yarnpkg.com/docs/install](https://yarnpkg.com/docs/install/#mac-t
 
 Go to [https://gulpjs.com/](https://gulpjs.com/)
 
-### Install Gem
-
-```
-bundle install
-```
-
 ### Download the dependencies NPM
 
-```
+```bash
 yarn install
 ```
 
@@ -45,44 +39,38 @@ yarn install
 Use [Prettier](https://github.com/prettier/prettier) for clean your **JS** / **SCSS** files.
 
 Plugin for IDE :
+
 * [Visual Code Studio](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 * [Atom](https://atom.io/packages/prettier-atom)
 * [Sublime text](https://github.com/danreeves/sublime-prettier)
 
-## Gulp Tasks
+## Commands
 
 ### Run project
 
-```
+```bash
 yarn start
 ```
 
 ### Build project
 
-```
+```bash
 yarn build
 ```
 
 ### Clean project
 
-```
+```bash
 yarn clean
 ```
 
-### Optimize for production
-
-* Minify HTML
-* Optimise images
-* Optimise and minify scripts with webpack
-* Optimise and minify styles with CSSO
-
-## How the starter works
+## How it works
 
 ### Works with SCSS
 
-The SCSS files are located in `./app/assets/scss`
+The SCSS files are located in `./app/assets/scss`.
 
-This starter use **normalize.css** with **NPM**.
+Example SCSS hierarchy :
 
 * **base/** : Unclassed HTML elements (type selector)
 * **components/** : Designed components, chunks of UI
@@ -90,28 +78,6 @@ This starter use **normalize.css** with **NPM**.
 * **utils/** : Helpers and overrides
 * **_settings.scss** : Global variables
 * **main.scss** : Main stylesheet
-
-#### CSS naming convention
-
-```
-// Component
-.myComponent { … }
-
-// Component child
-.myComponent-element { … }
-
-// Component modifier
-.myComponent--modifier {
-	.myComponent-element { … }
-	.myComponent-otherElement { … }
-}
-
-// Component state
-.myComponent.is-state { … }
-
-// JS for component
-.js-myComponent { … }
-```
 
 ### Works with Pug templating
 
@@ -141,14 +107,35 @@ The font files are located in `./app/assets/font`
 
 ### Works with sprite SVG inline
 
-Add svg files in folder `./app/assets/img/sprite` and uncomment lines *17 & 18* of file `./app/template/layout/base.jade`
+Disabled by default, for activate do :
+
+* in `./gulp/config.js` at **line 65** update value : `enable: true`;
+* uncomment **lines 12 & 13** of file `./app/template/layout/base.jade`;
+* add svg files in folder `./app/assets/img/sprite`.
+
+Use like this :
+
+```pug
+svg
+  use(xlink:href="#twitter")
+```
 
 ### Works with icons font
 
-ADD SVG Files in folder `./app/assets/icons` and gulp made magic.
+Disabled by default, for activate do :
+
+* in `./gulp/config.js` at **line 65** update value : `enable: true`;
+* Add [this file](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e) in `./app/assets/scss/tools/`;
+* Add SVG Files in folder `./app/assets/icons` and gulp made magic.
 
 [Preparing-svgs](https://www.npmjs.com/package/gulp-iconfont#preparing-svgs)
 
 * Icon format: svg
 * Icon size: 512x512
 * Vectorize stroke
+
+## TODO
+
+* update webpack version
+* add version on CSS and JS main files
+* add styleguide generator

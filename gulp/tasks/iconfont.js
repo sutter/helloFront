@@ -9,7 +9,10 @@ const notify = require("gulp-notify");
 const runTimestamp = Math.round(Date.now() / 1000);
 
 gulp.task("font-icon", () => {
-  if (utils.checkDirectoryForExt(config.src, ".svg")) {
+  if (
+    utils.checkDirectoryForExt(config.src, ".svg") &&
+    config.enable === true
+  ) {
     return gulp
       .src(config.files_src)
       .pipe(
@@ -29,7 +32,7 @@ gulp.task("font-icon", () => {
         iconfont({
           fontName: config.settings.font_name,
           prependUnicode: config.settings.prependUnicode,
-          formats: ["ttf", "eot", "woff", "woff2", "svg"],
+          formats: ["woff", "woff2"],
           timestamp: runTimestamp,
           normalize: config.settings.normalize,
           fontHeight: config.settings.font_height,
@@ -37,12 +40,14 @@ gulp.task("font-icon", () => {
       )
       .pipe(gulp.dest(config.dest));
     return;
-  } else {
+  } else if (config.enable === true) {
     // Create an Empty Icon SCSS File if there's no icons in the folder
     // Avoids SCSS errors when requiring a non-existent file
     console.info(
       "IconFont source folder is empty, skipping iconFont creation..."
     );
     utils.createEmptyFile(config.path_create_icon_font_file);
+  } else {
+    console.info("IconFont is disabled, skipping iconFont creation...");
   }
 });
