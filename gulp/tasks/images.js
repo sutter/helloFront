@@ -1,7 +1,6 @@
 const gulp = require("gulp");
 const config = require("../config").images;
 const imagemin = require("gulp-imagemin");
-const pngquant = require("imagemin-pngquant");
 const size = require("gulp-size");
 const plumber = require("gulp-plumber");
 const notify = require("gulp-notify");
@@ -15,15 +14,19 @@ gulp.task("images", () => {
       })
     )
     .pipe(
-      imagemin({
-        progressive: true,
-        svgoPlugins: [
-          {
-            removeViewBox: false,
-          },
+      imagemin(
+        [
+          imagemin.gifsicle({ interlaced: true }),
+          imagemin.jpegtran({ progressive: true }),
+          imagemin.optipng({ optimizationLevel: 5 }),
+          imagemin.svgo({
+            plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+          }),
         ],
-        use: [pngquant()],
-      })
+        {
+          verbose: true,
+        }
+      )
     )
     .pipe(
       size({
