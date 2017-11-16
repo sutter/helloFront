@@ -7,16 +7,15 @@ html(lang= lang)
   head
     include ../partials/head
 
-  body(role='document', class= template)
+  body(class= template)
 
     //- div(style='height: 0; width: 0; position: absolute; visibility: hidden')
     //-  include ../../assets/img/sprite.svg
 
-    .app
-      include ../partials/header
-      main.app-main(role='main')
-        section
-          block content
-      include ../partials/footer
+    include ../partials/header
+    main(role="main")
+      section
+        block content
+    include ../partials/footer
 
     script(src="assets/js/app.js", async)
