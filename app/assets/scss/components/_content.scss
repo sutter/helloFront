@@ -1,0 +1,69 @@
+/** ======================================
+ * Component : Content
+ * ======================================= */
+
+.content {
+  h1 {
+    @include title;
+    margin: $spacer-S 0;
+    font-size: $font-size-XXL;
+  }
+
+  h2 {
+    @include title;
+    margin: $spacer-S 0;
+    font-size: $font-size-XL;
+  }
+
+  h3 {
+    @include title;
+    margin: $spacer-S 0;
+    font-size: $font-size-L;
+  }
+
+  h4 {
+    @include title;
+    margin: $spacer-S 0;
+    font-size: $font-size-M;
+  }
+
+  h5 {
+    @include title;
+    margin: $spacer-S 0;
+    font-size: $font-size-XS;
+  }
+
+  h6 {
+    @include title;
+    margin: $spacer-S 0;
+    font-size: $font-size-XXS;
+  }
+
+  a {
+    color: $clr-1;
+    &:hover,
+    &:focus {
+      color: $clr-1-light;
+    }
+  }
+
+  blockquote {
+    margin: $spacer-M 0;
+    padding-left: $spacer-S;
+    color: lighten($clr-0, 15);
+    border-left: 2px solid $clr-0-light;
+
+    p {
+      margin: 0;
+    }
+
+    cite::before {
+      content: "\2014 \00A0";
+    }
+  }
+
+  figcaption {
+    font-size: $font-size-XS;
+    font-style: italic;
+  }
+}

@@ -1,0 +1,57 @@
+// scss-lint:disable ColorVariable
+
+// Strip units
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+// Base font Size
+$em-base: 16 !default;
+
+// PX to EM
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+// Mixes a color with black
+@function shade($color, $percent) {
+  @return mix(#000, $color, $percent);
+}
+
+// Mixes a color with white.
+@function tint($color, $percent) {
+  @return mix(#fff, $color, $percent);
+}
+
+/// Append pseudo-classes to a selector(s).
+///
+/// @argument {list | string} $inputs
+///   A selector, or list of selectors, to apply the pseudo-class to.
+///
+/// @argument {pseudo-class} $pseudo [null]
+///   The pseudo-class to be appended.
+///
+/// @return {list}
+///
+/// @access private
+
+@function _assign(
+  $inputs,
+  $pseudo: null
+) {
+  $list: ();
+
+  @each $input in $inputs {
+    $input: unquote($input);
+    $input: if($pseudo, $input + ":" + $pseudo, $input);
+    $list: append($list, $input, comma);
+  }
+
+  @return $list;
+}

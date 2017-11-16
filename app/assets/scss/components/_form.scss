@@ -1,0 +1,140 @@
+/** ======================================
+ * Component : Form
+ * ======================================= */
+
+.form {
+  @media (max-width: $mq-S) {
+    > .grid {
+      margin-bottom: $spacer-S;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: $spacer-S;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-group-feedback {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  line-height: 1.25;
+}
+
+.form-group-small {
+  font-size: 80%;
+  color: tint($clr-0, 40%);
+}
+
+.form-group-label {
+  margin: 0 0 0.5rem;
+  font-weight: bold;
+}
+
+.form-group-label--required::after {
+  content: " *";
+}
+
+.form-group-input {
+  input:not([type="range"]),
+  select {
+    appearance: none;
+  }
+
+  #{$form-list-input},
+  select {
+    height: $form-group-input-height;
+    padding: 0 1rem;
+    line-height: 1;
+  }
+
+  #{$form-list-input},
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid $clr-0-light;
+    border-radius: $rad-S;
+    background-color: $clr-light;
+    box-shadow: none;
+    transition: $trans;
+
+    &:hover {
+      border-color: shade($clr-0-light, 10%);
+    }
+
+    &:focus {
+      border-color: shade($clr-0-light, 20%);
+      outline: none;
+      box-shadow: none, 0 0 5px rgba(darken(shade($clr-0-light, 20%), 5), 0.7);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  textarea {
+    min-height: $form-group-input-height * 2;
+    padding: 1rem;
+    line-height: 1.25;
+  }
+}
+
+.form-footer {
+  margin-top: $spacer-S;
+  padding-top: $spacer-S;
+  text-align: center;
+  border-top: 1px solid $clr-divider;
+
+  @media (min-width: $mq-S-up) {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+}
+
+.form-footer-alpha {
+  margin-bottom: $spacer-S;
+
+  @media (min-width: $mq-S-up) {
+    margin-bottom: 0;
+    padding-right: $spacer-S;
+  }
+}
+
+.form-footer-beta {
+  @media (min-width: $mq-S-up) {
+    margin-left: auto;
+  }
+}
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.form-group--noLabel {
+  .form-group-label {
+    @include visually-hidden;
+  }
+}
+
+.form-group-input--inline {
+  display: flex;
+
+  > * + * {
+    margin-left: 2rem;
+  }
+}
+
+.form-group-small--checkbox,
+.form-group-small--radio {
+  margin-left: 2.5rem;
+}

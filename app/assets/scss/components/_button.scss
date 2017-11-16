@@ -1,0 +1,124 @@
+/** ======================================
+ * Component : Button
+ * ======================================= */
+
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: em(10, 14) em(18, 14);
+  font-size: em(14);
+  font-weight: bold;
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  color: $clr-light;
+  border: 0;
+  border-radius: $rad-S;
+  background: $clr-1;
+  cursor: pointer;
+  user-select: none;
+  transition: $trans;
+  -webkit-user-drag: none;
+  -webkit-appearance: none;
+
+  &:hover,
+  &:focus {
+    color: $clr-light;
+    outline: none;
+    background: $clr-1-darker;
+  }
+
+  &:disabled:hover,
+  &.is-disabled:hover {
+    background: $clr-1;
+  }
+
+  &.is-active,
+  .is-pressed {
+    background: shade($clr-1, 40%);
+  }
+
+  &:disabled,
+  &.is-disabled {
+    background-image: none !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+  }
+
+  + [class*="button"] {
+    @media (min-width: $mq-S-up) {
+      margin-left: 1rem;
+    }
+  }
+}
+
+/**
+ * Modifier : Color
+ * --------------------------------------- */
+
+.button--secondary {
+  color: $clr-0;
+  background: $clr-light;
+  box-shadow: inset 0 0 0 1px $clr-0-light;
+
+  &:hover,
+  &:focus {
+    color: $clr-0;
+    background: $clr-0-light;
+  }
+
+  &:disabled:hover,
+  &.is-disabled:hover {
+    background: $clr-light;
+  }
+
+  &.is-active,
+  .is-pressed {
+    color: $clr-light;
+    background: shade($clr-0-light, 40%);
+    box-shadow: none;
+  }
+}
+
+.button--danger {
+  background: $clr-danger;
+
+  &:disabled:hover,
+  &.is-disabled:hover {
+    background: $clr-danger;
+  }
+
+  &:hover,
+  &:focus {
+    background: shade($clr-danger, 20%);
+  }
+}
+
+/**
+ * Modifier : Size
+ * --------------------------------------- */
+
+.button--small {
+  padding: em(5) em(15);
+  font-size: em(12);
+}
+
+.button--big {
+  padding: em(15) em(40);
+  font-size: em(18);
+}
+
+.button--block {
+  justify-content: center;
+  width: 100%;
+}
+
+.button--blockMobile {
+  @media (max-width: $mq-S-up) {
+    display: block;
+    width: 100%;
+  }
+}

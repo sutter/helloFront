@@ -1,6 +1,6 @@
 # Hello Front
 
-Naked boilerplate SCSS / PUG / ES6 for clean and fast Front-end project.
+Boilerplate SCSS / PUG / ES6 for clean and fast Front-end project.
 
 Work on **app/** folder and gulp build in **dist/**.
 
@@ -77,7 +77,7 @@ Example SCSS hierarchy :
 * **tools/** : Default mixin and functions
 * **utils/** : Helpers and overrides
 * **_settings.scss** : Global variables
-* **main.scss** : Main stylesheet
+* **app.scss** : Main stylesheet
 
 ### Works with Pug templating
 

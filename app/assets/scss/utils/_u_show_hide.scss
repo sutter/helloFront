@@ -1,0 +1,23 @@
+/** ======================================
+ * Utils : Show / Hide
+ * ======================================= */
+
+// scss-lint:disable ImportantRule
+
+.u-hideMobile {
+  display: none !important;
+
+  @media (min-width: $mq-S-up) {
+    display: block !important;
+  }
+}
+
+.u-showMobile {
+  @media (min-width: $mq-S-up) {
+    display: none !important;
+  }
+}
+
+.u-visuallyHidden {
+  @include visually-hidden;
+}
