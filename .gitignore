@@ -7,9 +7,10 @@
 *.sublime-project
 *.sublime-workspace
 
-# Npm
+# Npm & yarn
 /npm-debug.log
 node_modules
+yarn-error.log
 
 # Generated folder
 build
