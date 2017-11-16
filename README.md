@@ -136,6 +136,5 @@ Disabled by default, for activate do :
 
 ## TODO
 
-* update webpack version
 * add version on CSS and JS main files
 * add styleguide generator

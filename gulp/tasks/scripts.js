@@ -8,8 +8,8 @@ const plumber = require("gulp-plumber");
 const options = require("minimist")(process.argv.slice(2));
 
 const webpackConfig = options.production
-  ? require("../../webpack.production.config.js")
-  : require("../../webpack.config.js");
+  ? require("../../webpack/webpack.config.prod")
+  : require("../../webpack/webpack.config.dev");
 
 const webpackChangeHandler = (_, stats) => {
   gutil.log(

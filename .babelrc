@@ -1,21 +1,3 @@
 {
-  "ignore": "./node_modules",
-  "presets": [
-    "es2015",
-    "stage-0"
-  ],
-  "plugins": [
-    [
-      "transform-decorators-legacy"
-    ]
-  ],
-  "sourceMaps": false,
-  "env": {
-    "production": {
-      "presets": [
-        "es2015",
-        "stage-0"
-      ]
-    }
-  }
+  "presets": ["env"]
 }
