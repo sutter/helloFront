@@ -2,8 +2,6 @@
  * Utils : Spacing
  * ======================================= */
 
-// scss-lint:disable ImportantRule
-
 $spacers: (N 0) (S $spacer-S) (M $spacer-M) (L $spacer-L);
 
 @each $spacer in $spacers {

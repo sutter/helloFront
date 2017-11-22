@@ -15,7 +15,7 @@
 }
 
 .form-group {
-  margin-bottom: $spacer-S;
+  margin-bottom: $spacer-M;
 
   &:last-child {
     margin-bottom: 0;
@@ -23,8 +23,8 @@
 }
 
 .form-group-feedback {
-  margin-top: 1rem;
-  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
   line-height: 1.25;
 }
 
@@ -34,8 +34,11 @@
 }
 
 .form-group-label {
-  margin: 0 0 0.5rem;
-  font-weight: bold;
+  margin: 0 0 1rem;
+  font-weight: $font-weight-base;
+  &.label {
+    cursor: pointer;
+  }
 }
 
 .form-group-label--required::after {
@@ -71,7 +74,7 @@
     }
 
     &:focus {
-      border-color: shade($clr-0-light, 20%);
+      border-color: $clr-1;
       outline: none;
       box-shadow: none, 0 0 5px rgba(darken(shade($clr-0-light, 20%), 5), 0.7);
     }

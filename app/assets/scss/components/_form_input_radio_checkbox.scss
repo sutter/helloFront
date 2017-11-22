@@ -4,10 +4,10 @@
  * --------------------------------------- */
 
 $inputRadioCheckboxSize: em(16);
-$inputRadioCheckboxTop: em(1);
+$inputRadioCheckboxTop: em(2);
 
-.formInputCheckbox,
-.formInputRadio {
+.inputCheckbox,
+.inputRadio {
   position: relative;
   line-height: $line-height-S;
 
@@ -54,7 +54,7 @@ $inputRadioCheckboxTop: em(1);
   }
 }
 
-.formInputCheckbox {
+.inputCheckbox {
   [type="checkbox"] + label::before {
     border-radius: em(3);
     transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -78,7 +78,7 @@ $inputRadioCheckboxTop: em(1);
   }
 }
 
-.formInputRadio {
+.inputRadio {
   [type="radio"] + label::before {
     border-radius: 50%;
     transition: $trans;

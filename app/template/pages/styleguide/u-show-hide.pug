@@ -1,0 +1,33 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Utils Show - hide"
+  - var metaDesc = "Utils Show - hide - CSS"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Documentation
+  .hf-content.hf-wrapper
+    h2 Show - hide
+    p Les utilitaires Show-Hide permettent cacher ou afficher les élements.
+    table
+      thead
+        tr
+          th Class
+          th Usage
+      tbody
+        tr
+          td
+            code .u-visuallyHidden
+          td Cache visuelement les élements, sauf pour les lecteurs d'écrans
+        tr
+          td
+            code .u-hideMobile
+          td Cache les éléments sur les écrans de moins de 480px
+        tr
+          td
+            code .u-showMobile
+          td Affiche les éléments seulement sur les écrans de plus de 480px

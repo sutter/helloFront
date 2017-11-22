@@ -36,13 +36,13 @@
     background: $clr-1;
   }
 
-  &.is-active,
-  .is-pressed {
+  &.is-active {
     background: shade($clr-1, 40%);
   }
 
   &:disabled,
   &.is-disabled {
+    opacity: 0.5;
     background-image: none !important;
     box-shadow: none !important;
     cursor: not-allowed;
@@ -75,8 +75,7 @@
     background: $clr-light;
   }
 
-  &.is-active,
-  .is-pressed {
+  &.is-active {
     color: $clr-light;
     background: shade($clr-0-light, 40%);
     box-shadow: none;

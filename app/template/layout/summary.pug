@@ -1,0 +1,21 @@
+include ../config
+block config
+include ../mixins/mixins
+
+doctype
+html(lang= lang)
+  head
+    include ../partials/head
+    link(rel='stylesheet', href= path + 'assets/css/styleguide.css')
+
+  body(class= template)
+
+    header.hf-head(role="banner")
+      .hf-wrapper
+        h1.hf-summaryHeader-title Sommaire
+    main(role="main")
+      section
+        block content
+
+    script(src= path + "assets/js/app.js", async)
+

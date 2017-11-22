@@ -1,0 +1,56 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Utils de layout"
+  - var metaDesc = "Utils de Layout - CSS"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Utils de layout
+  .hf-content.hf-wrapper
+    h2 Documentation
+    p Les utilitaires de Layout sont des helpers permettant de facilement appliquer certaines modifications de layout à un élément. (clearFix, floats, fix de "contexte de formattage de bloc"...)
+    table
+      thead
+        tr
+          th Classe
+          th Usage
+      tbody
+        tr
+          td
+            code .u-cf
+          td
+            | Emp&ecirc;cher les flottants de d&eacute;passer de leur conteneur. Plus d&apos;informations sur le fonctionnement dans 
+            a(href='http://www.alsacreations.com/astuce/lire/7-depassement-flottants-css.html', title='null') cet article d&apos;Alsacr&eacute;ations
+            | .
+        tr
+          td
+            code .u-floatLeft
+          td
+            | Ajoute un 
+            strong float: left
+            |  &agrave; l&apos;&eacute;l&eacute;ment.
+        tr
+          td
+            code .u-floatRight
+          td
+            | Ajoute un 
+            strong float: right
+            |  &agrave; l&apos;&eacute;l&eacute;ment.
+        tr
+          td
+            code .u-noBfc
+          td
+            | Supprime le contexte de formatage de block. Plus d&apos;information dans 
+            a(href='http://www.alsacreations.com/astuce/lire/1543-le-contexte-de-formatage-block-en-css.html', title='null') cet article d&apos;Alsacr&eacute;ations
+            |  sur le contexte de formatage block en CSS.
+        tr
+          td
+            code .u-flexPushleft
+          td
+            | D&eacute;cale un enfant direct d&apos;un parent en 
+            strong display:flex
+            |  vers la droite

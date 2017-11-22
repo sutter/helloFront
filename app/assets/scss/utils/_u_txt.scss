@@ -2,7 +2,7 @@
  * Utils : Txt
  * ======================================= */
 
-// scss-lint:disable ImportantRule
+/* Style */
 
 .u-txtUpper {
   text-transform: uppercase !important;
@@ -10,6 +10,14 @@
 
 .u-txtLower {
   text-transform: lowercase !important;
+}
+
+.u-txtBold {
+  font-weight: $font-weight-bold !important;
+}
+
+.u-txtThin {
+  font-weight: $font-weight-thin !important;
 }
 
 .u-txtCenter {
@@ -22,29 +30,6 @@
 
 .u-txtRight {
   text-align: right !important;
-}
-
-.u-txtBreak {
-  word-wrap: break-word !important;
-}
-
-.u-txtNoWrap {
-  white-space: nowrap !important;
-}
-
-.u-txtTruncate {
-  @include truncate;
-}
-
-.u-txtLead {
-  font-size: $font-size-M;
-  font-weight: $font-weight-bold;
-  color: $clr-0-dark;
-}
-
-.u-txtSmall {
-  font-size: $font-size-XXS;
-  line-height: 1.25em;
 }
 
 /* Size */
@@ -66,7 +51,7 @@
 }
 
 .u-txtS {
-  font-size: $font-size-XS !important;
+  font-size: $font-size-S !important;
 }
 
 .u-txtXS {

@@ -1,9 +1,18 @@
-extends ../layout/base
+extends ../layout/summary
 
 append config
-  - var title = "My page title"
+  - var title = "Sommaire"
   - var metaDesc = "My page description"
 
 block content
-  .wrapper
-    h1 Content here
+  .hf-wrapper
+    .hf-content
+      h2 Pages
+      ul
+        li
+          a(href="./home.html") Accueil
+      h2 Documentation
+      ul
+        li
+          a(href="./styleguide") Styleguide
+

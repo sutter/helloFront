@@ -1,0 +1,49 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Styleguide"
+  - var metaDesc = "Styleguide - CSS / HTML / JS"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Framework CSS
+  .hf-content
+    .hf-wrapper
+      h3 Support Navigateur
+      ul
+        li Internet Explorer 10+
+        li Edge
+        li Firefox 28+
+        li Chrome 21+ 
+        li Safari 6.1+
+      h3 Syntaxe SCSS
+      ul
+       li Indentation : 2 espaces
+       li 80 caractères maximum par lignes
+       li 1 déclaration par ligne
+      h3 Organisation des fichiers SCSS
+      ul
+        li
+          strong base/
+          | : Normalisation et micro-reset des éléments de style
+        li
+          strong components/
+          | : Composants de l’application (menu, header, footer, boutons…)
+        li
+          strong tools/
+          | : Mixins et fonctions 
+        li
+          strong utils/
+          | : Classes utilitaires
+        li
+          strong _settings.scss
+          | : Variables SCSS
+        li
+          strong app.scss
+      h3 Convention de nommage CSS
+      pre
+        code
+          include ../../data/css.md

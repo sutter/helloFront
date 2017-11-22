@@ -1,0 +1,75 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Buttons"
+  - var metaDesc = "Buttons - CSS / HTML / JS"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Boutons
+      nav
+        a(href="#styles") Styles
+        a(href="#states") États
+        a(href="#sizes") Tailles
+  .hf-content.hf-wrapper
+    h2#styles Styles
+    h3 Style de base
+    p Le style de base convient pour les boutons d'action primaire.
+    p Ajouter la classe .button aux éléments <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, ou <code>&lt;input /&gt;</code>.
+  .hf-code.hf-wrapper
+    a.button(href="#") Bouton
+    button.button Bouton
+    input(type="submit", value="Bouton").button
+  .hf-content.hf-wrapper
+    h3 Style secondaire
+    p Le style secondaire convient pour les boutons d'action secondaire.
+    p Ajouter la classe de modification <code>.button--secondary</code> à l'élément ayant la classe <code>.button</code> afin de modifier son style.
+  .hf-code.hf-wrapper
+    a.button.button--secondary(href="#") Bouton
+    button.button.button--secondary Bouton
+    input(type="submit", value="Bouton").button.button--secondary
+  .hf-content.hf-wrapper
+    h3 Style danger
+    p Le style danger convient pour les boutons d'action destructice.
+    p Ajouter la classe de modification <code>.button--danger</code> à l'élément ayant la classe <code>.button</code> afin de modifier son style.
+  .hf-code.hf-wrapper
+    a.button.button--danger(href="#") Bouton
+    button.button.button--danger Bouton
+    input(type="submit", value="Bouton").button.button--danger
+  .hf-content.hf-wrapper
+    h2#states États :
+    h3 État actif
+    p Ajouter la classe d'état <code>.is-active</code> sur le composant <code>.button</code> afin de modifier son apparence.
+  .hf-code.hf-wrapper
+    a.button.is-active(href="#") Bouton
+    button.button.button--secondary.is-active Bouton
+  .hf-content.hf-wrapper
+    h3 Style disabled
+    ul
+      li <code>&lt;a&gt;</code> : Ajouter la classe d'état <code>.is-disabled</code>
+      li <code>&lt;input /&gt;</code> ou <code>&lt;button /&gt;</code> : Ajouter l'attribut <code>disabled</code>
+  .hf-code.hf-wrapper
+    a.button.is-disabled(href="#") Bouton
+    button.button(disabled) Bouton
+    a.button.button--secondary.is-disabled(href="#") Bouton
+    button.button.button--secondary(disabled) Bouton
+    a.button.button--danger.is-disabled(href="#") Bouton
+    button.button.button--danger(disabled) Bouton
+  .hf-content.hf-wrapper
+    h2#sizes Tailles :
+    h3 Taille S
+    p Ajouter la classe de modification <code>.button--S</code> sur le composant <code>.button</code> afin de modifier sa taille.
+  .hf-code.hf-wrapper
+    a.button.button--S(href="#") Bouton
+    button.button.button--S Bouton
+    input(type="submit", value="Bouton").button.button--S
+  .hf-content.hf-wrapper
+    h3 Taille L
+    p Ajouter la classe de modification <code>.button--L</code> sur le composant <code>.button</code> afin de modifier sa taille.
+  .hf-code.hf-wrapper
+    a.button.button--L(href="#") Bouton
+    button.button.button--L Bouton
+    input(type="submit", value="Bouton").button.button--L

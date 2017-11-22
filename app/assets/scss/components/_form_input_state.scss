@@ -15,14 +15,16 @@ $formStateMarkup: _assign(
   )
 );
 
-$stateTypes: (error $clr-error) (success $clr-success) (warning $clr-warning);
+$stateTypes: (error $clr-danger) (success $clr-success) (warning $clr-warning);
 
 @each $state in $stateTypes {
   $type: nth($state, 1);
   $color: nth($state, 2);
 
   .form-group--#{$type}.form-group--#{$type} {
-    input {
+    input,
+    textarea,
+    select {
       color: $color;
       border-color: tint($color, 50%);
 
