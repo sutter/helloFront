@@ -18,11 +18,13 @@ nvm use
 
 ### Install Sass
 
-Go to [sass-lang.com/install](http://sass-lang.com/install) for installation in command line.
+Go to [sass-lang.com/install](http://sass-lang.com/install) for installation in
+command line.
 
 ### Install Yarn
 
-Go to [https://yarnpkg.com/docs/install](https://yarnpkg.com/docs/install/#mac-tab)
+Go to
+[https://yarnpkg.com/docs/install](https://yarnpkg.com/docs/install/#mac-tab)
 
 ### Install Gulp
 
@@ -36,7 +38,8 @@ yarn install
 
 ### Install Tooling
 
-Use [Prettier](https://github.com/prettier/prettier) for clean your **JS** / **SCSS** files.
+Use [Prettier](https://github.com/prettier/prettier) for clean your **JS** /
+**SCSS** files.
 
 Plugin for IDE :
 
@@ -125,7 +128,9 @@ svg
 Disabled by default, for activate do :
 
 * in `./gulp/config.js` at **line 65** update value : `enable: true`;
-* Add [this file](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e) in `./app/assets/scss/tools/`;
+* Add
+  [this file](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
+  in `./app/assets/scss/tools/`;
 * Add SVG Files in folder `./app/assets/icons` and gulp made magic.
 
 [Preparing-svgs](https://www.npmjs.com/package/gulp-iconfont#preparing-svgs)
@@ -137,4 +142,3 @@ Disabled by default, for activate do :
 ## TODO
 
 * add version on CSS and JS main files
-* add styleguide generator
