@@ -1,93 +1,98 @@
 //----------------------------------------
-// Variables
+//   Variables
 //----------------------------------------
 
 // 1 - Color
 // 2 - Font
 // 3 - Grid and wrapper
 // 4 - Radius
-// 5 - Transitions
-// 6 - Forms
-// 7 - Spacing
-// 8 - Breakpoints
-// 9 - Shadow
-// 10 - height
+// 5 - Forms
+// 6 - Spacing
+// 7 - Breakpoints
+// 8 - Transitions
 
 //
 // 1 - Color
 // ---------------------------------------
 
 $clr-light: #fff;
-$clr-success: #31cf65;
-$clr-warning: #fedc62;
-$clr-notice: #2b9eeb;
-$clr-danger: #fc3c63;
+$clr-success: #61bcbd;
+$clr-warning: #f9b134;
+$clr-notice: #d9edf7;
+$clr-danger: #d24a53;
 $clr-divider: #ededed;
 
-$clr-0-darker: #000;
-$clr-0-dark: #04222d;
-$clr-0: #6b7c93;
-$clr-0-light: #cfd4df;
-$clr-0-lighter: #f5f7f9;
+$clr-0-darker: #23292e;
+$clr-0-dark: #212121;
+$clr-0: #333;
+$clr-0-light: #ccc;
+$clr-0-lighter: #fafafa;
 
-$clr-1: #7179bd;
-$clr-1-light: tint($clr-1, 25%);
-$clr-1-lighter: tint($clr-1, 90%);
+$clr-1: #5ca1f3;
+$clr-1-light: tint($clr-1, 50%);
+$clr-1-lighter: tint($clr-1, 85%);
 $clr-1-dark: shade($clr-1, 15%);
 $clr-1-darker: shade($clr-1, 30%);
 
-$clr-2: #3fcadc;
-$clr-2-light: tint($clr-2, 25%);
-$clr-2-lighter: tint($clr-2, 50%);
+$clr-2: #605ce8;
+$clr-2-light: tint($clr-2, 50%);
+$clr-2-lighter: tint($clr-2, 85%);
 $clr-2-dark: shade($clr-2, 15%);
 $clr-2-darker: shade($clr-2, 30%);
+
+// Social color
+$clr-facebook: #3b5998;
+$clr-twitter: #55acee;
+$clr-linkedin: #0077b5;
+$clr-instagram: #3f729b;
+$clr-youtube: #cd201f;
+$clr-pinterest: #bd081c;
 
 //
 // 2 - Font
 // ---------------------------------------
 
-$font-base: "Open Sans", sans-serif;
+$font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 $font-alternate: $font-base;
-$font-size-base: 1.4rem;
+$font-size-base: 1.6rem;
 // Don't touch this, it's for em convertion
-$em-base: 16;
-$font-weight-bold: 700;
+$em-base: strip-units($font-size-base) * 10;
+$font-weight-bold: bold;
 $font-weight-base: 400;
-
-$font-size-XXL: 2.8rem;
-$font-size-XL: 2.4rem;
-$font-size-L: 1.8rem;
+$font-weight-thin: 100;
+$font-size-XXL: 4rem;
+$font-size-XL: 2.8rem;
+$font-size-L: 2rem;
 $font-size-M: 1.6rem;
 $font-size-S: 1.4rem;
 $font-size-XS: 1.2rem;
 $font-size-XXS: 1rem;
+$line-height-L: 1.625;
+$line-height-M: 1.5;
+$line-height-S: 1.25;
+$line-height-XS: 1;
 
 //
 // 3 - Grid and wrapper
 // ---------------------------------------
 
-$wrap-L-max-width: 250rem;
-$wrap-M-max-width: 64rem;
-$wrap-S-max-width: 40rem;
-$modal-max-width: 45rem;
-$gutter-width: 2rem;
 $app-min-width: 30rem;
+$wrap-M-max-width: 100rem;
+$wrap-S-max-width: 60rem;
+$gutter-width: 2rem;
+
+$width-list: (20 20%) (25 25%) (33 33.333%) (40 40%) (50 50%) (60 60%) (66 66.666%) (75 75%) (80 80%) (100 100%);
 
 //
 // 4 - Radius
 // ---------------------------------------
 
-$rad-S: 0.4rem;
+$rad-S: 0.3rem;
 $rad-M: 1rem;
 
 //
-// 5 - Transitions
-// ---------------------------------------
-
-$trans: all 0.3s ease-in-out;
-
-//
-// 6 - Forms
+// 5 - Forms
 // ---------------------------------------
 
 $form-group-input-height: 4rem;
@@ -108,17 +113,17 @@ $form-list-input: _assign(
 );
 
 //
-// 7 - Spacing
+// 6 - Spacing
 // ---------------------------------------
 
 $spacer-N: 0;
 $spacer-S: 1rem;
 $spacer-M: 2rem;
 $spacer-L: 4rem;
-$spacer-XL: 12rem;
+$spacer-XL: 8rem;
 
 //
-// 8 - Breakpoints
+// 7 - Breakpoints
 // ---------------------------------------
 
 $mq-S: em(480, $em-base);
@@ -127,23 +132,9 @@ $mq-M: em(768, $em-base);
 $mq-M-up: em(769, $em-base);
 $mq-L: em(1024, $em-base);
 $mq-L-up: em(1025, $em-base);
-$mq-XL: em(1500, $em-base);
-$mq-XL-up: em(1501, $em-base);
-$mq-XXL: em(2000, $em-base);
-$mq-XXL-up: em(2001, $em-base);
-
-$mq-nav: em(800, $em-base);
-$mq-nav-up: em(801, $em-base);
 
 //
-// 9 - Shadow
+// 8 - Transitions
 // ---------------------------------------
 
-$shadow-L: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-$shadow-M: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-
-//
-// 10 - height
-// ---------------------------------------
-
-$height-header: 7rem;
+$trans: all 0.3s ease-in-out;

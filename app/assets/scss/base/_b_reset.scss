@@ -27,7 +27,7 @@ body {
   font-weight: $font-weight-base;
   line-height: 1;
   text-rendering: optimizeLegibility;
-  color: $clr-0;
+  color: $clr-0-darker;
   background: $clr-light;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -87,13 +87,12 @@ acronym {
 
 a {
   text-decoration: none;
-  color: $clr-1;
-  transition: color 0.3s ease-in-out;
+  color: inherit;
 
   &:active,
   &:hover,
   &:focus {
-    color: $clr-1-dark;
+    color: inherit;
   }
 }
 
@@ -147,9 +146,6 @@ input,
 select,
 textarea {
   display: block;
-  &::placeholder {
-    color: rgba($clr-0, 0.3);
-  }
 }
 
 label {
@@ -181,7 +177,7 @@ fieldset {
 }
 
 ::placeholder {
-  color: $clr-0-dark;
+  color: $clr-0-light;
 }
 
 /**
@@ -203,6 +199,18 @@ th {
 th {
   font-weight: inherit;
   text-align: left;
+}
+
+/**
+ * Form 
+ * --------------------------------------- */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
 }
 
 /**

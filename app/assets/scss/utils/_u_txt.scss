@@ -1,0 +1,63 @@
+/** ======================================
+ * Utils : Txt
+ * ======================================= */
+
+/* Style */
+
+.u-txtUpper {
+  text-transform: uppercase !important;
+}
+
+.u-txtLower {
+  text-transform: lowercase !important;
+}
+
+.u-txtBold {
+  font-weight: $font-weight-bold !important;
+}
+
+.u-txtThin {
+  font-weight: $font-weight-thin !important;
+}
+
+.u-txtCenter {
+  text-align: center !important;
+}
+
+.u-txtLeft {
+  text-align: left !important;
+}
+
+.u-txtRight {
+  text-align: right !important;
+}
+
+/* Size */
+
+.u-txtXXL {
+  font-size: $font-size-XXL !important;
+}
+
+.u-txtXL {
+  font-size: $font-size-XL !important;
+}
+
+.u-txtL {
+  font-size: $font-size-L !important;
+}
+
+.u-txtM {
+  font-size: $font-size-M !important;
+}
+
+.u-txtS {
+  font-size: $font-size-S !important;
+}
+
+.u-txtXS {
+  font-size: $font-size-XS !important;
+}
+
+.u-txtXXS {
+  font-size: $font-size-XXS !important;
+}

@@ -1,6 +1,6 @@
-// ======================================
-// Utils : layout
-// =======================================
+/** ======================================
+ * Utils : Layout
+ * ======================================= */
 
 .u-cf {
   &::before,
@@ -28,12 +28,4 @@
 
 .u-flexPushleft {
   margin-left: auto;
-}
-
-// Need's Flex parent
-.u-flexCenter {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }

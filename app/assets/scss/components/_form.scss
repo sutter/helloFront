@@ -1,11 +1,11 @@
-// ======================================
-// Component : Form
-// =======================================
+/** ======================================
+ * Component : Form
+ * ======================================= */
 
 .form {
   @media (max-width: $mq-S) {
     > .grid {
-      margin-bottom: $spacer-M;
+      margin-bottom: $spacer-S;
 
       &:last-child {
         margin-bottom: 0;
@@ -23,21 +23,22 @@
 }
 
 .form-group-feedback {
-  margin-top: 1rem;
-  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
   line-height: 1.25;
 }
 
-.form-group-small,
-.form-error {
-  display: block;
-  font-size: 90%;
+.form-group-small {
+  font-size: 80%;
   color: tint($clr-0, 40%);
-  margin-top: $spacer-S;
 }
 
 .form-group-label {
-  @include label;
+  margin: 0 0 1rem;
+  font-weight: $font-weight-base;
+  &.label {
+    cursor: pointer;
+  }
 }
 
 .form-group-label--required::after {
@@ -73,7 +74,7 @@
     }
 
     &:focus {
-      border-color: shade($clr-0-light, 20%);
+      border-color: $clr-1;
       outline: none;
       box-shadow: none, 0 0 5px rgba(darken(shade($clr-0-light, 20%), 5), 0.7);
     }
@@ -90,66 +91,43 @@
   }
 }
 
-.form-fieldset {
-  &:not(:only-child) {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
-}
-
-.form-fieldset-lead {
-  font-weight: $font-weight-bold;
-
-  &:not(:only-child) {
-    margin-bottom: 1rem;
-  }
-}
-
 .form-footer {
-  margin-top: 3rem;
+  margin-top: $spacer-S;
+  padding-top: $spacer-S;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  border-top: 1px solid $clr-divider;
 
-.form-footer-item {
-  &:not(:first-child) {
-    margin-top: $spacer-M;
+  @media (min-width: $mq-S-up) {
+    display: flex;
+    align-items: center;
+    text-align: left;
   }
 }
 
-.form-errors {
-  color: $clr-danger;
-  line-height: 1.25;
+.form-footer-alpha {
+  margin-bottom: $spacer-S;
 
-  > * {
-    margin-bottom: $spacer-M;
-  }
-
-  h2 {
-    font-weight: $font-weight-bold;
-  }
-
-  ul {
-    padding-left: 2rem;
-    list-style: disc;
-    margin-top: 1rem;
-  }
-
-  li + li {
-    margin-top: 0.5rem;
+  @media (min-width: $mq-S-up) {
+    margin-bottom: 0;
+    padding-right: $spacer-S;
   }
 }
 
-.form-error {
-  color: $clr-danger;
+.form-footer-beta {
+  @media (min-width: $mq-S-up) {
+    margin-left: auto;
+  }
 }
 
 /**
  * Modifier
  * --------------------------------------- */
+
+.form-group--noLabel {
+  .form-group-label {
+    @include visually-hidden;
+  }
+}
 
 .form-group-input--inline {
   display: flex;

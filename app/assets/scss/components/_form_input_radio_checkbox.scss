@@ -9,7 +9,7 @@ $inputRadioCheckboxTop: em(2);
 .inputCheckbox,
 .inputRadio {
   position: relative;
-  line-height: 1.25;
+  line-height: $line-height-S;
 
   [type="radio"],
   [type="checkbox"] {
