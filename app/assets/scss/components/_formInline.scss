@@ -1,0 +1,61 @@
+// ======================================
+// Component : Form inline
+// * Dependencies : _form.scss
+// =======================================
+
+.form--inline {
+  display: flex;
+  align-items: flex-start;
+
+  .form-group {
+    flex-grow: 1;
+    margin-bottom: 0;
+
+    input,
+    select {
+      border-radius: $rad-S 0 0 $rad-S;
+      border-right: none;
+    }
+  }
+
+  .form-group-label {
+    @include visually-hidden;
+  }
+
+  .form-footer {
+    margin: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .button {
+    display: block;
+    width: 100%;
+    height: $form-group-input-height;
+    padding: 0 2rem;
+    font-size: $font-size-XS;
+    line-height: $form-group-input-height;
+    text-align: center;
+    border-radius: 0 $rad-S $rad-S 0;
+    box-shadow: none;
+    background: $clr-1;
+
+    &:hover {
+      box-shadow: none;
+      transform: none;
+      background: $clr-1-light;
+    }
+  }
+}
+
+//
+// Modifier
+// ---------------------------------------
+
+.form--inline {
+  .form-group {
+    .twitter-typeahead {
+      display: block !important;
+    }
+  }
+}

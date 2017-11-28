@@ -1,0 +1,60 @@
+// ======================================
+// Component : bookList
+// =======================================
+
+.bookList-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $spacer-L;
+  padding-bottom: $spacer-L;
+
+  > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.bookList-head-legend {
+  display: flex;
+  font-size: $font-size-L;
+
+  > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.bookList-head-legend-highlight {
+  color: $clr-1;
+  font-weight: $font-weight-bold;
+}
+
+.bookList-body {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $mq-S-up) {
+    margin: 0 -#{$gutter-width/2};
+  }
+
+  > * {
+    margin-bottom: $gutter-width;
+    @media (min-width: $mq-S-up) {
+      margin: $gutter-width/2;
+      width: calc(50% - #{$gutter-width});
+    }
+    @media (min-width: $mq-L-up) {
+      margin: $gutter-width/2;
+      width: calc(33.333% - #{$gutter-width});
+    }
+    @media (min-width: $mq-XL-up) {
+      width: calc(25% - #{$gutter-width});
+    }
+    @media (min-width: $mq-XXL-up) {
+      width: calc(20% - #{$gutter-width});
+    }
+  }
+}
+
+.bookList-body--organize  {
+  width: 100%;
+}

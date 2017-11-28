@@ -1,0 +1,33 @@
+// ======================================
+// Component : bookPage
+// =======================================
+
+.bookPage-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: $spacer-L;
+  padding-bottom: $spacer-L;
+
+  > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.bookPage-head-legend {
+  display: flex;
+  font-size: $font-size-L;
+
+  > *:not(:first-child) {
+    margin-left: 2rem;
+  }
+}
+
+.bookPage-head-legend-highlight {
+  color: $clr-1;
+  font-weight: $font-weight-bold;
+
+  .linkBack + & {
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,93 @@
+// ======================================
+// Component : dropdown
+// =======================================
+
+.dropdown {
+  color: $clr-light;
+  position: relative;
+}
+
+.dropdown-button {
+  position: relative;
+  border: none;
+  background: none;
+  color: $clr-light;
+  padding: 0.5rem 26px 0.5rem 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  will-change: opacity;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.75;
+  }
+
+  &:after {
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid $clr-light;
+  }
+
+  &.is-dropdownOpen {
+    &:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.dropdown-button.is-dropdownOpen + .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: #fff;
+  display: none;
+  border-radius: $rad-S;
+  min-width: 22rem;
+  text-align: center;
+  box-shadow: $shadow-L;
+
+  &:after {
+    position: absolute;
+    top: -8px;
+    right: 50px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid $clr-light;
+  }
+}
+
+.dropdown-box-list-item {
+  a {
+    display: block;
+    padding: 1.5rem 2rem;
+    color: $clr-0-dark;
+
+    &:hover,
+    &:focus {
+      color: $clr-1;
+    }
+  }
+
+  &:not(:first-child) {
+    border-top: 1px solid $clr-divider;
+  }
+}

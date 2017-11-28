@@ -1,0 +1,22 @@
+// ======================================
+// Component : msg
+// =======================================
+
+.msg:not(:empty) {
+  padding: 1rem;
+  background: $clr-0-lighter;
+  border-radius: $rad-S;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+//
+// Modifier
+// ---------------------------------------
+
+.msg--warning.msg--warning {
+  background: tint($clr-warning, 40%);
+  color: shade($clr-warning, 40%);
+}

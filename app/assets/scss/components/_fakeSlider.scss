@@ -1,0 +1,54 @@
+// ======================================
+// Component : fakeSlider
+// =======================================
+
+.fakeSlider {
+}
+
+.fakeSlider-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fakeSlider-controls-prev,
+.fakeSlider-controls-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 30rem;
+  height: 13rem;
+  width: 6.5rem;
+  background: rgba($clr-light, 0.9);
+
+  &:hover {
+    .fakeSlider-controls-picto path {
+      stroke-width: 4px;
+      stroke: $clr-1-dark;
+    }
+  }
+}
+
+.fakeSlider-controls-next {
+  right: 0;
+  border-radius: 666px 0 0 666px;
+}
+
+.fakeSlider-controls-prev {
+  border-radius: 0 666px 666px 0;
+}
+
+.fakeSlider-controls-picto {
+  width: 2.2rem;
+  height: 3.6rem;
+  display: block;
+  path {
+    stroke: $clr-1;
+    stroke-width: 2px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: all 0.3s ease-in-out;
+  }
+}

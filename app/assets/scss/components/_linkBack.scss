@@ -1,0 +1,29 @@
+// ======================================
+// Component : linkBack
+// =======================================
+
+.linkBack {
+  svg {
+    width: 2rem;
+    height: 2rem;
+    path,
+    circle {
+      fill: none;
+      stroke: $clr-1;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10;
+      transition: stroke 0.3s ease-in-out;
+    }
+  }
+
+  &:hover {
+    svg {
+      path,
+      circle {
+        stroke: $clr-1-light;
+      }
+    }
+  }
+}

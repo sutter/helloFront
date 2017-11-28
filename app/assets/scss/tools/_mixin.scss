@@ -1,17 +1,3 @@
-// scss-lint:disable ImportantRule
-
-@mixin title {
-  font-family: $font-alternate;
-  font-weight: bold;
-  line-height: $line-height-S;
-  text-rendering: optimizeLegibility;
-  color: $clr-0-darker;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
 @mixin truncate {
   overflow: hidden !important;
   max-width: 100%;
@@ -26,14 +12,66 @@
   clip: rect(0, 0, 0, 0) !important;
   width: 1px !important;
   height: 1px !important;
-  margin: -1px;
+  margin: -1px !important;
   padding: 0 !important;
   border: 0 !important;
 }
 
-@mixin listReset {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
+@mixin wrapper($width : $wrap-L-max-width, $gutter: $gutter-width) {
+  padding-right: $gutter;
+  padding-left: $gutter;
+
+  @media (min-width: $mq-S-up) {
+    max-width: $width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@mixin label {
+  margin: 0 0 0.75rem;
+  font-weight: $font-weight-base;
+}
+
+@mixin title {
+  font-weight: $font-weight-bold;
+  line-height: 1.25;
+  text-rendering: optimizeLegibility;
+  color: $clr-0-darker;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+@mixin title-XL {
+  font-size: $font-size-XL;
+  font-weight: $font-weight-bold;
+  color: $clr-0-dark;
+}
+
+@mixin title-L {
+  font-size: $font-size-L;
+  font-weight: $font-weight-bold;
+  color: $clr-0-dark;
+}
+
+@mixin text-L {
+  font-size: $font-size-L;
+  line-height: 1.333;
+}
+
+@mixin text-M {
+  font-size: $font-size-M;
+  line-height: 1.333;
+}
+
+@mixin text-S {
+  font-size: $font-size-S;
+  line-height: 1.333;
+}
+
+@mixin text-XS {
+  font-size: $font-size-XS;
+  line-height: 1.333;
 }

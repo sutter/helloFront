@@ -1,0 +1,48 @@
+// ======================================
+// Component : box
+// =======================================
+
+.box {
+  background: $clr-light;
+  border-radius: $rad-S;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.box-header {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: $clr-1-lighter;
+  border-radius: $rad-S $rad-S 0 0;
+  border-bottom: 1px solid shade($clr-1-lighter, 5%);
+}
+
+.box-header-title {
+  text-transform: uppercase;
+  font-size: $font-size-L;
+  font-weight: $font-weight-bold;
+  color: $clr-1;
+
+  + .box-header-subtitle {
+    margin-top: 1rem;
+    line-height: 1.25;
+
+    @media (min-width: $mq-S-up) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.box-header-subtitle {
+  color: $clr-1;
+}
+
+.box-body {
+  padding: 2rem;
+}
+
+.box-footer {
+  padding: 2rem;
+  margin-top: 1rem;
+  border-top: 1px solid $clr-divider;
+  text-align: center;
+}

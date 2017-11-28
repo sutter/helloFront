@@ -1,0 +1,57 @@
+// ======================================
+// Component : search
+// =======================================
+
+.search {
+  position: relative;
+
+  @media (max-width: $mq-nav) {
+    margin: 2rem 0;
+  }
+}
+
+.search-icon {
+  position: absolute;
+  top: 1.2rem;
+  left: 1.5rem;
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+
+  path {
+    transition: fill 0.3s ease-in-out;
+    fill: $clr-0;
+  }
+}
+
+.search-input {
+  border: none;
+  width: 400px;
+  border-radius: $rad-S;
+  padding: 1.2rem 2rem 1.2rem 4.5rem;
+  transition: box-shadow 0.3s ease-in-out;
+
+  @media (max-width: $mq-nav) {
+    width: 100%;
+  }
+
+  &::placeholder {
+    color: $clr-0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    box-shadow: $shadow-L;
+  }
+}
+
+.search-input:hover + .search-icon,
+.search-input:focus + .search-icon {
+  transform: scale(1.1);
+  path {
+    fill: $clr-1;
+  }
+}

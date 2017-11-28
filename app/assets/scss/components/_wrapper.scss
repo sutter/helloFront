@@ -1,20 +1,20 @@
-/** ======================================
- *  * Component : Wrapper
- * ======================================= */
+// ======================================
+// Component : Wrapper
+// =======================================
 
 .wrapper {
-  padding-right: $gutter-width;
-  padding-left: $gutter-width;
-
-  @media (min-width: $mq-S-up) {
-    max-width: $wrap-M-max-width;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  @include wrapper();
 }
 
-/* Modifier : size
--------------------------- */
+//
+// Modifier : Size
+// ---------------------------------------
+
+.wrapper--M {
+  @media (min-width: $mq-S-up) {
+    max-width: $wrap-M-max-width;
+  }
+}
 
 .wrapper--S {
   @media (min-width: $mq-S-up) {

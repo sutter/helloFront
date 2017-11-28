@@ -1,0 +1,14 @@
+// ======================================
+// Component : App
+// =======================================
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}
+
+.app-main {
+  flex-grow: 1;
+}

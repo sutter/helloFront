@@ -1,0 +1,7 @@
+// ======================================
+// Utils : Show / Hide
+// =======================================
+
+.u-visuallyHidden {
+  @include visually-hidden;
+}

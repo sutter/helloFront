@@ -1,11 +1,11 @@
-/** ======================================
- * Component : Form
- * ======================================= */
+// ======================================
+// Component : Form
+// =======================================
 
 .form {
   @media (max-width: $mq-S) {
     > .grid {
-      margin-bottom: $spacer-S;
+      margin-bottom: $spacer-M;
 
       &:last-child {
         margin-bottom: 0;
@@ -23,22 +23,21 @@
 }
 
 .form-group-feedback {
-  margin-top: 0.5rem;
-  font-size: 1.2rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
   line-height: 1.25;
 }
 
-.form-group-small {
-  font-size: 80%;
+.form-group-small,
+.form-error {
+  display: block;
+  font-size: 90%;
   color: tint($clr-0, 40%);
+  margin-top: $spacer-S;
 }
 
 .form-group-label {
-  margin: 0 0 1rem;
-  font-weight: $font-weight-base;
-  &.label {
-    cursor: pointer;
-  }
+  @include label;
 }
 
 .form-group-label--required::after {
@@ -74,7 +73,7 @@
     }
 
     &:focus {
-      border-color: $clr-1;
+      border-color: shade($clr-0-light, 20%);
       outline: none;
       box-shadow: none, 0 0 5px rgba(darken(shade($clr-0-light, 20%), 5), 0.7);
     }
@@ -91,43 +90,66 @@
   }
 }
 
+.form-fieldset {
+  &:not(:only-child) {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.form-fieldset-lead {
+  font-weight: $font-weight-bold;
+
+  &:not(:only-child) {
+    margin-bottom: 1rem;
+  }
+}
+
 .form-footer {
-  margin-top: $spacer-S;
-  padding-top: $spacer-S;
+  margin-top: 3rem;
   text-align: center;
-  border-top: 1px solid $clr-divider;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  @media (min-width: $mq-S-up) {
-    display: flex;
-    align-items: center;
-    text-align: left;
+.form-footer-item {
+  &:not(:first-child) {
+    margin-top: $spacer-M;
   }
 }
 
-.form-footer-alpha {
-  margin-bottom: $spacer-S;
+.form-errors {
+  color: $clr-danger;
+  line-height: 1.25;
 
-  @media (min-width: $mq-S-up) {
-    margin-bottom: 0;
-    padding-right: $spacer-S;
+  > * {
+    margin-bottom: $spacer-M;
+  }
+
+  h2 {
+    font-weight: $font-weight-bold;
+  }
+
+  ul {
+    padding-left: 2rem;
+    list-style: disc;
+    margin-top: 1rem;
+  }
+
+  li + li {
+    margin-top: 0.5rem;
   }
 }
 
-.form-footer-beta {
-  @media (min-width: $mq-S-up) {
-    margin-left: auto;
-  }
+.form-error {
+  color: $clr-danger;
 }
 
 /**
  * Modifier
  * --------------------------------------- */
-
-.form-group--noLabel {
-  .form-group-label {
-    @include visually-hidden;
-  }
-}
 
 .form-group-input--inline {
   display: flex;
