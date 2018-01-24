@@ -52,19 +52,19 @@ Plugin for IDE :
 ### Run project
 
 ```bash
-yarn start
+npm run dev
 ```
 
 ### Build project
 
 ```bash
-yarn build
+npm build
 ```
 
 ### Clean project
 
 ```bash
-yarn clean
+npm run clean
 ```
 
 ## How it works
@@ -135,7 +135,7 @@ Disabled by default, for activate do :
 
 * in `./gulp/config.js` at **line 65** update value : `enable: true`;
 * Add
-  [this file](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
+  [\_template-font-custom.scss](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
   in `./app/assets/scss/tools/`;
 * Add SVG Files in folder `./app/assets/icons` and gulp made magic.
 
@@ -144,7 +144,3 @@ Disabled by default, for activate do :
 * Icon format: svg
 * Icon size: 512x512
 * Vectorize stroke
-
-## TODO
-
-* add version on CSS and JS main files
