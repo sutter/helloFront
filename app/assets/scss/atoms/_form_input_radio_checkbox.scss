@@ -1,10 +1,10 @@
 /**
- * Custom radio & checkbox
+ * Atom : radio & checkbox
  * Dependencies : _form.scss
  * --------------------------------------- */
 
-$inputRadioCheckboxSize: em(16);
-$inputRadioCheckboxTop: em(2);
+$inputRadioCheckboxSize: 1.6rem;
+$inputRadioCheckboxTop: 0.2rem;
 
 .inputCheckbox,
 .inputRadio {
@@ -27,8 +27,8 @@ $inputRadioCheckboxTop: em(2);
   }
 
   label {
-    padding-left: $inputRadioCheckboxSize + em(8);
-    font-weight: 400;
+    padding-left: $inputRadioCheckboxSize + 0.8rem;
+    font-weight: $font-weight-base;
     transition: $trans;
 
     &::before {
@@ -38,7 +38,7 @@ $inputRadioCheckboxTop: em(2);
       display: inline-block;
       width: $inputRadioCheckboxSize;
       height: $inputRadioCheckboxSize;
-      margin-right: em(8);
+      margin-right: 0.8rem;
       vertical-align: text-bottom;
       border: 1px solid $clr-0-light;
       background: $clr-light center no-repeat;
@@ -56,7 +56,7 @@ $inputRadioCheckboxTop: em(2);
 
 .inputCheckbox {
   [type="checkbox"] + label::before {
-    border-radius: em(3);
+    border-radius: $rad-S;
     transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
 
@@ -85,7 +85,7 @@ $inputRadioCheckboxTop: em(2);
   }
 
   [type="radio"]:checked + label::before {
-    border: em(5) solid $clr-1;
+    border: $inputRadioCheckboxSize/2 - 0.35rem solid $clr-1;
   }
 
   &:not(:first-child) {

@@ -1,0 +1,23 @@
+/** ======================================
+ * Atom : Wrapper
+ * ======================================= */
+
+.wrapper {
+  padding-right: $gutter-width;
+  padding-left: $gutter-width;
+
+  @media (min-width: $mq-S-up) {
+    max-width: $wrap-M-max-width;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/* Modifier : size
+-------------------------- */
+
+.wrapper--S {
+  @media (min-width: $mq-S-up) {
+    max-width: $wrap-S-max-width;
+  }
+}

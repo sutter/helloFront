@@ -1,0 +1,50 @@
+/**
+ * Atom : Input state
+ * Dependencies : _form.scss
+ * --------------------------------------- */
+
+$formStateMarkup: _assign(
+
+  (
+    ".form-group-label",
+    ".form-group-feedback",
+    ".form-group-message",
+    ".formInputRadio",
+    ".formInputCheckbox",
+    ".formInputToggle"
+  )
+);
+
+$stateTypes: (error $clr-danger) (success $clr-success) (warning $clr-warning);
+
+@each $state in $stateTypes {
+  $type: nth($state, 1);
+  $color: nth($state, 2);
+
+  .form-group--#{$type}.form-group--#{$type} {
+    input,
+    textarea,
+    select {
+      color: $color;
+      border-color: tint($color, 50%);
+
+      &:hover {
+        border-color: tint($color, 50%);
+      }
+    }
+
+    #{$formStateMarkup} {
+      color: $color;
+    }
+  }
+}
+
+/**
+ * Disabled
+ */
+
+.form-group--disabled.form-group--disabled {
+  .form-group-label {
+    pointer-events: none;
+  }
+}

@@ -1,5 +1,5 @@
 /** ======================================
- * Component : Form
+ * Atom : Form
  * ======================================= */
 
 .form {
@@ -46,11 +46,6 @@
 }
 
 .form-group-input {
-  input:not([type="range"]),
-  select {
-    appearance: none;
-  }
-
   #{$form-list-input},
   select {
     height: $form-group-input-height;

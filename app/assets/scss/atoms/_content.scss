@@ -1,5 +1,5 @@
 /** ======================================
- * Component : Content
+ * Atom : Content
  * ======================================= */
 
 .content {
@@ -8,37 +8,37 @@
   line-height: 1.5;
   h1 {
     @include title;
-    margin: 1.5em 0 0.8em;
+    margin: 1.5rem 0 0.8rem;
     font-size: $font-size-XXL;
   }
 
   h2 {
     @include title;
-    margin: 1em 0 0.8em;
+    margin: 1rem 0 0.8rem;
     font-size: $font-size-XL;
   }
 
   h3 {
     @include title;
-    margin: 1.75em 0 0.8em;
+    margin: 1.75rem 0 0.8rem;
     font-size: $font-size-L;
   }
 
   h4 {
     @include title;
-    margin: 1.5em 0 0.8em;
+    margin: 1.5rem 0 0.8rem;
     font-size: $font-size-M;
   }
 
   h5 {
     @include title;
-    margin: 1.5em 0 0.8em;
+    margin: 1.5rem 0 0.8rem;
     font-size: $font-size-XS;
   }
 
   h6 {
     @include title;
-    margin: 1.5em 0 0.8em;
+    margin: 1.5rem 0 0.8rem;
     font-size: $font-size-XXS;
   }
 
@@ -127,7 +127,7 @@
   hr {
     height: 0;
     border: 1px solid $clr-divider;
-    margin: 2em 0 1em;
+    margin: 2rem 0 1rem;
   }
 
   /* Image */

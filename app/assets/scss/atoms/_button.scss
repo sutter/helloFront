@@ -1,14 +1,14 @@
 /** ======================================
- * Component : Button
+ * Atom : Button
  * ======================================= */
 
 .button {
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: em(10, 14) em(18, 14);
-  font-size: em(14);
-  font-weight: bold;
+  padding: 1rem 1.8rem;
+  font-size: $font-size-S;
+  font-weight: $font-weight-bold;
   line-height: normal;
   text-align: center;
   vertical-align: middle;
@@ -29,11 +29,6 @@
     background: $clr-1-darker;
   }
 
-  &:disabled:hover,
-  &.is-disabled:hover {
-    background: $clr-1;
-  }
-
   &.is-active {
     background: shade($clr-1, 40%);
   }
@@ -44,6 +39,10 @@
     background-image: none !important;
     box-shadow: none !important;
     cursor: not-allowed;
+
+    &:hover {
+      background: $clr-1;
+    }
   }
 
   + [class*="button"] {
@@ -97,13 +96,13 @@
  * --------------------------------------- */
 
 .button--S {
-  padding: em(5) em(15);
-  font-size: em(12);
+  padding: 0.5rem 1.5rem;
+  font-size: $font-size-XS;
 }
 
 .button--L {
-  padding: em(15) em(40);
-  font-size: em(18);
+  padding: 1.5rem 4rem;
+  font-size: $font-size-M;
 }
 
 .button--block {
