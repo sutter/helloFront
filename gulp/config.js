@@ -63,11 +63,11 @@ module.exports = {
 
   font_icon: {
     enable: false,
-    path_create_icon_font_file: app + "/assets/scss/components/_icons.scss",
+    path_create_icon_font_file: app + "/assets/scss/atoms/_icons.scss",
     src: app + "/assets/icons",
     files_src: app + "/assets/icons/*.svg",
     path: app + "/assets/scss/tools/_template-font-custom.scss",
-    target_path: "../scss/components/_icons.scss",
+    target_path: "../scss/atoms/_icons.scss",
     font_path: "../fonts/",
     dest: app + "/assets/fonts",
     files_dest: app + "/assets/fonts/" + fontName + ".{eot,svg,ttf,woff}",

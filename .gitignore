@@ -23,4 +23,4 @@ app/assets/fonts/app-font.woff
 app/assets/fonts/app-font.woff2
 
 # Generated files
-app/assets/scss/components/_icons.scss
+app/assets/scss/atoms/_icons.scss
