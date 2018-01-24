@@ -61,11 +61,19 @@ npm run dev
 npm build
 ```
 
+### Optimize SVG
+
+```bash
+npm run svg
+```
+
 ### Clean project
 
 ```bash
 npm run clean
 ```
+
+r
 
 ## How it works
 

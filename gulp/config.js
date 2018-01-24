@@ -36,11 +36,20 @@ module.exports = {
     files_dest: build + "/**/*.html",
   },
 
+  svg: {
+    files_src: [
+      "!" + app + "/assets/img/sprite/**/*.svg",
+      "!" + app + "/assets/img/sprite.svg",
+      app + "/assets/img/**/*.svg",
+    ],
+    dest: app + "/assets/img",
+  },
+
   images: {
     files_src: [
       "!" + app + "/assets/img/sprite/**/*.svg",
       "!" + app + "/assets/img/sprite.svg",
-      app + "/assets/img/**/*.{jpg,png,gif,svg}",
+      app + "/assets/img/**/*.{jpg,png,gif, svg}",
     ],
     dest: assets_dest,
   },
