@@ -1,10 +1,12 @@
 const app = "./app";
 const build = "./build";
 const fontName = "app-font";
+const assets_dest = "./build/assets";
 
 module.exports = {
   app: app,
   build: build,
+  assets_dest: assets_dest,
 
   browserSync: {
     notify: false,
@@ -16,16 +18,14 @@ module.exports = {
   styles: {
     src: app + "/assets/scss",
     files_src: app + "/assets/scss/**/*.scss",
-    main_dest: build + "/assets/css/main.css",
-    dest: build + "/assets/css/",
+    dest: assets_dest,
   },
 
   scripts: {
     files_src: app + "/assets/js/**/*.js",
     main_src: app + "/assets/js/main.js",
     main_name: "main.js",
-    dest: build + "/assets/js/",
-    main_dest: build + "/assets/js/main.js",
+    dest: assets_dest,
   },
 
   templates: {
@@ -42,7 +42,7 @@ module.exports = {
       "!" + app + "/assets/img/sprite.svg",
       app + "/assets/img/**/*.{jpg,png,gif,svg}",
     ],
-    dest: build + "/assets/img",
+    dest: assets_dest,
   },
 
   svgstore: {
@@ -58,7 +58,7 @@ module.exports = {
 
   fonts: {
     src: app + "/assets/fonts/**",
-    dest: build + "/assets/fonts",
+    dest: assets_dest,
   },
 
   font_icon: {

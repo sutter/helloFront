@@ -79,7 +79,7 @@ Example SCSS hierarchy :
 * **components/** : Designed components, chunks of UI
 * **tools/** : Default mixin and functions
 * **utils/** : Helpers and overrides
-* **_settings.scss** : Global variables
+* **\_settings.scss** : Global variables
 * **app.scss** : Main stylesheet
 
 ### Works with Pug templating
@@ -129,7 +129,7 @@ Disabled by default, for activate do :
 
 * in `./gulp/config.js` at **line 65** update value : `enable: true`;
 * Add
-  [this file](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
+  [\_template-font-custom.scss](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
   in `./app/assets/scss/tools/`;
 * Add SVG Files in folder `./app/assets/icons` and gulp made magic.
 
