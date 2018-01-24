@@ -10,7 +10,7 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version 8.9.0 of NodeJS.
+Use the version v8.9.1 of NodeJS.
 
 ```bash
 nvm use
@@ -79,7 +79,7 @@ Example SCSS hierarchy :
 * **components/** : Designed components, chunks of UI
 * **tools/** : Default mixin and functions
 * **utils/** : Helpers and overrides
-* **_settings.scss** : Global variables
+* **\_settings.scss** : Global variables
 * **app.scss** : Main stylesheet
 
 ### Works with Pug templating
