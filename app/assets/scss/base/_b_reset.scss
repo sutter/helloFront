@@ -31,7 +31,7 @@ body {
   background: $clr-light;
   overflow-x: hidden;
   overflow-y: scroll;
-  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-width: $app-min-width;
@@ -41,8 +41,16 @@ body {
   outline: none !important;
 }
 
-[data-whatinput="mouse"],
-[data-whatinput="touch"] {
+[data-whatintent="keyboard"] *:focus {
+  box-shadow: 0 0 0 5px #09f, 0 5px 20px #09f !important;
+  outline: 0;
+}
+
+a,
+button,
+textarea,
+select,
+input {
   &:focus {
     outline: none;
   }
@@ -142,16 +150,29 @@ iframe {
  * Form
  * --------------------------------------- */
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
 input,
 select,
 textarea {
   display: block;
 }
 
+input:not([type="range"]),
+textarea,
+select {
+  appearance: none;
+}
+
 label {
   display: inline-block;
   cursor: pointer;
-
   abbr {
     display: none;
   }
@@ -164,10 +185,20 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   display: inline;
+  appearance: none;
+  &::-ms-check {
+    display: none; /* unstyle IE checkboxes */
+  }
 }
 
 [type="search"] {
   box-sizing: border-box;
+}
+
+select {
+  &::-ms-expand {
+    display: none; /* hiding IE11 arrow */
+  }
 }
 
 fieldset {
@@ -199,18 +230,6 @@ th {
 th {
   font-weight: inherit;
   text-align: left;
-}
-
-/**
- * Form 
- * --------------------------------------- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: inherit;
 }
 
 /**

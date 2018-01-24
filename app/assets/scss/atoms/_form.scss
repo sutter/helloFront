@@ -1,5 +1,5 @@
 /** ======================================
- * Component : Form
+ * Atom : Form
  * ======================================= */
 
 .form {
@@ -46,11 +46,6 @@
 }
 
 .form-group-input {
-  input:not([type="range"]),
-  select {
-    appearance: none;
-  }
-
   #{$form-list-input},
   select {
     height: $form-group-input-height;
@@ -71,12 +66,6 @@
 
     &:hover {
       border-color: shade($clr-0-light, 10%);
-    }
-
-    &:focus {
-      border-color: $clr-1;
-      outline: none;
-      box-shadow: none, 0 0 5px rgba(darken(shade($clr-0-light, 20%), 5), 0.7);
     }
 
     &:disabled {
