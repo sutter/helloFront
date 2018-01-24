@@ -4,7 +4,7 @@
   "description": "Front-end boilerplate",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "dev": "gulp",
     "build": "gulp build --production && gulp rev && gulp revreplace",
     "reset": "rm -rf build && rm -rf node_modules"
   },

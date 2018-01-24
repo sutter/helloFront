@@ -52,19 +52,19 @@ Plugin for IDE :
 ### Run project
 
 ```bash
-yarn start
+npm run dev
 ```
 
 ### Build project
 
 ```bash
-yarn build
+npm build
 ```
 
 ### Clean project
 
 ```bash
-yarn clean
+npm run clean
 ```
 
 ## How it works
@@ -138,7 +138,3 @@ Disabled by default, for activate do :
 * Icon format: svg
 * Icon size: 512x512
 * Vectorize stroke
-
-## TODO
-
-* add version on CSS and JS main files
