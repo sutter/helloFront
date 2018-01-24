@@ -10,7 +10,7 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version 8.9.0 of NodeJS.
+Use the version v8.9.1 of NodeJS.
 
 ```bash
 nvm use
@@ -71,15 +71,21 @@ yarn clean
 
 ### Works with SCSS
 
+Use [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) design for orgaznise components
+
 The SCSS files are located in `./app/assets/scss`.
 
 Example SCSS hierarchy :
 
 * **base/** : Unclassed HTML elements (type selector)
-* **components/** : Designed components, chunks of UI
+* **atoms/** : Atoms are the basic building blocks of matter (button, input, etc.)
+* **molecules/** : Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound (from, cards, etc.)
+* **organisms/** : Les organismes sont des groupes de molécules réunis pour former une section relativement complexe et distincte d'une interface (header, footer, etc.)
+* **template/** : Templates consist mostly of groups of organisms stitched together to form pages.
+* **page/** : Pages are specific instances of templates
 * **tools/** : Default mixin and functions
 * **utils/** : Helpers and overrides
-* **_settings.scss** : Global variables
+* **\_settings.scss** : Global variables
 * **app.scss** : Main stylesheet
 
 ### Works with Pug templating

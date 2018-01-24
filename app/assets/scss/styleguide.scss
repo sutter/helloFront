@@ -133,8 +133,7 @@ $styleguideSidebar: 200px;
     color: $clr-1;
     transition: color 0.3s ease-in-out;
 
-    &:hover,
-    &:focus {
+    &:hover {
       color: $clr-1-light;
     }
   }
@@ -237,8 +236,7 @@ $styleguideSidebar: 200px;
       background: rgba(#fff, 0.1);
       border-radius: 666px;
       transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
-      &:hover,
-      &:focus {
+      &:hover {
         background: #fff;
         color: $clr-1;
       }
