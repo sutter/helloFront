@@ -17,7 +17,7 @@ gulp.task("svg", () => {
       imagemin(
         [
           imagemin.svgo({
-            plugins: [{ removeViewBox: false }, {removeDimensions: true}],
+            plugins: [{ removeViewBox: false }, { removeDimensions: true }],
           }),
         ],
         {
@@ -30,5 +30,5 @@ gulp.task("svg", () => {
         title: "svg",
       })
     )
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dist));
 });

@@ -44,7 +44,7 @@ gulp.task("scripts", () => {
     )
     .pipe(named())
     .pipe(webpack(webpackConfig, null, webpackChangeHandler))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dist));
 
   if (!process.WATCH_SCRIPTS) {
     return webpackStream; // return the stream if scripts watch is disabled to properly finish the script tasks

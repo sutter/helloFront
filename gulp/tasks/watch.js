@@ -5,7 +5,7 @@ const watch = require("gulp-watch");
 const runSequence = require("run-sequence");
 
 gulp.task("watch", () => {
-  watch(config.styles.files_src, "./app/assets", function() {
+  watch(config.styles.files_src, "./src/assets", function() {
     runSequence("styles");
   });
 

@@ -38,7 +38,7 @@ gulp.task("font-icon", () => {
           fontHeight: config.settings.font_height,
         })
       )
-      .pipe(gulp.dest(config.dest));
+      .pipe(gulp.dest(config.dist));
     return;
   } else if (config.enable === true) {
     // Create an Empty Icon SCSS File if there's no icons in the folder

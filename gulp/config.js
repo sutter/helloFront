@@ -1,85 +1,85 @@
-const app = "./app";
-const build = "./build";
+const src = "./src";
+const dist = "./dist";
 const fontName = "app-font";
-const assets_dest = "./build/assets";
+const assets_dist = "./dist/assets";
 
 module.exports = {
-  app: app,
-  build: build,
-  assets_dest: assets_dest,
+  src: src,
+  dist: dist,
+  assets_dist: assets_dist,
 
   browserSync: {
     notify: false,
     open: false,
-    server: build,
-    files: [build + "/**/*.css"],
+    server: dist,
+    files: [dist + "/**/*.css"],
   },
 
   styles: {
-    src: app + "/assets/scss",
-    files_src: app + "/assets/scss/**/*.scss",
-    dest: assets_dest,
+    src: src + "/assets/scss",
+    files_src: src + "/assets/scss/**/*.scss",
+    dist: assets_dist,
   },
 
   scripts: {
-    files_src: app + "/assets/js/**/*.js",
-    main_src: app + "/assets/js/main.js",
+    files_src: src + "/assets/js/**/*.js",
+    main_src: src + "/assets/js/main.js",
     main_name: "main.js",
-    dest: assets_dest,
+    dist: assets_dist,
   },
 
   templates: {
-    src: app + "/template",
-    files_src: [app + "/template/**/*.pug", app + "/template/**/*.md"],
-    page_src: app + "/template/pages/**/*.pug",
-    dest: build,
-    files_dest: build + "/**/*.html",
+    src: src + "/template",
+    files_src: [src + "/template/**/*.pug", src + "/template/**/*.md"],
+    page_src: src + "/template/pages/**/*.pug",
+    dist: dist,
+    files_dist: dist + "/**/*.html",
   },
 
   svg: {
     files_src: [
-      "!" + app + "/assets/img/sprite/**/*.svg",
-      "!" + app + "/assets/img/sprite.svg",
-      app + "/assets/img/**/*.svg",
+      "!" + src + "/assets/img/sprite/**/*.svg",
+      "!" + src + "/assets/img/sprite.svg",
+      src + "/assets/img/**/*.svg",
     ],
-    dest: app + "/assets/img",
+    dist: src + "/assets/img",
   },
 
   images: {
     files_src: [
-      "!" + app + "/assets/img/sprite/**/*.svg",
-      "!" + app + "/assets/img/sprite.svg",
-      app + "/assets/img/**/*.{jpg,png,gif, svg}",
+      "!" + src + "/assets/img/sprite/**/*.svg",
+      "!" + src + "/assets/img/sprite.svg",
+      src + "/assets/img/**/*.{jpg,png,gif, svg}",
     ],
-    dest: assets_dest,
+    dist: assets_dist,
   },
 
   svgstore: {
-    files_src_svg_sprites: app + "/assets/img/sprite/*.svg",
-    dest: app + "/assets/img",
-    file_dest: app + "/assets/img/sprite.svg",
+    files_src_svg_sprites: src + "/assets/img/sprite/*.svg",
+    dist: src + "/assets/img",
+    file_dist: src + "/assets/img/sprite.svg",
   },
 
   rootfiles: {
-    src: app + "/rootfiles/**",
-    dest: build,
+    src: src + "/rootfiles/**",
+    dist: dist,
   },
 
   fonts: {
-    src: app + "/assets/fonts/**",
-    dest: assets_dest,
+    src: src + "/assets/fonts/**",
+    dist: assets_dist,
   },
 
   font_icon: {
     enable: false,
-    path_create_icon_font_file: app + "/assets/scss/atoms/_icons.scss",
-    src: app + "/assets/icons",
-    files_src: app + "/assets/icons/*.svg",
-    path: app + "/assets/scss/tools/_template-font-custom.scss",
+    path_create_icon_font_file: src + "/assets/scss/atoms/_icons.scss",
+    src: src + "/assets/icons",
+    files_src: src + "/assets/icons/*.svg",
+    path: src + "/assets/scss/tools/_template-font-custom.scss",
     target_path: "../scss/atoms/_icons.scss",
     font_path: "../fonts/",
-    dest: app + "/assets/fonts",
-    files_dest: app + "/assets/fonts/" + fontName + ".{eot,svg,ttf,woff}",
+    dist: src + "/assets/fonts",
+    files_dist: src + "/assets/fonts/" + fontName + ".{eot,svg,ttf,woff}",
     settings: {
       prependUnicode: true,
       font_name: fontName,
@@ -94,11 +94,11 @@ module.exports = {
   },
 
   deploy: {
-    folderSrc: build + "/**/*",
+    folderSrc: dist + "/**/*",
     folderReplaceSrc: [
-      build + "/**/*.html",
-      build + "/**/*.js",
-      build + "/**/*.css",
+      dist + "/**/*.html",
+      dist + "/**/*.js",
+      dist + "/**/*.css",
     ],
   },
 };

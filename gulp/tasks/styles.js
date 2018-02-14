@@ -25,5 +25,5 @@ gulp.task("styles", () => {
     .pipe(!options.production ? sourcemaps.write(".") : gutil.noop())
     .pipe(options.production ? csso() : gutil.noop())
     .pipe(size({ title: "style" }))
-    .pipe(gulp.dest(config.styles.dest));
+    .pipe(gulp.dest(config.styles.dist));
 });

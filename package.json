@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --production && gulp rev && gulp revreplace",
-    "reset": "rm -rf build && rm -rf node_modules",
+    "reset": "rm -rf dist && rm -rf node_modules",
     "svg": "gulp svg"
   },
   "repository": {

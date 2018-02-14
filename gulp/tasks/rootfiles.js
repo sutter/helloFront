@@ -6,5 +6,5 @@ gulp.task("rootfiles", () => {
     .src(config.src, {
       dot: true,
     })
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dist));
 });

@@ -21,5 +21,5 @@ gulp.task("templates", () => {
       options.production ? htmlmin({ collapseWhitespace: true }) : gutil.noop()
     )
     .pipe(size({ title: "template" }))
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dist));
 });

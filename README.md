@@ -2,7 +2,7 @@
 
 Boilerplate SCSS / PUG / ES6 for clean and fast Front-end project.
 
-Work on **app/** folder and gulp build in **dist/**.
+Work on **src/** folder and gulp build in **dist/**.
 
 ## Installation
 
@@ -10,7 +10,7 @@ Work on **app/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version v8.9.1 of NodeJS.
+Use the version v8.9.4 of NodeJS.
 
 ```bash
 nvm use
@@ -52,28 +52,26 @@ Plugin for IDE :
 ### Run project
 
 ```bash
-npm run dev
+yarn run dev
 ```
 
 ### Build project
 
 ```bash
-npm build
+yarn build
 ```
 
 ### Optimize SVG
 
 ```bash
-npm run svg
+yarn run svg
 ```
 
 ### Clean project
 
 ```bash
-npm run clean
+yarn run reset
 ```
-
-r
 
 ## How it works
 
@@ -81,7 +79,7 @@ r
 
 Use [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) design for orgaznise components
 
-The SCSS files are located in `./app/assets/scss`.
+The SCSS files are located in `./src/assets/scss`.
 
 Example SCSS hierarchy :
 
@@ -98,7 +96,7 @@ Example SCSS hierarchy :
 
 ### Works with Pug templating
 
-The PUG files are located in `./app/template`
+The PUG files are located in `./src/template`
 
 * **layout** : layout of html files generated
 * **mixin** : for reusable pattern
@@ -108,27 +106,27 @@ The PUG files are located in `./app/template`
 
 ### Works with JavaScript
 
-The Javascript files are located in `./app/assets/js`.
+The Javascript files are located in `./src/assets/js`.
 
 **Use the ES6 syntaxe** Babel convert it in ES5 for you via webpack.
 
 ### Working with Images
 
-The Image files are located in `./app/assets/img`
+The Image files are located in `./src/assets/img`
 
 Accepted file formats : - jpg - png - gif - svg
 
 ### Working with Fonts
 
-The font files are located in `./app/assets/font`
+The font files are located in `./src/assets/font`
 
 ### Works with sprite SVG inline
 
 Disabled by default, for activate do :
 
 * in `./gulp/config.js` at **line 65** update value : `enable: true`;
-* uncomment **lines 12 & 13** of file `./app/template/layout/base.jade`;
-* add svg files in folder `./app/assets/img/sprite`.
+* uncomment **lines 12 & 13** of file `./src/template/layout/base.jade`;
+* add svg files in folder `./src/assets/img/sprite`.
 
 Use like this :
 
@@ -144,8 +142,8 @@ Disabled by default, for activate do :
 * in `./gulp/config.js` at **line 65** update value : `enable: true`;
 * Add
   [\_template-font-custom.scss](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
-  in `./app/assets/scss/tools/`;
-* Add SVG Files in folder `./app/assets/icons` and gulp made magic.
+  in `./src/assets/scss/tools/`;
+* Add SVG Files in folder `./src/assets/icons` and gulp made magic.
 
 [Preparing-svgs](https://www.npmjs.com/package/gulp-iconfont#preparing-svgs)
 

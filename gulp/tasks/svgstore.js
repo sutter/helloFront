@@ -26,5 +26,5 @@ gulp.task("svgstore", () => {
       })
     )
     .pipe(svgstore())
-    .pipe(gulp.dest(config.dest));
+    .pipe(gulp.dest(config.dist));
 });

@@ -13,14 +13,14 @@ node_modules
 yarn-error.log
 
 # Generated folder
-build
+dest
 
 # Generated fonts
-app/assets/fonts/app-font.eot
-app/assets/fonts/app-font.svg
-app/assets/fonts/app-font.ttf
-app/assets/fonts/app-font.woff
-app/assets/fonts/app-font.woff2
+src/assets/fonts/app-font.eot
+src/assets/fonts/app-font.svg
+src/assets/fonts/app-font.ttf
+src/assets/fonts/app-font.woff
+src/assets/fonts/app-font.woff2
 
 # Generated files
-app/assets/scss/atoms/_icons.scss
+src/assets/scss/atoms/_icons.scss
