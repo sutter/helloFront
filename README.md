@@ -120,26 +120,11 @@ Accepted file formats : - jpg - png - gif - svg
 
 The font files are located in `./src/assets/font`
 
-### Works with sprite SVG inline
-
-Disabled by default, for activate do :
-
-* in `./gulp/config.js` at **line 65** update value : `enable: true`;
-* uncomment **lines 12 & 13** of file `./src/template/layout/base.jade`;
-* add svg files in folder `./src/assets/img/sprite`.
-
-Use like this :
-
-```pug
-svg
-  use(xlink:href="#twitter")
-```
-
 ### Works with icons font
 
 Disabled by default, for activate do :
 
-* in `./gulp/config.js` at **line 65** update value : `enable: true`;
+* in `./gulp/config.js` at [**line 68**](https://github.com/sutter/helloFront/blob/master/gulp/config.js#L68) update value : `enable: true`;
 * Add
   [\_template-font-custom.scss](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
   in `./src/assets/scss/tools/`;

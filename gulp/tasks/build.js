@@ -5,7 +5,6 @@ gulp.task("build", callback => {
   runSequence(
     "clean",
     "svg",
-    "svgstore",
     "font-icon",
     ["styles", "templates", "images", "rootfiles", "fonts", "scripts"],
     callback

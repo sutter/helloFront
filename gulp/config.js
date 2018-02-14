@@ -54,12 +54,6 @@ module.exports = {
     dist: assets_dist,
   },
 
-  svgstore: {
-    files_src_svg_sprites: src + "/assets/img/sprite/*.svg",
-    dist: src + "/assets/img",
-    file_dist: src + "/assets/img/sprite.svg",
-  },
-
   rootfiles: {
     src: src + "/rootfiles/**",
     dist: dist,

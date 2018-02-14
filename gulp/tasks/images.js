@@ -20,7 +20,7 @@ gulp.task("images", () => {
           imagemin.jpegtran({ progressive: true }),
           imagemin.optipng({ optimizationLevel: 5 }),
           imagemin.svgo({
-            plugins: [{ removeViewBox: false }, { removeDimensions: true }],
+            plugins: [{ removeViewBox: false }, { removeDimensions: false }],
           }),
         ],
         {
