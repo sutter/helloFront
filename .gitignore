@@ -13,7 +13,7 @@ node_modules
 yarn-error.log
 
 # Generated folder
-dest
+dist
 
 # Generated fonts
 src/assets/fonts/app-font.eot
