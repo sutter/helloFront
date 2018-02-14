@@ -124,7 +124,7 @@ The font files are located in `./src/assets/font`
 
 Disabled by default, for activate do :
 
-* in `./gulp/config.js` at [**line 68**](https://github.com/sutter/helloFront/blob/master/gulp/config.js#L68) update value : `enable: true`;
+* in `./gulp/config.js` at [line 68](https://github.com/sutter/helloFront/blob/master/gulp/config.js#L68) update value : `enable: true`;
 * Add
   [\_template-font-custom.scss](https://gist.github.com/sutter/5f9471f95f6d5f388704721272b4a21e)
   in `./src/assets/scss/tools/`;
