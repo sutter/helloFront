@@ -2,8 +2,6 @@
  * Utils / Width
  * ======================================= */
 
-// scss-lint:disable ImportantRule
-
 @each $width in $width-list {
   $prefix: nth($width, 1);
   $size: nth($width, 2);
