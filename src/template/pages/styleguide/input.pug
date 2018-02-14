@@ -3,7 +3,7 @@ extends ../../layout/styleguide
 append config
   - var template = 't-styleguide'
   - var title = "Inputs"
-  - var metaDesc = "Inputs - CSS / HTML / JS"
+  - var metaDesc = "Inputs - CSS / HTML"
   - var path = './../'
 
 block content
@@ -44,10 +44,10 @@ block content
     .form-group
       .form-group-label Fake label
       .form-group-input
-        .inputRadio
+        .radio
           input#inputRadio-base-1(type='radio', name='inputRadio-base')
           label(for='inputRadio-base-1') Radio A
-        .inputRadio
+        .radio
           input#inputRadio-base-2(type='radio', name='inputRadio-base')
           label(for='inputRadio-base-2') Radio B
   .hf-content.hf-wrapper
@@ -56,10 +56,10 @@ block content
     .form-group
       .form-group-label Fake label
       .form-group-input.form-group-input--inline
-        .inputRadio
+        .radio
           input#inputRadio-inline-1(type='radio', name='inputRadio-inline')
           label(for='inputRadio-inline-1') Radio A
-        .inputRadio
+        .radio
           input#inputRadio-inline-2(type='radio', name='inputRadio-inline')
           label(for='inputRadio-inline-2') Radio B
   .hf-content.hf-wrapper
@@ -67,7 +67,7 @@ block content
   .hf-code.hf-wrapper
     .form-group
       .form-group-input
-          .inputCheckbox
+          .checkbox
             input#inputCheckbox(type='checkbox', value='inputCheckbox')
             label(for='inputCheckbox') Checkbox
   .hf-content.hf-wrapper
@@ -94,15 +94,15 @@ block content
     .form-group.form-group--disabled
       .form-group-label Fake label
       .form-group-input.form-group-input--inline
-        .inputRadio
+        .radio
           input#inputRadio-inline-disabled-1(type='radio', name='inputRadio-inline-disabled', disabled)
           label(for='inputRadio-inline-disabled-1') Radio A
-        .inputRadio
+        .radio
           input#inputRadio-inline-disabled-2(type='radio', name='inputRadio-inline-disabled', disabled)
           label(for='inputRadio-inline-disabled-2') Radio B
     .form-group.form-group--disabled
       .form-group-input
-        .inputCheckbox
+        .checkbox
           input#inputCheckbox-disabled(type='checkbox', value='inputCheckbox-disabled', disabled)
           label(for='inputCheckbox-disabled') Checkbox
   .hf-content.hf-wrapper
@@ -126,15 +126,15 @@ block content
     .form-group.form-group--success
       .form-group-label Fake label
       .form-group-input.form-group-input--inline
-        .inputRadio
+        .radio
           input#inputRadio-inline-success-1(type='radio', name='inputRadio-inline-success')
           label(for='inputRadio-inline-success-1') Radio A
-        .inputRadio
+        .radio
           input#inputRadio-inline-success-2(type='radio', name='inputRadio-inline-success')
           label(for='inputRadio-inline-success-2') Radio B
     .form-group.form-group--success
       .form-group-input
-        .inputCheckbox
+        .checkbox
           input#inputCheckbox-success(type='checkbox', value='inputCheckbox-success')
           label(for='inputCheckbox-success') Checkbox
   .hf-content.hf-wrapper
@@ -161,15 +161,15 @@ block content
     .form-group.form-group--error
       .form-group-label Fake label
       .form-group-input.form-group-input--inline
-        .inputRadio
+        .radio
           input#inputRadio-inline-error-1(type='radio', name='inputRadio-inline-error')
           label(for='inputRadio-inline-error-1') Radio A
-        .inputRadio
+        .radio
           input#inputRadio-inline-error-2(type='radio', name='inputRadio-inline-error')
           label(for='inputRadio-inline-error-2') Radio B
     .form-group.form-group--error
       .form-group-input
-        .inputCheckbox
+        .checkbox
           input#inputCheckbox-error(type='checkbox', value='inputCheckbox-error')
           label(for='inputCheckbox-error') Checkbox
   .hf-content.hf-wrapper

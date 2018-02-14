@@ -17,11 +17,14 @@
 
 @import "atoms/button";
 @import "atoms/content";
-@import "atoms/form";
-@import "atoms/form_input_select";
-@import "atoms/form_input_radio_checkbox";
-@import "atoms/form_input_state";
+@import "atoms/input";
 @import "atoms/wrapper";
+
+// =======================================
+// Molecules
+// =======================================
+
+@import "molecules/form";
 
 // =======================================
 // Utils

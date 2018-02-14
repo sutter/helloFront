@@ -1,0 +1,207 @@
+/** ======================================
+ * Molecule : Form
+ * ======================================= */
+
+.form {
+  @media (max-width: $mq-S) {
+    > .grid {
+      margin-bottom: $spacer-S;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: $spacer-M;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-group-feedback {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  color: $clr-0-light;
+}
+
+.form-group-small {
+  font-size: 80%;
+  color: tint($clr-0, 40%);
+}
+
+.form-group-label {
+  margin: 0 0 1rem;
+  font-weight: $font-weight-base;
+  color: $clr-0;
+  &.label {
+    cursor: pointer;
+  }
+}
+
+.form-group-label--required::after {
+  content: " *";
+}
+
+.form-group-input {
+  #{$form-list-input},
+  select {
+    height: $form-group-input-height;
+    padding: 0 2rem;
+    line-height: 1;
+  }
+
+  #{$form-list-input},
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid $clr-divider;
+    border-radius: $rad-S;
+    background-color: $clr-light;
+    box-shadow: none;
+    transition: $trans;
+
+    &:hover {
+      border-color: shade($clr-0-light, 10%);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  textarea {
+    min-height: $form-group-input-height * 2;
+    padding: 2rem;
+    line-height: 1.25;
+  }
+}
+
+.form-footer {
+  margin-top: $spacer-L;
+  &:not(.form-footer--alignLeft) {
+    @media (min-width: $mq-S-up) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  > *:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.form-inline {
+  display: flex;
+  align-items: flex-start;
+
+  .form-group {
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .form-group-label {
+    @include visually-hidden;
+  }
+
+  .form-group:not(.form-group--onlyOfType) {
+    &:not(:last-child) {
+      input,
+      select {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: 0;
+      }
+    }
+    &:last-of-type {
+      input,
+      select {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+  }
+
+  .form-footer {
+    margin: 0 0 0 2rem;
+    .button {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+  }
+
+  + .form-group {
+    margin-top: $spacer-M;
+  }
+}
+
+/**
+ * Modifier
+ * --------------------------------------- */
+
+.form-group--noLabel {
+  .form-group-label {
+    @include visually-hidden;
+  }
+}
+
+.form-group-input--inline {
+  display: flex;
+
+  > * + * {
+    margin-left: 2rem;
+  }
+}
+
+.form-group-small--checkbox,
+.form-group-small--radio {
+  margin-left: 2.5rem;
+}
+
+/**
+* Modifier : State
+* --------------------------------------- */
+
+$formStateMarkup: _assign(
+   (".form-group-label", ".form-group-feedback", ".form-group-message")
+);
+
+$stateTypes: (error $clr-danger) (success $clr-success) (warning $clr-warning);
+
+@each $state in $stateTypes {
+  $type: nth($state, 1);
+  $color: nth($state, 2);
+
+  .form-group--#{$type}.form-group--#{$type} {
+    input,
+    textarea,
+    select {
+      color: $color;
+      border-color: tint($color, 50%);
+
+      &:hover {
+        border-color: tint($color, 50%);
+      }
+    }
+
+    #{$formStateMarkup} {
+      color: $color;
+    }
+  }
+}
+
+/**
+ * Disabled
+ */
+
+.form-group--disabled.form-group--disabled {
+  .form-group-label {
+    pointer-events: none;
+  }
+}

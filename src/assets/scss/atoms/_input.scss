@@ -1,13 +1,32 @@
+/** ======================================
+* Atom : inputs
+* ======================================= */
+
 /**
- * Atom : radio & checkbox
- * Dependencies : _form.scss
- * --------------------------------------- */
+* Select
+* --------------------------------------- */
 
-$inputRadioCheckboxSize: 1.6rem;
-$inputRadioCheckboxTop: 0.2rem;
+.select {
+  min-width: 6rem;
+  height: 4rem;
+  padding-top: 0;
+  padding-right: 3rem;
+  padding-bottom: 0;
+  line-height: $form-group-input-height;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+ZG93bjwvdGl0bGU+PHBhdGggZD0iTTUuMzk3IDkuMTRsMy45NyAzLjZjLjM4NC4zNDguOTMuMzQ3IDEuMzE0LS4wMDVsMy45MjctMy42Yy40NTMtLjQxNS41MjUtMS4xNy4xNi0xLjY4Ny0uMzY0LS41MTYtMS4wMjYtLjU5OC0xLjQ4LS4xODNsLTMuOTI2IDMuNiAxLjMxNy0uMDA0LTMuOTctMy42Yy0uNDU0LS40MTItMS4xMTYtLjMyNi0xLjQ3OC4xOTMtLjM2My41MTgtLjI4OCAxLjI3My4xNjcgMS42ODZ6IiBmaWxsPSIjQURBREFEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
 
-.inputCheckbox,
-.inputRadio {
+/**
+* Checkbox & radio
+* --------------------------------------- */
+
+$radioCheckboxSize: 1.6rem;
+$radioCheckboxTop: 0.2rem;
+
+.checkbox,
+.radio {
   position: relative;
   line-height: $line-height-S;
 
@@ -27,17 +46,17 @@ $inputRadioCheckboxTop: 0.2rem;
   }
 
   label {
-    padding-left: $inputRadioCheckboxSize + 0.8rem;
+    padding-left: $radioCheckboxSize + 0.8rem;
     font-weight: $font-weight-base;
     transition: $trans;
 
     &::before {
       position: absolute;
-      top: $inputRadioCheckboxTop;
+      top: $radioCheckboxTop;
       left: 0;
       display: inline-block;
-      width: $inputRadioCheckboxSize;
-      height: $inputRadioCheckboxSize;
+      width: $radioCheckboxSize;
+      height: $radioCheckboxSize;
       margin-right: 0.8rem;
       vertical-align: text-bottom;
       border: 1px solid $clr-0-light;
@@ -54,7 +73,7 @@ $inputRadioCheckboxTop: 0.2rem;
   }
 }
 
-.inputCheckbox {
+.checkbox {
   [type="checkbox"] + label::before {
     border-radius: $rad-S;
     transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -64,28 +83,22 @@ $inputRadioCheckboxTop: 0.2rem;
     border-color: $clr-1;
     background: $clr-1
       url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%228%22%20height%3D%226%22%20viewBox%3D%220%200%208%206%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Ctitle%3EShape%20Copy%3C/title%3E%3Cpath%20d%3D%22M.185%203.245L2.47%205.53c.246.246.645.246.89%200l4.455-4.454c.247-.246.247-.645%200-.89-.246-.248-.645-.248-.89%200L2.47%204.638h.89L1.077%202.353c-.246-.247-.645-.247-.89%200-.248.246-.248.645%200%20.89z%22%20fill%3D%22%23FFF%22%20fill-rule%3D%22evenodd%22/%3E%3C/svg%3E")
-      center no-repeat; // app/assets/img/check.svg
+      center no-repeat;
   }
 
   &:not(:first-child) {
     margin-top: 1rem;
   }
-
-  .form-group-input--inline & {
-    &:not(:first-child) {
-      margin-top: 0;
-    }
-  }
 }
 
-.inputRadio {
+.radio {
   [type="radio"] + label::before {
     border-radius: 50%;
     transition: $trans;
   }
 
   [type="radio"]:checked + label::before {
-    border: $inputRadioCheckboxSize/2 - 0.35rem solid $clr-1;
+    border: $radioCheckboxSize/2 - 0.35rem solid $clr-1;
   }
 
   &:not(:first-child) {
