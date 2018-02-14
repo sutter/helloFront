@@ -2,18 +2,6 @@
  * Utils : Layout
  * ======================================= */
 
-.u-cf {
-  &::before,
-  &::after {
-    display: table;
-    content: " ";
-  }
-
-  &::after {
-    clear: both;
-  }
-}
-
 .u-noBfc {
   overflow: hidden !important;
 }
@@ -28,4 +16,14 @@
 
 .u-flexPushleft {
   margin-left: auto;
+}
+
+.u-flexInlineGrid.u-flexInlineGrid {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+  > * {
+    margin: 0.5rem;
+  }
 }
