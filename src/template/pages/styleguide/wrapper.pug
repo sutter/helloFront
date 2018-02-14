@@ -1,0 +1,24 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Wrapper"
+  - var metaDesc = "Wrapper - CSS / HTML"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Wrapper
+  .hf-content.hf-wrapper
+    h2 Style de base
+    p Le composant <code>.wrapper</code> permet de center des éléments sur la grille.
+  .hf-code.hf-wrapper
+    .wrapper
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero debitis est facilis, neque eveniet corporis sunt qui necessitatibus dolores quisquam aperiam omnis itaque laboriosam non, quaerat iure. Voluptates, exercitationem.
+  .hf-content.hf-wrapper
+    h2 Style Small
+    p Ajouter la classe de modification <code>.wrapper--S</code> à l'élément ayant la classe <code>.wrapper</code> afin de modifier son style.
+  .hf-code.hf-wrapper
+    .wrapper.wrapper--S
+      p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero debitis est facilis, neque eveniet corporis sunt qui necessitatibus dolores quisquam aperiam omnis itaque laboriosam non, quaerat iure. Voluptates, exercitationem.
