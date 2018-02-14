@@ -52,25 +52,25 @@ Plugin for IDE :
 ### Run project
 
 ```bash
-yarn run dev
+yarn dev
 ```
 
 ### Build project
 
 ```bash
-yarn run build
+yarn build
 ```
 
 ### Optimize SVG
 
 ```bash
-yarn run svg
+yarn svg
 ```
 
 ### Clean project
 
 ```bash
-yarn run reset
+yarn reset
 ```
 
 ## How it works
