@@ -37,3 +37,41 @@
   padding-left: 0;
   list-style: none;
 }
+
+@mixin gridItem($size) {
+  .grid-item--#{$size}-20 {
+    width: calc(20% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-25 {
+    width: calc(25% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-33 {
+    width: calc(33.333% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-40 {
+    width: calc(40% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-50 {
+    width: calc(50% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-60 {
+    width: calc(60% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-66 {
+    width: calc(66.666% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-75 {
+    width: calc(75% - #{$gutter-width});
+  }
+
+  .grid-item--#{$size}-80 {
+    width: calc(80% - #{$gutter-width});
+  }
+}

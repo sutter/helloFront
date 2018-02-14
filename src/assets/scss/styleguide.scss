@@ -260,4 +260,17 @@ $styleguideSidebar: 200px;
       margin-top: 10rem;
     }
   }
+
+  .grid-item {
+    background: $clr-0-lighter;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 1px $clr-0-light;
+  }
+}
+
+.hf-box {
+  background: $clr-1;
+  padding: 2rem;
 }
