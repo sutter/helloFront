@@ -8,11 +8,13 @@ html(lang= lang)
     include ../partials/head
 
   body(class= template)
-
-    include ../partials/header
-    main
-      section
-        block content
-    include ../partials/footer
+    .app
+      .app-head
+        include ../partials/header
+      main.app-body
+        section
+          block content
+      .app-footer
+        include ../partials/footer
 
     script(src= path + "assets/app.js", async)
