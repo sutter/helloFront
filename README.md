@@ -58,7 +58,7 @@ yarn run dev
 ### Build project
 
 ```bash
-yarn build
+yarn run build
 ```
 
 ### Optimize SVG
