@@ -96,6 +96,8 @@ Example SCSS hierarchy :
 * **\_settings.scss** : Global variables
 * **app.scss** : Main stylesheet
 
+Use the [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) namming convention.
+
 ### Works with Pug templating
 
 The PUG files are located in `./src/template`
