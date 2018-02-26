@@ -3,6 +3,23 @@
  * ======================================= */
 
 .content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  ul,
+  dl,
+  blockquote,
+  table {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   /* Typography */
 
   line-height: 1.5;
