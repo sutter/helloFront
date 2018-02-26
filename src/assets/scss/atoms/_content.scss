@@ -115,7 +115,7 @@
 
   /* Link */
 
-  a {
+  a:not(.button) {
     color: $clr-1;
     &:hover {
       color: $clr-1-light;
