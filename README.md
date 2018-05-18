@@ -12,8 +12,6 @@ Work on **src/** folder and gulp build in **dist/**.
 
 Install [NVM](https://github.com/creationix/nvm)
 
-Use the version v8.9.4 of NodeJS.
-
 ```bash
 nvm use
 ```
