@@ -1,8 +1,8 @@
 /** ======================================
- * Atom : Wrapper
+ * Layout : Wrapper
  * ======================================= */
 
-.wrapper {
+.l-wrapper {
   padding-right: $gutter-width;
   padding-left: $gutter-width;
 
@@ -13,10 +13,11 @@
   }
 }
 
-/* Modifier : size
--------------------------- */
+/**
+ * Modifier : Size
+ * --------------------------------------- */
 
-.wrapper--S {
+.l-wrapper--S {
   @media (min-width: $mq-S-up) {
     max-width: $wrap-S-max-width;
   }

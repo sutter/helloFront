@@ -1,0 +1,34 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Formulaires"
+  - var metaDesc = "Formulaires - CSS / HTML"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Form
+      nav
+        a(href="#type") Type
+  .hf-content.hf-wrapper
+    h2#type Types
+    h3 Formulaire type
+    ul
+     li Les éléments de type <code>&lt;form&gt;</code> prennent la classe <code>.m-form</code>
+     li Chaque ligne d'inputs est contenu dans un composant <code>.m-form-group</code>, gérant les marges entre chaque lignes
+     li Les action de formulaires sont contenue dans un composant <code>.m-form-footer</code>
+     li Les inputs et les labels possèdent également leur propres <a href="./input.html">classes et composants</a>
+  .hf-code.hf-wrapper
+    form.m-form(action='')
+      .m-form-group
+          label.m-form-group-label(for='login') Identifiant
+          .m-form-group-input
+            input#login(type='text', name='login', placeholder='Identifiant')
+      .m-form-group
+        label.m-form-group-label(for='password') Mot de passe
+        .m-form-group-input
+          input#password(type='password', name='password', placeholder='Mot de passe')
+      .m-form-footer
+        input.a-button(type='submit', value='connexion')

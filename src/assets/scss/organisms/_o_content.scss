@@ -1,8 +1,8 @@
 /** ======================================
- * Atom : Content
+ * Orgnanism : Content
  * ======================================= */
 
-.content {
+.o-content {
   h1,
   h2,
   h3,
@@ -20,6 +20,7 @@
       margin-bottom: 0;
     }
   }
+
   /* Typography */
 
   line-height: 1.5;
@@ -132,7 +133,7 @@
 
   /* Link */
 
-  a:not(.button) {
+  a:not(.a-button) {
     color: $clr-1;
     &:hover {
       color: $clr-1-light;

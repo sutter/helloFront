@@ -1,11 +1,11 @@
 /** ======================================
- * Molecule : Grid
+ * Layout : Grid
  * ======================================= */
 
-.grid {
+.l-grid {
   display: flex;
   flex-wrap: wrap;
-  + .grid {
+  + .l-grid {
     margin-top: $gutter-width;
     @media (min-width: $mq-S-up) {
       margin-top: $gutter-width/2;
@@ -16,7 +16,7 @@
   }
 }
 
-.grid-item {
+.l-grid-item {
   @media (max-width: $mq-S) {
     width: 100%;
     &:not(:first-child) {
@@ -33,11 +33,11 @@
  * Grid child options
  * --------------------------------------- */
 
-.grid-itemFirst {
+.l-grid-itemFirst {
   order: -1;
 }
 
-.grid-itemPush {
+.l-grid-itemPush {
   margin-left: auto;
 }
 
@@ -69,16 +69,16 @@
  * Modifier : grid option
  * --------------------------------------- */
 
-.grid--center {
+.l-grid--center {
   justify-content: center;
 }
 
-.grid--equalHeight {
-  .grid-item > * {
+.l-grid--equalHeight {
+  .l-grid-item > * {
     height: 100%;
   }
 }
 
-.grid--noWrap {
+.l-grid--noWrap {
   flex-wrap: nowrap;
 }

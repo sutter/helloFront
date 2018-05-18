@@ -2,7 +2,7 @@
  * Atom : Button
  * ======================================= */
 
-.button {
+.a-button {
   position: relative;
   display: inline-block;
   margin: 0;
@@ -20,7 +20,7 @@
   background: $clr-1;
   cursor: pointer;
   user-select: none;
-  transition: $trans;
+  transition: $trans-all;
   -webkit-user-drag: none;
   -webkit-appearance: none;
 
@@ -53,10 +53,10 @@
 }
 
 /**
- * Modifier : Color
+ * Modifier : Appearance
  * --------------------------------------- */
 
-.button--secondary {
+.a-button--secondary {
   color: $clr-0;
   background: $clr-light;
   box-shadow: inset 0 0 0 1px $clr-0-light;
@@ -78,7 +78,7 @@
   }
 }
 
-.button--danger {
+.a-button--danger {
   background: $clr-danger;
 
   &:disabled:hover,
@@ -95,22 +95,22 @@
  * Modifier : Size
  * --------------------------------------- */
 
-.button--S {
+.a-button--S {
   padding: 0.5rem 1.5rem;
   font-size: $font-size-XS;
 }
 
-.button--L {
+.a-button--L {
   padding: 1.5rem 4rem;
   font-size: $font-size-M;
 }
 
-.button--block {
+.a-button--block {
   justify-content: center;
   width: 100%;
 }
 
-.button--blockMobile {
+.a-button--blockMobile {
   @media (max-width: $mq-S-up) {
     display: block;
     width: 100%;

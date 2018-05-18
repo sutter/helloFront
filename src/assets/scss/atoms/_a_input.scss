@@ -6,7 +6,7 @@
 * Select
 * --------------------------------------- */
 
-.select {
+.a-inputSelect {
   min-width: 6rem;
   height: 4rem;
   padding-top: 0;
@@ -25,8 +25,8 @@
 $radioCheckboxSize: 1.6rem;
 $radioCheckboxTop: 0.2rem;
 
-.checkbox,
-.radio {
+.a-inputCheckbox,
+.a-inputRadio {
   position: relative;
   line-height: $line-height-S;
 
@@ -48,7 +48,7 @@ $radioCheckboxTop: 0.2rem;
   label {
     padding-left: $radioCheckboxSize + 0.8rem;
     font-weight: $font-weight-base;
-    transition: $trans;
+    transition: $trans-all;
 
     &::before {
       position: absolute;
@@ -73,7 +73,7 @@ $radioCheckboxTop: 0.2rem;
   }
 }
 
-.checkbox {
+.a-inputCheckbox {
   [type="checkbox"] + label::before {
     border-radius: $rad-S;
     transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -91,10 +91,10 @@ $radioCheckboxTop: 0.2rem;
   }
 }
 
-.radio {
+.a-inputRadio {
   [type="radio"] + label::before {
     border-radius: 50%;
-    transition: $trans;
+    transition: $trans-all;
   }
 
   [type="radio"]:checked + label::before {
@@ -105,7 +105,7 @@ $radioCheckboxTop: 0.2rem;
     margin-top: 1rem;
   }
 
-  .form-group-input--inline & {
+  .m-form-group-input--inline & {
     &:not(:first-child) {
       margin-top: 0;
     }

@@ -1,0 +1,145 @@
+extends ../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Grille"
+  - var metaDesc = "Grille - CSS / HTML"
+  - var path = './../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Grille
+  .hf-content.hf-wrapper
+    h2 Grille
+    h3 Composant de base
+    p Une définition de grille est composée d'un élément <code>.l-grid</code>, puis d'enfants avec une classe <code>.l-grid-item</code>
+  .hf-code.hf-wrapper
+    .l-grid
+      .l-grid-item 1
+      .l-grid-item 2
+  .hf-content.hf-wrapper
+    h3 Définition du nombre de colones
+    p Ajouter la classe de modification <code>.l-grid-item--XX-XX</code> à l'élément ayant la classe <code>.l-grid-item</code> afin de modifier son nombre de colonnes.
+    p Le dernier nombre de la chaine de caractères (ex : -50) correspond à la largeur en pourcentage (50%).
+    p Nombres de colonnes disponibles :
+    .u-mtM
+      .l-grid
+        .l-grid-item.l-grid-item--S-UP-33
+          h4 Taille S - de 480px à 768px
+          ul
+            li <code>.l-grid-item--S-20</code>
+            li <code>.l-grid-item--S-25</code>
+            li <code>.l-grid-item--S-33</code>
+            li <code>.l-grid-item--S-40</code>
+            li <code>.l-grid-item--S-50</code>
+            li <code>.l-grid-item--S-60</code>
+            li <code>.l-grid-item--S-66</code>
+            li <code>.l-grid-item--S-75</code>
+            li <code>.l-grid-item--S-80</code>
+        .l-grid-item.l-grid-item--S-UP-33
+          h4 Taille S-UP - sup à 480px
+          ul
+            li <code>.l-grid-item--S-UP-20</code>
+            li <code>.l-grid-item--S-UP-25</code>
+            li <code>.l-grid-item--S-UP-33</code>
+            li <code>.l-grid-item--S-UP-40</code>
+            li <code>.l-grid-item--S-UP-50</code>
+            li <code>.l-grid-item--S-UP-60</code>
+            li <code>.l-grid-item--S-UP-66</code>
+            li <code>.l-grid-item--S-UP-75</code>
+            li <code>.l-grid-item--S-UP-80</code>
+        .l-grid-item.l-grid-item--S-UP-33
+          h4 Taille M - de 768px à 1049px
+          ul
+            li <code>.l-grid-item--M-20</code>
+            li <code>.l-grid-item--M-25</code>
+            li <code>.l-grid-item--M-33</code>
+            li <code>.l-grid-item--M-40</code>
+            li <code>.l-grid-item--M-50</code>
+            li <code>.l-grid-item--M-60</code>
+            li <code>.l-grid-item--M-66</code>
+            li <code>.l-grid-item--M-75</code>
+            li <code>.l-grid-item--M-80</code>
+        .l-grid-item.l-grid-item--S-UP-33
+          h4 Taille M-UP - sup à 768px
+          ul
+            li <code>.l-grid-item--M-UP-20</code>
+            li <code>.l-grid-item--M-UP-25</code>
+            li <code>.l-grid-item--M-UP-33</code>
+            li <code>.l-grid-item--M-UP-40</code>
+            li <code>.l-grid-item--M-UP-50</code>
+            li <code>.l-grid-item--M-UP-60</code>
+            li <code>.l-grid-item--M-UP-66</code>
+            li <code>.l-grid-item--M-UP-75</code>
+            li <code>.l-grid-item--M-UP-80</code>
+        .l-grid-item.l-grid-item--S-UP-33
+          h4 Taille L-UP - sup à 1049px
+          ul
+            li <code>.l-grid-item--L-UP-20</code>
+            li <code>.l-grid-item--L-UP-25</code>
+            li <code>.l-grid-item--L-UP-33</code>
+            li <code>.l-grid-item--L-UP-40</code>
+            li <code>.l-grid-item--L-UP-50</code>
+            li <code>.l-grid-item--L-UP-60</code>
+            li <code>.l-grid-item--L-UP-66</code>
+            li <code>.l-grid-item--L-UP-75</code>
+            li <code>.l-grid-item--L-UP-80</code>
+      
+  .hf-code.hf-wrapper
+    .l-grid
+      .l-grid-item.l-grid-item--M-50.l-grid-item--L-UP-25 1
+      .l-grid-item.l-grid-item--M-50.l-grid-item--L-UP-25 2
+      .l-grid-item.l-grid-item--M-50.l-grid-item--L-UP-25 3
+      .l-grid-item.l-grid-item--M-50.l-grid-item--L-UP-25 4
+      .l-grid-item.l-grid-item--S-UP-20 5
+      .l-grid-item.l-grid-item--S-UP-20 6
+      .l-grid-item.l-grid-item--S-UP-20 7
+      .l-grid-item.l-grid-item--S-UP-20 8
+      .l-grid-item.l-grid-item--S-UP-20 9
+      .l-grid-item.l-grid-item--S-75.l-grid-item--M-UP-50 10
+      .l-grid-item.l-grid-item--S-25.l-grid-item--M-UP-50 11
+  .hf-content.hf-wrapper
+    h3 Modification d'ordre
+    p Il est possible de mettre un élément de grille en premier en ajoutant la classe <code>.l-grid-itemFirst</code> à un élément <code>.l-grid-item</code>.
+  .hf-code.hf-wrapper
+    .l-grid
+      .l-grid-item.l-grid-item--S-UP-50 1
+      .l-grid-item.l-grid-item--S-UP-50.l-grid-itemFirst 2
+  .hf-content.hf-wrapper
+    h3 Modification d'espacement
+    p Il est possible de décaler un élément de grille à gauche en ajoutant la classe <code>.l-grid-itemPush</code> à un élément <code>.l-grid-item</code>.
+  .hf-code.hf-wrapper
+    .l-grid
+      .l-grid-item.l-grid-item--S-UP-25 1
+      .l-grid-item.l-grid-item--S-UP-25.l-grid-itemPush 2
+  .hf-content.hf-wrapper
+    h3 Centrer les élements
+    p Il est possible de center les éléments <code>.l-grid-item</code> en ajoutant la classe <code>.l-grid--center</code> à l'élément <code>.l-grid</code>.
+  .hf-code.hf-wrapper
+    .l-grid.l-grid--center
+      .l-grid-item.l-grid-item--S-UP-25 1
+      .l-grid-item.l-grid-item--S-UP-25 2
+  .hf-content.hf-wrapper
+    h3 Élements enfants de même hauteur
+    p Il est possible de donner la même hauteur aux enfants directs de <code>.l-grid-item</code> en ajoutant la classe <code>.l-grid--equalHeight</code> à l'élément <code>.l-grid</code>.
+  .hf-code.hf-wrapper
+    .l-grid.l-grid--equalHeight
+      .l-grid-item.l-grid-item--S-UP-50
+        .hf-box
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, numquam nihil incidunt odit illo iusto eaque ratione perspiciatis ut aperiam fugiat, asperiores laboriosam reiciendis dolorem placeat eos laborum! Molestiae, tempore!
+      .l-grid-item.l-grid-item--S-UP-50
+        .hf-box
+          p Lorem ipsum dolor
+  .hf-content.hf-wrapper
+    h3 Contraindre le non retour à la ligne
+    p Il est possible de contraindre les éléments <code>.l-grid-item</code> à ne pas retourner à la ligne en ajoutant la classe <code>.l-grid--noWrap</code> à l'élément <code>.l-grid</code>.
+  .hf-code.hf-wrapper
+    .l-grid.l-grid--noWrap
+      .l-grid-item.l-grid-item--S-UP-50 1
+      .l-grid-item.l-grid-item--S-UP-25 2
+      .l-grid-item.l-grid-item--S-UP-25 3
+      .l-grid-item.l-grid-item--S-UP-25 4
+      .l-grid-item.l-grid-item--S-UP-25 5
+      .l-grid-item.l-grid-item--S-UP-25 6
+      .l-grid-item.l-grid-item--S-UP-25 7

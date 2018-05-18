@@ -82,9 +82,7 @@ $wrap-S-max-width: 60rem;
 $gutter-width: 2rem;
 
 $width-list: (20 20%) (25 25%) (33 33.333%) (40 40%) (50 50%) (60 60%)
-  (
-    66 66.666%
-  ) (75 75%) (80 80%) (100 100%);
+  (66 66.666%) (75 75%) (80 80%) (100 100%);
 
 //
 // 4 - Radius
@@ -100,7 +98,6 @@ $rad-M: 1rem;
 $form-group-input-height: 4rem;
 
 $form-list-input: _assign(
-
   (
     '[type="text"]',
     '[type="password"]',
@@ -139,4 +136,6 @@ $mq-L-up: em(1025, $em-base);
 // 8 - Transitions
 // ---------------------------------------
 
-$trans: all 0.3s ease-in-out;
+$trans-timing: 0.3s;
+$trans-cubic: "cubic-bezier(0.455, 0.03, 0.515, 0.955)";
+$trans-all: all $trans-timing $trans-cubic;
