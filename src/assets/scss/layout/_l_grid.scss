@@ -7,23 +7,23 @@
   flex-wrap: wrap;
   + .l-grid {
     margin-top: $gutter-width;
-    @media (min-width: $mq-S-up) {
+    @media #{$mobileUp} {
       margin-top: $gutter-width/2;
     }
   }
-  @media (min-width: $mq-S-up) {
+  @media #{$mobileUp} {
     margin: -$gutter-width/2;
   }
 }
 
 .l-grid-item {
-  @media (max-width: $mq-S) {
+  @media #{$mobile} {
     width: 100%;
     &:not(:first-child) {
       margin-top: $gutter-width;
     }
   }
-  @media (min-width: $mq-S-up) {
+  @media #{$mobileUp} {
     margin: $gutter-width/2;
     width: calc(100% - #{$gutter-width});
   }
@@ -45,23 +45,23 @@
  * Modifier : column
  * --------------------------------------- */
 
-@media (min-width: $mq-S-up) and (max-width: $mq-M) {
+@media #{$mobileUp} and #{$tabletUp} {
   @include gridItem(S);
 }
 
-@media (min-width: $mq-S-up) {
+@media #{$mobileUp} {
   @include gridItem(S-UP);
 }
 
-@media (min-width: $mq-M-up) and (max-width: $mq-L) {
+@media #{$tabletUp} and #{$desktop} {
   @include gridItem(M);
 }
 
-@media (min-width: $mq-M-up) {
+@media #{$tabletUp} {
   @include gridItem(M-UP);
 }
 
-@media (min-width: $mq-L-up) {
+@media #{$desktopUp} {
   @include gridItem(L-UP);
 }
 

@@ -5,13 +5,13 @@
 .u-hideMobile {
   display: none !important;
 
-  @media (min-width: $mq-S-up) {
+  @media #{$mobileUp} {
     display: block !important;
   }
 }
 
 .u-showMobile {
-  @media (min-width: $mq-S-up) {
+  @media #{$mobileUp} {
     display: none !important;
   }
 }

@@ -44,12 +44,6 @@
       background: $clr-1;
     }
   }
-
-  + [class*="button"] {
-    @media (min-width: $mq-S-up) {
-      margin-left: 1rem;
-    }
-  }
 }
 
 /**
@@ -111,7 +105,7 @@
 }
 
 .a-button--blockMobile {
-  @media (max-width: $mq-S-up) {
+  @media #{mobile} {
     display: block;
     width: 100%;
   }

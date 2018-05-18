@@ -3,7 +3,7 @@
  * ======================================= */
 
 .m-form {
-  @media (max-width: $mq-S) {
+  @media #{$mobile} {
     > .l-grid {
       margin-bottom: $spacer-S;
 
@@ -85,7 +85,7 @@
 .m-form-footer {
   margin-top: $spacer-L;
   &:not(.m-form-footer--alignLeft) {
-    @media (min-width: $mq-S-up) {
+    @media #{$mobileUp} {
       display: flex;
       flex-direction: column;
       align-items: center;
