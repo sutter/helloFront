@@ -2,4 +2,4 @@ mixin menu(menu_items)
   ul.menu-inner
     each top_item in menu_items
       li.menu-item(class= navLinkActive)
-        a(href= top_item.link, class= navLinkActive == top_item.title ? 'menu-link is-active' : 'menu-link')= top_item.title
+        a(href= top_item.link, class= navLinkActive == top_item.title ? 'm-menu-link is-active' : 'm-menu-link')= top_item.title
