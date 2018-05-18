@@ -21,7 +21,12 @@ gulp.task("styles", () => {
     )
     .pipe(!options.production ? sourcemaps.init() : gutil.noop())
     .pipe(sass({ precision: 10 }))
-    .pipe(autoprefixer({ browsers: ["last 2 versions"] }))
+    .pipe(
+      autoprefixer({
+        browsers: ["last 2 versions"],
+        cascade: false,
+      })
+    )
     .pipe(!options.production ? sourcemaps.write(".") : gutil.noop())
     .pipe(options.production ? csso() : gutil.noop())
     .pipe(size({ title: "style" }))
