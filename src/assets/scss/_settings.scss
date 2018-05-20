@@ -137,7 +137,7 @@ $mq-L-up: em(1025, $em-base);
 // 8 - MediaQueries
 // ---------------------------------------
 
-$mobile: #{$mobile};
+$mobile: (max-width: $mq-S);
 $mobileUp: (min-width: $mq-S-up);
 $tablet: (max-width: $mq-M);
 $tabletUp: (min-width: $mq-M-up);
