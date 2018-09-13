@@ -52,7 +52,13 @@
   select {
     height: $form-group-input-height;
     padding: 0 2rem;
+  }
+
+  #{$form-list-input} {
     line-height: 1;
+  }
+  select {
+    line-height: $form-group-input-height;
   }
 
   #{$form-list-input},
