@@ -137,12 +137,24 @@ $mq-L-up: em(1025, $em-base);
 // 8 - MediaQueries
 // ---------------------------------------
 
-$mobile: #{$mobile};
-$mobileUp: (min-width: $mq-S-up);
-$tablet: (max-width: $mq-M);
-$tabletUp: (min-width: $mq-M-up);
-$desktop: (max-width: $mq-L);
-$desktopUp: (min-width: $mq-L-up);
+$mobile: (
+  max-width: $mq-S,
+);
+$mobileUp: (
+  min-width: $mq-S-up,
+);
+$tablet: (
+  max-width: $mq-M,
+);
+$tabletUp: (
+  min-width: $mq-M-up,
+);
+$desktop: (
+  max-width: $mq-L,
+);
+$desktopUp: (
+  min-width: $mq-L-up,
+);
 
 //
 // 9 - Transitions
