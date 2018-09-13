@@ -21,7 +21,7 @@
   "engines": {
     "node": "8.11.2",
     "npm": "5.6",
-    "yarn": "1.6.0"
+    "yarn": "1.9.4"
   },
   "homepage": "https://github.com/sutter/helloFront#readme",
   "devDependencies": {
