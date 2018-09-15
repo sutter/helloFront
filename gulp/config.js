@@ -36,6 +36,14 @@ module.exports = {
     files_dist: dist + "/**/*.html",
   },
 
+  icons: {
+    dir: src + "/assets/icons/",
+    src_files: [
+      `${src}/assets/icons/**/*.svg`,
+      `!${src}/assets/icons/symbol/**/*`,
+    ],
+  },
+
   svg: {
     files_src: [
       "!" + src + "/assets/img/sprite/**/*.svg",

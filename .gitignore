@@ -15,9 +15,5 @@ yarn-error.log
 # Generated folder
 dist
 
-# Generated fonts
-src/assets/fonts/app-font.eot
-src/assets/fonts/app-font.svg
-src/assets/fonts/app-font.ttf
-src/assets/fonts/app-font.woff
-src/assets/fonts/app-font.woff2
+# Generated SVG sprite
+src/assets/icons/symbol

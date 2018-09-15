@@ -1,3 +1,7 @@
+mixin icon(iconHref, iconClass )
+  svg(class= iconClass)
+    use(xlink:href="#spriteIcon-"+iconHref)
+
 mixin menu(menu_items)
   ul.menu-inner
     each top_item in menu_items

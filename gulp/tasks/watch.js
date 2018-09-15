@@ -13,6 +13,10 @@ gulp.task("watch", () => {
     runSequence("images", browserSync.reload);
   });
 
+  watch(config.icons.src_files, () => {
+    runSequence("icons", "templates", browserSync.reload);
+  });
+
   watch(config.templates.files_src, () => {
     runSequence("templates", browserSync.reload);
   });
