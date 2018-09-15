@@ -21,6 +21,3 @@ src/assets/fonts/app-font.svg
 src/assets/fonts/app-font.ttf
 src/assets/fonts/app-font.woff
 src/assets/fonts/app-font.woff2
-
-# Generated files
-src/assets/scss/atoms/_icons.scss

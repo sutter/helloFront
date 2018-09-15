@@ -17,10 +17,6 @@ gulp.task("watch", () => {
     runSequence("templates", browserSync.reload);
   });
 
-  watch(config.font_icon.files_src, () => {
-    runSequence("font-icon", "styles", browserSync.reload);
-  });
-
   watch(config.fonts.src, () => {
     runSequence("fonts", browserSync.reload);
   });
