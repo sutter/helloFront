@@ -8,7 +8,7 @@ const notify = require("gulp-notify");
 const sourcemaps = require("gulp-sourcemaps");
 const gutil = require("gulp-util");
 const size = require("gulp-size");
-const csso = require("gulp-csso");
+const cssnano = require('gulp-cssnano');
 const options = require("minimist")(process.argv.slice(2));
 
 gulp.task("styles", () => {
@@ -27,7 +27,7 @@ gulp.task("styles", () => {
       })
     )
     .pipe(!options.production ? sourcemaps.write(".") : gutil.noop())
-    .pipe(options.production ? csso() : gutil.noop())
+    .pipe(options.production ? cssnano() : gutil.noop())
     .pipe(size({ title: "style" }))
     .pipe(gulp.dest(config.styles.dist));
 });
