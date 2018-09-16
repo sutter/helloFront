@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sutter/helloFront#readme",
   "devDependencies": {
-    "browser-sync": "^2.24.4"
+    "browser-sync": "^2.24.7"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -35,7 +35,7 @@
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-cssnano": "^2.1.3",
-    "gulp-htmlmin": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
@@ -49,7 +49,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-svg-sprite": "^1.4.0",
     "gulp-util": "^3.0.8",
-    "gulp-watch": "^5.0.0",
+    "gulp-watch": "^5.0.1",
     "minimist": "^1.2.0",
     "require-dir": "^1.0.0",
     "run-sequence": "^2.2.1",
@@ -57,8 +57,8 @@
     "uglifyjs-webpack-plugin": "^1.2.5",
     "vinyl-named": "^1.1.0",
     "webpack": "^3.11.0",
-    "webpack-merge": "^4.1.2",
+    "webpack-merge": "^4.1.4",
     "webpack-stream": "^4.0.3",
-    "what-input": "^5.1.0"
+    "what-input": "^5.1.2"
   }
 }
