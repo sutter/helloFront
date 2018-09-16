@@ -23,7 +23,6 @@ gulp.task("styles", () => {
     .pipe(sass({ precision: 10 }))
     .pipe(
       autoprefixer({
-        browsers: ["last 2 versions"],
         cascade: false,
       })
     )
