@@ -13,12 +13,12 @@ gulp.task("watch", () => {
     runSequence("images", browserSync.reload);
   });
 
-  watch(config.templates.files_src, () => {
-    runSequence("templates", browserSync.reload);
+  watch(config.icons.src_files, () => {
+    runSequence("icons", "templates", browserSync.reload);
   });
 
-  watch(config.font_icon.files_src, () => {
-    runSequence("font-icon", "styles", browserSync.reload);
+  watch(config.templates.files_src, () => {
+    runSequence("templates", browserSync.reload);
   });
 
   watch(config.fonts.src, () => {

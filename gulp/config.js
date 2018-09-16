@@ -36,6 +36,14 @@ module.exports = {
     files_dist: dist + "/**/*.html",
   },
 
+  icons: {
+    dir: src + "/assets/icons/",
+    src_files: [
+      `${src}/assets/icons/**/*.svg`,
+      `!${src}/assets/icons/symbol/**/*`,
+    ],
+  },
+
   svg: {
     files_src: [
       "!" + src + "/assets/img/sprite/**/*.svg",
@@ -62,37 +70,5 @@ module.exports = {
   fonts: {
     src: src + "/assets/fonts/**",
     dist: assets_dist,
-  },
-
-  font_icon: {
-    enable: false,
-    path_create_icon_font_file: src + "/assets/scss/atoms/_icons.scss",
-    src: src + "/assets/icons",
-    files_src: src + "/assets/icons/*.svg",
-    path: src + "/assets/scss/tools/_template-font-custom.scss",
-    target_path: "../scss/atoms/_icons.scss",
-    font_path: "../fonts/",
-    dist: src + "/assets/fonts",
-    files_dist: src + "/assets/fonts/" + fontName + ".{eot,svg,ttf,woff}",
-    settings: {
-      prependUnicode: true,
-      font_name: fontName,
-      normalize: true,
-      font_height: 512,
-    },
-  },
-
-  url: {
-    urlLocal: "http://localhost:3000",
-    urlProd: "http://sutter.github.io/helloFront",
-  },
-
-  deploy: {
-    folderSrc: dist + "/**/*",
-    folderReplaceSrc: [
-      dist + "/**/*.html",
-      dist + "/**/*.js",
-      dist + "/**/*.css",
-    ],
   },
 };

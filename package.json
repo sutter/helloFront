@@ -21,7 +21,7 @@
   "engines": {
     "node": "8.11.2",
     "npm": "5.6",
-    "yarn": "1.6.0"
+    "yarn": "1.9.4"
   },
   "homepage": "https://github.com/sutter/helloFront#readme",
   "devDependencies": {
@@ -36,12 +36,11 @@
     "gulp-autoprefixer": "^5.0.0",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
-    "gulp-iconfont": "^9.1.0",
-    "gulp-iconfont-css": "^2.1.0",
     "gulp-imagemin": "^4.1.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
     "gulp-pug": "^4.0.1",
+    "gulp-rename": "^1.4.0",
     "gulp-rev": "^8.1.1",
     "gulp-rev-delete-original": "^0.2.3",
     "gulp-rev-replace": "^0.4.3",
@@ -49,6 +48,7 @@
     "gulp-shell": "^0.6.5",
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-svg-sprite": "^1.4.0",
     "gulp-svgmin": "^1.2.4",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.0",
