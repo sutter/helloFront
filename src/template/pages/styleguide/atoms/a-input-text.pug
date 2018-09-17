@@ -1,0 +1,34 @@
+extends ../../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Inputs text"
+  - var metaDesc = "Inputs Text - CSS / HTML"
+  - var path = './../../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Input text
+      nav
+        a(href="#types") Types
+        a(href="#states") États
+  .hf-wrapper
+    .hf-content
+      h2#types Types
+      h3 Input text
+    :code
+      <input id="input-base" class="a-inputText" type="text" name="input-base" placeholder="Placeholder" />
+    .hf-content
+      h2#states États
+      h3 État : disabled
+    :code
+      <input id="input-base" class="a-inputText" type="text" name="input-base" placeholder="Placeholder" disabled/>
+    .hf-content
+      h3 État : readOnly
+    :code
+      <input id="input-base" class="a-inputText" type="text" name="input-base" placeholder="Placeholder" readOnly/>
+    .hf-content
+      h3 État : error
+    :code
+      <input id="input-base" class="a-inputText" type="text" name="input-base" placeholder="Placeholder" data-state="error"/>

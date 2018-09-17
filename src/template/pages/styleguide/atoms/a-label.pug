@@ -1,0 +1,30 @@
+extends ../../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Labels"
+  - var metaDesc = "Labels - CSS / HTML"
+  - var path = './../../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Labels
+  .hf-wrapper
+    .hf-content
+      h2#styles Styles
+      h3 Label de base
+    :code
+      <label class="a-label">Label</label>
+      <label class="a-label" required>Label</label>
+    .hf-content
+      h3 Faux label
+    :code
+      <div class="a-label">Label</div>
+      <div class="a-label" required>Label</div>
+    .hf-content
+      h2#styles États
+      h3 État : error
+    :code
+      <label class="a-label" data-state="error">Label</label>
+      <label class="a-label" required data-state="error">Label</label>

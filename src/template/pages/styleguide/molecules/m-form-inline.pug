@@ -1,0 +1,36 @@
+extends ../../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Formulaires Inline"
+  - var metaDesc = "Formulaires Inline- CSS / HTML"
+  - var path = './../../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Formumaire inline
+      nav
+        a(href="#type") Type
+  .hf-wrapper
+    .hf-content
+      h2#type Types
+      h3 Formulaire inline simple
+    :code
+      <form class="m-formInline" action="">
+        <div class="m-formInline-group">
+          <label class="a-label" for="login">Identifiant</label>
+          <div class="m-form-formInline-input">
+            <input class="a-inputText" id="login" type="text" name="login" placeholder="Identifiant" />
+          </div>
+        </div>
+        <div class="m-formInline-group">
+          <label class="a-label" for="password">Mot de passe</label>
+          <div class="m-formInline-input">
+            <input class="a-inputText" id="password" type="password" name="password" placeholder="Mot de passe" />
+          </div>
+        </div>
+        <div class="m-formInline-footer">
+          <input class="a-button" type="submit" value="Connexion" />
+        </div>
+      </form>

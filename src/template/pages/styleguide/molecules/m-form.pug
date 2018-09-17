@@ -1,0 +1,48 @@
+extends ../../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Formulaires"
+  - var metaDesc = "Formulaires - CSS / HTML"
+  - var path = './../../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Formulaire
+      nav
+        a(href="#type") Type
+  .hf-wrapper
+    .hf-content
+      h2#type Types
+      h3 Formulaire type
+    :code
+      <form class="m-form" action="">
+        <div class="m-form-group">
+          <label class="a-label" for="login">Identifiant</label>
+          <div class="m-form-group-input">
+            <input class="a-inputText" id="login" type="text" name="login" placeholder="Identifiant" />
+          </div>
+        </div>
+        <div class="m-form-group">
+          <label class="a-label" for="password">Mot de passe</label>
+          <div class="m-form-group-input">
+            <input class="a-inputText" id="password" type="password" name="password" placeholder="Mot de passe" />
+          </div>
+        </div>
+        <div class="m-form-footer">
+          <input class="a-button" type="submit" value="Connexion" />
+        </div>
+      </form>
+    .hf-content
+      h3 Formulaire avec explication
+    :code
+      <form class="m-form" action="">
+        <div class="m-form-group">
+          <label class="a-label" for="password-2">Mot de passe</label>
+          <div class="m-form-group-input">
+            <input class="a-inputText" id="password-2" type="password" name="password-2" placeholder="Mot de passe" />
+          </div>
+          <div class="m-form-group-small">Doit comporter au moins 12 caractères de types de types différents.</div>
+        </div>
+      </form>

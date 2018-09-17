@@ -12,27 +12,38 @@ html(lang= lang)
     .hf-styleguide
       header
           .hf-styleguide-title Styleguide
-          a.hf-styleguide-linkBack(href="../") Retour sommaire
+          a.hf-styleguide-linkBack(href="/") Retour sommaire
           nav
             p Atoms
-            a(href="./a-button.html") Button
-            a(href="./a-input.html") Input
+            a(href=pathStyleguide+"atoms/a-button.html") Button
+            a(href=pathStyleguide+"atoms/a-input-checkbox.html") Input - Checkbox
+            a(href=pathStyleguide+"atoms/a-input-radio.html") Input - Radio
+            a(href=pathStyleguide+"atoms/a-input-select.html") Input - Select
+            a(href=pathStyleguide+"atoms/a-input-text.html") Input - Text
+            a(href=pathStyleguide+"atoms/a-input-textarea.html") Input - Textarea
+            a(href=pathStyleguide+"atoms/a-label.html") Labels
             p Molecules
-            a(href="./m-form.html") Form
-            p Organisms
-            a(href="./o-content.html") Content
+            a(href=pathStyleguide+"molecules/m-content.html") Content
+            a(href=pathStyleguide+"molecules/m-form.html") Form 
+            a(href=pathStyleguide+"molecules/m-form-inline.html") Form - inline
             p Layout
-            a(href="./l-grid.html") Grid
-            a(href="./l-wrapper.html") Wrapper
+            a(href=pathStyleguide+"layout/l-grid.html") Grid
+            a(href=pathStyleguide+"layout/l-wrapper.html") Wrapper
             p Utils
-            a(href="./u-layout.html") Layout
-            a(href="./u-show-hide.html") Show - hide
-            a(href="./u-spacing.html") Spacing
-            a(href="./u-text.html") Text
-            a(href="./u-text-color.html") Text color
-            a(href="./u-width.html") Width
+            a(href=pathStyleguide+"utils/u-layout.html") Layout
+            a(href=pathStyleguide+"utils/u-show-hide.html") Show - hide
+            a(href=pathStyleguide+"utils/u-spacing.html") Spacing
+            a(href=pathStyleguide+"utils/u-text.html") Text
+            a(href=pathStyleguide+"utils/u-text-color.html") Text color
+            a(href=pathStyleguide+"utils/u-width.html") Width
       main
         section
           block content
-
+      script(src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js")
       script(src= path + "assets/app.js", async)
+      script.
+        var codes = document.querySelectorAll('.js-highlight')
+        for ( var i = 0; i < codes.length; ++i) {
+          codes[i].textContent = codes[i].innerHTML
+        }
+        hljs.initHighlightingOnLoad()

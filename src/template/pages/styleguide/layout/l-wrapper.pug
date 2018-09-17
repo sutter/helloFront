@@ -1,0 +1,36 @@
+extends ../../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Wrapper"
+  - var metaDesc = "Wrapper - CSS / HTML"
+  - var path = './../../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Wrapper
+  .hf-wrapper
+    .hf-content
+      h2#types Types
+      h3 Type de base
+      p Le composant <code>.l-wrapper</code> permet de center des éléments sur la grille.
+  :code
+    <div class="l-wrapper">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero debitis est facilis, neque eveniet corporis sunt qui necessitatibus dolores quisquam aperiam omnis itaque laboriosam non, quaerat iure. Voluptates, exercitationem.</p>
+    </div>
+  .hf-wrapper
+    .hf-content
+      h2#sizes Tailles
+      h3 Taille M
+  :code
+    <div class="l-wrapper" data-size="M">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero debitis est facilis, neque eveniet corporis sunt qui necessitatibus dolores quisquam aperiam omnis itaque laboriosam non, quaerat iure. Voluptates, exercitationem.</p>
+    </div>
+  .hf-wrapper
+    .hf-content
+      h3 Taille S
+  :code
+    <div class="l-wrapper" data-size="S">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vero debitis est facilis, neque eveniet corporis sunt qui necessitatibus dolores quisquam aperiam omnis itaque laboriosam non, quaerat iure. Voluptates, exercitationem.</p>
+    </div>

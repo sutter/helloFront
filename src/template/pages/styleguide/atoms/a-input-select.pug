@@ -1,0 +1,39 @@
+extends ../../../layout/styleguide
+
+append config
+  - var template = 't-styleguide'
+  - var title = "Inputs select"
+  - var metaDesc = "Inputs select - CSS / HTML"
+  - var path = './../../'
+
+block content
+  .hf-head
+    .hf-wrapper
+      h1 Input select
+      nav
+        a(href="#types") Types
+        a(href="#states") États
+  .hf-wrapper
+    .hf-content
+      h2#types Types
+      h3 Input select
+    :code
+      <select class="a-inputSelect" name="input-select">
+        <option>Lorem Ipsum</option>
+        <option>Sit ammet glab</option>
+      </select>
+    .hf-content
+      h2#states États
+      h3 État : disabled
+    :code
+      <select class="a-inputSelect" name="input-select" disabled>
+        <option>Lorem Ipsum</option>
+        <option>Sit ammet glab</option>
+      </select>
+    .hf-content
+      h3 État : error
+    :code
+      <select class="a-inputSelect" name="input-select" data-state="error">
+        <option>Lorem Ipsum</option>
+        <option>Sit ammet glab</option>
+      </select>

@@ -2,15 +2,16 @@
 //   Variables
 //----------------------------------------
 
-// 1 - Color
-// 2 - Font
-// 3 - Grid and wrapper
-// 4 - Radius
-// 5 - Forms
-// 6 - Spacing
-// 7 - Breakpoints
-// 8 - MediaQueries
-// 9 - Transitions
+// 1  - Color
+// 2  - Font
+// 3  - Grid and wrapper
+// 4  - Radius
+// 5  - Forms
+// 6  - Spacing
+// 7  - Breakpoints
+// 8  - MediaQueries
+// 9  - Transitions
+// 10 - Inputs
 
 //
 // 1 - Color
@@ -20,7 +21,7 @@ $clr-light: #fff;
 $clr-success: #61bcbd;
 $clr-warning: #f9b134;
 $clr-notice: #d9edf7;
-$clr-danger: #d24a53;
+$clr-error: #d24a53;
 $clr-divider: #ededed;
 
 $clr-0-darker: #23292e;
@@ -163,3 +164,10 @@ $desktopUp: (
 $trans-timing: 0.3s;
 $trans-cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 $trans-all: all $trans-timing $trans-cubic;
+
+//
+// 10 - inputs
+// ---------------------------------------
+
+$radioCheckboxSize: 1.6rem;
+$radioCheckboxTop: 0.2rem;

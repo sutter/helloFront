@@ -1,0 +1,23 @@
+/** ======================================
+* Atom : inputSelect
+* ======================================= */
+
+.a-inputSelect {
+  @include inputBase;
+  min-width: 6rem;
+  height: 4rem;
+  padding-top: 0;
+  padding-right: 3rem;
+  padding-left: 2rem;
+  padding-bottom: 0;
+  line-height: $form-group-input-height;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+ZG93bjwvdGl0bGU+PHBhdGggZD0iTTUuMzk3IDkuMTRsMy45NyAzLjZjLjM4NC4zNDguOTMuMzQ3IDEuMzE0LS4wMDVsMy45MjctMy42Yy40NTMtLjQxNS41MjUtMS4xNy4xNi0xLjY4Ny0uMzY0LS41MTYtMS4wMjYtLjU5OC0xLjQ4LS4xODNsLTMuOTI2IDMuNiAxLjMxNy0uMDA0LTMuOTctMy42Yy0uNDU0LS40MTItMS4xMTYtLjMyNi0xLjQ3OC4xOTMtLjM2My41MTgtLjI4OCAxLjI3My4xNjcgMS42ODZ6IiBmaWxsPSIjQURBREFEIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+
+  &:not(:disabled) {
+    &:hover {
+      border-color: shade($clr-0-light, 10%);
+    }
+  }
+}

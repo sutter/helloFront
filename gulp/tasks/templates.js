@@ -8,6 +8,19 @@ const htmlmin = require("gulp-htmlmin");
 const size = require("gulp-size");
 const options = require("minimist")(process.argv.slice(2));
 
+const filters = {
+  code(html, options) {
+    const lang = options.lang || "html";
+    const preview =
+      lang === "html" ? `<div class="hf-preview">${html}</div>` : "";
+    return `
+      <div class="hf-exemple">
+        ${preview}
+        <pre class="hf-code"><code class="js-highlight ${lang}">${html}</code></pre>
+      </div>`;
+  },
+};
+
 gulp.task("templates", () => {
   return gulp
     .src(config.page_src)
@@ -16,7 +29,7 @@ gulp.task("templates", () => {
         errorHandler: notify.onError("PUG Error: <%= error.message %>"),
       })
     )
-    .pipe(pug({ pretty: true }))
+    .pipe(pug({ pretty: true, filters }))
     .pipe(
       options.production ? htmlmin({ collapseWhitespace: true }) : gutil.noop()
     )
