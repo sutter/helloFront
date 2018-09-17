@@ -14,10 +14,6 @@
   @media #{$mobileUp} {
     margin: -$gutter-width/2;
   }
-
-  &[data-justifyContent] {
-    justify-content: "attr(data-justifyContent)";
-  }
 }
 
 .l-grid-item {
@@ -30,10 +26,6 @@
   @media #{$mobileUp} {
     margin: $gutter-width/2;
     width: calc(100% - #{$gutter-width});
-  }
-
-  &[data-align="left"] {
-    margin-left: auto;
   }
 }
 

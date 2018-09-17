@@ -21,7 +21,7 @@
     }
   }
 
-  &[data-state="error"] {
+  &.is-error {
     color: $clr-error;
   }
 }
