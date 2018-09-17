@@ -6,6 +6,7 @@ const notify = require("gulp-notify");
 const gutil = require("gulp-util");
 const htmlmin = require("gulp-htmlmin");
 const size = require("gulp-size");
+const cache = require("gulp-cache");
 const options = require("minimist")(process.argv.slice(2));
 
 const filters = {
@@ -29,7 +30,7 @@ gulp.task("templates", () => {
         errorHandler: notify.onError("PUG Error: <%= error.message %>"),
       })
     )
-    .pipe(pug({ pretty: true, filters }))
+    .pipe(cache(pug({ pretty: true, filters })))
     .pipe(
       options.production ? htmlmin({ collapseWhitespace: true }) : gutil.noop()
     )
