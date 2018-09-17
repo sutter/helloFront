@@ -29,11 +29,12 @@
     background: $clr-1-darker;
   }
 
-  &[data-state="active"] {
+  &.is-active {
     background: shade($clr-1, 40%);
   }
 
-  &[disabled] {
+  &.is-disabled,
+  &:disabled {
     opacity: 0.5;
     background-image: none !important;
     box-shadow: none !important;
@@ -43,26 +44,25 @@
       background: $clr-1;
     }
   }
+}
 
-  &[data-size~="S"] {
-    padding: 0.5rem 1.5rem;
-    font-size: $font-size-XS;
-  }
+/**
+* Modifier : Size
+* --------------------------------------- */
 
-  &[data-size~="L"] {
-    padding: 1.5rem 4rem;
-    font-size: $font-size-M;
-  }
+.a-button--S {
+  padding: 0.5rem 1.5rem;
+  font-size: $font-size-XS;
+}
 
-  &[data-size~="full"] {
+.a-button--fullWidth {
+  justify-content: center;
+  width: 100%;
+}
+
+.a-button--fullWidthMobile {
+  @media #{$mobile} {
     justify-content: center;
     width: 100%;
-  }
-
-  &[data-size~="fullOnlyMobile"] {
-    @media #{$mobile} {
-      justify-content: center;
-      width: 100%;
-    }
   }
 }

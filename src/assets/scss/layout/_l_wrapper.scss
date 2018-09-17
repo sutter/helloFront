@@ -5,20 +5,24 @@
 .l-wrapper {
   padding-right: $gutter-width;
   padding-left: $gutter-width;
+}
 
-  &[data-size~="M"] {
-    @media #{$mobileUp} {
-      max-width: $wrap-M-max-width;
-      margin-right: auto;
-      margin-left: auto;
-    }
+/**
+* Modifier : Size
+* --------------------------------------- */
+
+.l-wrapper--M {
+  @media #{$mobileUp} {
+    max-width: $wrap-M-max-width;
+    margin-right: auto;
+    margin-left: auto;
   }
+}
 
-  &[data-size~="S"] {
-    @media #{$mobileUp} {
-      max-width: $wrap-S-max-width;
-      margin-right: auto;
-      margin-left: auto;
-    }
+.l-wrapper--S {
+  @media #{$mobileUp} {
+    max-width: $wrap-S-max-width;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
