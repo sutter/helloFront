@@ -8,7 +8,7 @@ const notify = require("gulp-notify");
 const sourcemaps = require("gulp-sourcemaps");
 const gutil = require("gulp-util");
 const size = require("gulp-size");
-const cssnano = require('gulp-cssnano');
+const cssnano = require("gulp-cssnano");
 const options = require("minimist")(process.argv.slice(2));
 
 gulp.task("styles", () => {
