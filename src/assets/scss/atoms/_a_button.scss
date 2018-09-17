@@ -6,7 +6,7 @@
   position: relative;
   display: inline-block;
   margin: 0;
-  padding: 1rem 1.8rem;
+  padding: 1.15rem 1.8rem;
   font-size: $font-size-S;
   font-weight: $font-weight-bold;
   line-height: normal;
@@ -29,12 +29,11 @@
     background: $clr-1-darker;
   }
 
-  &.is-active {
+  &[data-state="active"] {
     background: shade($clr-1, 40%);
   }
 
-  &:disabled,
-  &.is-disabled {
+  &[disabled] {
     opacity: 0.5;
     background-image: none !important;
     box-shadow: none !important;
@@ -44,69 +43,26 @@
       background: $clr-1;
     }
   }
-}
 
-/**
- * Modifier : Appearance
- * --------------------------------------- */
-
-.a-button--secondary {
-  color: $clr-0;
-  background: $clr-light;
-  box-shadow: inset 0 0 0 1px $clr-0-light;
-
-  &:hover {
-    color: $clr-0;
-    background: $clr-0-light;
+  &[data-size~="S"] {
+    padding: 0.5rem 1.5rem;
+    font-size: $font-size-XS;
   }
 
-  &:disabled:hover,
-  &.is-disabled:hover {
-    background: $clr-light;
+  &[data-size~="L"] {
+    padding: 1.5rem 4rem;
+    font-size: $font-size-M;
   }
 
-  &.is-active {
-    color: $clr-light;
-    background: shade($clr-0-light, 40%);
-    box-shadow: none;
-  }
-}
-
-.a-button--danger {
-  background: $clr-danger;
-
-  &:disabled:hover,
-  &.is-disabled:hover {
-    background: $clr-danger;
-  }
-
-  &:hover {
-    background: shade($clr-danger, 20%);
-  }
-}
-
-/**
- * Modifier : Size
- * --------------------------------------- */
-
-.a-button--S {
-  padding: 0.5rem 1.5rem;
-  font-size: $font-size-XS;
-}
-
-.a-button--L {
-  padding: 1.5rem 4rem;
-  font-size: $font-size-M;
-}
-
-.a-button--block {
-  justify-content: center;
-  width: 100%;
-}
-
-.a-button--blockMobile {
-  @media #{mobile} {
-    display: block;
+  &[data-size~="full"] {
+    justify-content: center;
     width: 100%;
+  }
+
+  &[data-size~="fullOnlyMobile"] {
+    @media #{$mobile} {
+      justify-content: center;
+      width: 100%;
+    }
   }
 }

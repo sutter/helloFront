@@ -14,6 +14,10 @@
   @media #{$mobileUp} {
     margin: -$gutter-width/2;
   }
+
+  &[data-justifyContent] {
+    justify-content: "attr(data-justifyContent)";
+  }
 }
 
 .l-grid-item {
@@ -27,18 +31,10 @@
     margin: $gutter-width/2;
     width: calc(100% - #{$gutter-width});
   }
-}
 
-/**
- * Grid child options
- * --------------------------------------- */
-
-.l-grid-itemFirst {
-  order: -1;
-}
-
-.l-grid-itemPush {
-  margin-left: auto;
+  &[data-align="left"] {
+    margin-left: auto;
+  }
 }
 
 /**
@@ -63,22 +59,4 @@
 
 @media #{$desktopUp} {
   @include gridItem(L-UP);
-}
-
-/**
- * Modifier : grid option
- * --------------------------------------- */
-
-.l-grid--center {
-  justify-content: center;
-}
-
-.l-grid--equalHeight {
-  .l-grid-item > * {
-    height: 100%;
-  }
-}
-
-.l-grid--noWrap {
-  flex-wrap: nowrap;
 }

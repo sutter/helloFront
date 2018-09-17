@@ -1,0 +1,15 @@
+/** ======================================
+ * Molecule : Form Inline
+ * ======================================= */
+
+.m-formInline {
+  display: flex;
+  align-items: flex-start;
+  .a-label {
+    @include visually-hidden;
+  }
+
+  > * + * {
+    margin-left: 1rem;
+  }
+}

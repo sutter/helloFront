@@ -6,19 +6,19 @@
   padding-right: $gutter-width;
   padding-left: $gutter-width;
 
-  @media #{$mobileUp} {
-    max-width: $wrap-M-max-width;
-    margin-right: auto;
-    margin-left: auto;
+  &[data-size~="M"] {
+    @media #{$mobileUp} {
+      max-width: $wrap-M-max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
-}
 
-/**
- * Modifier : Size
- * --------------------------------------- */
-
-.l-wrapper--S {
-  @media #{$mobileUp} {
-    max-width: $wrap-S-max-width;
+  &[data-size~="S"] {
+    @media #{$mobileUp} {
+      max-width: $wrap-S-max-width;
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }

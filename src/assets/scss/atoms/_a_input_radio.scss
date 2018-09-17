@@ -1,0 +1,23 @@
+/** ======================================
+* Atom : inputRadio
+* ======================================= */
+
+.a-inputRadio {
+  @include inputRadioCheckboxBase;
+
+  [type="radio"]:not(:checked) + label:hover::before {
+    box-shadow: inset 0 0 0 1px $clr-1;
+  }
+
+  [type="radio"] + label::before {
+    border-radius: 50%;
+  }
+
+  [type="radio"]:checked + label::before {
+    box-shadow: inset 0 0 0 $radioCheckboxSize/2 - 0.35rem $clr-1;
+  }
+
+  &:not(:first-child) {
+    margin-top: 1rem;
+  }
+}

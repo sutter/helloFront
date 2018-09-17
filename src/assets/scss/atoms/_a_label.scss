@@ -1,0 +1,27 @@
+/** ======================================
+* Atom : Label
+* ======================================= */
+
+.a-label {
+  display: block;
+  font-weight: $font-weight-bold;
+  color: $clr-0;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &.label {
+    cursor: pointer;
+  }
+
+  &[required] {
+    &::after {
+      content: " *";
+    }
+  }
+
+  &[data-state="error"] {
+    color: $clr-error;
+  }
+}

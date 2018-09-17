@@ -16,8 +16,13 @@
 // Atoms
 // =======================================
 
-@import "atoms/a_button";
-@import "atoms/a_input";
+@import "./atoms/a_button";
+@import "./atoms/a_input_checkbox";
+@import "./atoms/a_input_radio";
+@import "./atoms/a_input_select";
+@import "./atoms/a_input_text";
+@import "./atoms/a_input_textarea";
+@import "./atoms/a_label";
 
 // =======================================
 // Layout
@@ -31,18 +36,13 @@
 // Molecules
 // =======================================
 
-@import "molecules/m_form";
-
-// =======================================
-// Organisms
-// =======================================
-
-@import "organisms/o_content";
+@import "./molecules/m_content";
+@import "./molecules/m_form_inline";
+@import "./molecules/m_form";
 
 // =======================================
 // Utils
 // =======================================
-
 @import "utils/u_txtColor";
 @import "utils/u_layout";
 @import "utils/u_show_hide";

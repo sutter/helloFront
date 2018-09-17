@@ -111,7 +111,6 @@ Example SCSS hierarchy :
 - **base/** : Unclassed HTML elements (type selector)
 - **atoms/** : Atoms are the basic building blocks of matter (button, input, etc.)
 - **molecules/** : Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound (from, cards, etc.)
-- **organisms/** : Molecules give us some building blocks to work with, and we can now combine them together to form organisms. (header, footer, etc.)
 - **layout/** : Layout are the basic elment for build layout.
 - **page/** : Pages are specific instances of templates
 - **tools/** : Default mixin and functions

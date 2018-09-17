@@ -20,7 +20,7 @@ $clr-light: #fff;
 $clr-success: #61bcbd;
 $clr-warning: #f9b134;
 $clr-notice: #d9edf7;
-$clr-danger: #d24a53;
+$clr-error: #d24a53;
 $clr-divider: #ededed;
 
 $clr-0-darker: #23292e;
@@ -163,3 +163,6 @@ $desktopUp: (
 $trans-timing: 0.3s;
 $trans-cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 $trans-all: all $trans-timing $trans-cubic;
+
+$radioCheckboxSize: 1.6rem;
+$radioCheckboxTop: 0.2rem;

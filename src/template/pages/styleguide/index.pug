@@ -9,10 +9,10 @@ append config
 block content
   .hf-head
     .hf-wrapper
-      h1 Framework CSS
-  .hf-content
-    .hf-wrapper
-      h3 Support Navigateur
+      h1 Framework CSS 
+  .hf-wrapper
+    .hf-content
+      h2 Support Navigateur
       ul
         li Internet Explorer 10+
         li Edge
@@ -25,6 +25,18 @@ block content
        li 80 caractères maximum par lignes
        li 1 déclaration par ligne
       h3 Convention de nommage CSS
-      pre
-        code
-          include ../../data/css.md
+    :code(lang="css")
+      /* Composant */
+      .myComponent { … }
+
+      /* Composant enfant */
+       .myComponent-element { … }
+
+      /* Modificateur de composant */
+      .myComponent[data-value] { … }
+
+      /* État du composant */
+      .myComponent[data-state] { … }
+
+      /* Ciblage réservée au javascript */
+      [data-js-myScript] { … }
