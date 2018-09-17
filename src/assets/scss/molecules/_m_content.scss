@@ -22,8 +22,6 @@
   }
 
   /* Typography */
-
-  line-height: 1.5;
   h1 {
     @include title;
     margin: 1.5rem 0 0.8rem;
@@ -128,15 +126,6 @@
     font-weight: bold;
     &:not(:first-child) {
       margin-top: 1rem;
-    }
-  }
-
-  /* Link */
-
-  a:not(.a-button) {
-    color: $clr-1;
-    &:hover {
-      color: $clr-1-light;
     }
   }
 

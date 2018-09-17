@@ -25,7 +25,7 @@ body {
   font-family: $font-base;
   font-size: $font-size-base;
   font-weight: $font-weight-base;
-  line-height: 1;
+  line-height: $line-height-M;
   text-rendering: optimizeLegibility;
   color: $clr-0-darker;
   background: $clr-light;
@@ -95,12 +95,13 @@ acronym {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: $clr-1;
+  transition: color $trans-timing $trans-cubic;
 
   &:active,
   &:hover,
   &:focus {
-    color: inherit;
+    color: $clr-1-light;
   }
 }
 
