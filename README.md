@@ -102,7 +102,7 @@ yarn reset
 
 ### 1.3.1. Works with SCSS
 
-Use [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) design for orgaznise components
+Use [atomic design](http://bradfrost.com/blog/post/atomic-web-design/) design for organizing components
 
 The SCSS files are located in `./src/assets/scss`.
 
