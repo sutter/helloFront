@@ -20,8 +20,8 @@
       content: " *";
     }
   }
+}
 
-  &.is-error {
-    color: $clr-error;
-  }
+.a-label--error {
+  color: $clr-error;
 }

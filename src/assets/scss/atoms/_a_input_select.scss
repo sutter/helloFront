@@ -2,7 +2,7 @@
 * Atom : inputSelect
 * ======================================= */
 
-.a-inputSelect {
+.a-input-select {
   @include inputBase;
   min-width: 6rem;
   height: 4rem;
@@ -20,4 +20,8 @@
       border-color: shade($clr-0-light, 10%);
     }
   }
+}
+
+.a-input-select--error {
+  border-color: $clr-error;
 }

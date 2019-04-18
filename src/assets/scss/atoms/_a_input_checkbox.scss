@@ -2,7 +2,7 @@
 * Atom : inputCheckbox
 * ======================================= */
 
-.a-inputCheckbox {
+.a-input-checkbox {
   @include inputRadioCheckboxBase;
 
   [type="checkbox"] + label {
@@ -33,5 +33,11 @@
 
   &:not(:first-child) {
     margin-top: 1rem;
+  }
+}
+
+.a-input-checkbox--error {
+  label::before {
+    box-shadow: inset 0 0 0 1px $clr-error;
   }
 }

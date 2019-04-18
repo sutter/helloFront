@@ -2,7 +2,7 @@
  * Utils : Spacing
  * ======================================= */
 
-$spacers: (N 0) (S $spacer-S) (M $spacer-M) (L $spacer-L);
+$spacers: (n 0) (s $spacer-S) (m $spacer-M) (l $spacer-L);
 
 @each $spacer in $spacers {
   $type: nth($spacer, 1);

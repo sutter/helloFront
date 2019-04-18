@@ -2,11 +2,15 @@
 * Atom : Input Text
 * ======================================= */
 
-.a-inputText {
+.a-input-text {
   @include inputBase;
   height: $form-group-input-height;
   line-height: 1;
   padding: 0 2rem;
   border: 1px solid $clr-divider;
   @include inputBaseState;
+}
+
+.a-input-text--error {
+  border-color: $clr-error;
 }

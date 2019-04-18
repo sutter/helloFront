@@ -15,6 +15,7 @@ $styleguideSidebar: 20rem;
   position: relative;
   > header {
     position: fixed;
+    overflow-y: auto;
     top: 0;
     left: 0;
     bottom: 0;
@@ -276,7 +277,7 @@ $styleguideSidebar: 20rem;
     border-radius: 0.3rem;
   }
 
-  .l-grid-item {
+  .l-grid__item {
     background: $clr-0-lighter;
     padding: 10px;
     text-align: center;

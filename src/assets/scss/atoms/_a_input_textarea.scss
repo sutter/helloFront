@@ -2,10 +2,14 @@
 * Atom : Input Textarea
 * ======================================= */
 
-.a-inputTextarea {
+.a-input-textarea {
   @include inputBase;
   min-height: $form-group-input-height * 2;
   padding: 0.9rem 2rem;
   line-height: 1.25;
   @include inputBaseState;
+}
+
+.a-input-textarea--error {
+  border-color: $clr-error;
 }

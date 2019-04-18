@@ -2,7 +2,7 @@
  * Utils : Show / Hide
  * ======================================= */
 
-.u-hideMobile {
+.u-hide-mobile {
   display: none !important;
 
   @media #{$mobileUp} {
@@ -10,12 +10,12 @@
   }
 }
 
-.u-showMobile {
+.u-show-mobile {
   @media #{$mobileUp} {
     display: none !important;
   }
 }
 
-.u-visuallyHidden {
+.u-visually-hidden {
   @include visually-hidden;
 }
