@@ -13,6 +13,7 @@ $styleguideSidebar: 20rem;
 .hf-styleguide {
   min-height: 100vh;
   position: relative;
+  overflow-y: scroll;
   > header {
     position: fixed;
     overflow-y: auto;
