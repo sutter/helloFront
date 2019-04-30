@@ -12,12 +12,12 @@ html(lang= lang)
       .u-visuallyHidden
         include ../../assets/icons/symbol/icons.svg
     .l-app
-      .l-app-head
+      .l-app__head
         include ../partials/header
-      main.app-body
+      main.l-app__body
         section
           block content
-      .l-app-footer
+      .l-app__footer
         include ../partials/footer
 
     script(src= path + "assets/app.js", async)

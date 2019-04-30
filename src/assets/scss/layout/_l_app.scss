@@ -5,11 +5,18 @@
 .l-app {
   display: flex;
   flex-direction: column;
+  width: 100%;
   min-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
-.l-app-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+.l-app__head,
+.l-app__footer {
+  flex-shrink: 0;
+}
+
+.l-app__body {
+  flex: 1 1 auto;
 }
