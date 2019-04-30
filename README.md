@@ -118,7 +118,7 @@ Example SCSS hierarchy :
 - **\_settings.scss** : Global variables
 - **app.scss** : Main stylesheet
 
-Use the [SUIT CSS](https://github.com/suitcss/suit/blob/master/doc/naming-conventions.md) namming convention.
+Use the [BEM](http://getbem.com/introduction/) namming convention.
 
 ### 1.3.2. Works with Pug templating
 
