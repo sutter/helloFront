@@ -16,7 +16,7 @@
   }
 }
 
-.l-grid-item {
+.l-grid__item {
   @media #{$mobile} {
     width: 100%;
     &:not(:first-child) {
@@ -34,21 +34,21 @@
  * --------------------------------------- */
 
 @media #{$mobileUp} and #{$tabletUp} {
-  @include gridItem(S);
+  @include gridItem(s);
 }
 
 @media #{$mobileUp} {
-  @include gridItem(S-UP);
+  @include gridItem(s-up);
 }
 
 @media #{$tabletUp} and #{$desktop} {
-  @include gridItem(M);
+  @include gridItem(m);
 }
 
 @media #{$tabletUp} {
-  @include gridItem(M-UP);
+  @include gridItem(m-up);
 }
 
 @media #{$desktopUp} {
-  @include gridItem(L-UP);
+  @include gridItem(l-up);
 }

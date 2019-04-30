@@ -20,6 +20,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   position: relative;
   height: 100%;
   font-family: $font-base;
@@ -29,8 +31,7 @@ body {
   text-rendering: optimizeLegibility;
   color: $clr-0-darker;
   background: $clr-light;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  overflow: hidden;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

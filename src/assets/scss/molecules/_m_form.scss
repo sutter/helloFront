@@ -8,13 +8,13 @@
   }
 }
 
-.m-form-group {
+.m-form__group {
   &:not(:first-child) {
     margin-top: $spacer-M;
   }
 }
 
-.m-form-group-small {
+.m-form__group__legend {
   font-size: 80%;
   color: tint($clr-0, 40%);
   line-height: 1.25;
@@ -23,7 +23,7 @@
   }
 }
 
-.m-form-footer {
+.m-form__footer {
   &:not(:first-child) {
     margin-top: $spacer-M;
   }

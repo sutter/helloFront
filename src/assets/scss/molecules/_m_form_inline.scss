@@ -2,14 +2,14 @@
  * Molecule : Form Inline
  * ======================================= */
 
-.m-formInline {
+.m-form-inline {
   display: flex;
   align-items: flex-start;
   .a-label {
     @include visually-hidden;
   }
 
-  > * + * {
+  > *:not(:first-child) {
     margin-left: 1rem;
   }
 }

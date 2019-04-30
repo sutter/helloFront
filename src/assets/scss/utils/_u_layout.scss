@@ -2,23 +2,23 @@
  * Utils : Layout
  * ======================================= */
 
-.u-noBfc {
+.u-no-bfc {
   overflow: hidden !important;
 }
 
-.u-floatLeft {
+.u-float-left {
   float: left !important;
 }
 
-.u-floatRight {
+.u-float-right {
   float: right !important;
 }
 
-.u-flexPushleft {
+.u-flex-push-left {
   margin-left: auto !important;
 }
 
-.u-flexInlineGrid.u-flexInlineGrid {
+.u-flex-inline-grid.u-flex-inline-grid {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
