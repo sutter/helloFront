@@ -1,8 +1,9 @@
 # 1. Hello Front
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/5f42eea3983e36565d92/maintainability)](https://codeclimate.com/github/sutter/helloFront/maintainability)
-
 Boilerplate SCSS / PUG / ES6 for clean and fast Front-end project.
+
+* Démo : [https://hellofront.netlify.com/](https://hellofront.netlify.com/)
+
 
 Work on **src/** folder and gulp build in **dist/**.
 
