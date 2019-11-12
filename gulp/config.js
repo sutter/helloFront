@@ -57,7 +57,7 @@ module.exports = {
     files_src: [
       "!" + src + "/assets/img/sprite/**/*.svg",
       "!" + src + "/assets/img/sprite.svg",
-      src + "/assets/img/**/*.{jpg,png,gif, svg}",
+      src + "/assets/img/**/*.{jpg,png,gif,svg}",
     ],
     dist: assets_dist,
   },
