@@ -20,7 +20,12 @@ gulp.task("styles", () => {
       })
     )
     .pipe(!options.production ? sourcemaps.init() : gutil.noop())
-    .pipe(sass({ precision: 10 }))
+    .pipe(
+      sass({ 
+        precision: 10, 
+        includePaths: ['node_modules/'], 
+      })
+    )
     .pipe(
       autoprefixer({
         cascade: false,
