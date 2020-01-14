@@ -119,7 +119,7 @@ Example SCSS hierarchy :
 - **\_settings.scss** : Global variables
 - **app.scss** : Main stylesheet
 
-Use the [BEM](http://getbem.com/introduction/) namming convention.
+Use the [BEM](http://getbem.com/introduction/) naming convention.
 
 ### 1.3.2. Works with Pug templating
 
