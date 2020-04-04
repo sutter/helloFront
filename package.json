@@ -51,7 +51,7 @@
     "gulp-svg-sprite": "^1.4.0",
     "gulp-util": "^3.0.8",
     "gulp-watch": "^5.0.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.3",
     "require-dir": "^1.0.0",
     "run-sequence": "^2.2.1",
     "size": "^1.0.0",
